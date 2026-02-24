@@ -58,10 +58,22 @@ func (e *Engine) RecipeLookup(ctx context.Context, req crafting.RecipeLookupRequ
 		resp.ProfitAnalysis = analysis
 	}
 	
-	// Find recipes that use this recipe's output
-	usedIn, err := e.recipes.GetRecipesUsingOutput(ctx, recipe.Output.ItemID)
-	if err != nil {
-		return nil, err
+	// Find recipes that use this recipe's outputs as inputs
+	usedInMap := make(map[string]bool)
+	for _, output := range recipe.Outputs {
+		recipes, err := e.recipes.GetRecipesUsingOutput(ctx, output.ItemID)
+		if err != nil {
+			return nil, err
+		}
+		for _, r := range recipes {
+			usedInMap[r] = true
+		}
+	}
+
+	// Convert map to slice
+	usedIn := make([]string, 0, len(usedInMap))
+	for recipeID := range usedInMap {
+		usedIn = append(usedIn, recipeID)
 	}
 	resp.UsedInRecipes = usedIn
 	

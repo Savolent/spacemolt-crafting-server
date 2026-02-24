@@ -33,13 +33,13 @@ func (e *Engine) checkSkillRequirements(
 ) (bool, []crafting.SkillGap, error) {
 	ready := true
 	var gaps []crafting.SkillGap
-	
+
 	for _, req := range recipe.SkillsRequired {
 		currentLevel := agentSkills[req.SkillID] // defaults to 0 if not present
-		
+
 		if currentLevel < req.LevelRequired {
 			ready = false
-			
+
 			// Get skill name for better output
 			skillName, err := e.skills.GetSkillName(ctx, req.SkillID)
 			if err != nil {
@@ -48,13 +48,13 @@ func (e *Engine) checkSkillRequirements(
 			if skillName == "" {
 				skillName = req.SkillID
 			}
-			
+
 			// Calculate XP to next level
 			xpToNext, err := e.skills.GetXPForLevel(ctx, req.SkillID, currentLevel+1)
 			if err != nil {
 				return false, nil, err
 			}
-			
+
 			gaps = append(gaps, crafting.SkillGap{
 				SkillID:       req.SkillID,
 				SkillName:     skillName,
@@ -64,65 +64,65 @@ func (e *Engine) checkSkillRequirements(
 			})
 		}
 	}
-	
+
 	return ready, gaps, nil
 }
 
-// calculateComponentMatch calculates how well the agent's inventory matches recipe requirements.
-func (e *Engine) calculateComponentMatch(
+// calculateInputMatch calculates how well the agent's inventory matches recipe input requirements.
+func (e *Engine) calculateInputMatch(
 	recipe *crafting.Recipe,
 	inventory map[string]int,
-) (have []crafting.RecipeComponent, missing []crafting.RecipeComponent, canCraft int) {
-	if len(recipe.Components) == 0 {
+) (have []crafting.RecipeInput, missing []crafting.RecipeInput, canCraft int) {
+	if len(recipe.Inputs) == 0 {
 		return nil, nil, 0
 	}
-	
+
 	canCraft = -1 // will be set to minimum craftable quantity
-	
-	for _, req := range recipe.Components {
-		available := inventory[req.ComponentID]
-		
+
+	for _, req := range recipe.Inputs {
+		available := inventory[req.ItemID]
+
 		if available >= req.Quantity {
 			// Have enough for at least one craft
-			have = append(have, crafting.RecipeComponent{
-				ComponentID: req.ComponentID,
-				Quantity:    req.Quantity,
+			have = append(have, crafting.RecipeInput{
+				ItemID:   req.ItemID,
+				Quantity: req.Quantity,
 			})
-			
-			// How many times can we craft with this component?
+
+			// How many times can we craft with this input?
 			thisCanCraft := available / req.Quantity
 			if canCraft < 0 || thisCanCraft < canCraft {
 				canCraft = thisCanCraft
 			}
 		} else if available > 0 {
 			// Have some but not enough
-			have = append(have, crafting.RecipeComponent{
-				ComponentID: req.ComponentID,
-				Quantity:    available,
+			have = append(have, crafting.RecipeInput{
+				ItemID:   req.ItemID,
+				Quantity: available,
 			})
-			missing = append(missing, crafting.RecipeComponent{
-				ComponentID: req.ComponentID,
-				Quantity:    req.Quantity - available,
+			missing = append(missing, crafting.RecipeInput{
+				ItemID:   req.ItemID,
+				Quantity: req.Quantity - available,
 			})
 			canCraft = 0
 		} else {
 			// Have none
-			missing = append(missing, crafting.RecipeComponent{
-				ComponentID: req.ComponentID,
-				Quantity:    req.Quantity,
+			missing = append(missing, crafting.RecipeInput{
+				ItemID:   req.ItemID,
+				Quantity: req.Quantity,
 			})
 			canCraft = 0
 		}
 	}
-	
+
 	if canCraft < 0 {
 		canCraft = 0
 	}
-	
+
 	return have, missing, canCraft
 }
 
-// calculateMatchRatio returns the ratio of matched components to total components.
+// calculateMatchRatio returns the ratio of matched inputs to total inputs.
 func calculateMatchRatio(have, total int) float64 {
 	if total == 0 {
 		return 0
@@ -140,57 +140,67 @@ func (e *Engine) calculateProfitAnalysis(
 	if stationID == "" {
 		return nil, nil
 	}
-	
-	// Get output sell price
-	outputPrice, err := e.market.GetSellPrice(ctx, recipe.Output.ItemID, stationID)
-	if err != nil {
-		return nil, err
-	}
-	if outputPrice == 0 {
-		return nil, nil // No market data
-	}
-	
-	// Calculate input cost
-	var inputCost int
-	for _, comp := range recipe.Components {
-		buyPrice, err := e.market.GetBuyPrice(ctx, comp.ComponentID, stationID)
+
+	// Calculate total output value from all outputs
+	var totalOutputPrice int
+	for _, output := range recipe.Outputs {
+		outputPrice, err := e.market.GetSellPrice(ctx, output.ItemID, stationID)
 		if err != nil {
 			return nil, err
 		}
-		inputCost += buyPrice * comp.Quantity
+		totalOutputPrice += outputPrice * output.Quantity
 	}
-	
-	profitPerUnit := (outputPrice * recipe.Output.Quantity) - inputCost
-	
+
+	if totalOutputPrice == 0 {
+		return nil, nil // No market data
+	}
+
+	// Calculate input cost
+	var inputCost int
+	for _, inp := range recipe.Inputs {
+		buyPrice, err := e.market.GetBuyPrice(ctx, inp.ItemID, stationID)
+		if err != nil {
+			return nil, err
+		}
+		inputCost += buyPrice * inp.Quantity
+	}
+
+	profitPerUnit := totalOutputPrice - inputCost
+
 	var marginPct float64
 	if inputCost > 0 {
 		marginPct = float64(profitPerUnit) / float64(inputCost) * 100
 	}
-	
-	// Get volume and trend
-	volume, err := e.market.GetVolume24h(ctx, recipe.Output.ItemID, stationID)
+
+	// For multi-output recipes, use the first output as primary for volume/trend
+	var primaryOutput crafting.RecipeOutput
+	if len(recipe.Outputs) > 0 {
+		primaryOutput = recipe.Outputs[0]
+	}
+
+	volume, err := e.market.GetVolume24h(ctx, primaryOutput.ItemID, stationID)
 	if err != nil {
 		return nil, err
 	}
-	
-	trend, err := e.market.GetPriceTrend(ctx, recipe.Output.ItemID, stationID)
+
+	trend, err := e.market.GetPriceTrend(ctx, primaryOutput.ItemID, stationID)
 	if err != nil {
 		return nil, err
 	}
-	
+
 	analysis := &crafting.ProfitAnalysis{
-		OutputSellPrice: outputPrice,
+		OutputSellPrice: totalOutputPrice,
 		InputCost:       inputCost,
 		ProfitPerUnit:   profitPerUnit,
 		ProfitMarginPct: marginPct,
 		MarketVolume24h: volume,
 		PriceTrend:      trend,
 	}
-	
+
 	if canCraftQuantity > 0 {
 		analysis.TotalPotentialProfit = profitPerUnit * canCraftQuantity
 	}
-	
+
 	return analysis, nil
 }
 

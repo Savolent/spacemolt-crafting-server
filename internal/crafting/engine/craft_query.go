@@ -73,9 +73,9 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 			continue
 		}
 		
-		// Calculate component match
-		have, missing, canCraft := e.calculateComponentMatch(recipe, inventory)
-		matchRatio := calculateMatchRatio(len(have), len(recipe.Components))
+		// Calculate input match
+		have, missing, canCraft := e.calculateInputMatch(recipe, inventory)
+		matchRatio := calculateMatchRatio(len(have), len(recipe.Inputs))
 		
 		// Check skill requirements
 		skillsReady, skillGaps, err := e.checkSkillRequirements(ctx, recipe, req.Skills)
@@ -101,26 +101,26 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 				ProfitAnalysis:   profitAnalysis,
 			})
 		} else if matchRatio == 1.0 && !skillsReady {
-			// Have components but blocked by skills
+			// Have inputs but blocked by skills
 			blockedBySkills = append(blockedBySkills, crafting.PartialComponentMatch{
-				Recipe:            *recipe,
-				ComponentsHave:    have,
-				ComponentsMissing: missing,
-				MatchRatio:        matchRatio,
-				SkillsReady:       false,
-				SkillsMissing:     skillGaps,
-				ProfitAnalysis:    profitAnalysis,
+				Recipe:         *recipe,
+				InputsHave:     have,
+				InputsMissing:  missing,
+				MatchRatio:     matchRatio,
+				SkillsReady:    false,
+				SkillsMissing:  skillGaps,
+				ProfitAnalysis: profitAnalysis,
 			})
 		} else if req.IncludePartial && matchRatio >= req.MinMatchRatio {
-			// Partial component match
+			// Partial input match
 			partialComponents = append(partialComponents, crafting.PartialComponentMatch{
-				Recipe:            *recipe,
-				ComponentsHave:    have,
-				ComponentsMissing: missing,
-				MatchRatio:        matchRatio,
-				SkillsReady:       skillsReady,
-				SkillsMissing:     skillGaps,
-				ProfitAnalysis:    profitAnalysis,
+				Recipe:         *recipe,
+				InputsHave:     have,
+				InputsMissing:  missing,
+				MatchRatio:     matchRatio,
+				SkillsReady:    skillsReady,
+				SkillsMissing:  skillGaps,
+				ProfitAnalysis: profitAnalysis,
 			})
 		}
 	}
@@ -175,8 +175,8 @@ func sortCraftable(matches []crafting.CraftableMatch, strategy crafting.Optimiza
 			return matches[i].CanCraftQuantity > matches[j].CanCraftQuantity
 			
 		case crafting.StrategyOptimizeCraftPath:
-			// Prefer simpler recipes (fewer components)
-			return len(matches[i].Recipe.Components) < len(matches[j].Recipe.Components)
+			// Prefer simpler recipes (fewer inputs)
+			return len(matches[i].Recipe.Inputs) < len(matches[j].Recipe.Inputs)
 			
 		default:
 			return matches[i].CanCraftQuantity > matches[j].CanCraftQuantity
@@ -202,12 +202,12 @@ func sortPartial(matches []crafting.PartialComponentMatch, strategy crafting.Opt
 			return matches[i].MatchRatio > matches[j].MatchRatio
 			
 		case crafting.StrategyMinimizeAcquisition:
-			// Sort by fewest missing components
-			return len(matches[i].ComponentsMissing) < len(matches[j].ComponentsMissing)
-			
+			// Sort by fewest missing inputs
+			return len(matches[i].InputsMissing) < len(matches[j].InputsMissing)
+
 		case crafting.StrategyOptimizeCraftPath:
 			// Prefer simpler recipes
-			return len(matches[i].Recipe.Components) < len(matches[j].Recipe.Components)
+			return len(matches[i].Recipe.Inputs) < len(matches[j].Recipe.Inputs)
 			
 		default:
 			return matches[i].MatchRatio > matches[j].MatchRatio

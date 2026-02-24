@@ -15,11 +15,11 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 	}
 	
 	resp := &crafting.ComponentUsesResponse{
-		ComponentID: req.ComponentID,
+		ItemID: req.ItemID,
 	}
-	
-	// Find all recipes that use this component
-	recipeIDs, err := e.recipes.FindRecipesByComponents(ctx, []string{req.ComponentID})
+
+	// Find all recipes that use this item
+	recipeIDs, err := e.recipes.FindRecipesByComponents(ctx, []string{req.ItemID})
 	if err != nil {
 		return nil, err
 	}
@@ -35,11 +35,11 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 			continue
 		}
 		
-		// Find how much of this component is needed
+		// Find how much of this item is needed
 		var quantityNeeded int
-		for _, comp := range recipe.Components {
-			if comp.ComponentID == req.ComponentID {
-				quantityNeeded = comp.Quantity
+		for _, inp := range recipe.Inputs {
+			if inp.ItemID == req.ItemID {
+				quantityNeeded = inp.Quantity
 				break
 			}
 		}
@@ -88,7 +88,7 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 	
 	// Get market sell price as alternative
 	if req.StationID != "" {
-		sellPrice, err := e.market.GetSellPrice(ctx, req.ComponentID, req.StationID)
+		sellPrice, err := e.market.GetSellPrice(ctx, req.ItemID, req.StationID)
 		if err != nil {
 			return nil, err
 		}
@@ -119,14 +119,14 @@ func sortComponentUses(uses []crafting.ComponentUseInfo, strategy crafting.Optim
 			
 		case crafting.StrategyUseInventoryFirst:
 			// Prefer simpler recipes
-			return len(uses[i].Recipe.Components) < len(uses[j].Recipe.Components)
-			
+			return len(uses[i].Recipe.Inputs) < len(uses[j].Recipe.Inputs)
+
 		default:
 			// Default: prefer recipes we can actually craft
 			if uses[i].SkillReady != uses[j].SkillReady {
 				return uses[i].SkillReady
 			}
-			return len(uses[i].Recipe.Components) < len(uses[j].Recipe.Components)
+			return len(uses[i].Recipe.Inputs) < len(uses[j].Recipe.Inputs)
 		}
 	})
 }
