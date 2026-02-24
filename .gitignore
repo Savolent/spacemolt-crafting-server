@@ -1,0 +1,9 @@
+# Compiled binaries
+bin/
+
+# Database backups
+*.db.backup
+
+
+# Working docs
+docs/
