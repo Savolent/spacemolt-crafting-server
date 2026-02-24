@@ -22,14 +22,40 @@ func NewSyncer(database *db.DB) *Syncer {
 	return &Syncer{db: database}
 }
 
+// unwrapItems tries to unmarshal data as a {"items": [...]} envelope first,
+// falling back to the raw data as a plain array.
+func unwrapItems(data []byte) (json.RawMessage, error) {
+	var envelope struct {
+		Items json.RawMessage `json:"items"`
+	}
+	if err := json.Unmarshal(data, &envelope); err == nil && len(envelope.Items) > 0 {
+		return envelope.Items, nil
+	}
+	return data, nil
+}
+
+// ItemImport represents the expected format of item data from SpaceMolt.
+type ItemImport struct {
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	Description string `json:"description,omitempty"`
+	Category    string `json:"category,omitempty"`
+	Rarity      string `json:"rarity,omitempty"`
+	Size        int    `json:"size,omitempty"`
+	BaseValue   int    `json:"base_value,omitempty"`
+	Stackable   bool   `json:"stackable,omitempty"`
+	Tradeable   bool   `json:"tradeable,omitempty"`
+}
+
 // RecipeImport represents the expected format of recipe data from SpaceMolt.
-// Adjust this based on actual SpaceMolt get_recipes() output format.
 type RecipeImport struct {
-	ID           string `json:"id"`
-	Name         string `json:"name"`
-	Description  string `json:"description,omitempty"`
-	Category     string `json:"category,omitempty"`
-	CraftingTime int    `json:"crafting_time,omitempty"`
+	ID              string `json:"id"`
+	Name            string `json:"name"`
+	Description     string `json:"description,omitempty"`
+	Category        string `json:"category,omitempty"`
+	CraftingTime    int    `json:"crafting_time,omitempty"`
+	BaseQuality     int    `json:"base_quality,omitempty"`
+	SkillQualityMod int    `json:"skill_quality_mod,omitempty"`
 
 	// Inputs (was components)
 	Inputs []struct {
@@ -60,6 +86,9 @@ type RecipeImport struct {
 		Level         int    `json:"level,omitempty"`
 		LevelRequired int    `json:"level_required,omitempty"`
 	} `json:"skills,omitempty"`
+
+	// RequiredSkills as a map (catalog format: {"crafting_advanced": 2})
+	RequiredSkills map[string]int `json:"required_skills,omitempty"`
 
 	// Legacy single output support
 	Output struct {
@@ -99,6 +128,56 @@ type SkillImport struct {
 	XPThresholds []int `json:"xp_thresholds,omitempty"`
 }
 
+// ImportItemsFromFile imports items from a JSON file.
+func (s *Syncer) ImportItemsFromFile(ctx context.Context, path string) error {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return fmt.Errorf("reading file: %w", err)
+	}
+
+	itemsData, err := unwrapItems(data)
+	if err != nil {
+		return fmt.Errorf("unwrapping items: %w", err)
+	}
+
+	var imports []ItemImport
+	if err := json.Unmarshal(itemsData, &imports); err != nil {
+		return fmt.Errorf("parsing JSON: %w", err)
+	}
+
+	items := make([]crafting.Item, 0, len(imports))
+	for _, imp := range imports {
+		if imp.ID == "" {
+			continue
+		}
+		items = append(items, crafting.Item{
+			ID:          imp.ID,
+			Name:        imp.Name,
+			Description: imp.Description,
+			Category:    imp.Category,
+			Rarity:      imp.Rarity,
+			Size:        imp.Size,
+			BaseValue:   imp.BaseValue,
+			Stackable:   imp.Stackable,
+			Tradeable:   imp.Tradeable,
+		})
+	}
+
+	itemStore := db.NewItemStore(s.db)
+	if err := itemStore.BulkInsertItems(ctx, items); err != nil {
+		return fmt.Errorf("inserting items: %w", err)
+	}
+
+	if err := s.db.SetSyncMetadata(ctx, "items_last_sync", time.Now().Format(time.RFC3339)); err != nil {
+		return err
+	}
+	if err := s.db.SetSyncMetadata(ctx, "items_count", fmt.Sprintf("%d", len(items))); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 // ImportRecipesFromFile imports recipes from a JSON file.
 func (s *Syncer) ImportRecipesFromFile(ctx context.Context, path string) error {
 	data, err := os.ReadFile(path)
@@ -106,8 +185,13 @@ func (s *Syncer) ImportRecipesFromFile(ctx context.Context, path string) error {
 		return fmt.Errorf("reading file: %w", err)
 	}
 
+	itemsData, err := unwrapItems(data)
+	if err != nil {
+		return fmt.Errorf("unwrapping items: %w", err)
+	}
+
 	var imports []RecipeImport
-	if err := json.Unmarshal(data, &imports); err != nil {
+	if err := json.Unmarshal(itemsData, &imports); err != nil {
 		return fmt.Errorf("parsing JSON: %w", err)
 	}
 
@@ -140,8 +224,13 @@ func (s *Syncer) ImportSkillsFromFile(ctx context.Context, path string) error {
 		return fmt.Errorf("reading file: %w", err)
 	}
 
+	itemsData, err := unwrapItems(data)
+	if err != nil {
+		return fmt.Errorf("unwrapping items: %w", err)
+	}
+
 	var imports []SkillImport
-	if err := json.Unmarshal(data, &imports); err != nil {
+	if err := json.Unmarshal(itemsData, &imports); err != nil {
 		return fmt.Errorf("parsing JSON: %w", err)
 	}
 
@@ -170,11 +259,13 @@ func (s *Syncer) ImportSkillsFromFile(ctx context.Context, path string) error {
 // transformRecipe converts import format to domain format.
 func transformRecipe(imp RecipeImport) crafting.Recipe {
 	recipe := crafting.Recipe{
-		ID:           imp.ID,
-		Name:         imp.Name,
-		Description:  imp.Description,
-		Category:     imp.Category,
-		CraftingTime: imp.CraftingTime,
+		ID:              imp.ID,
+		Name:            imp.Name,
+		Description:     imp.Description,
+		Category:        imp.Category,
+		CraftingTime:    imp.CraftingTime,
+		BaseQuality:     imp.BaseQuality,
+		SkillQualityMod: imp.SkillQualityMod,
 	}
 
 	// Handle inputs - try both "inputs" and "components" fields
@@ -242,7 +333,7 @@ func transformRecipe(imp RecipeImport) crafting.Recipe {
 		}
 	}
 
-	// Transform skill requirements
+	// Transform skill requirements from Skills array
 	for _, sk := range imp.Skills {
 		skillID := sk.SkillID
 		if skillID == "" {
@@ -259,6 +350,17 @@ func transformRecipe(imp RecipeImport) crafting.Recipe {
 			SkillID:       skillID,
 			LevelRequired: level,
 		})
+	}
+
+	// If no Skills array entries, convert RequiredSkills map to SkillsRequired slice
+	if len(recipe.SkillsRequired) == 0 && len(imp.RequiredSkills) > 0 {
+		recipe.RequiredSkills = imp.RequiredSkills
+		for skillID, level := range imp.RequiredSkills {
+			recipe.SkillsRequired = append(recipe.SkillsRequired, crafting.SkillRequirement{
+				SkillID:       skillID,
+				LevelRequired: level,
+			})
+		}
 	}
 
 	return recipe
@@ -281,7 +383,7 @@ func transformSkill(imp SkillImport) crafting.Skill {
 		skill.MaxLevel = 10
 	}
 
-	// Transform prerequisites
+	// Transform prerequisites from array
 	for _, p := range imp.Prerequisites {
 		skillID := p.SkillID
 		if skillID == "" {
@@ -296,6 +398,19 @@ func transformSkill(imp SkillImport) crafting.Skill {
 		})
 	}
 
+	// If no Prerequisites array, parse RequiredSkills JSON as map[string]int
+	if len(skill.Prerequisites) == 0 && len(imp.RequiredSkills) > 0 {
+		var reqMap map[string]int
+		if json.Unmarshal(imp.RequiredSkills, &reqMap) == nil {
+			for skillID, level := range reqMap {
+				skill.Prerequisites = append(skill.Prerequisites, crafting.SkillRequirement{
+					SkillID:       skillID,
+					LevelRequired: level,
+				})
+			}
+		}
+	}
+
 	// Transform XP thresholds
 	if len(imp.XPThresholds) > 0 {
 		skill.XPThresholds = imp.XPThresholds
@@ -306,6 +421,14 @@ func transformSkill(imp SkillImport) crafting.Skill {
 				xp = lvl.XP
 			}
 			skill.XPThresholds = append(skill.XPThresholds, xp)
+		}
+	}
+
+	// If still no XP thresholds, parse XPPerLevel JSON as []int
+	if len(skill.XPThresholds) == 0 && len(imp.XPPerLevel) > 0 {
+		var xpList []int
+		if json.Unmarshal(imp.XPPerLevel, &xpList) == nil && len(xpList) > 0 {
+			skill.XPThresholds = xpList
 		}
 	}
 
@@ -376,10 +499,14 @@ func (s *Syncer) ImportMarketDataFromFile(ctx context.Context, path string) erro
 
 // ClearAll removes all data from the database.
 func (s *Syncer) ClearAll(ctx context.Context) error {
+	itemStore := db.NewItemStore(s.db)
 	recipeStore := db.NewRecipeStore(s.db)
 	skillStore := db.NewSkillStore(s.db)
 	marketStore := db.NewMarketStore(s.db)
 
+	if err := itemStore.ClearItems(ctx); err != nil {
+		return err
+	}
 	if err := recipeStore.ClearRecipes(ctx); err != nil {
 		return err
 	}

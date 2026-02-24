@@ -19,9 +19,11 @@ import (
 func main() {
 	// Parse flags
 	dbPath := flag.String("db", "data/crafting/crafting.db", "Path to SQLite database")
+	importItems := flag.String("import-items", "", "Import items from JSON file")
 	importRecipes := flag.String("import-recipes", "", "Import recipes from JSON file")
 	importSkills := flag.String("import-skills", "", "Import skills from JSON file")
 	importMarket := flag.String("import-market", "", "Import market data from JSON file")
+	migrateDB := flag.Bool("migrate", false, "Migrate database from v1 to v2 schema")
 	verbose := flag.Bool("verbose", false, "Enable verbose logging")
 	flag.Parse()
 
@@ -47,6 +49,17 @@ func main() {
 		cancel()
 	}()
 
+	// Handle migration command
+	if *migrateDB {
+		logger.Info("migrating database", "db", *dbPath)
+		if err := db.MigrateToV2(ctx, *dbPath); err != nil {
+			logger.Error("migration failed", "error", err)
+			os.Exit(1)
+		}
+		logger.Info("migration completed successfully")
+		return
+	}
+
 	// Open database
 	database, err := db.OpenAndInit(ctx, *dbPath)
 	if err != nil {
@@ -56,8 +69,17 @@ func main() {
 	defer func() { _ = database.Close() }()
 
 	// Handle import commands
-	if *importRecipes != "" || *importSkills != "" || *importMarket != "" {
+	if *importItems != "" || *importRecipes != "" || *importSkills != "" || *importMarket != "" {
 		syncer := sync.NewSyncer(database)
+
+		if *importItems != "" {
+			logger.Info("importing items", "file", *importItems)
+			if err := syncer.ImportItemsFromFile(ctx, *importItems); err != nil {
+				logger.Error("failed to import items", "error", err)
+				os.Exit(1)
+			}
+			logger.Info("items imported successfully")
+		}
 
 		if *importRecipes != "" {
 			logger.Info("importing recipes", "file", *importRecipes)

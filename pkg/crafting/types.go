@@ -4,6 +4,23 @@ package crafting
 import "encoding/json"
 
 // ============================================
+// ITEM TYPES
+// ============================================
+
+// Item represents a game item from the catalog.
+type Item struct {
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	Description string `json:"description,omitempty"`
+	Category    string `json:"category,omitempty"`
+	Rarity      string `json:"rarity,omitempty"`
+	Size        int    `json:"size,omitempty"`
+	BaseValue   int    `json:"base_value,omitempty"`
+	Stackable   bool   `json:"stackable,omitempty"`
+	Tradeable   bool   `json:"tradeable,omitempty"`
+}
+
+// ============================================
 // INPUT TYPES
 // ============================================
 
