@@ -10,16 +10,27 @@ CREATE TABLE IF NOT EXISTS recipes (
     name            TEXT NOT NULL,
     description     TEXT,
     category        TEXT,
-    craft_time_sec  INTEGER DEFAULT 0,
-    output_item_id  TEXT NOT NULL,
-    output_quantity INTEGER DEFAULT 1
+    crafting_time   INTEGER DEFAULT 0,
+    base_quality    INTEGER DEFAULT 0,
+    skill_quality_mod INTEGER DEFAULT 0,
+    required_skills TEXT DEFAULT '{}',
+    last_updated_tick INTEGER DEFAULT 0
 );
 
-CREATE TABLE IF NOT EXISTS recipe_components (
+CREATE TABLE IF NOT EXISTS recipe_inputs (
     recipe_id       TEXT NOT NULL,
-    component_id    TEXT NOT NULL,
+    item_id         TEXT NOT NULL,
     quantity        INTEGER NOT NULL,
-    PRIMARY KEY (recipe_id, component_id),
+    PRIMARY KEY (recipe_id, item_id),
+    FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS recipe_outputs (
+    recipe_id       TEXT NOT NULL,
+    item_id         TEXT NOT NULL,
+    quantity        INTEGER NOT NULL,
+    quality_mod     BOOLEAN DEFAULT 0,
+    PRIMARY KEY (recipe_id, item_id),
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
 
@@ -31,10 +42,10 @@ CREATE TABLE IF NOT EXISTS recipe_skills (
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
 
--- Inverted index for fast component lookups
-CREATE INDEX IF NOT EXISTS idx_recipe_components_component ON recipe_components(component_id);
+-- Inverted indexes for fast lookups
+CREATE INDEX IF NOT EXISTS idx_recipe_inputs_item ON recipe_inputs(item_id);
+CREATE INDEX IF NOT EXISTS idx_recipe_outputs_item ON recipe_outputs(item_id);
 CREATE INDEX IF NOT EXISTS idx_recipes_category ON recipes(category);
-CREATE INDEX IF NOT EXISTS idx_recipes_output ON recipes(output_item_id);
 
 -- ============================================
 -- SKILL DATA
@@ -43,9 +54,14 @@ CREATE INDEX IF NOT EXISTS idx_recipes_output ON recipes(output_item_id);
 CREATE TABLE IF NOT EXISTS skills (
     id              TEXT PRIMARY KEY,
     name            TEXT NOT NULL,
-    category        TEXT,
     description     TEXT,
-    max_level       INTEGER DEFAULT 10
+    category        TEXT,
+    max_level       INTEGER DEFAULT 10,
+    training_source TEXT,
+    xp_per_level    TEXT DEFAULT '[]',
+    bonus_per_level TEXT DEFAULT '{}',
+    required_skills TEXT DEFAULT '{}',
+    last_updated_tick INTEGER DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS skill_prerequisites (
@@ -72,17 +88,17 @@ CREATE INDEX IF NOT EXISTS idx_skill_levels_skill ON skill_levels(skill_id);
 -- ============================================
 
 CREATE TABLE IF NOT EXISTS market_prices (
-    component_id    TEXT NOT NULL,
+    item_id         TEXT NOT NULL,
     station_id      TEXT NOT NULL,
     price_type      TEXT NOT NULL CHECK (price_type IN ('buy', 'sell')),
     price           INTEGER NOT NULL,
     volume_24h      INTEGER,
     recorded_at     TEXT NOT NULL,
-    PRIMARY KEY (component_id, station_id, price_type, recorded_at)
+    PRIMARY KEY (item_id, station_id, price_type, recorded_at)
 );
 
 CREATE TABLE IF NOT EXISTS market_price_summary (
-    component_id    TEXT NOT NULL,
+    item_id         TEXT NOT NULL,
     station_id      TEXT NOT NULL,
     price_type      TEXT NOT NULL CHECK (price_type IN ('buy', 'sell')),
     avg_price_7d    REAL,
@@ -90,23 +106,31 @@ CREATE TABLE IF NOT EXISTS market_price_summary (
     max_price_7d    INTEGER,
     price_trend     TEXT CHECK (price_trend IN ('rising', 'falling', 'stable')),
     last_updated    TEXT,
-    PRIMARY KEY (component_id, station_id, price_type)
+    PRIMARY KEY (item_id, station_id, price_type)
 );
 
-CREATE INDEX IF NOT EXISTS idx_market_prices_component ON market_prices(component_id);
+CREATE INDEX IF NOT EXISTS idx_market_prices_item ON market_prices(item_id);
 CREATE INDEX IF NOT EXISTS idx_market_prices_recorded ON market_prices(recorded_at);
-CREATE INDEX IF NOT EXISTS idx_market_summary_component ON market_price_summary(component_id);
+CREATE INDEX IF NOT EXISTS idx_market_summary_item ON market_price_summary(item_id);
 
 -- ============================================
--- COMPONENT METADATA (for names, etc.)
+-- ITEM METADATA (for names, etc.)
 -- ============================================
 
-CREATE TABLE IF NOT EXISTS components (
+CREATE TABLE IF NOT EXISTS items (
     id              TEXT PRIMARY KEY,
     name            TEXT NOT NULL,
+    description     TEXT,
     category        TEXT,
-    description     TEXT
+    rarity          TEXT,
+    size            INTEGER DEFAULT 1,
+    base_value      INTEGER DEFAULT 0,
+    stackable       BOOLEAN DEFAULT 0,
+    tradeable       BOOLEAN DEFAULT 0,
+    last_updated_tick INTEGER DEFAULT 0
 );
+
+CREATE INDEX IF NOT EXISTS idx_items_category ON items(category);
 
 -- ============================================
 -- METADATA

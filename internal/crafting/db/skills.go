@@ -3,6 +3,7 @@ package db
 import (
 	"context"
 	"database/sql"
+	"encoding/json"
 	"fmt"
 
 	"github.com/rsned/spacemolt-crafting-server/pkg/crafting"
@@ -21,21 +22,41 @@ func NewSkillStore(db *DB) *SkillStore {
 // GetSkill retrieves a single skill by ID.
 func (s *SkillStore) GetSkill(ctx context.Context, id string) (*crafting.Skill, error) {
 	skill := &crafting.Skill{ID: id}
-	
+
+	var trainingSource sql.NullString
+	var xpPerLevel, bonusPerLevel, requiredSkills sql.NullString
+
 	err := s.db.QueryRowContext(ctx, `
-		SELECT name, category, description, max_level
+		SELECT name, description, category, max_level, training_source, xp_per_level, bonus_per_level, required_skills
 		FROM skills WHERE id = ?
 	`, id).Scan(
 		&skill.Name,
-		&skill.Category,
 		&skill.Description,
+		&skill.Category,
 		&skill.MaxLevel,
+		&trainingSource,
+		&xpPerLevel,
+		&bonusPerLevel,
+		&requiredSkills,
 	)
 	if err == sql.ErrNoRows {
 		return nil, nil
 	}
 	if err != nil {
 		return nil, fmt.Errorf("querying skill: %w", err)
+	}
+
+	if trainingSource.Valid {
+		skill.TrainingSource = trainingSource.String
+	}
+	if xpPerLevel.Valid && xpPerLevel.String != "[]" {
+		skill.XPPerLevel = json.RawMessage(xpPerLevel.String)
+	}
+	if bonusPerLevel.Valid && bonusPerLevel.String != "{}" {
+		skill.BonusPerLevel = json.RawMessage(bonusPerLevel.String)
+	}
+	if requiredSkills.Valid && requiredSkills.String != "{}" {
+		skill.RequiredSkills = json.RawMessage(requiredSkills.String)
 	}
 	
 	// Get prerequisites
@@ -220,8 +241,8 @@ func (s *SkillStore) CountRecipesLockedBySkill(ctx context.Context, skillID stri
 func (s *SkillStore) BulkInsertSkills(ctx context.Context, skills []crafting.Skill) error {
 	return s.db.InTransaction(ctx, func(tx *sql.Tx) error {
 		skillStmt, err := tx.PrepareContext(ctx, `
-			INSERT OR REPLACE INTO skills (id, name, category, description, max_level)
-			VALUES (?, ?, ?, ?, ?)
+			INSERT OR REPLACE INTO skills (id, name, description, category, max_level, training_source, xp_per_level, bonus_per_level, required_skills)
+			VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 		`)
 		if err != nil {
 			return fmt.Errorf("preparing skill statement: %w", err)
@@ -247,8 +268,22 @@ func (s *SkillStore) BulkInsertSkills(ctx context.Context, skills []crafting.Ski
 		defer func() { _ = levelStmt.Close() }()
 		
 		for _, sk := range skills {
+			xpPerLevel := "[]"
+			if len(sk.XPPerLevel) > 0 {
+				xpPerLevel = string(sk.XPPerLevel)
+			}
+			bonusPerLevel := "{}"
+			if len(sk.BonusPerLevel) > 0 {
+				bonusPerLevel = string(sk.BonusPerLevel)
+			}
+			requiredSkills := "{}"
+			if len(sk.RequiredSkills) > 0 {
+				requiredSkills = string(sk.RequiredSkills)
+			}
+
 			_, err := skillStmt.ExecContext(ctx,
-				sk.ID, sk.Name, sk.Category, sk.Description, sk.MaxLevel,
+				sk.ID, sk.Name, sk.Description, sk.Category, sk.MaxLevel,
+				sk.TrainingSource, xpPerLevel, bonusPerLevel, requiredSkills,
 			)
 			if err != nil {
 				return fmt.Errorf("inserting skill %s: %w", sk.ID, err)

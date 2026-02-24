@@ -1,6 +1,8 @@
 // Package crafting contains the core types for the crafting query server.
 package crafting
 
+import "encoding/json"
+
 // ============================================
 // INPUT TYPES
 // ============================================
@@ -58,20 +60,23 @@ func (s OptimizationStrategy) IsValid() bool {
 
 // Recipe represents a craftable item with its requirements.
 type Recipe struct {
-	ID             string             `json:"id"`
-	Name           string             `json:"name"`
-	Description    string             `json:"description,omitempty"`
-	Category       string             `json:"category,omitempty"`
-	CraftTimeSec   int                `json:"craft_time_sec,omitempty"`
-	Components     []RecipeComponent  `json:"components"`
-	SkillsRequired []SkillRequirement `json:"skills_required"`
-	Output         RecipeOutput       `json:"output"`
+	ID              string              `json:"id"`
+	Name            string              `json:"name"`
+	Description     string              `json:"description,omitempty"`
+	Category        string              `json:"category,omitempty"`
+	CraftingTime    int                 `json:"crafting_time,omitempty"`
+	BaseQuality     int                 `json:"base_quality,omitempty"`
+	SkillQualityMod int                 `json:"skill_quality_mod,omitempty"`
+	RequiredSkills  map[string]int      `json:"required_skills,omitempty"`
+	Inputs          []RecipeInput       `json:"inputs"`
+	Outputs         []RecipeOutput      `json:"outputs"`
+	SkillsRequired  []SkillRequirement  `json:"skills_required"`
 }
 
-// RecipeComponent represents a required input component for a recipe.
-type RecipeComponent struct {
-	ComponentID string `json:"component_id"`
-	Quantity    int    `json:"quantity"`
+// RecipeInput represents a required input item for a recipe.
+type RecipeInput struct {
+	ItemID   string `json:"item_id"`
+	Quantity int    `json:"quantity"`
 }
 
 // SkillRequirement represents a skill level needed for a recipe.
@@ -82,8 +87,9 @@ type SkillRequirement struct {
 
 // RecipeOutput represents what a recipe produces.
 type RecipeOutput struct {
-	ItemID   string `json:"item_id"`
-	Quantity int    `json:"quantity"`
+	ItemID     string `json:"item_id"`
+	Quantity   int    `json:"quantity"`
+	QualityMod bool   `json:"quality_mod"`
 }
 
 // ============================================
@@ -92,13 +98,17 @@ type RecipeOutput struct {
 
 // Skill represents a skill in the progression tree.
 type Skill struct {
-	ID            string             `json:"id"`
-	Name          string             `json:"name"`
-	Category      string             `json:"category"`
-	Description   string             `json:"description,omitempty"`
-	MaxLevel      int                `json:"max_level"`
-	Prerequisites []SkillRequirement `json:"prerequisites,omitempty"`
-	XPThresholds  []int              `json:"xp_thresholds"` // XP needed for each level
+	ID             string             `json:"id"`
+	Name           string             `json:"name"`
+	Description    string             `json:"description,omitempty"`
+	Category       string             `json:"category"`
+	MaxLevel       int                `json:"max_level"`
+	TrainingSource string             `json:"training_source,omitempty"`
+	XPPerLevel     json.RawMessage    `json:"xp_per_level,omitempty"`
+	BonusPerLevel  json.RawMessage    `json:"bonus_per_level,omitempty"`
+	RequiredSkills json.RawMessage    `json:"required_skills_json,omitempty"`
+	Prerequisites  []SkillRequirement `json:"prerequisites,omitempty"`
+	XPThresholds   []int              `json:"xp_thresholds"`
 }
 
 // SkillGap represents the difference between current and required skill levels.
@@ -125,9 +135,9 @@ type ProfitAnalysis struct {
 	PriceTrend           string  `json:"price_trend,omitempty"`
 }
 
-// MarketPriceSummary contains aggregated price data for a component.
+// MarketPriceSummary contains aggregated price data for an item.
 type MarketPriceSummary struct {
-	ComponentID string  `json:"component_id"`
+	ItemID string  `json:"item_id"`
 	StationID   string  `json:"station_id"`
 	PriceType   string  `json:"price_type"` // "buy" or "sell"
 	AvgPrice7d  float64 `json:"avg_price_7d"`
@@ -150,8 +160,8 @@ type CraftableMatch struct {
 // PartialComponentMatch represents a recipe where the agent has some components.
 type PartialComponentMatch struct {
 	Recipe            Recipe             `json:"recipe"`
-	ComponentsHave    []RecipeComponent  `json:"components_have"`
-	ComponentsMissing []RecipeComponent  `json:"components_missing"`
+	InputsHave       []RecipeInput  `json:"inputs_have"`
+	InputsMissing    []RecipeInput  `json:"inputs_missing"`
 	MatchRatio        float64            `json:"match_ratio"`
 	SkillsReady       bool               `json:"skills_ready"`
 	SkillsMissing     []SkillGap         `json:"skills_missing,omitempty"`
@@ -172,15 +182,15 @@ type CraftStep struct {
 
 // CraftStepInput represents an input component for a craft step.
 type CraftStepInput struct {
-	ComponentID string `json:"component_id"`
+	ItemID string `json:"item_id"`
 	Quantity    int    `json:"quantity"`
 	Source      string `json:"source"` // "inventory", "previous_step", "acquire"
 	SourceStep  int    `json:"source_step,omitempty"`
 }
 
-// MaterialRequirement represents a component needed for crafting.
+// MaterialRequirement represents an item needed for crafting.
 type MaterialRequirement struct {
-	ComponentID        string   `json:"component_id"`
+	ItemID             string   `json:"item_id"`
 	QuantityNeeded     int      `json:"quantity_needed"`
 	QuantityHave       int      `json:"quantity_have"`
 	QuantityToAcquire  int      `json:"quantity_to_acquire"`
@@ -245,7 +255,7 @@ type CraftPathResponse struct {
 	SkillReady      bool                  `json:"skill_ready"`
 	SkillsMissing   []SkillGap            `json:"skills_missing,omitempty"`
 	MaterialsNeeded []MaterialRequirement `json:"materials_needed"`
-	CraftTimeSec    int                   `json:"craft_time_sec"`
+	CraftingTime    int                   `json:"crafting_time"`
 	Summary         CraftPathSummary      `json:"summary"`
 }
 
@@ -313,7 +323,7 @@ type SkillCraftPathsSummary struct {
 
 // ComponentUsesRequest is the input for the component_uses tool.
 type ComponentUsesRequest struct {
-	ComponentID        string               `json:"component_id"`
+	ItemID             string               `json:"item_id"`
 	Skills             map[string]int       `json:"skills,omitempty"`
 	IncludeSkillLocked bool                 `json:"include_skill_locked"`
 	StationID          string               `json:"station_id,omitempty"`
@@ -322,14 +332,14 @@ type ComponentUsesRequest struct {
 
 // ComponentUsesResponse is the output for the component_uses tool.
 type ComponentUsesResponse struct {
-	ComponentID     string             `json:"component_id"`
-	ComponentName   string             `json:"component_name,omitempty"`
+	ItemID          string             `json:"item_id"`
+	ItemName        string             `json:"item_name,omitempty"`
 	UsedIn          []ComponentUseInfo `json:"used_in"`
 	TotalUses       int                `json:"total_uses"`
 	MarketSellPrice int                `json:"market_sell_price,omitempty"`
 }
 
-// ComponentUseInfo describes how a component is used in a recipe.
+// ComponentUseInfo describes how an item is used in a recipe.
 type ComponentUseInfo struct {
 	Recipe           Recipe          `json:"recipe"`
 	QuantityPerCraft int             `json:"quantity_per_craft"`

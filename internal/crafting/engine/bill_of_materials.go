@@ -36,42 +36,51 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 	// Build output -> recipe map with deterministic selection
 	// When multiple recipes produce the same output, prefer:
 	// 1. Shortest craft time
-	// 2. Highest output quantity (better efficiency)
+	// 2. Highest total output quantity (better efficiency)
 	// 3. Lexicographically first recipe_id (for determinism)
 	//
 	// IMPORTANT: This map is used consistently throughout the entire dependency tree,
 	// so diamond dependencies (multiple paths to the same item) will always use the
 	// same recipe. This ensures consistency - we don't use recipe A on one branch
 	// and recipe B on another branch for the same intermediate item.
+	//
+	// For multi-output recipes, we consider all outputs when building this map.
 	outputToRecipe := make(map[string]*crafting.Recipe)
 	for i := range allRecipes {
-		existing, exists := outputToRecipe[allRecipes[i].Output.ItemID]
-		if !exists {
-			outputToRecipe[allRecipes[i].Output.ItemID] = &allRecipes[i]
-			continue
-		}
+		// For each output in the recipe, determine if this recipe should be preferred
+		for _, output := range allRecipes[i].Outputs {
+			existing, exists := outputToRecipe[output.ItemID]
+			if !exists {
+				outputToRecipe[output.ItemID] = &allRecipes[i]
+				continue
+			}
 
-		// Compare and pick better recipe
-		newRecipe := &allRecipes[i]
-		replace := false
+			// Compare and pick better recipe
+			newRecipe := &allRecipes[i]
+			replace := false
 
-		// Prefer shorter craft time
-		if newRecipe.CraftTimeSec < existing.CraftTimeSec {
-			replace = true
-		} else if newRecipe.CraftTimeSec == existing.CraftTimeSec {
-			// If same time, prefer higher output quantity (more efficient)
-			if newRecipe.Output.Quantity > existing.Output.Quantity {
+			// Calculate total output quantity for comparison
+			newTotalQty := totalOutputQuantity(newRecipe)
+			existingTotalQty := totalOutputQuantity(existing)
+
+			// Prefer shorter craft time
+			if newRecipe.CraftingTime < existing.CraftingTime {
 				replace = true
-			} else if newRecipe.Output.Quantity == existing.Output.Quantity {
-				// If still tied, use recipe_id for determinism
-				if newRecipe.ID < existing.ID {
+			} else if newRecipe.CraftingTime == existing.CraftingTime {
+				// If same time, prefer higher total output quantity (more efficient)
+				if newTotalQty > existingTotalQty {
 					replace = true
+				} else if newTotalQty == existingTotalQty {
+					// If still tied, use recipe_id for determinism
+					if newRecipe.ID < existing.ID {
+						replace = true
+					}
 				}
 			}
-		}
 
-		if replace {
-			outputToRecipe[allRecipes[i].Output.ItemID] = newRecipe
+			if replace {
+				outputToRecipe[output.ItemID] = newRecipe
+			}
 		}
 	}
 
@@ -103,9 +112,9 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 
 		craftableItems[itemID] = recipe
 
-		// Recursively visit dependencies
-		for _, comp := range recipe.Components {
-			if err := dfs(comp.ComponentID); err != nil {
+		// Recursively visit dependencies (inputs)
+		for _, inp := range recipe.Inputs {
+			if err := dfs(inp.ItemID); err != nil {
 				return err
 			}
 		}
@@ -115,9 +124,15 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 	}
 
 	// Start DFS with the target recipe explicitly
-	craftableItems[targetRecipe.Output.ItemID] = targetRecipe
-	for _, comp := range targetRecipe.Components {
-		if err := dfs(comp.ComponentID); err != nil {
+	// Use the first output as the primary output for the target
+	if len(targetRecipe.Outputs) == 0 {
+		return nil, fmt.Errorf("recipe %s has no outputs", targetRecipe.ID)
+	}
+	primaryOutput := targetRecipe.Outputs[0]
+	craftableItems[primaryOutput.ItemID] = targetRecipe
+
+	for _, inp := range targetRecipe.Inputs {
+		if err := dfs(inp.ItemID); err != nil {
 			return nil, err
 		}
 	}
@@ -137,7 +152,7 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 	}
 
 	demand := make(map[string]int)
-	demand[targetRecipe.Output.ItemID] = req.Quantity
+	demand[primaryOutput.ItemID] = req.Quantity
 
 	craftRuns := make(map[string]int)
 	for _, itemID := range sortedTopDown {
@@ -147,13 +162,17 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 			continue
 		}
 
+		// Calculate output quantity for this recipe
+		// For multi-output recipes, sum up all outputs that match the demand item
+		outputQuantity := getOutputQuantityForItem(recipe, itemID)
+
 		// Calculate craft runs needed
-		runsNeeded := int(math.Ceil(float64(itemDemand) / float64(recipe.Output.Quantity)))
+		runsNeeded := int(math.Ceil(float64(itemDemand) / float64(outputQuantity)))
 		craftRuns[itemID] = runsNeeded
 
-		// Propagate demand to components
-		for _, comp := range recipe.Components {
-			demand[comp.ComponentID] += runsNeeded * comp.Quantity
+		// Propagate demand to inputs
+		for _, inp := range recipe.Inputs {
+			demand[inp.ItemID] += runsNeeded * inp.Quantity
 		}
 	}
 
@@ -179,16 +198,18 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 			continue
 		}
 		// Exclude the target item from intermediates
-		if itemID == targetRecipe.Output.ItemID {
+		if itemID == primaryOutput.ItemID {
 			continue
 		}
+
+		outputQuantity := getOutputQuantityForItem(recipe, itemID)
 
 		intermediates = append(intermediates, crafting.BOMIntermediate{
 			ItemID:        itemID,
 			RecipeID:      recipe.ID,
 			RecipeName:    recipe.Name,
 			CraftRuns:     runs,
-			TotalProduced: runs * recipe.Output.Quantity,
+			TotalProduced: runs * outputQuantity,
 			TotalNeeded:   demand[itemID],
 		})
 	}
@@ -206,13 +227,15 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 			continue
 		}
 
+		outputQuantity := getOutputQuantityForItem(recipe, itemID)
+
 		craftSteps = append(craftSteps, crafting.BOMCraftStep{
 			StepNumber:   stepNum,
 			RecipeID:     recipe.ID,
 			RecipeName:   recipe.Name,
 			CraftRuns:    runs,
-			OutputItemID: recipe.Output.ItemID,
-			OutputPerRun: recipe.Output.Quantity,
+			OutputItemID: itemID,
+			OutputPerRun: outputQuantity,
 		})
 		stepNum++
 	}
@@ -221,19 +244,44 @@ func (e *Engine) BillOfMaterials(ctx context.Context, req crafting.BillOfMateria
 	totalTime := 0
 	for itemID, runs := range craftRuns {
 		recipe := craftableItems[itemID]
-		totalTime += recipe.CraftTimeSec * runs
+		totalTime += recipe.CraftingTime * runs
 	}
 
 	return &crafting.BillOfMaterialsResponse{
 		RecipeID:       targetRecipe.ID,
 		RecipeName:     targetRecipe.Name,
-		OutputItemID:   targetRecipe.Output.ItemID,
+		OutputItemID:   primaryOutput.ItemID,
 		Quantity:       req.Quantity,
 		RawMaterials:   rawMaterials,
 		Intermediates:  intermediates,
 		CraftSteps:     craftSteps,
 		TotalCraftTime: totalTime,
 	}, nil
+}
+
+// totalOutputQuantity calculates the total output quantity for a recipe.
+func totalOutputQuantity(recipe *crafting.Recipe) int {
+	total := 0
+	for _, out := range recipe.Outputs {
+		total += out.Quantity
+	}
+	return total
+}
+
+// getOutputQuantityForItem returns the output quantity for a specific item from a recipe.
+// For multi-output recipes, this sums up all outputs matching the itemID.
+func getOutputQuantityForItem(recipe *crafting.Recipe, itemID string) int {
+	total := 0
+	for _, out := range recipe.Outputs {
+		if out.ItemID == itemID {
+			total += out.Quantity
+		}
+	}
+	// Fallback to first output if no match found (shouldn't happen in normal flow)
+	if total == 0 && len(recipe.Outputs) > 0 {
+		total = recipe.Outputs[0].Quantity
+	}
+	return total
 }
 
 // topologicalSort performs a topological sort on craftable items.
@@ -248,10 +296,10 @@ func topologicalSort(craftable map[string]*crafting.Recipe) ([]string, error) {
 			inDegree[itemID] = 0
 		}
 
-		for _, comp := range recipe.Components {
-			// Only consider craftable components as dependencies
-			if craftable[comp.ComponentID] != nil {
-				adjacency[comp.ComponentID] = append(adjacency[comp.ComponentID], itemID)
+		for _, inp := range recipe.Inputs {
+			// Only consider craftable inputs as dependencies
+			if craftable[inp.ItemID] != nil {
+				adjacency[inp.ItemID] = append(adjacency[inp.ItemID], itemID)
 				inDegree[itemID]++
 			}
 		}

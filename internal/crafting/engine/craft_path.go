@@ -66,7 +66,7 @@ func (e *Engine) CraftPathTo(ctx context.Context, req crafting.CraftPathRequest)
 		SkillReady:      skillsReady,
 		SkillsMissing:   skillGaps,
 		MaterialsNeeded: materials,
-		CraftTimeSec:    recipe.CraftTimeSec * req.TargetQuantity,
+		CraftingTime:    recipe.CraftingTime * req.TargetQuantity,
 		Summary:         summary,
 	}, nil
 }
@@ -81,23 +81,23 @@ func (e *Engine) calculateMaterialsNeeded(
 ) ([]crafting.MaterialRequirement, error) {
 	var materials []crafting.MaterialRequirement
 	
-	for _, comp := range recipe.Components {
-		needed := comp.Quantity * quantity
-		have := inventory[comp.ComponentID]
+	for _, inp := range recipe.Inputs {
+		needed := inp.Quantity * quantity
+		have := inventory[inp.ItemID]
 		toAcquire := needed - have
 		if toAcquire < 0 {
 			toAcquire = 0
 		}
-		
+
 		mat := crafting.MaterialRequirement{
-			ComponentID:       comp.ComponentID,
+			ItemID:            inp.ItemID,
 			QuantityNeeded:    needed,
 			QuantityHave:      have,
 			QuantityToAcquire: toAcquire,
 		}
-		
-		// Check if this component can be crafted
-		craftRecipes, err := e.recipes.FindRecipesByOutput(ctx, comp.ComponentID)
+
+		// Check if this item can be crafted
+		craftRecipes, err := e.recipes.FindRecipesByOutput(ctx, inp.ItemID)
 		if err != nil {
 			return nil, err
 		}
@@ -105,13 +105,13 @@ func (e *Engine) calculateMaterialsNeeded(
 			mat.IsCraftable = true
 			mat.CraftRecipeID = craftRecipes[0] // Use first recipe
 		}
-		
+
 		// Add acquisition methods
 		if toAcquire > 0 {
-			// TODO: Look up where this component can be acquired
+			// TODO: Look up where this item can be acquired
 			// For now, indicate it can be bought if we have market data
 			if stationID != "" {
-				price, err := e.market.GetBuyPrice(ctx, comp.ComponentID, stationID)
+				price, err := e.market.GetBuyPrice(ctx, inp.ItemID, stationID)
 				if err != nil {
 					return nil, err
 				}
@@ -119,13 +119,13 @@ func (e *Engine) calculateMaterialsNeeded(
 					mat.AcquisitionMethods = append(mat.AcquisitionMethods, "buy:"+stationID)
 				}
 			}
-			
+
 			// If craftable, that's also an acquisition method
 			if mat.IsCraftable {
 				mat.AcquisitionMethods = append(mat.AcquisitionMethods, "craft:"+mat.CraftRecipeID)
 			}
 		}
-		
+
 		materials = append(materials, mat)
 	}
 	
