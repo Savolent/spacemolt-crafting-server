@@ -10,7 +10,7 @@ A Model Context Protocol (MCP) server that provides intelligent crafting queries
 2. **`craft_path_to`** - "How do I craft this specific item?"
 3. **`recipe_lookup`** - "Tell me about this recipe"
 4. **`skill_craft_paths`** - "Which skills unlock new recipes?"
-5. **`component_uses`** - "What can I do with this component?"
+5. **`component_uses`** - "What can I do with this item?"
 6. **`bill_of_materials`** - "What raw materials do I need?"
 
 ## Quick Start
@@ -40,7 +40,7 @@ cp bin/crafting-server ~/go/bin/
 
 #### Database Snapshot
 
-A pre-built database snapshot is available in the `database/` directory, containing all recipes and skills already imported. You can use it directly:
+A pre-built database snapshot is available in the `database/` directory, containing all items, recipes, and skills already imported. You can use it directly:
 
 ```bash
 # Copy the pre-built database
@@ -50,20 +50,56 @@ cp database/crafting.db ./
 ./bin/crafting-server -db database/crafting.db
 ```
 
-#### Import Recipe Data Manually
+#### Starting From Scratch
 
-If you prefer to build your own database from scratch, you can import the data manually:
+To create and populate a fresh database from the game catalog JSON files:
 
 ```bash
-# Import recipes from SpaceMolt game API
-./bin/crafting-server -db crafting.db -import-recipes recipes.json
+# Build the server
+go build -o bin/crafting-server ./cmd/crafting-server
 
-# Import skill definitions
-./bin/crafting-server -db crafting.db -import-skills skills.json
+# Import all data into a new database (the DB file is created automatically)
+./bin/crafting-server -db crafting.db \
+  -import-items /path/to/catalog_items.json \
+  -import-recipes /path/to/catalog_recipes.json \
+  -import-skills /path/to/catalog_skills.json \
+  -verbose
+```
+
+The catalog JSON files use a `{"items": [...]}` envelope format, which the importer handles automatically. You can also import each file separately:
+
+```bash
+# Import items first (provides item metadata for names, categories, etc.)
+./bin/crafting-server -db crafting.db -import-items catalog_items.json
+
+# Import recipes (with inputs, outputs, and skill requirements)
+./bin/crafting-server -db crafting.db -import-recipes catalog_recipes.json
+
+# Import skills (with prerequisites and XP thresholds)
+./bin/crafting-server -db crafting.db -import-skills catalog_skills.json
 
 # (Optional) Import market data for profit calculations
 ./bin/crafting-server -db crafting.db -import-market market.json
 ```
+
+#### Verifying the Import
+
+After importing, you can verify the data with SQLite:
+
+```bash
+sqlite3 crafting.db "
+  SELECT 'items', COUNT(*) FROM items
+  UNION ALL SELECT 'recipes', COUNT(*) FROM recipes
+  UNION ALL SELECT 'skills', COUNT(*) FROM skills
+  UNION ALL SELECT 'recipe_inputs', COUNT(*) FROM recipe_inputs
+  UNION ALL SELECT 'recipe_outputs', COUNT(*) FROM recipe_outputs
+  UNION ALL SELECT 'recipe_skills', COUNT(*) FROM recipe_skills
+  UNION ALL SELECT 'skill_levels', COUNT(*) FROM skill_levels
+  UNION ALL SELECT 'skill_prerequisites', COUNT(*) FROM skill_prerequisites;
+"
+```
+
+Expected counts: ~476 items, 394 recipes, 138 skills, plus populated junction tables.
 
 ## Claude Code Integration
 
@@ -101,27 +137,31 @@ Once configured, you can use these tools in Claude Code:
 - **`craft_path_to`** - Get the crafting path for a specific item
 - **`recipe_lookup`** - Look up details about a specific recipe
 - **`skill_craft_paths`** - Discover which skills unlock new crafting recipes
-- **`component_uses`** - Find all uses for a specific component
+- **`component_uses`** - Find all uses for a specific item
 - **`bill_of_materials`** - Calculate total raw materials needed for a recipe
 
 ## Database
 
 The server uses SQLite for fast, efficient recipe and skill queries:
 
-- **Recipes:** 239+ recipes from SpaceMolt
-- **Skills:** 139 skill definitions
+- **Items:** 476 item definitions from the game catalog
+- **Recipes:** 394 recipes from SpaceMolt
+- **Skills:** 138 skill definitions
 - **Database Size:** ~500KB
 - **Query Performance:** 1-5ms typical
 
 ### Schema
 
+- `items` - Item metadata (name, category, rarity, value)
 - `recipes` - Recipe metadata
-- `recipe_components` - Required inputs (inverted index)
-- `recipe_skills` - Skill requirements
+- `recipe_inputs` - Required input items (inverted index)
+- `recipe_outputs` - Recipe output items (supports multiple outputs)
+- `recipe_skills` - Skill requirements per recipe
 - `skills` - Skill definitions
 - `skill_prerequisites` - Skill dependencies
 - `skill_levels` - XP thresholds per level
 - `market_prices` - Historical price data
+- `market_price_summary` - Aggregated price summaries
 
 ## Example Queries
 
@@ -166,10 +206,10 @@ The server uses SQLite for fast, efficient recipe and skill queries:
 cmd/crafting-server/    # Main entry point
 pkg/crafting/           # Public domain types
 internal/
-  ├── db/              # Database layer
+  ├── db/              # Database layer (SQLite)
   ├── engine/          # Query business logic
   ├── mcp/             # MCP protocol
-  └── sync/            # Data import
+  └── sync/            # Data import from catalog JSON
 ```
 
 ## Dependencies
@@ -205,65 +245,96 @@ Command-line options:
 ```
 -db string
     Path to SQLite database (default "data/crafting/crafting.db")
+-import-items string
+    Import items from JSON file
 -import-recipes string
     Import recipes from JSON file
 -import-skills string
     Import skills from JSON file
 -import-market string
     Import market data from JSON file
+-migrate
+    Migrate database from v1 to v2 schema
 -verbose
     Enable verbose logging
 ```
 
 ## Data Format
 
-### Recipe JSON
+The importer accepts both flat JSON arrays and catalog envelope format (`{"items": [...], "total": N}`).
+
+### Item JSON (Catalog Format)
 
 ```json
-[
-  {
-    "id": "craft_basic_mining_laser",
-    "name": "Basic Mining Laser",
-    "description": "A simple mining laser for asteroid extraction.",
-    "category": "Mining",
-    "craft_time_sec": 10,
-    "components": [
-      {"id": "ore_copper", "quantity": 5},
-      {"id": "ore_crystal", "quantity": 2}
-    ],
-    "skills_required": [
-      {"skill_id": "crafting_basic", "level": 1}
-    ],
-    "output": {
-      "item_id": "mining_laser_1",
-      "quantity": 1
+{
+  "items": [
+    {
+      "id": "ore_copper",
+      "name": "Copper Ore",
+      "description": "Common metallic ore.",
+      "category": "ore",
+      "rarity": "common",
+      "size": 1,
+      "base_value": 10,
+      "stackable": true,
+      "tradeable": true
     }
-  }
-]
+  ]
+}
 ```
 
-### Skill JSON
+### Recipe JSON (Catalog Format)
 
 ```json
-[
-  {
-    "id": "crafting_basic",
-    "name": "Basic Crafting",
-    "description": "Foundation of crafting knowledge.",
-    "category": "Crafting",
-    "levels": [
-      {"level": 1, "xp_required": 0},
-      {"level": 2, "xp_required": 100},
-      {"level": 3, "xp_required": 300}
-    ]
-  }
-]
+{
+  "items": [
+    {
+      "id": "craft_engine_core",
+      "name": "Assemble Engine Core",
+      "description": "Build propulsion system cores.",
+      "category": "Components",
+      "crafting_time": 10,
+      "base_quality": 40,
+      "skill_quality_mod": 6,
+      "inputs": [
+        {"item_id": "refined_alloy", "quantity": 3},
+        {"item_id": "ore_cobalt", "quantity": 4}
+      ],
+      "outputs": [
+        {"item_id": "comp_engine_core", "quantity": 1, "quality_mod": true}
+      ],
+      "required_skills": {
+        "crafting_advanced": 2
+      }
+    }
+  ]
+}
+```
+
+### Skill JSON (Catalog Format)
+
+```json
+{
+  "items": [
+    {
+      "id": "armor_advanced",
+      "name": "Advanced Armor",
+      "description": "Expert armor plating.",
+      "category": "Combat",
+      "max_level": 10,
+      "training_source": "Take hull damage in combat.",
+      "required_skills": {"armor": 5},
+      "xp_per_level": [500, 1500, 3000, 5000, 8000, 12000, 17000, 23000, 30000, 40000],
+      "bonus_per_level": {"armorEffectiveness": 2, "hullHP": 3}
+    }
+  ]
+}
 ```
 
 ## Performance
 
 - **Query Speed:** 1-5ms for typical queries
-- **Database Size:** ~500KB (239 recipes, 139 skills)
+- **Database Size:** ~500KB (476 items, 394 recipes, 138 skills)
 - **Binary Size:** ~10MB
 - **Memory Usage:** ~5MB typical
 
