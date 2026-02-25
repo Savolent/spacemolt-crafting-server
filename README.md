@@ -78,8 +78,26 @@ The catalog JSON files use a `{"items": [...]}` envelope format, which the impor
 # Import skills (with prerequisites and XP thresholds)
 ./bin/crafting-server -db crafting.db -import-skills catalog_skills.json
 
+# Set game version (optional, tracks which server version the data came from)
+./bin/crafting-server -db crafting.db -game-version v0.142.7 -import-items catalog_items.json
+
 # (Optional) Import market data for profit calculations
 ./bin/crafting-server -db crafting.db -import-market market.json
+```
+
+### Checking Database Version
+
+To see which game server version the database was built from:
+
+```bash
+./bin/crafting-server -db crafting.db -version
+```
+
+Output:
+```
+Game Version: v0.142.7
+Imported At: 2026-02-20 20:09:00 PST
+Updated At:  2026-02-24 19:06:35 PST
 ```
 
 #### Verifying the Import
@@ -253,8 +271,6 @@ Command-line options:
     Import skills from JSON file
 -import-market string
     Import market data from JSON file
--migrate
-    Migrate database from v1 to v2 schema
 -verbose
     Enable verbose logging
 ```

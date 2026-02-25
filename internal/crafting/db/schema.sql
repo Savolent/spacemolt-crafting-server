@@ -141,3 +141,18 @@ CREATE TABLE IF NOT EXISTS sync_metadata (
     value           TEXT,
     updated_at      TEXT DEFAULT (datetime('now'))
 );
+
+-- Database version tracking
+CREATE TABLE IF NOT EXISTS version (
+    id              INTEGER PRIMARY KEY CHECK (id = 1),
+    game_version    TEXT NOT NULL,
+    imported_at     TEXT NOT NULL DEFAULT (datetime('now')),
+    updated_at      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+-- Ensure only one row in version table
+CREATE TRIGGER IF NOT EXISTS version_single_row INSERT ON version WHEN NEW.id != 1
+BEGIN
+    SELECT RAISE(ABORT, 'Only one row allowed in version table with id=1');
+END;
+

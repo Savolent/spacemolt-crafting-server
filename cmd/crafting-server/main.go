@@ -23,6 +23,8 @@ func main() {
 	importRecipes := flag.String("import-recipes", "", "Import recipes from JSON file")
 	importSkills := flag.String("import-skills", "", "Import skills from JSON file")
 	importMarket := flag.String("import-market", "", "Import market data from JSON file")
+	gameVersion := flag.String("game-version", "", "Game server version (e.g., 'v0.142.7')")
+	showVersion := flag.Bool("version", false, "Show database version information and exit")
 	verbose := flag.Bool("verbose", false, "Enable verbose logging")
 	flag.Parse()
 
@@ -56,9 +58,29 @@ func main() {
 	}
 	defer func() { _ = database.Close() }()
 
+	// Handle version query
+	if *showVersion {
+		version, err := database.GetVersion(ctx)
+		if err != nil {
+			logger.Error("failed to get version", "error", err)
+			os.Exit(1)
+		}
+		if version == nil {
+			fmt.Println("No version information available in database")
+			os.Exit(0)
+		}
+		fmt.Printf("Game Version: %s\n", version.GameVersion)
+		fmt.Printf("Imported At: %s\n", version.ImportedAt.Format("2006-01-02 15:04:05 MST"))
+		fmt.Printf("Updated At:  %s\n", version.UpdatedAt.Format("2006-01-02 15:04:05 MST"))
+		os.Exit(0)
+	}
+
 	// Handle import commands
 	if *importItems != "" || *importRecipes != "" || *importSkills != "" || *importMarket != "" {
 		syncer := sync.NewSyncer(database)
+
+		// Track if any imports happened
+		imported := false
 
 		if *importItems != "" {
 			logger.Info("importing items", "file", *importItems)
@@ -67,6 +89,7 @@ func main() {
 				os.Exit(1)
 			}
 			logger.Info("items imported successfully")
+			imported = true
 		}
 
 		if *importRecipes != "" {
@@ -76,6 +99,7 @@ func main() {
 				os.Exit(1)
 			}
 			logger.Info("recipes imported successfully")
+			imported = true
 		}
 
 		if *importSkills != "" {
@@ -85,6 +109,7 @@ func main() {
 				os.Exit(1)
 			}
 			logger.Info("skills imported successfully")
+			imported = true
 		}
 
 		if *importMarket != "" {
@@ -94,6 +119,23 @@ func main() {
 				os.Exit(1)
 			}
 			logger.Info("market data imported successfully")
+			imported = true
+		}
+
+		// Update version info if game-version was provided
+		if imported && *gameVersion != "" {
+			logger.Info("setting version", "game_version", *gameVersion)
+			if err := database.SetVersion(ctx, *gameVersion); err != nil {
+				logger.Warn("failed to set version", "error", err)
+			} else {
+				logger.Info("version set successfully")
+			}
+		} else if imported {
+			// Just update the timestamp if no version specified
+			logger.Info("updating version timestamp")
+			if err := database.UpdateVersionTimestamp(ctx); err != nil {
+				logger.Warn("failed to update version timestamp", "error", err)
+			}
 		}
 
 		// If only doing imports, exit
