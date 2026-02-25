@@ -23,7 +23,6 @@ func main() {
 	importRecipes := flag.String("import-recipes", "", "Import recipes from JSON file")
 	importSkills := flag.String("import-skills", "", "Import skills from JSON file")
 	importMarket := flag.String("import-market", "", "Import market data from JSON file")
-	migrateDB := flag.Bool("migrate", false, "Migrate database from v1 to v2 schema")
 	verbose := flag.Bool("verbose", false, "Enable verbose logging")
 	flag.Parse()
 
@@ -48,17 +47,6 @@ func main() {
 		logger.Info("shutting down...")
 		cancel()
 	}()
-
-	// Handle migration command
-	if *migrateDB {
-		logger.Info("migrating database", "db", *dbPath)
-		if err := db.MigrateToV2(ctx, *dbPath); err != nil {
-			logger.Error("migration failed", "error", err)
-			os.Exit(1)
-		}
-		logger.Info("migration completed successfully")
-		return
-	}
 
 	// Open database
 	database, err := db.OpenAndInit(ctx, *dbPath)
