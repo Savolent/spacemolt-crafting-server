@@ -120,14 +120,19 @@ func (sc *StatsCalculator) Median(orders []any) int {
 
 // ChoosePricingMethod selects pricing method based on data characteristics.
 func (sc *StatsCalculator) ChoosePricingMethod(sampleCount, totalVolume int) string {
-	if sampleCount >= 50 && totalVolume >= 10000 {
+	// Volume-weighted: High volume market (10+ orders AND 50K+ volume)
+	// OR very high volume regardless of order count
+	if (sampleCount >= 10 && totalVolume >= 50000) || totalVolume >= 100000 {
 		return "volume_weighted"
 	}
-	if sampleCount >= 10 {
+	// Second-price auction: Normal liquidity (3+ orders)
+	if sampleCount >= 3 {
 		return "second_price"
 	}
-	if sampleCount >= 3 {
+	// Median: Sparse but real data (2+ orders)
+	if sampleCount >= 2 {
 		return "median"
 	}
+	// MSRP fallback: No market data
 	return "msrp_only"
 }

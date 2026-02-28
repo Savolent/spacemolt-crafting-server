@@ -139,9 +139,15 @@ func TestStatsCalculator_ChoosePricingMethod(t *testing.T) {
 		expectedMethod string
 	}{
 		{
-			name:           "High volume flooded market (ores)",
+			name:           "Very high volume flooded market (ores)",
 			sampleCount:    50,
-			totalVolume:    10000,
+			totalVolume:    50000,
+			expectedMethod: "volume_weighted",
+		},
+		{
+			name:           "High volume regardless of orders",
+			sampleCount:    5,
+			totalVolume:    100000,
 			expectedMethod: "volume_weighted",
 		},
 		{
@@ -151,8 +157,14 @@ func TestStatsCalculator_ChoosePricingMethod(t *testing.T) {
 			expectedMethod: "second_price",
 		},
 		{
-			name:           "Sparse market",
+			name:           "Sparse market (2-3 orders)",
 			sampleCount:    3,
+			totalVolume:    10,
+			expectedMethod: "second_price",
+		},
+		{
+			name:           "Very sparse (2 orders)",
+			sampleCount:    2,
 			totalVolume:    10,
 			expectedMethod: "median",
 		},
