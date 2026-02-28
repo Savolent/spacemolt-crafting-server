@@ -6,10 +6,13 @@ import (
 	"flag"
 	"fmt"
 	"log/slog"
+	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 
+	"github.com/rsned/spacemolt-crafting-server/internal/api"
 	"github.com/rsned/spacemolt-crafting-server/internal/crafting/db"
 	"github.com/rsned/spacemolt-crafting-server/internal/crafting/engine"
 	"github.com/rsned/spacemolt-crafting-server/internal/crafting/mcp"
@@ -19,6 +22,7 @@ import (
 func main() {
 	// Parse flags
 	dbPath := flag.String("db", "data/crafting/crafting.db", "Path to SQLite database")
+	httpAddr := flag.String("http", "", "Start HTTP server on specified address (e.g., ':8080')")
 	importItems := flag.String("import-items", "", "Import items from JSON file")
 	importRecipes := flag.String("import-recipes", "", "Import recipes from JSON file")
 	importSkills := flag.String("import-skills", "", "Import skills from JSON file")
@@ -146,13 +150,31 @@ func main() {
 
 	// Create engine and server
 	eng := engine.New(database)
-	server := mcp.NewServer(eng, logger)
 
-	// Run MCP server
-	logger.Info("starting MCP server", "db", *dbPath)
-	if err := server.Run(ctx); err != nil && ctx.Err() == nil {
-		logger.Error("server error", "error", err)
-		os.Exit(1)
+	// Choose server mode based on flags
+	if *httpAddr != "" {
+		// HTTP server mode
+		httpServer := api.NewServer(database, api.Config{
+			Addr:            *httpAddr,
+			ReadTimeout:     10 * time.Second,
+			WriteTimeout:    10 * time.Second,
+			ShutdownTimeout: 5 * time.Second,
+		})
+
+		logger.Info("starting HTTP server", "addr", *httpAddr, "db", *dbPath)
+		if err := httpServer.Start(); err != nil && err != http.ErrServerClosed {
+			logger.Error("server error", "error", err)
+			os.Exit(1)
+		}
+	} else {
+		// MCP server mode (default)
+		server := mcp.NewServer(eng, logger)
+
+		logger.Info("starting MCP server", "db", *dbPath)
+		if err := server.Run(ctx); err != nil && ctx.Err() == nil {
+			logger.Error("server error", "error", err)
+			os.Exit(1)
+		}
 	}
 
 	fmt.Fprintln(os.Stderr, "server stopped")
