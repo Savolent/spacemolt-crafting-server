@@ -286,7 +286,12 @@ func buildInventoryMap(components []crafting.Component) map[string]int {
 
 // RecipeMarketProfitability calculates market profitability for all recipes.
 // Returns recipes sorted by absolute profit (descending).
-func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empireID string) (*crafting.RecipeMarketProfitabilityResponse, error) {
+// components is an optional list of items the user currently has in inventory.
+// For items in inventory, the input cost is set to 0 (since they already own them).
+func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empireID string, components []crafting.Component) (*crafting.RecipeMarketProfitabilityResponse, error) {
+	// Build inventory map from components for efficient lookup
+	inventory := buildInventoryMap(components)
+
 	// Get all recipes
 	recipes, err := e.recipes.GetAllRecipes(ctx)
 	if err != nil {
@@ -340,6 +345,21 @@ func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empir
 		var inputUsesMSRP bool
 
 		for _, inp := range recipe.Inputs {
+			// Check if user has this item in inventory
+			available, hasItem := inventory[inp.ItemID]
+
+			// Determine quantity to purchase
+			quantityToBuy := inp.Quantity
+			if hasItem && available >= inp.Quantity {
+				// User has enough of this item, no need to buy
+				continue
+			} else if hasItem && available > 0 {
+				// User has some but not enough, buy the shortfall
+				quantityToBuy = inp.Quantity - available
+			}
+			// Otherwise (hasItem == false or available == 0), buy full quantity
+
+			// Calculate cost for quantityToBuy
 			if stationID != "" {
 				inputStats, err := e.market.GetPriceStats(ctx, inp.ItemID, stationID, "buy")
 				if err != nil {
@@ -347,13 +367,13 @@ func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empir
 				}
 
 				if inputStats != nil {
-					inputCost += inputStats.RepresentativePrice * inp.Quantity
+					inputCost += inputStats.RepresentativePrice * quantityToBuy
 				} else {
 					msrp, err := e.market.GetItemMSRP(ctx, inp.ItemID)
 					if err != nil {
 						return nil, err
 					}
-					inputCost += msrp * inp.Quantity
+					inputCost += msrp * quantityToBuy
 					inputUsesMSRP = true
 				}
 			} else {
@@ -361,7 +381,7 @@ func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empir
 				if err != nil {
 					return nil, err
 				}
-				inputCost += msrp * inp.Quantity
+				inputCost += msrp * quantityToBuy
 				inputUsesMSRP = true
 			}
 		}

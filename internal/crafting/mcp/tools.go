@@ -355,6 +355,24 @@ func recipeMarketProfitabilityTool() ToolDefinition {
 					Type:        "string",
 					Description: "Empire ID for market price filtering (optional)",
 				},
+				"components": {
+					Type:        "array",
+					Description: "Optional list of items currently in inventory. For any recipe inputs matching these items, the cost will be set to 0 (since you already own them).",
+					Items: &Property{
+						Type: "object",
+						Properties: map[string]Property{
+							"id": {
+								Type:        "string",
+								Description: "Item ID",
+							},
+							"quantity": {
+								Type:        "integer",
+								Description: "Quantity available in inventory",
+							},
+						},
+						Required: []string{"id", "quantity"},
+					},
+				},
 			},
 		},
 	}
@@ -362,11 +380,12 @@ func recipeMarketProfitabilityTool() ToolDefinition {
 
 func (s *Server) toolRecipeMarketProfitability(ctx context.Context, args json.RawMessage) (any, error) {
 	var req struct {
-		StationID string `json:"station_id,omitempty"`
-		EmpireID  string `json:"empire_id,omitempty"`
+		StationID  string                 `json:"station_id,omitempty"`
+		EmpireID   string                 `json:"empire_id,omitempty"`
+		Components []crafting.Component   `json:"components,omitempty"`
 	}
 	if err := json.Unmarshal(args, &req); err != nil {
 		return nil, err
 	}
-	return s.engine.RecipeMarketProfitability(ctx, req.StationID, req.EmpireID)
+	return s.engine.RecipeMarketProfitability(ctx, req.StationID, req.EmpireID, req.Components)
 }

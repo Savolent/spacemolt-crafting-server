@@ -88,7 +88,7 @@ func TestRecipeMarketProfitability(t *testing.T) {
 	eng := engine.New(database)
 
 	t.Run("returns all recipes with market profitability", func(t *testing.T) {
-		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "")
+		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "", nil)
 		if err != nil {
 			t.Fatalf("RecipeMarketProfitability failed: %v", err)
 		}
@@ -146,7 +146,7 @@ func TestRecipeMarketProfitability(t *testing.T) {
 	})
 
 	t.Run("sorts by absolute profit descending", func(t *testing.T) {
-		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "")
+		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "", nil)
 		if err != nil {
 			t.Fatalf("RecipeMarketProfitability failed: %v", err)
 		}
@@ -167,7 +167,7 @@ func TestRecipeMarketProfitability(t *testing.T) {
 	})
 
 	t.Run("works without station (uses MSRP for all)", func(t *testing.T) {
-		result, err := eng.RecipeMarketProfitability(ctx, "", "")
+		result, err := eng.RecipeMarketProfitability(ctx, "", "", nil)
 		if err != nil {
 			t.Fatalf("RecipeMarketProfitability failed: %v", err)
 		}
@@ -184,6 +184,99 @@ func TestRecipeMarketProfitability(t *testing.T) {
 			if !recipe.InputUsesMSRP {
 				t.Errorf("recipe %s: expected input to use MSRP when no station specified", recipe.RecipeID)
 			}
+		}
+	})
+
+	t.Run("filters by available inventory", func(t *testing.T) {
+		// User has 50 ore_iron in inventory
+		components := []crafting.Component{
+			{ID: "ore_iron", Quantity: 50},
+		}
+
+		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "", components)
+		if err != nil {
+			t.Fatalf("RecipeMarketProfitability failed: %v", err)
+		}
+
+		if result == nil {
+			t.Fatal("expected result, got nil")
+		}
+
+		// Find craft_steel recipe (requires 10 ore_iron)
+		var steelRecipe *crafting.RecipeMarketProfit
+		for _, r := range result.Recipes {
+			if r.RecipeID == "craft_steel" {
+				steelRecipe = &r
+				break
+			}
+		}
+
+		if steelRecipe == nil {
+			t.Fatal("craft_steel recipe not found")
+		}
+
+		// With 50 ore_iron in inventory, we can make 5 crafts
+		// Input cost should be lower since we "have" some inputs
+		// Previously: 10 ore_iron @ 3 = 30
+		// Now with 50 in inventory: we still need to buy the rest, but let's see...
+
+		// Actually, the logic should be: if we have the item in inventory, cost is 0
+		// craft_steel needs 10 ore_iron, we have 50, so we can make 5
+		// For 1 craft, cost should be 0 since we already have the ore
+
+		// The input_cost should reflect items we still need to BUY
+		// For craft_steel with 50 ore_iron in inventory:
+		// - We have 50 ore_iron
+			// - Recipe needs 10 ore_iron per craft
+			// - We can make 5 crafts without buying anything
+		// - Input cost for 1 craft should be 0
+		// - Profit should be full output_sell_price
+
+		if steelRecipe.InputCost != 0 {
+			t.Errorf("expected input cost 0 (have inventory), got %d", steelRecipe.InputCost)
+		}
+
+		if steelRecipe.Profit != steelRecipe.OutputSellPrice {
+			t.Errorf("expected profit to equal output price (no input cost), got profit %d vs output %d",
+				steelRecipe.Profit, steelRecipe.OutputSellPrice)
+		}
+	})
+
+	t.Run("handles partial inventory (need to buy some inputs)", func(t *testing.T) {
+		// User has only 5 ore_iron (needs 10 for craft_steel)
+		components := []crafting.Component{
+			{ID: "ore_iron", Quantity: 5},
+		}
+
+		result, err := eng.RecipeMarketProfitability(ctx, "Test Station", "", components)
+		if err != nil {
+			t.Fatalf("RecipeMarketProfitability failed: %v", err)
+		}
+
+		// Find craft_steel recipe
+		var steelRecipe *crafting.RecipeMarketProfit
+		for _, r := range result.Recipes {
+			if r.RecipeID == "craft_steel" {
+				steelRecipe = &r
+				break
+			}
+		}
+
+		if steelRecipe == nil {
+			t.Fatal("craft_steel recipe not found")
+		}
+
+		// craft_steel needs 10 ore_iron
+		// User has 5, so needs to buy 5 more
+		// Cost: 5 ore_iron @ buy price 3 = 15
+		// Profit = 100 - 15 = 85
+
+		if steelRecipe.InputCost != 15 {
+			t.Errorf("expected input cost 15 (partial inventory), got %d", steelRecipe.InputCost)
+		}
+
+		if steelRecipe.Profit != 85 {
+			t.Errorf("expected profit 85 (partial inventory), got %d", steelRecipe.Profit)
 		}
 	})
 }
