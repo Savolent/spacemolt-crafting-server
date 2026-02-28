@@ -136,6 +136,11 @@ CREATE INDEX IF NOT EXISTS idx_items_category ON items(category);
 -- METADATA
 -- ============================================
 
+CREATE TABLE IF NOT EXISTS schema_migrations (
+    migration_id TEXT PRIMARY KEY,
+    applied_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS sync_metadata (
     key             TEXT PRIMARY KEY,
     value           TEXT,
