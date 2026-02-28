@@ -312,4 +312,55 @@ func TestMarketSubmitEndpoint(t *testing.T) {
 			t.Error("expected non-zero sell price after order submission")
 		}
 	})
+
+	t.Run("admin endpoint for manual recalculation", func(t *testing.T) {
+		// First, insert multiple orders directly into the database
+		// Need at least 2 orders for median, or 3+ for second_price
+		_, err := database.ExecContext(ctx, `
+			INSERT INTO market_order_book
+			(batch_id, item_id, station_id, order_type, price_per_unit, volume_available, recorded_at)
+			VALUES
+				('test_batch', 'comp_steel', 'Grand Exchange Station', 'sell', 130, 300, datetime('now')),
+				('test_batch', 'comp_steel', 'Grand Exchange Station', 'sell', 140, 500, datetime('now')),
+				('test_batch', 'comp_steel', 'Grand Exchange Station', 'sell', 150, 200, datetime('now'))
+		`)
+		if err != nil {
+			t.Fatalf("inserting test orders: %v", err)
+		}
+
+		// Call admin recalc endpoint
+		resp, err := http.Post(server.URL()+"/api/v1/admin/market/recalc/comp_steel", "application/json", nil)
+		if err != nil {
+			t.Fatalf("POST failed: %v", err)
+		}
+		defer func() { _ = resp.Body.Close() }()
+
+		if resp.StatusCode != http.StatusOK {
+			t.Errorf("expected status 200, got %d", resp.StatusCode)
+		}
+
+		// Query the price to verify it was recalculated
+		resp, err = http.Get(server.URL() + "/api/v1/market/price/comp_steel")
+		if err != nil {
+			t.Fatalf("GET failed: %v", err)
+		}
+		defer func() { _ = resp.Body.Close() }()
+
+		var priceResponse struct {
+			ItemID     string `json:"item_id"`
+			SellPrice  int    `json:"sell_price"`
+			MethodName string `json:"method_name"`
+		}
+		if err := json.NewDecoder(resp.Body).Decode(&priceResponse); err != nil {
+			t.Fatalf("decoding response: %v", err)
+		}
+
+		if priceResponse.MethodName == "msrp_only" {
+			t.Error("expected stats to be recalculated from manual trigger, not msrp_only")
+		}
+
+		if priceResponse.SellPrice == 0 {
+			t.Error("expected non-zero sell price after manual recalculation")
+		}
+	})
 }

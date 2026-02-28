@@ -79,6 +79,7 @@ func (s *Server) Start() error {
 	mux.HandleFunc("/api/v1/health", s.handleHealth)
 	mux.HandleFunc("/api/v1/market/submit", s.handleMarketSubmit)
 	mux.HandleFunc("/api/v1/market/price/", s.handleMarketPrice)
+	mux.HandleFunc("/api/v1/admin/market/recalc/", s.handleAdminRecalc)
 
 	listener, err := net.Listen("tcp", s.config.Addr)
 	if err != nil {
@@ -315,4 +316,46 @@ func (s *Server) queryMarketPrice(ctx context.Context, itemID string) (*MarketPr
 	}
 
 	return response, nil
+}
+
+// handleAdminRecalc processes manual recalculation requests.
+func (s *Server) handleAdminRecalc(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodPost {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	// Extract item ID from path
+	itemID := r.URL.Path[len("/api/v1/admin/market/recalc/"):]
+	if itemID == "" {
+		http.Error(w, "item_id is required", http.StatusBadRequest)
+		return
+	}
+
+	// Validate item exists
+	var exists bool
+	err := s.db.QueryRowContext(r.Context(), `SELECT 1 FROM items WHERE id = ?`, itemID).Scan(&exists)
+	if err != nil || !exists {
+		http.Error(w, "item not found", http.StatusNotFound)
+		return
+	}
+
+	market := db.NewMarketStore(s.db)
+
+	// Default station for admin endpoint
+	stationID := "Grand Exchange Station"
+
+	// Recalculate stats
+	if err := market.RecalculatePriceStats(r.Context(), itemID, stationID); err != nil {
+		http.Error(w, fmt.Sprintf("recalculation failed: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+	_ = json.NewEncoder(w).Encode(map[string]string{
+		"status":   "success",
+		"item_id":  itemID,
+		"station":  stationID,
+	})
 }
