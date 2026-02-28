@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server that provides intelligent crafting queries for SpaceMolt AI agents to cut down on context usage and token burn.
 
+- Last rebuilt and repopulated the database against Server version: **v0.142.7**
+
 ## Features
 
 ### 6 Useful MCP Tools
@@ -12,6 +14,21 @@ A Model Context Protocol (MCP) server that provides intelligent crafting queries
 4. **`skill_craft_paths`** - "Which skills unlock new recipes?"
 5. **`component_uses`** - "What can I do with this item?"
 6. **`bill_of_materials`** - "What raw materials do I need?"
+
+
+The crafting server uses a rough priority ordering when returning recipes to try to ensure the best things can get crafted first rather than burning all your cycles and inventory making Std Ammo rounds and smelting iron.
+
+### Recipe Distribution by Priority Tier
+
+| Tier | Categories | Recipe Count |
+|------|------------|--------------|
+| 1 (Highest) | Shipbuilding, Legendary | 25 |
+| 2 | Components, Weapons, Equipment | 125 |
+| 3 | Consumables | 79 |
+| 4 | Refining | 71 |
+| 5 | (various) | ~50 |
+| 6 (Lowest) | Defense, Utility, Drones, etc. | ~44 |
+
 
 ## Quick Start
 
@@ -117,7 +134,7 @@ sqlite3 crafting.db "
 "
 ```
 
-Expected counts: ~476 items, 394 recipes, 138 skills, plus populated junction tables.
+Expected counts: ~688 items, 394 recipes, 138 skills, plus populated junction tables.
 
 ## Claude Code Integration
 
@@ -162,7 +179,7 @@ Once configured, you can use these tools in Claude Code:
 
 The server uses SQLite for fast, efficient recipe and skill queries:
 
-- **Items:** 476 item definitions from the game catalog
+- **Items:** 688 item definitions from the game catalog
 - **Recipes:** 394 recipes from SpaceMolt
 - **Skills:** 138 skill definitions
 - **Database Size:** ~500KB
@@ -350,7 +367,7 @@ The importer accepts both flat JSON arrays and catalog envelope format (`{"items
 ## Performance
 
 - **Query Speed:** 1-5ms for typical queries
-- **Database Size:** ~500KB (476 items, 394 recipes, 138 skills)
+- **Database Size:** ~500KB (688 items, 394 recipes, 138 skills)
 - **Binary Size:** ~10MB
 - **Memory Usage:** ~5MB typical
 
