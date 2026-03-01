@@ -3,11 +3,13 @@
 package main
 
 import (
+	"cmp"
 	"database/sql"
 	"fmt"
 	"log"
 	"os"
 	"path/filepath"
+	"slices"
 	"strings"
 	"text/template"
 
@@ -120,7 +122,99 @@ func main() {
 		}
 	}
 
+	// Group items by category for READMEs.
+	catItems := make(map[string][]*Item)
+	for _, it := range items {
+		catItems[it.Category] = append(catItems[it.Category], it)
+	}
+	for _, itemList := range catItems {
+		slices.SortFunc(itemList, func(a, b *Item) int {
+			return cmp.Compare(a.Name, b.Name)
+		})
+	}
+
+	categories := make([]CategoryInfo, 0, len(catItems))
+	for cat, itemList := range catItems {
+		categories = append(categories, CategoryInfo{
+			Name:        cat,
+			Description: categoryDescriptions[cat],
+			Count:       len(itemList),
+			Items:       itemList,
+		})
+	}
+	slices.SortFunc(categories, func(a, b CategoryInfo) int {
+		return cmp.Compare(a.Name, b.Name)
+	})
+
+	if err := writeREADMEs(outDir, categories); err != nil {
+		log.Fatalf("write READMEs: %v", err)
+	}
+
 	fmt.Printf("Generated %d catalog pages in %s/\n", len(items), outDir)
+}
+
+// CategoryInfo groups items for README generation.
+type CategoryInfo struct {
+	Name        string
+	Description string
+	Count       int
+	Items       []*Item
+}
+
+var categoryDescriptions = map[string]string{
+	"artifact":   "Rare relics and ancient objects from lost civilizations.",
+	"component":  "Crafted parts and assemblies used to build ships, stations, and equipment.",
+	"consumable": "Single-use items including ammunition, stims, repair kits, and fuel.",
+	"contraband": "Illegal goods that carry severe penalties if caught in possession.",
+	"defense":    "Defensive equipment and shield systems.",
+	"document":   "Blueprints, maps, and encrypted data files.",
+	"drone":      "Autonomous craft for combat, mining, repair, and reconnaissance.",
+	"material":   "Rare raw materials with special properties.",
+	"misc":       "Collectibles, souvenirs, medals, and other miscellaneous items.",
+	"ore":        "Raw ores, gases, ice, and biological samples harvested from space.",
+	"refined":    "Processed materials refined from raw ores and gases.",
+	"weapon":     "Weapons and weapon systems.",
+}
+
+func writeREADMEs(outDir string, categories []CategoryInfo) error {
+	funcs := template.FuncMap{
+		"yesno":      yesno,
+		"fmtValue":   fmtValue,
+		"joinSkills": joinSkills,
+	}
+	topTmpl := template.Must(template.New("top").Funcs(funcs).Parse(topREADMETemplate))
+	catTmpl := template.Must(template.New("cat").Funcs(funcs).Parse(catREADMETemplate))
+
+	// Top-level README.
+	topPath := filepath.Join(outDir, "README.md")
+	f, err := os.Create(topPath)
+	if err != nil {
+		return err
+	}
+	if err := topTmpl.Execute(f, categories); err != nil {
+		_ = f.Close()
+		return err
+	}
+	if err := f.Close(); err != nil {
+		return err
+	}
+
+	// Per-category READMEs.
+	for _, cat := range categories {
+		catPath := filepath.Join(outDir, cat.Name, "README.md")
+		f, err := os.Create(catPath)
+		if err != nil {
+			return err
+		}
+		if err := catTmpl.Execute(f, cat); err != nil {
+			_ = f.Close()
+			return err
+		}
+		if err := f.Close(); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func loadItems(db *sql.DB) (map[string]*Item, error) {
@@ -252,6 +346,60 @@ func joinSkills(skills []SkillReq) string {
 	}
 	return strings.Join(parts, ", ")
 }
+
+const topREADMETemplate = `<!-- Auto-generated from crafting.db — do not edit manually -->
+
+# SpaceMolt Item Catalog
+
+Complete reference for all items in the SpaceMolt universe, organized by category.
+
+| Category | Items | Description |
+|----------|------:|-------------|
+{{- range .}}
+| [{{.Name}}]({{.Name}}/) | {{.Count}} | {{.Description}} |
+{{- end}}
+`
+
+const catREADMETemplate = `<!-- Auto-generated from crafting.db — do not edit manually -->
+
+# {{.Name}}
+
+{{.Description}}
+
+## Table of Contents
+
+{{- range .Items}}
+- [{{.Name}}](#{{.ID}})
+{{- end}}
+
+---
+{{range .Items}}
+## {{.Name}} {#{{.ID}}}
+
+{{- /* Include the item file contents inline */}}
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>{{.Name}}</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![{{.Name}}](../images/{{.ID}}.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>{{.Rarity}}</td></tr>
+<tr><td><b>Size</b></td><td>{{.Size}}</td></tr>
+<tr><td><b>Stackable</b></td><td>{{yesno .Stackable}}</td></tr>
+<tr><td><b>Tradeable</b></td><td>{{yesno .Tradeable}}</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>{{fmtValue .BaseValue}}</td></tr>
+</table>
+
+> {{.Description}}
+
+[View full page]({{.ID}}.md)
+
+---
+{{end}}`
 
 const itemTemplate = `<!-- Auto-generated from crafting.db — do not edit manually -->
 
