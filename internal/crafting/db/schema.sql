@@ -90,6 +90,7 @@ CREATE INDEX IF NOT EXISTS idx_skill_levels_skill ON skill_levels(skill_id);
 CREATE TABLE IF NOT EXISTS market_prices (
     item_id         TEXT NOT NULL,
     station_id      TEXT NOT NULL,
+    empire_id       TEXT,
     price_type      TEXT NOT NULL CHECK (price_type IN ('buy', 'sell')),
     price           INTEGER NOT NULL,
     volume_24h      INTEGER,
@@ -109,9 +110,49 @@ CREATE TABLE IF NOT EXISTS market_price_summary (
     PRIMARY KEY (item_id, station_id, price_type)
 );
 
+CREATE TABLE IF NOT EXISTS market_order_book (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    batch_id        TEXT NOT NULL,
+    item_id         TEXT NOT NULL,
+    station_id      TEXT NOT NULL,
+    empire_id       TEXT,
+    order_type      TEXT NOT NULL CHECK (order_type IN ('buy', 'sell')),
+    price_per_unit  INTEGER NOT NULL,
+    volume_available INTEGER NOT NULL,
+    player_stall_name TEXT,
+    recorded_at     TEXT NOT NULL,
+    submitter_id    TEXT,
+    created_at      TEXT DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS market_price_stats (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_id             TEXT NOT NULL,
+    station_id          TEXT NOT NULL,
+    empire_id           TEXT,
+    order_type          TEXT NOT NULL CHECK (order_type IN ('buy', 'sell')),
+    stat_method         TEXT NOT NULL,
+    representative_price INTEGER NOT NULL,
+    sample_count        INTEGER NOT NULL,
+    total_volume        INTEGER NOT NULL,
+    min_price           INTEGER NOT NULL,
+    max_price           INTEGER NOT NULL,
+    stddev              REAL,
+    confidence_score    REAL NOT NULL,
+    price_trend         TEXT CHECK (price_trend IN ('rising', 'falling', 'stable')),
+    last_updated        TEXT NOT NULL,
+    UNIQUE(item_id, station_id, empire_id, order_type),
+    FOREIGN KEY (item_id) REFERENCES items(id) ON DELETE CASCADE
+);
+
 CREATE INDEX IF NOT EXISTS idx_market_prices_item ON market_prices(item_id);
 CREATE INDEX IF NOT EXISTS idx_market_prices_recorded ON market_prices(recorded_at);
 CREATE INDEX IF NOT EXISTS idx_market_summary_item ON market_price_summary(item_id);
+CREATE INDEX IF NOT EXISTS idx_order_book_lookup ON market_order_book(item_id, station_id, order_type, recorded_at);
+CREATE INDEX IF NOT EXISTS idx_order_book_batch ON market_order_book(batch_id);
+CREATE INDEX IF NOT EXISTS idx_order_book_stale ON market_order_book(recorded_at);
+CREATE INDEX IF NOT EXISTS idx_price_stats_lookup ON market_price_stats(item_id, station_id, order_type);
 
 -- ============================================
 -- ITEM METADATA (for names, etc.)
@@ -131,6 +172,17 @@ CREATE TABLE IF NOT EXISTS items (
 );
 
 CREATE INDEX IF NOT EXISTS idx_items_category ON items(category);
+
+-- ============================================
+-- STATION DATA
+-- ============================================
+
+CREATE TABLE IF NOT EXISTS stations (
+    id              TEXT PRIMARY KEY,
+    name            TEXT NOT NULL,
+    poi_id          TEXT,
+    empire          TEXT NOT NULL
+);
 
 -- ============================================
 -- METADATA

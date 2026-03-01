@@ -132,6 +132,11 @@ func (s *Server) handleMarketSubmit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Resolve station identifier (could be station_id, poi_id, or name)
+	if station, err := s.db.ResolveStation(r.Context(), req.StationID); err == nil && station != nil {
+		req.StationID = station.ID
+	}
+
 	response, err := s.processMarketSubmission(r.Context(), req)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)

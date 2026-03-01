@@ -9,8 +9,11 @@ import (
 
 // RecipeLookup executes the recipe_lookup tool logic.
 func (e *Engine) RecipeLookup(ctx context.Context, req crafting.RecipeLookupRequest) (*crafting.RecipeLookupResponse, error) {
+	// Resolve station identifier
+	req.StationID = e.resolveStationID(ctx, req.StationID)
+
 	resp := &crafting.RecipeLookupResponse{}
-	
+
 	// If search term provided, search first
 	if req.Search != "" {
 		hits, err := e.recipes.SearchRecipes(ctx, req.Search, 10)

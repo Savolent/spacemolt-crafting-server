@@ -9,6 +9,9 @@ import (
 
 // ComponentUses executes the component_uses tool logic.
 func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRequest) (*crafting.ComponentUsesResponse, error) {
+	// Resolve station identifier
+	req.StationID = e.resolveStationID(ctx, req.StationID)
+
 	// Apply defaults
 	if !req.Strategy.IsValid() {
 		req.Strategy = crafting.StrategyUseInventoryFirst

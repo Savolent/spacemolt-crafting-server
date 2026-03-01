@@ -131,6 +131,31 @@ func GetMigration005() (*Migration, error) {
 	}, nil
 }
 
+// GetMigration006 returns the stations table migration.
+func GetMigration006() (*Migration, error) {
+	data, err := migrationFS.ReadFile("migrations/006_add_stations_table.sql")
+	if err != nil {
+		return nil, err
+	}
+
+	return &Migration{
+		ID:      "006_add_stations_table",
+		UpSQL:   string(data),
+		DownSQL: `DROP TABLE IF EXISTS stations;`,
+	}, nil
+}
+
+// ApplyMigration006 applies migration 006 (stations table).
+func ApplyMigration006(ctx context.Context, db *DB) error {
+	migration, err := GetMigration006()
+	if err != nil {
+		return err
+	}
+
+	migrator := NewMigrator(db)
+	return migrator.Apply(ctx, migration)
+}
+
 // ApplyMigration005 applies migration 005 with special handling for empire_id column.
 func ApplyMigration005(ctx context.Context, db *DB) error {
 	migration, err := GetMigration005()

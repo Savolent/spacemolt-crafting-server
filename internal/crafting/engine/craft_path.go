@@ -14,6 +14,9 @@ func (e *Engine) CraftPathTo(ctx context.Context, req crafting.CraftPathRequest)
 		req.TargetQuantity = 1
 	}
 	
+	// Resolve station identifier
+	req.StationID = e.resolveStationID(ctx, req.StationID)
+
 	// Get the target recipe
 	recipe, err := e.recipes.GetRecipe(ctx, req.TargetRecipeID)
 	if err != nil {

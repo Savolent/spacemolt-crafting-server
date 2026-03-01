@@ -11,6 +11,7 @@ import (
 
 // Engine is the main query engine for crafting operations.
 type Engine struct {
+	db        *db.DB
 	recipes   *db.RecipeStore
 	skills    *db.SkillStore
 	market    *db.MarketStore
@@ -31,12 +32,28 @@ func New(database *db.DB) *Engine {
 	}
 
 	return &Engine{
+		db:                 database,
 		recipes:            db.NewRecipeStore(database),
 		skills:             db.NewSkillStore(database),
 		market:             db.NewMarketStore(database),
 		catPri:             database.CategoryPriorities(),
 		categoryPriorities: priorities,
 	}
+}
+
+// resolveStationID resolves a user-provided station identifier (which may be
+// a station_id, poi_id, or name) to the canonical station_id used in market
+// data. If no matching station is found, the original identifier is returned
+// as-is so existing queries against market tables still work.
+func (e *Engine) resolveStationID(ctx context.Context, identifier string) string {
+	if identifier == "" {
+		return ""
+	}
+	station, err := e.db.ResolveStation(ctx, identifier)
+	if err != nil || station == nil {
+		return identifier
+	}
+	return station.ID
 }
 
 // getCategoryTier returns the priority tier for a category.
@@ -289,6 +306,9 @@ func buildInventoryMap(components []crafting.Component) map[string]int {
 // components is an optional list of items the user currently has in inventory.
 // For items in inventory, the input cost is set to 0 (since they already own them).
 func (e *Engine) RecipeMarketProfitability(ctx context.Context, stationID, empireID string, components []crafting.Component) (*crafting.RecipeMarketProfitabilityResponse, error) {
+	// Resolve station identifier
+	stationID = e.resolveStationID(ctx, stationID)
+
 	// Build inventory map from components for efficient lookup
 	inventory := buildInventoryMap(components)
 

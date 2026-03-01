@@ -23,6 +23,9 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 		req.Strategy = crafting.StrategyUseInventoryFirst
 	}
 
+	// Resolve station identifier
+	req.StationID = e.resolveStationID(ctx, req.StationID)
+
 	// Build inventory lookup map
 	inventory := buildInventoryMap(req.Components)
 	componentIDs := make([]string, 0, len(req.Components))
