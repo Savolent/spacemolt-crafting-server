@@ -7,6 +7,9 @@ bin/
 # Catalog image placeholders (not yet populated)
 catalog/images/
 
+# Editor swap files
+*.swp
+
 
 # Working docs
 docs/
