@@ -5,131 +5,131 @@
 Single-use items including ammunition, stims, repair kits, and fuel.
 
 ## Table of Contents
-- [Adrenaline Surge](#stim_adrenaline)
-- [Advanced Repair Kit](#repair_kit_advanced)
-- [Afterburner Fuel](#afterburner_fuel)
-- [Anchor Beacon](#anchor_beacon)
-- [Anomaly Detector](#scan_probe_anomaly)
-- [Anomaly Probe](#probe_anomaly)
-- [Antimatter Torpedoes](#torpedoes_antimatter)
-- [Antimatter Warhead](#missiles_antimatter)
-- [Antimatter-Core Rounds Box](#rounds_antimatter)
-- [Armor Piercing Rounds Box](#rounds_armor_piercing)
-- [Armor Weld](#armor_weld)
-- [Armor-Buster Missiles](#missiles_armor_buster)
-- [Berserker Compound](#stim_berserker)
-- [Breacher Torpedoes](#torpedoes_breacher)
-- [Cascade EM Charge Pack](#em_cascade)
-- [Chaff Bundle](#countermeasure_chaff)
-- [Chaff Pod](#chaff_pod)
-- [Clarity Stim](#stim_clarity)
-- [Cloaking Charge](#cloak_charge)
-- [Cloaking Dust](#cloaking_dust)
-- [Cluster Missiles](#missiles_cluster)
-- [Combat Scanner Probe](#scan_probe_combat)
-- [Combat Scanner Probe](#probe_combat)
-- [Combat Stim](#stim_pack)
-- [Corrosive Plasma Cell Pack](#plasma_corrosive)
-- [Crimson Bloodwine](#food_crimson_bloodwine)
-- [Cryo Slug Case](#slugs_cryo)
-- [Decoy Drone](#countermeasure_decoy)
-- [Decoy Drone](#decoy_drone)
-- [Deep Scan Probe](#scan_probe_deep)
-- [Deep Space Probe](#probe_deep_space)
-- [Depleted Uranium Rounds Box](#rounds_depleted_uranium)
-- [Dispersal Plasma Cell Pack](#plasma_dispersal)
-- [ECM Burst](#ecm_burst)
-- [ECM Burst](#countermeasure_ecm)
-- [EM Charge Pack](#em_standard)
-- [EMP Mines](#mines_emp)
-- [EMP Missiles](#missiles_emp)
-- [EMP Slug Case](#slugs_emp)
-- [EMP Torpedoes](#torpedoes_emp)
-- [EMP-Tipped Rounds Box](#rounds_emp_tipped)
-- [Emergency Jump Cell](#emergency_jump)
-- [Emergency Warp Device](#emergency_warp_device)
-- [Endurance Booster](#stim_endurance)
-- [Entropic Void Core Pack](#void_entropic)
-- [Experience Booster](#xp_booster)
-- [Ferrous Slug Case](#slugs_ferrous)
-- [Flare Pod](#flare_pod)
-- [Focus Stim](#stim_focus)
-- [Focused EM Charge Pack](#em_focused)
-- [Focused Plasma Cell Pack](#plasma_focused)
-- [Fragmentation Mines](#mines_fragmentation)
-- [Fragmentation Rounds Box](#rounds_fragmenting)
-- [Frontier Rotgut](#food_frontier_moonshine)
-- [Fuel Cell](#fuel_cell)
-- [Hull Nanites](#hull_nanites)
-- [Hull Patch](#hull_patch)
-- [Incendiary Missiles](#missiles_incendiary)
-- [Incendiary Rounds Box](#rounds_incendiary)
-- [Ion Charge Pack](#em_ion)
-- [Jammer Burst](#jammer_burst)
-- [Military Fuel Cell](#fuel_cell_military)
-- [Mineral Scanner Probe](#scan_probe_mineral)
-- [Mining Enhancer](#mining_enhancer)
-- [Mining Survey Probe](#probe_mining)
-- [Nanite Swarm](#nanite_swarm)
-- [Neural Accelerator](#stim_neural)
-- [Neural Disruption Charge Pack](#em_neural)
-- [Neutronium Slug Case](#slugs_neutronium)
-- [Nuclear Mines](#mines_nuclear)
-- [Null Void Core Pack](#void_null)
-- [Omega Core Pack](#void_omega)
-- [Overcharge Cell](#overcharge_cell)
-- [Overcharged Plasma Cell Pack](#plasma_overcharged)
-- [Overclock Chip](#overclock_chip)
-- [PD Burst](#point_defense_burst)
-- [Perception Enhancer](#stim_perception)
-- [Phased Void Core Pack](#void_phased)
-- [Plasma Cell Pack](#plasma_standard)
-- [Plasma Mines](#mines_plasma)
-- [Plasma Torpedoes](#torpedoes_plasma)
-- [Power Surge Cell](#power_surge)
-- [Premium Fuel Cell](#fuel_cell_premium)
-- [Reflex Enhancer](#stim_reflex)
-- [Regeneration Serum](#stim_regeneration)
-- [Regenerative Compound](#regenerative_compound)
-- [Repair Kit](#repair_kit)
-- [Repair Nanites](#repair_nanites)
-- [Salvage Enhancer](#salvage_enhancer)
-- [Scan Probe](#probe_scan)
-- [Scan Probe](#scan_probe_basic)
-- [Sensor Booster](#sensor_booster)
-- [Sensor Jammer](#countermeasure_jammer)
-- [Shaped Charge Slug Case](#slugs_shaped_charge)
-- [Shield Booster MK2](#shield_booster_mk2)
-- [Shield Charge](#shield_booster_charge)
-- [Shield Hardener](#shield_hardener)
-- [Shield Overcharge](#shield_overcharge)
-- [Shield Regenerator](#shield_regenerator)
-- [Siege Torpedoes](#torpedoes_siege)
-- [Singularity Core Pack](#void_singularity)
-- [Singularity Slug Case](#slugs_singularity)
-- [Smoke Screen](#smoke_screen)
-- [Solarian Gourmet Rations](#food_sol_rations)
-- [Speed Stim](#stim_speed)
-- [Standard Guided Missiles](#missiles_standard)
-- [Standard Mines](#mines_standard)
-- [Standard Rounds Box](#rounds_standard)
-- [Standard Torpedoes](#torpedoes_standard)
-- [Stellar Plasma Cell Pack](#plasma_stellar)
-- [Structural Cement](#structural_cement)
-- [Swarm Missiles](#missiles_swarm)
-- [Thermal Flare](#countermeasure_flare)
-- [Trade Negotiator](#trade_booster)
-- [Tungsten Slug Case](#slugs_tungsten)
-- [Turtle Compound](#stim_turtle)
-- [Void Core Pack](#void_standard)
-- [Void Mines](#mines_void)
-- [Void-Tuned EM Charge Pack](#em_void_tuned)
-- [Warp Stabilizer](#warp_stabilizer)
-- [Weapon Overload Capacitor](#weapon_overload)
+- [Adrenaline Surge](#adrenaline-surge)
+- [Advanced Repair Kit](#advanced-repair-kit)
+- [Afterburner Fuel](#afterburner-fuel)
+- [Anchor Beacon](#anchor-beacon)
+- [Anomaly Detector](#anomaly-detector)
+- [Anomaly Probe](#anomaly-probe)
+- [Antimatter Torpedoes](#antimatter-torpedoes)
+- [Antimatter Warhead](#antimatter-warhead)
+- [Antimatter-Core Rounds Box](#antimatter-core-rounds-box)
+- [Armor Piercing Rounds Box](#armor-piercing-rounds-box)
+- [Armor Weld](#armor-weld)
+- [Armor-Buster Missiles](#armor-buster-missiles)
+- [Berserker Compound](#berserker-compound)
+- [Breacher Torpedoes](#breacher-torpedoes)
+- [Cascade EM Charge Pack](#cascade-em-charge-pack)
+- [Chaff Bundle](#chaff-bundle)
+- [Chaff Pod](#chaff-pod)
+- [Clarity Stim](#clarity-stim)
+- [Cloaking Charge](#cloaking-charge)
+- [Cloaking Dust](#cloaking-dust)
+- [Cluster Missiles](#cluster-missiles)
+- [Combat Scanner Probe](#combat-scanner-probe)
+- [Combat Scanner Probe](#combat-scanner-probe)
+- [Combat Stim](#combat-stim)
+- [Corrosive Plasma Cell Pack](#corrosive-plasma-cell-pack)
+- [Crimson Bloodwine](#crimson-bloodwine)
+- [Cryo Slug Case](#cryo-slug-case)
+- [Decoy Drone](#decoy-drone)
+- [Decoy Drone](#decoy-drone)
+- [Deep Scan Probe](#deep-scan-probe)
+- [Deep Space Probe](#deep-space-probe)
+- [Depleted Uranium Rounds Box](#depleted-uranium-rounds-box)
+- [Dispersal Plasma Cell Pack](#dispersal-plasma-cell-pack)
+- [ECM Burst](#ecm-burst)
+- [ECM Burst](#ecm-burst)
+- [EM Charge Pack](#em-charge-pack)
+- [EMP Mines](#emp-mines)
+- [EMP Missiles](#emp-missiles)
+- [EMP Slug Case](#emp-slug-case)
+- [EMP Torpedoes](#emp-torpedoes)
+- [EMP-Tipped Rounds Box](#emp-tipped-rounds-box)
+- [Emergency Jump Cell](#emergency-jump-cell)
+- [Emergency Warp Device](#emergency-warp-device)
+- [Endurance Booster](#endurance-booster)
+- [Entropic Void Core Pack](#entropic-void-core-pack)
+- [Experience Booster](#experience-booster)
+- [Ferrous Slug Case](#ferrous-slug-case)
+- [Flare Pod](#flare-pod)
+- [Focus Stim](#focus-stim)
+- [Focused EM Charge Pack](#focused-em-charge-pack)
+- [Focused Plasma Cell Pack](#focused-plasma-cell-pack)
+- [Fragmentation Mines](#fragmentation-mines)
+- [Fragmentation Rounds Box](#fragmentation-rounds-box)
+- [Frontier Rotgut](#frontier-rotgut)
+- [Fuel Cell](#fuel-cell)
+- [Hull Nanites](#hull-nanites)
+- [Hull Patch](#hull-patch)
+- [Incendiary Missiles](#incendiary-missiles)
+- [Incendiary Rounds Box](#incendiary-rounds-box)
+- [Ion Charge Pack](#ion-charge-pack)
+- [Jammer Burst](#jammer-burst)
+- [Military Fuel Cell](#military-fuel-cell)
+- [Mineral Scanner Probe](#mineral-scanner-probe)
+- [Mining Enhancer](#mining-enhancer)
+- [Mining Survey Probe](#mining-survey-probe)
+- [Nanite Swarm](#nanite-swarm)
+- [Neural Accelerator](#neural-accelerator)
+- [Neural Disruption Charge Pack](#neural-disruption-charge-pack)
+- [Neutronium Slug Case](#neutronium-slug-case)
+- [Nuclear Mines](#nuclear-mines)
+- [Null Void Core Pack](#null-void-core-pack)
+- [Omega Core Pack](#omega-core-pack)
+- [Overcharge Cell](#overcharge-cell)
+- [Overcharged Plasma Cell Pack](#overcharged-plasma-cell-pack)
+- [Overclock Chip](#overclock-chip)
+- [PD Burst](#pd-burst)
+- [Perception Enhancer](#perception-enhancer)
+- [Phased Void Core Pack](#phased-void-core-pack)
+- [Plasma Cell Pack](#plasma-cell-pack)
+- [Plasma Mines](#plasma-mines)
+- [Plasma Torpedoes](#plasma-torpedoes)
+- [Power Surge Cell](#power-surge-cell)
+- [Premium Fuel Cell](#premium-fuel-cell)
+- [Reflex Enhancer](#reflex-enhancer)
+- [Regeneration Serum](#regeneration-serum)
+- [Regenerative Compound](#regenerative-compound)
+- [Repair Kit](#repair-kit)
+- [Repair Nanites](#repair-nanites)
+- [Salvage Enhancer](#salvage-enhancer)
+- [Scan Probe](#scan-probe)
+- [Scan Probe](#scan-probe)
+- [Sensor Booster](#sensor-booster)
+- [Sensor Jammer](#sensor-jammer)
+- [Shaped Charge Slug Case](#shaped-charge-slug-case)
+- [Shield Booster MK2](#shield-booster-mk2)
+- [Shield Charge](#shield-charge)
+- [Shield Hardener](#shield-hardener)
+- [Shield Overcharge](#shield-overcharge)
+- [Shield Regenerator](#shield-regenerator)
+- [Siege Torpedoes](#siege-torpedoes)
+- [Singularity Core Pack](#singularity-core-pack)
+- [Singularity Slug Case](#singularity-slug-case)
+- [Smoke Screen](#smoke-screen)
+- [Solarian Gourmet Rations](#solarian-gourmet-rations)
+- [Speed Stim](#speed-stim)
+- [Standard Guided Missiles](#standard-guided-missiles)
+- [Standard Mines](#standard-mines)
+- [Standard Rounds Box](#standard-rounds-box)
+- [Standard Torpedoes](#standard-torpedoes)
+- [Stellar Plasma Cell Pack](#stellar-plasma-cell-pack)
+- [Structural Cement](#structural-cement)
+- [Swarm Missiles](#swarm-missiles)
+- [Thermal Flare](#thermal-flare)
+- [Trade Negotiator](#trade-negotiator)
+- [Tungsten Slug Case](#tungsten-slug-case)
+- [Turtle Compound](#turtle-compound)
+- [Void Core Pack](#void-core-pack)
+- [Void Mines](#void-mines)
+- [Void-Tuned EM Charge Pack](#void-tuned-em-charge-pack)
+- [Warp Stabilizer](#warp-stabilizer)
+- [Weapon Overload Capacitor](#weapon-overload-capacitor)
 
 ---
 
-## Adrenaline Surge {#stim_adrenaline}
+## Adrenaline Surge
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adrenaline Surge</h3></th></tr>
@@ -153,7 +153,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Advanced Repair Kit {#repair_kit_advanced}
+## Advanced Repair Kit
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Advanced Repair Kit</h3></th></tr>
@@ -177,7 +177,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Afterburner Fuel {#afterburner_fuel}
+## Afterburner Fuel
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Afterburner Fuel</h3></th></tr>
@@ -201,7 +201,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Anchor Beacon {#anchor_beacon}
+## Anchor Beacon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anchor Beacon</h3></th></tr>
@@ -225,7 +225,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Anomaly Detector {#scan_probe_anomaly}
+## Anomaly Detector
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anomaly Detector</h3></th></tr>
@@ -249,7 +249,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Anomaly Probe {#probe_anomaly}
+## Anomaly Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anomaly Probe</h3></th></tr>
@@ -273,7 +273,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Antimatter Torpedoes {#torpedoes_antimatter}
+## Antimatter Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Torpedoes</h3></th></tr>
@@ -297,7 +297,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Antimatter Warhead {#missiles_antimatter}
+## Antimatter Warhead
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Warhead</h3></th></tr>
@@ -321,7 +321,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Antimatter-Core Rounds Box {#rounds_antimatter}
+## Antimatter-Core Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter-Core Rounds Box</h3></th></tr>
@@ -345,7 +345,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Armor Piercing Rounds Box {#rounds_armor_piercing}
+## Armor Piercing Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Piercing Rounds Box</h3></th></tr>
@@ -369,7 +369,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Armor Weld {#armor_weld}
+## Armor Weld
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Weld</h3></th></tr>
@@ -393,7 +393,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Armor-Buster Missiles {#missiles_armor_buster}
+## Armor-Buster Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor-Buster Missiles</h3></th></tr>
@@ -417,7 +417,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Berserker Compound {#stim_berserker}
+## Berserker Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Berserker Compound</h3></th></tr>
@@ -441,7 +441,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Breacher Torpedoes {#torpedoes_breacher}
+## Breacher Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Breacher Torpedoes</h3></th></tr>
@@ -465,7 +465,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Cascade EM Charge Pack {#em_cascade}
+## Cascade EM Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cascade EM Charge Pack</h3></th></tr>
@@ -489,7 +489,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Chaff Bundle {#countermeasure_chaff}
+## Chaff Bundle
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chaff Bundle</h3></th></tr>
@@ -513,7 +513,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Chaff Pod {#chaff_pod}
+## Chaff Pod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chaff Pod</h3></th></tr>
@@ -537,7 +537,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Clarity Stim {#stim_clarity}
+## Clarity Stim
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Clarity Stim</h3></th></tr>
@@ -561,7 +561,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Cloaking Charge {#cloak_charge}
+## Cloaking Charge
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloaking Charge</h3></th></tr>
@@ -585,7 +585,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Cloaking Dust {#cloaking_dust}
+## Cloaking Dust
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloaking Dust</h3></th></tr>
@@ -609,7 +609,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Cluster Missiles {#missiles_cluster}
+## Cluster Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cluster Missiles</h3></th></tr>
@@ -633,31 +633,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Combat Scanner Probe {#scan_probe_combat}
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Scanner Probe](../images/scan_probe_combat.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>250 cr</td></tr>
-</table>
-
-> Reveals ship details including modules and cargo.
-
-[View full page](scan_probe_combat.md)
-
----
-
-## Combat Scanner Probe {#probe_combat}
+## Combat Scanner Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
@@ -681,7 +657,31 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Combat Stim {#stim_pack}
+## Combat Scanner Probe
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Combat Scanner Probe](../images/scan_probe_combat.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>250 cr</td></tr>
+</table>
+
+> Reveals ship details including modules and cargo.
+
+[View full page](scan_probe_combat.md)
+
+---
+
+## Combat Stim
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Stim</h3></th></tr>
@@ -705,7 +705,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Corrosive Plasma Cell Pack {#plasma_corrosive}
+## Corrosive Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Corrosive Plasma Cell Pack</h3></th></tr>
@@ -729,7 +729,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Crimson Bloodwine {#food_crimson_bloodwine}
+## Crimson Bloodwine
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Bloodwine</h3></th></tr>
@@ -753,7 +753,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Cryo Slug Case {#slugs_cryo}
+## Cryo Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryo Slug Case</h3></th></tr>
@@ -777,31 +777,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Decoy Drone {#countermeasure_decoy}
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Decoy Drone](../images/countermeasure_decoy.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>40 cr</td></tr>
-</table>
-
-> Expendable drone that mimics ship sensor signatures.
-
-[View full page](countermeasure_decoy.md)
-
----
-
-## Decoy Drone {#decoy_drone}
+## Decoy Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
@@ -825,7 +801,31 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Deep Scan Probe {#scan_probe_deep}
+## Decoy Drone
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Decoy Drone](../images/countermeasure_decoy.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>40 cr</td></tr>
+</table>
+
+> Expendable drone that mimics ship sensor signatures.
+
+[View full page](countermeasure_decoy.md)
+
+---
+
+## Deep Scan Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Scan Probe</h3></th></tr>
@@ -849,7 +849,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Deep Space Probe {#probe_deep_space}
+## Deep Space Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Space Probe</h3></th></tr>
@@ -873,7 +873,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Depleted Uranium Rounds Box {#rounds_depleted_uranium}
+## Depleted Uranium Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Depleted Uranium Rounds Box</h3></th></tr>
@@ -897,7 +897,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Dispersal Plasma Cell Pack {#plasma_dispersal}
+## Dispersal Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dispersal Plasma Cell Pack</h3></th></tr>
@@ -921,7 +921,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## ECM Burst {#ecm_burst}
+## ECM Burst
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
@@ -945,7 +945,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## ECM Burst {#countermeasure_ecm}
+## ECM Burst
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
@@ -969,7 +969,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EM Charge Pack {#em_standard}
+## EM Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EM Charge Pack</h3></th></tr>
@@ -993,7 +993,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EMP Mines {#mines_emp}
+## EMP Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Mines</h3></th></tr>
@@ -1017,7 +1017,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EMP Missiles {#missiles_emp}
+## EMP Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Missiles</h3></th></tr>
@@ -1041,7 +1041,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EMP Slug Case {#slugs_emp}
+## EMP Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Slug Case</h3></th></tr>
@@ -1065,7 +1065,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EMP Torpedoes {#torpedoes_emp}
+## EMP Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Torpedoes</h3></th></tr>
@@ -1089,7 +1089,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## EMP-Tipped Rounds Box {#rounds_emp_tipped}
+## EMP-Tipped Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP-Tipped Rounds Box</h3></th></tr>
@@ -1113,7 +1113,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Emergency Jump Cell {#emergency_jump}
+## Emergency Jump Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Emergency Jump Cell</h3></th></tr>
@@ -1137,7 +1137,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Emergency Warp Device {#emergency_warp_device}
+## Emergency Warp Device
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Emergency Warp Device</h3></th></tr>
@@ -1161,7 +1161,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Endurance Booster {#stim_endurance}
+## Endurance Booster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Endurance Booster</h3></th></tr>
@@ -1185,7 +1185,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Entropic Void Core Pack {#void_entropic}
+## Entropic Void Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Entropic Void Core Pack</h3></th></tr>
@@ -1209,7 +1209,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Experience Booster {#xp_booster}
+## Experience Booster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Experience Booster</h3></th></tr>
@@ -1233,7 +1233,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Ferrous Slug Case {#slugs_ferrous}
+## Ferrous Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ferrous Slug Case</h3></th></tr>
@@ -1257,7 +1257,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Flare Pod {#flare_pod}
+## Flare Pod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Flare Pod</h3></th></tr>
@@ -1281,7 +1281,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Focus Stim {#stim_focus}
+## Focus Stim
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focus Stim</h3></th></tr>
@@ -1305,7 +1305,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Focused EM Charge Pack {#em_focused}
+## Focused EM Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused EM Charge Pack</h3></th></tr>
@@ -1329,7 +1329,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Focused Plasma Cell Pack {#plasma_focused}
+## Focused Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused Plasma Cell Pack</h3></th></tr>
@@ -1353,7 +1353,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Fragmentation Mines {#mines_fragmentation}
+## Fragmentation Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fragmentation Mines</h3></th></tr>
@@ -1377,7 +1377,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Fragmentation Rounds Box {#rounds_fragmenting}
+## Fragmentation Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fragmentation Rounds Box</h3></th></tr>
@@ -1401,7 +1401,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Frontier Rotgut {#food_frontier_moonshine}
+## Frontier Rotgut
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Rotgut</h3></th></tr>
@@ -1425,7 +1425,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Fuel Cell {#fuel_cell}
+## Fuel Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fuel Cell</h3></th></tr>
@@ -1449,7 +1449,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Hull Nanites {#hull_nanites}
+## Hull Nanites
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Nanites</h3></th></tr>
@@ -1473,7 +1473,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Hull Patch {#hull_patch}
+## Hull Patch
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Patch</h3></th></tr>
@@ -1497,7 +1497,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Incendiary Missiles {#missiles_incendiary}
+## Incendiary Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Incendiary Missiles</h3></th></tr>
@@ -1521,7 +1521,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Incendiary Rounds Box {#rounds_incendiary}
+## Incendiary Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Incendiary Rounds Box</h3></th></tr>
@@ -1545,7 +1545,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Ion Charge Pack {#em_ion}
+## Ion Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Charge Pack</h3></th></tr>
@@ -1569,7 +1569,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Jammer Burst {#jammer_burst}
+## Jammer Burst
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jammer Burst</h3></th></tr>
@@ -1593,7 +1593,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Military Fuel Cell {#fuel_cell_military}
+## Military Fuel Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Military Fuel Cell</h3></th></tr>
@@ -1617,7 +1617,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Mineral Scanner Probe {#scan_probe_mineral}
+## Mineral Scanner Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mineral Scanner Probe</h3></th></tr>
@@ -1641,7 +1641,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Mining Enhancer {#mining_enhancer}
+## Mining Enhancer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Enhancer</h3></th></tr>
@@ -1665,7 +1665,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Mining Survey Probe {#probe_mining}
+## Mining Survey Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Survey Probe</h3></th></tr>
@@ -1689,7 +1689,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Nanite Swarm {#nanite_swarm}
+## Nanite Swarm
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nanite Swarm</h3></th></tr>
@@ -1713,7 +1713,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Neural Accelerator {#stim_neural}
+## Neural Accelerator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Accelerator</h3></th></tr>
@@ -1737,7 +1737,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Neural Disruption Charge Pack {#em_neural}
+## Neural Disruption Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Disruption Charge Pack</h3></th></tr>
@@ -1761,7 +1761,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Neutronium Slug Case {#slugs_neutronium}
+## Neutronium Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neutronium Slug Case</h3></th></tr>
@@ -1785,7 +1785,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Nuclear Mines {#mines_nuclear}
+## Nuclear Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nuclear Mines</h3></th></tr>
@@ -1809,7 +1809,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Null Void Core Pack {#void_null}
+## Null Void Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Null Void Core Pack</h3></th></tr>
@@ -1833,7 +1833,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Omega Core Pack {#void_omega}
+## Omega Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Omega Core Pack</h3></th></tr>
@@ -1857,7 +1857,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Overcharge Cell {#overcharge_cell}
+## Overcharge Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overcharge Cell</h3></th></tr>
@@ -1881,7 +1881,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Overcharged Plasma Cell Pack {#plasma_overcharged}
+## Overcharged Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overcharged Plasma Cell Pack</h3></th></tr>
@@ -1905,7 +1905,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Overclock Chip {#overclock_chip}
+## Overclock Chip
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overclock Chip</h3></th></tr>
@@ -1929,7 +1929,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## PD Burst {#point_defense_burst}
+## PD Burst
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>PD Burst</h3></th></tr>
@@ -1953,7 +1953,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Perception Enhancer {#stim_perception}
+## Perception Enhancer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Perception Enhancer</h3></th></tr>
@@ -1977,7 +1977,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Phased Void Core Pack {#void_phased}
+## Phased Void Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phased Void Core Pack</h3></th></tr>
@@ -2001,7 +2001,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Plasma Cell Pack {#plasma_standard}
+## Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Cell Pack</h3></th></tr>
@@ -2025,7 +2025,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Plasma Mines {#mines_plasma}
+## Plasma Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Mines</h3></th></tr>
@@ -2049,7 +2049,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Plasma Torpedoes {#torpedoes_plasma}
+## Plasma Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Torpedoes</h3></th></tr>
@@ -2073,7 +2073,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Power Surge Cell {#power_surge}
+## Power Surge Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Surge Cell</h3></th></tr>
@@ -2097,7 +2097,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Premium Fuel Cell {#fuel_cell_premium}
+## Premium Fuel Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Premium Fuel Cell</h3></th></tr>
@@ -2121,7 +2121,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Reflex Enhancer {#stim_reflex}
+## Reflex Enhancer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reflex Enhancer</h3></th></tr>
@@ -2145,7 +2145,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Regeneration Serum {#stim_regeneration}
+## Regeneration Serum
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Regeneration Serum</h3></th></tr>
@@ -2169,7 +2169,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Regenerative Compound {#regenerative_compound}
+## Regenerative Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Regenerative Compound</h3></th></tr>
@@ -2193,7 +2193,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Repair Kit {#repair_kit}
+## Repair Kit
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Kit</h3></th></tr>
@@ -2217,7 +2217,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Repair Nanites {#repair_nanites}
+## Repair Nanites
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Nanites</h3></th></tr>
@@ -2241,7 +2241,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Salvage Enhancer {#salvage_enhancer}
+## Salvage Enhancer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Enhancer</h3></th></tr>
@@ -2265,7 +2265,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Scan Probe {#probe_scan}
+## Scan Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
@@ -2289,7 +2289,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Scan Probe {#scan_probe_basic}
+## Scan Probe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
@@ -2313,7 +2313,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Sensor Booster {#sensor_booster}
+## Sensor Booster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Booster</h3></th></tr>
@@ -2337,7 +2337,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Sensor Jammer {#countermeasure_jammer}
+## Sensor Jammer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Jammer</h3></th></tr>
@@ -2361,7 +2361,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shaped Charge Slug Case {#slugs_shaped_charge}
+## Shaped Charge Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shaped Charge Slug Case</h3></th></tr>
@@ -2385,7 +2385,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shield Booster MK2 {#shield_booster_mk2}
+## Shield Booster MK2
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Booster MK2</h3></th></tr>
@@ -2409,7 +2409,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shield Charge {#shield_booster_charge}
+## Shield Charge
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Charge</h3></th></tr>
@@ -2433,7 +2433,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shield Hardener {#shield_hardener}
+## Shield Hardener
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Hardener</h3></th></tr>
@@ -2457,7 +2457,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shield Overcharge {#shield_overcharge}
+## Shield Overcharge
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Overcharge</h3></th></tr>
@@ -2481,7 +2481,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Shield Regenerator {#shield_regenerator}
+## Shield Regenerator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Regenerator</h3></th></tr>
@@ -2505,7 +2505,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Siege Torpedoes {#torpedoes_siege}
+## Siege Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Siege Torpedoes</h3></th></tr>
@@ -2529,7 +2529,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Singularity Core Pack {#void_singularity}
+## Singularity Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Core Pack</h3></th></tr>
@@ -2553,7 +2553,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Singularity Slug Case {#slugs_singularity}
+## Singularity Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Slug Case</h3></th></tr>
@@ -2577,7 +2577,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Smoke Screen {#smoke_screen}
+## Smoke Screen
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Smoke Screen</h3></th></tr>
@@ -2601,7 +2601,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Solarian Gourmet Rations {#food_sol_rations}
+## Solarian Gourmet Rations
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Gourmet Rations</h3></th></tr>
@@ -2625,7 +2625,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Speed Stim {#stim_speed}
+## Speed Stim
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Speed Stim</h3></th></tr>
@@ -2649,7 +2649,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Standard Guided Missiles {#missiles_standard}
+## Standard Guided Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Guided Missiles</h3></th></tr>
@@ -2673,7 +2673,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Standard Mines {#mines_standard}
+## Standard Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Mines</h3></th></tr>
@@ -2697,7 +2697,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Standard Rounds Box {#rounds_standard}
+## Standard Rounds Box
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Rounds Box</h3></th></tr>
@@ -2721,7 +2721,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Standard Torpedoes {#torpedoes_standard}
+## Standard Torpedoes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Torpedoes</h3></th></tr>
@@ -2745,7 +2745,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Stellar Plasma Cell Pack {#plasma_stellar}
+## Stellar Plasma Cell Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Plasma Cell Pack</h3></th></tr>
@@ -2769,7 +2769,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Structural Cement {#structural_cement}
+## Structural Cement
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Structural Cement</h3></th></tr>
@@ -2793,7 +2793,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Swarm Missiles {#missiles_swarm}
+## Swarm Missiles
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Swarm Missiles</h3></th></tr>
@@ -2817,7 +2817,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Thermal Flare {#countermeasure_flare}
+## Thermal Flare
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thermal Flare</h3></th></tr>
@@ -2841,7 +2841,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Trade Negotiator {#trade_booster}
+## Trade Negotiator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Negotiator</h3></th></tr>
@@ -2865,7 +2865,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Tungsten Slug Case {#slugs_tungsten}
+## Tungsten Slug Case
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Slug Case</h3></th></tr>
@@ -2889,7 +2889,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Turtle Compound {#stim_turtle}
+## Turtle Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Turtle Compound</h3></th></tr>
@@ -2913,7 +2913,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Void Core Pack {#void_standard}
+## Void Core Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Core Pack</h3></th></tr>
@@ -2937,7 +2937,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Void Mines {#mines_void}
+## Void Mines
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Mines</h3></th></tr>
@@ -2961,7 +2961,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Void-Tuned EM Charge Pack {#em_void_tuned}
+## Void-Tuned EM Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void-Tuned EM Charge Pack</h3></th></tr>
@@ -2985,7 +2985,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Warp Stabilizer {#warp_stabilizer}
+## Warp Stabilizer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warp Stabilizer</h3></th></tr>
@@ -3009,7 +3009,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
-## Weapon Overload Capacitor {#weapon_overload}
+## Weapon Overload Capacitor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Overload Capacitor</h3></th></tr>

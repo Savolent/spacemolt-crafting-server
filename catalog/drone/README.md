@@ -5,19 +5,19 @@
 Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ## Table of Contents
-- [Combat Drone](#combat_drone)
-- [ECM Drone](#ecm_drone)
-- [Heavy Combat Drone](#heavy_combat_drone)
-- [Logistics Drone](#logistics_drone)
-- [Mining Drone](#mining_drone)
-- [Repair Drone](#repair_drone)
-- [Salvage Drone](#salvage_drone)
-- [Scout Drone](#scout_drone)
-- [Shield Drone](#shield_drone)
+- [Combat Drone](#combat-drone)
+- [ECM Drone](#ecm-drone)
+- [Heavy Combat Drone](#heavy-combat-drone)
+- [Logistics Drone](#logistics-drone)
+- [Mining Drone](#mining-drone)
+- [Repair Drone](#repair-drone)
+- [Salvage Drone](#salvage-drone)
+- [Scout Drone](#scout-drone)
+- [Shield Drone](#shield-drone)
 
 ---
 
-## Combat Drone {#combat_drone}
+## Combat Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Drone</h3></th></tr>
@@ -41,7 +41,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## ECM Drone {#ecm_drone}
+## ECM Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Drone</h3></th></tr>
@@ -65,7 +65,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Heavy Combat Drone {#heavy_combat_drone}
+## Heavy Combat Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Heavy Combat Drone</h3></th></tr>
@@ -89,7 +89,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Logistics Drone {#logistics_drone}
+## Logistics Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Logistics Drone</h3></th></tr>
@@ -113,7 +113,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Mining Drone {#mining_drone}
+## Mining Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Drone</h3></th></tr>
@@ -137,7 +137,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Repair Drone {#repair_drone}
+## Repair Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Drone</h3></th></tr>
@@ -161,7 +161,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Salvage Drone {#salvage_drone}
+## Salvage Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Drone</h3></th></tr>
@@ -185,7 +185,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Scout Drone {#scout_drone}
+## Scout Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scout Drone</h3></th></tr>
@@ -209,7 +209,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 ---
 
-## Shield Drone {#shield_drone}
+## Shield Drone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Drone</h3></th></tr>

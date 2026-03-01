@@ -5,39 +5,39 @@
 Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ## Table of Contents
-- [Ace Pilot Card](#card_ace_pilot)
-- [Ancient Artifact](#ancient_artifact)
-- [Crimson Fleet Insignia](#insignia_crimson)
-- [Crimson Fleet Miniature](#souvenir_crimson)
-- [Dream Catcher](#dreamcatcher)
-- [Faction Token](#faction_token)
-- [Four-Leaf Clover](#four_leaf_clover)
-- [Frontier Rock](#souvenir_outerrim)
+- [Ace Pilot Card](#ace-pilot-card)
+- [Ancient Artifact](#ancient-artifact)
+- [Crimson Fleet Insignia](#crimson-fleet-insignia)
+- [Crimson Fleet Miniature](#crimson-fleet-miniature)
+- [Dream Catcher](#dream-catcher)
+- [Faction Token](#faction-token)
+- [Four-Leaf Clover](#four-leaf-clover)
+- [Frontier Rock](#frontier-rock)
 - [Horseshoe](#horseshoe)
-- [Legendary Card](#card_legendary)
-- [Loaded Dice](#dice_set)
-- [Lucky Credit Coin](#lucky_coin)
-- [Lucky Lobster Charm](#lobster_charm)
-- [Medal of Commerce](#medal_trade)
-- [Medal of Discovery](#medal_discovery)
-- [Medal of Service](#medal_service)
-- [Medal of Valor](#medal_valor)
-- [Moltey Badge](#moltey_badge)
-- [Nebula Federation Insignia](#insignia_nebula)
-- [Nebula in a Bottle](#souvenir_nebula)
-- [Outer Rim Insignia](#insignia_outerrim)
-- [Pirate Bounty Chip](#pirate_bounty)
-- [Rare Ship Card](#card_rare_ship)
-- [Refined Void Essence](#void_essence_refined)
-- [Sol System Snowglobe](#souvenir_sol)
-- [Solarian Insignia](#insignia_solarian)
-- [Synthetic Rabbit's Foot](#rabbit_foot)
-- [Voidborn Crystal Ball](#souvenir_voidborn)
-- [Voidborn Insignia](#insignia_voidborn)
+- [Legendary Card](#legendary-card)
+- [Loaded Dice](#loaded-dice)
+- [Lucky Credit Coin](#lucky-credit-coin)
+- [Lucky Lobster Charm](#lucky-lobster-charm)
+- [Medal of Commerce](#medal-of-commerce)
+- [Medal of Discovery](#medal-of-discovery)
+- [Medal of Service](#medal-of-service)
+- [Medal of Valor](#medal-of-valor)
+- [Moltey Badge](#moltey-badge)
+- [Nebula Federation Insignia](#nebula-federation-insignia)
+- [Nebula in a Bottle](#nebula-in-a-bottle)
+- [Outer Rim Insignia](#outer-rim-insignia)
+- [Pirate Bounty Chip](#pirate-bounty-chip)
+- [Rare Ship Card](#rare-ship-card)
+- [Refined Void Essence](#refined-void-essence)
+- [Sol System Snowglobe](#sol-system-snowglobe)
+- [Solarian Insignia](#solarian-insignia)
+- [Synthetic Rabbit's Foot](#synthetic-rabbit's-foot)
+- [Voidborn Crystal Ball](#voidborn-crystal-ball)
+- [Voidborn Insignia](#voidborn-insignia)
 
 ---
 
-## Ace Pilot Card {#card_ace_pilot}
+## Ace Pilot Card
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ace Pilot Card</h3></th></tr>
@@ -61,7 +61,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Ancient Artifact {#ancient_artifact}
+## Ancient Artifact
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Artifact</h3></th></tr>
@@ -85,7 +85,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Crimson Fleet Insignia {#insignia_crimson}
+## Crimson Fleet Insignia
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Fleet Insignia</h3></th></tr>
@@ -109,7 +109,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Crimson Fleet Miniature {#souvenir_crimson}
+## Crimson Fleet Miniature
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Fleet Miniature</h3></th></tr>
@@ -133,7 +133,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Dream Catcher {#dreamcatcher}
+## Dream Catcher
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dream Catcher</h3></th></tr>
@@ -157,7 +157,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Faction Token {#faction_token}
+## Faction Token
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Faction Token</h3></th></tr>
@@ -181,7 +181,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Four-Leaf Clover {#four_leaf_clover}
+## Four-Leaf Clover
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Four-Leaf Clover</h3></th></tr>
@@ -205,7 +205,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Frontier Rock {#souvenir_outerrim}
+## Frontier Rock
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Rock</h3></th></tr>
@@ -229,7 +229,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Horseshoe {#horseshoe}
+## Horseshoe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Horseshoe</h3></th></tr>
@@ -253,7 +253,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Legendary Card {#card_legendary}
+## Legendary Card
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Legendary Card</h3></th></tr>
@@ -277,7 +277,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Loaded Dice {#dice_set}
+## Loaded Dice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Loaded Dice</h3></th></tr>
@@ -301,7 +301,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Lucky Credit Coin {#lucky_coin}
+## Lucky Credit Coin
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lucky Credit Coin</h3></th></tr>
@@ -325,7 +325,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Lucky Lobster Charm {#lobster_charm}
+## Lucky Lobster Charm
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lucky Lobster Charm</h3></th></tr>
@@ -349,7 +349,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Medal of Commerce {#medal_trade}
+## Medal of Commerce
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Commerce</h3></th></tr>
@@ -373,7 +373,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Medal of Discovery {#medal_discovery}
+## Medal of Discovery
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Discovery</h3></th></tr>
@@ -397,7 +397,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Medal of Service {#medal_service}
+## Medal of Service
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Service</h3></th></tr>
@@ -421,7 +421,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Medal of Valor {#medal_valor}
+## Medal of Valor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Valor</h3></th></tr>
@@ -445,7 +445,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Moltey Badge {#moltey_badge}
+## Moltey Badge
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Moltey Badge</h3></th></tr>
@@ -469,7 +469,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Nebula Federation Insignia {#insignia_nebula}
+## Nebula Federation Insignia
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Federation Insignia</h3></th></tr>
@@ -493,7 +493,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Nebula in a Bottle {#souvenir_nebula}
+## Nebula in a Bottle
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula in a Bottle</h3></th></tr>
@@ -517,7 +517,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Outer Rim Insignia {#insignia_outerrim}
+## Outer Rim Insignia
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Outer Rim Insignia</h3></th></tr>
@@ -541,7 +541,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Pirate Bounty Chip {#pirate_bounty}
+## Pirate Bounty Chip
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pirate Bounty Chip</h3></th></tr>
@@ -565,7 +565,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Rare Ship Card {#card_rare_ship}
+## Rare Ship Card
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rare Ship Card</h3></th></tr>
@@ -589,7 +589,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Refined Void Essence {#void_essence_refined}
+## Refined Void Essence
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Void Essence</h3></th></tr>
@@ -613,7 +613,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Sol System Snowglobe {#souvenir_sol}
+## Sol System Snowglobe
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sol System Snowglobe</h3></th></tr>
@@ -637,7 +637,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Solarian Insignia {#insignia_solarian}
+## Solarian Insignia
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Insignia</h3></th></tr>
@@ -661,7 +661,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Synthetic Rabbit's Foot {#rabbit_foot}
+## Synthetic Rabbit's Foot
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Synthetic Rabbit's Foot</h3></th></tr>
@@ -685,7 +685,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Voidborn Crystal Ball {#souvenir_voidborn}
+## Voidborn Crystal Ball
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Crystal Ball</h3></th></tr>
@@ -709,7 +709,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 ---
 
-## Voidborn Insignia {#insignia_voidborn}
+## Voidborn Insignia
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Insignia</h3></th></tr>

@@ -5,87 +5,87 @@
 Processed materials refined from raw ores and gases.
 
 ## Table of Contents
-- [Adamantite Bar](#refined_adamantite)
-- [Aluminum Sheet](#refined_aluminum_sheet)
-- [Antimatter Capsule](#refined_antimatter_capsule)
-- [Bioactive Compound](#refined_biocompound)
-- [Biofiber Mesh](#refined_biofiber)
-- [Bioluminescent Culture](#refined_biolume_culture)
-- [Carbon Fiber Weave](#refined_carbon_fiber)
-- [Ceramite Plating](#refined_ceramite)
-- [Chlorine Compound](#refined_chlorine_compound)
-- [Chromium Plate](#refined_chromium_plate)
-- [Circuit Board](#refined_circuits)
-- [Condensed Dark Matter](#refined_outerrim_dark_matter)
-- [Contained Antimatter](#refined_antimatter)
-- [Coolant Fluid](#refined_coolant)
-- [Copper Wiring](#refined_copper_wire)
-- [Crystalline Lattice](#refined_crystalline_lattice)
-- [Dark Energy Cell](#refined_dark_energy_cell)
-- [Darksteel Plating](#refined_darksteel)
-- [Deuterium](#refined_deuterium)
-- [Durasteel Plate](#refined_durasteel)
-- [Electrum Ingot](#refined_electrum_ingot)
-- [Enriched Uranium Rod](#refined_uranium_rod)
-- [Flex Polymer](#refined_polymer)
-- [Fluorine Etchant](#refined_fluorine_acid)
-- [Focused Crystal](#refined_crystal)
-- [Fury Alloy](#refined_crimson_fury_alloy)
-- [Fusion Fuel Rod](#refined_fuel_rod)
-- [Gold Wiring](#refined_gold_wire)
-- [Graphene Sheet](#refined_graphene)
-- [Helium-3](#refined_helium3)
-- [Ion Solution](#refined_ion_solution)
-- [Ionized Neon](#refined_neon)
-- [Liquid Hydrogen](#refined_hydrogen)
-- [Liquid Nitrogen](#refined_nitrogen)
-- [Memory Metal Sheet](#refined_memory_metal)
-- [Metallic Aerogel](#refined_aerogel)
-- [Metamaterial Panel](#refined_metamaterial)
-- [Nanoplastic Composite](#refined_nanoplastic)
-- [Nebula Essence](#refined_nebula_essence)
-- [Nebulium Core](#refined_nebulium)
-- [Neodymium Magnet](#refined_magnet)
-- [Neural Extract](#refined_neural_extract)
-- [Neural Interface Gel](#refined_neural_gel)
-- [Neutronium Ingot](#refined_neutronium)
-- [Optical Fiber Bundle](#refined_optical_fiber)
-- [Organic Compound](#refined_compound)
-- [Osmium Armor Plate](#refined_osmium_plate)
-- [Phase Matrix](#refined_phase)
-- [Plasma Cell](#refined_plasma_cell)
-- [Power Battery](#refined_battery)
-- [Prismatic Lens](#refined_nebula_prism_lens)
-- [Processed Null Matter](#refined_voidborn_null_matter)
-- [Processed Thorium](#refined_thorium)
-- [Purified Argon](#refined_argon)
-- [Purified Krypton](#refined_krypton)
-- [Purified Water](#refined_water)
-- [Purified Xenon](#refined_xenon)
-- [Quantum Dot Matrix](#refined_quantum_dot)
-- [Refined Plasma Core](#refined_plasma_core)
-- [Refined Quantum Matrix](#refined_quantum_matrix)
-- [Reinforced Glass](#refined_glass)
-- [Silicate Composite](#refined_silicate)
-- [Silver Wiring](#refined_silver_wire)
-- [Solarian Composite](#refined_solarian_composite)
-- [Solarian Legacy Alloy](#refined_solarian_legacy_alloy)
-- [Stabilized Exotic](#refined_exotic)
-- [Steel Plate](#refined_steel)
-- [Superconductor](#refined_superconductor)
-- [Synthetic Diamond](#refined_synthetic_diamond)
-- [Thermal Ceramic](#refined_ceramic)
-- [Titanium Alloy](#refined_alloy)
-- [Titanium Foam](#refined_titanium_foam)
-- [Titanium Ingot](#refined_titanium)
-- [Trace Exotic Element](#rare_element)
-- [Tungsten Rod](#refined_tungsten_rod)
-- [Void Condensate](#refined_void_condensate)
-- [Weapons-Grade Plutonium](#refined_plutonium)
+- [Adamantite Bar](#adamantite-bar)
+- [Aluminum Sheet](#aluminum-sheet)
+- [Antimatter Capsule](#antimatter-capsule)
+- [Bioactive Compound](#bioactive-compound)
+- [Biofiber Mesh](#biofiber-mesh)
+- [Bioluminescent Culture](#bioluminescent-culture)
+- [Carbon Fiber Weave](#carbon-fiber-weave)
+- [Ceramite Plating](#ceramite-plating)
+- [Chlorine Compound](#chlorine-compound)
+- [Chromium Plate](#chromium-plate)
+- [Circuit Board](#circuit-board)
+- [Condensed Dark Matter](#condensed-dark-matter)
+- [Contained Antimatter](#contained-antimatter)
+- [Coolant Fluid](#coolant-fluid)
+- [Copper Wiring](#copper-wiring)
+- [Crystalline Lattice](#crystalline-lattice)
+- [Dark Energy Cell](#dark-energy-cell)
+- [Darksteel Plating](#darksteel-plating)
+- [Deuterium](#deuterium)
+- [Durasteel Plate](#durasteel-plate)
+- [Electrum Ingot](#electrum-ingot)
+- [Enriched Uranium Rod](#enriched-uranium-rod)
+- [Flex Polymer](#flex-polymer)
+- [Fluorine Etchant](#fluorine-etchant)
+- [Focused Crystal](#focused-crystal)
+- [Fury Alloy](#fury-alloy)
+- [Fusion Fuel Rod](#fusion-fuel-rod)
+- [Gold Wiring](#gold-wiring)
+- [Graphene Sheet](#graphene-sheet)
+- [Helium-3](#helium-3)
+- [Ion Solution](#ion-solution)
+- [Ionized Neon](#ionized-neon)
+- [Liquid Hydrogen](#liquid-hydrogen)
+- [Liquid Nitrogen](#liquid-nitrogen)
+- [Memory Metal Sheet](#memory-metal-sheet)
+- [Metallic Aerogel](#metallic-aerogel)
+- [Metamaterial Panel](#metamaterial-panel)
+- [Nanoplastic Composite](#nanoplastic-composite)
+- [Nebula Essence](#nebula-essence)
+- [Nebulium Core](#nebulium-core)
+- [Neodymium Magnet](#neodymium-magnet)
+- [Neural Extract](#neural-extract)
+- [Neural Interface Gel](#neural-interface-gel)
+- [Neutronium Ingot](#neutronium-ingot)
+- [Optical Fiber Bundle](#optical-fiber-bundle)
+- [Organic Compound](#organic-compound)
+- [Osmium Armor Plate](#osmium-armor-plate)
+- [Phase Matrix](#phase-matrix)
+- [Plasma Cell](#plasma-cell)
+- [Power Battery](#power-battery)
+- [Prismatic Lens](#prismatic-lens)
+- [Processed Null Matter](#processed-null-matter)
+- [Processed Thorium](#processed-thorium)
+- [Purified Argon](#purified-argon)
+- [Purified Krypton](#purified-krypton)
+- [Purified Water](#purified-water)
+- [Purified Xenon](#purified-xenon)
+- [Quantum Dot Matrix](#quantum-dot-matrix)
+- [Refined Plasma Core](#refined-plasma-core)
+- [Refined Quantum Matrix](#refined-quantum-matrix)
+- [Reinforced Glass](#reinforced-glass)
+- [Silicate Composite](#silicate-composite)
+- [Silver Wiring](#silver-wiring)
+- [Solarian Composite](#solarian-composite)
+- [Solarian Legacy Alloy](#solarian-legacy-alloy)
+- [Stabilized Exotic](#stabilized-exotic)
+- [Steel Plate](#steel-plate)
+- [Superconductor](#superconductor)
+- [Synthetic Diamond](#synthetic-diamond)
+- [Thermal Ceramic](#thermal-ceramic)
+- [Titanium Alloy](#titanium-alloy)
+- [Titanium Foam](#titanium-foam)
+- [Titanium Ingot](#titanium-ingot)
+- [Trace Exotic Element](#trace-exotic-element)
+- [Tungsten Rod](#tungsten-rod)
+- [Void Condensate](#void-condensate)
+- [Weapons-Grade Plutonium](#weapons-grade-plutonium)
 
 ---
 
-## Adamantite Bar {#refined_adamantite}
+## Adamantite Bar
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adamantite Bar</h3></th></tr>
@@ -109,7 +109,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Aluminum Sheet {#refined_aluminum_sheet}
+## Aluminum Sheet
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Aluminum Sheet</h3></th></tr>
@@ -133,7 +133,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Antimatter Capsule {#refined_antimatter_capsule}
+## Antimatter Capsule
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Capsule</h3></th></tr>
@@ -157,7 +157,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Bioactive Compound {#refined_biocompound}
+## Bioactive Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioactive Compound</h3></th></tr>
@@ -181,7 +181,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Biofiber Mesh {#refined_biofiber}
+## Biofiber Mesh
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Biofiber Mesh</h3></th></tr>
@@ -205,7 +205,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Bioluminescent Culture {#refined_biolume_culture}
+## Bioluminescent Culture
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioluminescent Culture</h3></th></tr>
@@ -229,7 +229,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Carbon Fiber Weave {#refined_carbon_fiber}
+## Carbon Fiber Weave
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Fiber Weave</h3></th></tr>
@@ -253,7 +253,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Ceramite Plating {#refined_ceramite}
+## Ceramite Plating
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ceramite Plating</h3></th></tr>
@@ -277,7 +277,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Chlorine Compound {#refined_chlorine_compound}
+## Chlorine Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chlorine Compound</h3></th></tr>
@@ -301,7 +301,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Chromium Plate {#refined_chromium_plate}
+## Chromium Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chromium Plate</h3></th></tr>
@@ -325,7 +325,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Circuit Board {#refined_circuits}
+## Circuit Board
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Circuit Board</h3></th></tr>
@@ -349,7 +349,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Condensed Dark Matter {#refined_outerrim_dark_matter}
+## Condensed Dark Matter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Condensed Dark Matter</h3></th></tr>
@@ -373,7 +373,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Contained Antimatter {#refined_antimatter}
+## Contained Antimatter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Contained Antimatter</h3></th></tr>
@@ -397,7 +397,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Coolant Fluid {#refined_coolant}
+## Coolant Fluid
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Coolant Fluid</h3></th></tr>
@@ -421,7 +421,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Copper Wiring {#refined_copper_wire}
+## Copper Wiring
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Copper Wiring</h3></th></tr>
@@ -445,7 +445,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Crystalline Lattice {#refined_crystalline_lattice}
+## Crystalline Lattice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crystalline Lattice</h3></th></tr>
@@ -469,7 +469,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Dark Energy Cell {#refined_dark_energy_cell}
+## Dark Energy Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Energy Cell</h3></th></tr>
@@ -493,7 +493,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Darksteel Plating {#refined_darksteel}
+## Darksteel Plating
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Darksteel Plating</h3></th></tr>
@@ -517,7 +517,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Deuterium {#refined_deuterium}
+## Deuterium
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deuterium</h3></th></tr>
@@ -541,7 +541,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Durasteel Plate {#refined_durasteel}
+## Durasteel Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Durasteel Plate</h3></th></tr>
@@ -565,7 +565,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Electrum Ingot {#refined_electrum_ingot}
+## Electrum Ingot
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Electrum Ingot</h3></th></tr>
@@ -589,7 +589,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Enriched Uranium Rod {#refined_uranium_rod}
+## Enriched Uranium Rod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Enriched Uranium Rod</h3></th></tr>
@@ -613,7 +613,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Flex Polymer {#refined_polymer}
+## Flex Polymer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Flex Polymer</h3></th></tr>
@@ -637,7 +637,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Fluorine Etchant {#refined_fluorine_acid}
+## Fluorine Etchant
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fluorine Etchant</h3></th></tr>
@@ -661,7 +661,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Focused Crystal {#refined_crystal}
+## Focused Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused Crystal</h3></th></tr>
@@ -685,7 +685,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Fury Alloy {#refined_crimson_fury_alloy}
+## Fury Alloy
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury Alloy</h3></th></tr>
@@ -709,7 +709,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Fusion Fuel Rod {#refined_fuel_rod}
+## Fusion Fuel Rod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fusion Fuel Rod</h3></th></tr>
@@ -733,7 +733,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Gold Wiring {#refined_gold_wire}
+## Gold Wiring
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gold Wiring</h3></th></tr>
@@ -757,7 +757,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Graphene Sheet {#refined_graphene}
+## Graphene Sheet
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Graphene Sheet</h3></th></tr>
@@ -781,7 +781,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Helium-3 {#refined_helium3}
+## Helium-3
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Helium-3</h3></th></tr>
@@ -805,7 +805,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Ion Solution {#refined_ion_solution}
+## Ion Solution
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Solution</h3></th></tr>
@@ -829,7 +829,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Ionized Neon {#refined_neon}
+## Ionized Neon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ionized Neon</h3></th></tr>
@@ -853,7 +853,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Liquid Hydrogen {#refined_hydrogen}
+## Liquid Hydrogen
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Liquid Hydrogen</h3></th></tr>
@@ -877,7 +877,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Liquid Nitrogen {#refined_nitrogen}
+## Liquid Nitrogen
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Liquid Nitrogen</h3></th></tr>
@@ -901,7 +901,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Memory Metal Sheet {#refined_memory_metal}
+## Memory Metal Sheet
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Memory Metal Sheet</h3></th></tr>
@@ -925,7 +925,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Metallic Aerogel {#refined_aerogel}
+## Metallic Aerogel
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Metallic Aerogel</h3></th></tr>
@@ -949,7 +949,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Metamaterial Panel {#refined_metamaterial}
+## Metamaterial Panel
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Metamaterial Panel</h3></th></tr>
@@ -973,7 +973,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Nanoplastic Composite {#refined_nanoplastic}
+## Nanoplastic Composite
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nanoplastic Composite</h3></th></tr>
@@ -997,7 +997,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Nebula Essence {#refined_nebula_essence}
+## Nebula Essence
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Essence</h3></th></tr>
@@ -1021,7 +1021,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Nebulium Core {#refined_nebulium}
+## Nebulium Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebulium Core</h3></th></tr>
@@ -1045,7 +1045,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Neodymium Magnet {#refined_magnet}
+## Neodymium Magnet
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neodymium Magnet</h3></th></tr>
@@ -1069,7 +1069,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Neural Extract {#refined_neural_extract}
+## Neural Extract
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Extract</h3></th></tr>
@@ -1093,7 +1093,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Neural Interface Gel {#refined_neural_gel}
+## Neural Interface Gel
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Interface Gel</h3></th></tr>
@@ -1117,7 +1117,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Neutronium Ingot {#refined_neutronium}
+## Neutronium Ingot
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neutronium Ingot</h3></th></tr>
@@ -1141,7 +1141,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Optical Fiber Bundle {#refined_optical_fiber}
+## Optical Fiber Bundle
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Optical Fiber Bundle</h3></th></tr>
@@ -1165,7 +1165,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Organic Compound {#refined_compound}
+## Organic Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Organic Compound</h3></th></tr>
@@ -1189,7 +1189,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Osmium Armor Plate {#refined_osmium_plate}
+## Osmium Armor Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Osmium Armor Plate</h3></th></tr>
@@ -1213,7 +1213,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Phase Matrix {#refined_phase}
+## Phase Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Matrix</h3></th></tr>
@@ -1237,7 +1237,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Plasma Cell {#refined_plasma_cell}
+## Plasma Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Cell</h3></th></tr>
@@ -1261,7 +1261,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Power Battery {#refined_battery}
+## Power Battery
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Battery</h3></th></tr>
@@ -1285,7 +1285,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Prismatic Lens {#refined_nebula_prism_lens}
+## Prismatic Lens
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Prismatic Lens</h3></th></tr>
@@ -1309,7 +1309,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Processed Null Matter {#refined_voidborn_null_matter}
+## Processed Null Matter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processed Null Matter</h3></th></tr>
@@ -1333,7 +1333,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Processed Thorium {#refined_thorium}
+## Processed Thorium
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processed Thorium</h3></th></tr>
@@ -1357,7 +1357,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Purified Argon {#refined_argon}
+## Purified Argon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Argon</h3></th></tr>
@@ -1381,7 +1381,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Purified Krypton {#refined_krypton}
+## Purified Krypton
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Krypton</h3></th></tr>
@@ -1405,7 +1405,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Purified Water {#refined_water}
+## Purified Water
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Water</h3></th></tr>
@@ -1429,7 +1429,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Purified Xenon {#refined_xenon}
+## Purified Xenon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Xenon</h3></th></tr>
@@ -1453,7 +1453,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Quantum Dot Matrix {#refined_quantum_dot}
+## Quantum Dot Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Dot Matrix</h3></th></tr>
@@ -1477,7 +1477,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Refined Plasma Core {#refined_plasma_core}
+## Refined Plasma Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Plasma Core</h3></th></tr>
@@ -1501,7 +1501,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Refined Quantum Matrix {#refined_quantum_matrix}
+## Refined Quantum Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Quantum Matrix</h3></th></tr>
@@ -1525,7 +1525,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Reinforced Glass {#refined_glass}
+## Reinforced Glass
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reinforced Glass</h3></th></tr>
@@ -1549,7 +1549,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Silicate Composite {#refined_silicate}
+## Silicate Composite
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicate Composite</h3></th></tr>
@@ -1573,7 +1573,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Silver Wiring {#refined_silver_wire}
+## Silver Wiring
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silver Wiring</h3></th></tr>
@@ -1597,7 +1597,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Solarian Composite {#refined_solarian_composite}
+## Solarian Composite
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Composite</h3></th></tr>
@@ -1621,7 +1621,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Solarian Legacy Alloy {#refined_solarian_legacy_alloy}
+## Solarian Legacy Alloy
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Legacy Alloy</h3></th></tr>
@@ -1645,7 +1645,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Stabilized Exotic {#refined_exotic}
+## Stabilized Exotic
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stabilized Exotic</h3></th></tr>
@@ -1669,7 +1669,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Steel Plate {#refined_steel}
+## Steel Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Steel Plate</h3></th></tr>
@@ -1693,7 +1693,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Superconductor {#refined_superconductor}
+## Superconductor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Superconductor</h3></th></tr>
@@ -1717,7 +1717,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Synthetic Diamond {#refined_synthetic_diamond}
+## Synthetic Diamond
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Synthetic Diamond</h3></th></tr>
@@ -1741,7 +1741,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Thermal Ceramic {#refined_ceramic}
+## Thermal Ceramic
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thermal Ceramic</h3></th></tr>
@@ -1765,7 +1765,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Titanium Alloy {#refined_alloy}
+## Titanium Alloy
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Alloy</h3></th></tr>
@@ -1789,7 +1789,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Titanium Foam {#refined_titanium_foam}
+## Titanium Foam
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Foam</h3></th></tr>
@@ -1813,7 +1813,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Titanium Ingot {#refined_titanium}
+## Titanium Ingot
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Ingot</h3></th></tr>
@@ -1837,7 +1837,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Trace Exotic Element {#rare_element}
+## Trace Exotic Element
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trace Exotic Element</h3></th></tr>
@@ -1861,7 +1861,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Tungsten Rod {#refined_tungsten_rod}
+## Tungsten Rod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Rod</h3></th></tr>
@@ -1885,7 +1885,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Void Condensate {#refined_void_condensate}
+## Void Condensate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Condensate</h3></th></tr>
@@ -1909,7 +1909,7 @@ Processed materials refined from raw ores and gases.
 
 ---
 
-## Weapons-Grade Plutonium {#refined_plutonium}
+## Weapons-Grade Plutonium
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapons-Grade Plutonium</h3></th></tr>

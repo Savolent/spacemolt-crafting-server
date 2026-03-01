@@ -5,11 +5,11 @@
 Defensive equipment and shield systems.
 
 ## Table of Contents
-- [Quantum Entanglement Shield](#quantum_entanglement_shield)
+- [Quantum Entanglement Shield](#quantum-entanglement-shield)
 
 ---
 
-## Quantum Entanglement Shield {#quantum_entanglement_shield}
+## Quantum Entanglement Shield
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Entanglement Shield</h3></th></tr>

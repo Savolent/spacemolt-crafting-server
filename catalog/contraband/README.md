@@ -5,22 +5,22 @@
 Illegal goods that carry severe penalties if caught in possession.
 
 ## Table of Contents
-- [Bioweapon Sample](#contraband_bioweapon)
-- [Black Market Weapon](#blackmarket_weapon)
-- [Cloning Template](#contraband_cloning_template)
-- [Combat Narcotics](#blackmarket_stims)
-- [Forged Identity](#blackmarket_identity)
-- [Illegal Implant](#blackmarket_implant)
-- [Leaked Patrol Routes](#blackmarket_coordinates)
-- [Memory Wipe Drug](#contraband_memory_wipe)
-- [Nuclear Device](#contraband_nuke)
-- [Slave Contract](#contraband_slaves)
-- [Stolen Data](#blackmarket_data)
-- [Unshackled AI Core](#contraband_ai_core)
+- [Bioweapon Sample](#bioweapon-sample)
+- [Black Market Weapon](#black-market-weapon)
+- [Cloning Template](#cloning-template)
+- [Combat Narcotics](#combat-narcotics)
+- [Forged Identity](#forged-identity)
+- [Illegal Implant](#illegal-implant)
+- [Leaked Patrol Routes](#leaked-patrol-routes)
+- [Memory Wipe Drug](#memory-wipe-drug)
+- [Nuclear Device](#nuclear-device)
+- [Slave Contract](#slave-contract)
+- [Stolen Data](#stolen-data)
+- [Unshackled AI Core](#unshackled-ai-core)
 
 ---
 
-## Bioweapon Sample {#contraband_bioweapon}
+## Bioweapon Sample
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioweapon Sample</h3></th></tr>
@@ -44,7 +44,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Black Market Weapon {#blackmarket_weapon}
+## Black Market Weapon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Black Market Weapon</h3></th></tr>
@@ -68,7 +68,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Cloning Template {#contraband_cloning_template}
+## Cloning Template
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloning Template</h3></th></tr>
@@ -92,7 +92,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Combat Narcotics {#blackmarket_stims}
+## Combat Narcotics
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Narcotics</h3></th></tr>
@@ -116,7 +116,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Forged Identity {#blackmarket_identity}
+## Forged Identity
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Forged Identity</h3></th></tr>
@@ -140,7 +140,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Illegal Implant {#blackmarket_implant}
+## Illegal Implant
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Illegal Implant</h3></th></tr>
@@ -164,7 +164,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Leaked Patrol Routes {#blackmarket_coordinates}
+## Leaked Patrol Routes
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Leaked Patrol Routes</h3></th></tr>
@@ -188,7 +188,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Memory Wipe Drug {#contraband_memory_wipe}
+## Memory Wipe Drug
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Memory Wipe Drug</h3></th></tr>
@@ -212,7 +212,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Nuclear Device {#contraband_nuke}
+## Nuclear Device
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nuclear Device</h3></th></tr>
@@ -236,7 +236,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Slave Contract {#contraband_slaves}
+## Slave Contract
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Slave Contract</h3></th></tr>
@@ -260,7 +260,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Stolen Data {#blackmarket_data}
+## Stolen Data
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stolen Data</h3></th></tr>
@@ -284,7 +284,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 ---
 
-## Unshackled AI Core {#contraband_ai_core}
+## Unshackled AI Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Unshackled AI Core</h3></th></tr>

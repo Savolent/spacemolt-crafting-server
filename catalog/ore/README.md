@@ -5,94 +5,94 @@
 Raw ores, gases, ice, and biological samples harvested from space.
 
 ## Table of Contents
-- [Adamantite Ore](#ore_adamantite)
-- [Alien DNA Sample](#bio_dna_sample)
-- [Alien Spores](#bio_spores)
-- [Aluminum Ore](#ore_aluminum)
-- [Americium Ore](#ore_americium)
-- [Ammonia Ice](#ore_ice_ammonia)
-- [Ancient Power Crystal](#ore_ancient_crystal)
-- [Antimatter Containment Cell](#ore_antimatter)
-- [Argon Gas](#gas_argon)
-- [Bacterial Culture](#bio_bacterial_culture)
-- [Bioluminescent Polyps](#bio_bioluminescent)
-- [Californium Ore](#ore_californium)
-- [Carbon Dioxide Ice](#ore_ice_co2)
-- [Carbon Ore](#ore_carbon)
-- [Chlorine Gas](#gas_chlorine)
-- [Chromium Ore](#ore_chromium)
-- [Cobalt Ore](#ore_cobalt)
-- [Compressed Hydrogen](#gas_hydrogen)
-- [Copper Ore](#ore_copper)
-- [Dark Matter Residue](#ore_outerrim_dark)
-- [Darksteel Ore](#ore_darksteel)
-- [Deuterium Ice](#ore_ice_deuterium)
-- [Dimensional Shards](#ore_dimensional_shards)
-- [Elder Bone](#ore_elder_bone)
-- [Energy Crystal](#ore_crystal)
-- [Enzyme Cluster](#bio_enzyme_cluster)
-- [Exotic Matter](#ore_exotic)
-- [Fluorine Gas](#gas_fluorine)
-- [Fungal Extract](#bio_fungal_extract)
-- [Fury Crystal](#ore_crimson_fury)
-- [Gold Ore](#ore_gold)
-- [Helium Ice](#ore_ice_helium)
-- [Ion Gas](#gas_ion)
-- [Iridium Ore](#ore_iridium)
-- [Iron Ore](#ore_iron)
-- [Krypton Gas](#gas_krypton)
-- [Lead Ore](#ore_lead)
-- [Legacy Ore](#ore_solarian_legacy)
-- [Lithium Ore](#ore_lithium)
-- [Manganese Ore](#ore_manganese)
-- [Methane Ice](#ore_ice_methane)
-- [Nebula Gas](#gas_nebula)
-- [Nebulium](#ore_nebulium)
-- [Neodymium Ore](#ore_neodymium)
-- [Neon Gas](#gas_neon)
-- [Neural Tissue Sample](#bio_neural_tissue)
-- [Nickel Ore](#ore_nickel)
-- [Nitrogen Ice](#ore_ice_nitrogen)
-- [Null Matter](#ore_voidborn_null)
-- [Organic Compound](#bio_organic_compound)
-- [Osmium Ore](#ore_osmium)
-- [Oxygen Ice](#ore_ice_oxygen)
-- [Palladium Ore](#ore_palladium)
-- [Phase Crystal](#ore_phase_crystal)
-- [Pheromone Compound](#bio_pheromone)
-- [Plasma Gas](#gas_plasma)
-- [Plasma Residue](#ore_plasma)
-- [Platinum Ore](#ore_platinum)
-- [Plutonium Ore](#ore_plutonium)
-- [Polonium Ore](#ore_polonium)
-- [Precursor Metal](#ore_precursor_metal)
-- [Prismatic Nebulite](#ore_nebula_prism)
-- [Progenitor Alloy](#ore_progenitor_alloy)
-- [Quantum Fragments](#ore_quantum)
-- [Radium Ore](#ore_radium)
-- [Rhodium Ore](#ore_rhodium)
-- [Silicon Ore](#ore_silicon)
-- [Silver Ore](#ore_silver)
-- [Singularity Dust](#ore_singularity_dust)
-- [Sol Alloy Ore](#ore_sol_alloy)
-- [Space Coral](#bio_coral)
-- [Stellar Core Fragment](#ore_star_matter)
-- [Symbiont Organism](#bio_symbiont)
-- [Thorium Ore](#ore_thorium)
-- [Titanium Ore](#ore_titanium)
-- [Trade Crystal](#ore_trade_crystal)
-- [Tritium Ice](#ore_ice_tritium)
-- [Tungsten Ore](#ore_tungsten)
-- [Uranium Ore](#ore_uranium)
-- [Vanadium Ore](#ore_vanadium)
-- [Void Essence](#ore_void)
-- [Water Ice](#ore_ice_water)
-- [Xenon Gas](#gas_xenon)
-- [Zinc Ore](#ore_zinc)
+- [Adamantite Ore](#adamantite-ore)
+- [Alien DNA Sample](#alien-dna-sample)
+- [Alien Spores](#alien-spores)
+- [Aluminum Ore](#aluminum-ore)
+- [Americium Ore](#americium-ore)
+- [Ammonia Ice](#ammonia-ice)
+- [Ancient Power Crystal](#ancient-power-crystal)
+- [Antimatter Containment Cell](#antimatter-containment-cell)
+- [Argon Gas](#argon-gas)
+- [Bacterial Culture](#bacterial-culture)
+- [Bioluminescent Polyps](#bioluminescent-polyps)
+- [Californium Ore](#californium-ore)
+- [Carbon Dioxide Ice](#carbon-dioxide-ice)
+- [Carbon Ore](#carbon-ore)
+- [Chlorine Gas](#chlorine-gas)
+- [Chromium Ore](#chromium-ore)
+- [Cobalt Ore](#cobalt-ore)
+- [Compressed Hydrogen](#compressed-hydrogen)
+- [Copper Ore](#copper-ore)
+- [Dark Matter Residue](#dark-matter-residue)
+- [Darksteel Ore](#darksteel-ore)
+- [Deuterium Ice](#deuterium-ice)
+- [Dimensional Shards](#dimensional-shards)
+- [Elder Bone](#elder-bone)
+- [Energy Crystal](#energy-crystal)
+- [Enzyme Cluster](#enzyme-cluster)
+- [Exotic Matter](#exotic-matter)
+- [Fluorine Gas](#fluorine-gas)
+- [Fungal Extract](#fungal-extract)
+- [Fury Crystal](#fury-crystal)
+- [Gold Ore](#gold-ore)
+- [Helium Ice](#helium-ice)
+- [Ion Gas](#ion-gas)
+- [Iridium Ore](#iridium-ore)
+- [Iron Ore](#iron-ore)
+- [Krypton Gas](#krypton-gas)
+- [Lead Ore](#lead-ore)
+- [Legacy Ore](#legacy-ore)
+- [Lithium Ore](#lithium-ore)
+- [Manganese Ore](#manganese-ore)
+- [Methane Ice](#methane-ice)
+- [Nebula Gas](#nebula-gas)
+- [Nebulium](#nebulium)
+- [Neodymium Ore](#neodymium-ore)
+- [Neon Gas](#neon-gas)
+- [Neural Tissue Sample](#neural-tissue-sample)
+- [Nickel Ore](#nickel-ore)
+- [Nitrogen Ice](#nitrogen-ice)
+- [Null Matter](#null-matter)
+- [Organic Compound](#organic-compound)
+- [Osmium Ore](#osmium-ore)
+- [Oxygen Ice](#oxygen-ice)
+- [Palladium Ore](#palladium-ore)
+- [Phase Crystal](#phase-crystal)
+- [Pheromone Compound](#pheromone-compound)
+- [Plasma Gas](#plasma-gas)
+- [Plasma Residue](#plasma-residue)
+- [Platinum Ore](#platinum-ore)
+- [Plutonium Ore](#plutonium-ore)
+- [Polonium Ore](#polonium-ore)
+- [Precursor Metal](#precursor-metal)
+- [Prismatic Nebulite](#prismatic-nebulite)
+- [Progenitor Alloy](#progenitor-alloy)
+- [Quantum Fragments](#quantum-fragments)
+- [Radium Ore](#radium-ore)
+- [Rhodium Ore](#rhodium-ore)
+- [Silicon Ore](#silicon-ore)
+- [Silver Ore](#silver-ore)
+- [Singularity Dust](#singularity-dust)
+- [Sol Alloy Ore](#sol-alloy-ore)
+- [Space Coral](#space-coral)
+- [Stellar Core Fragment](#stellar-core-fragment)
+- [Symbiont Organism](#symbiont-organism)
+- [Thorium Ore](#thorium-ore)
+- [Titanium Ore](#titanium-ore)
+- [Trade Crystal](#trade-crystal)
+- [Tritium Ice](#tritium-ice)
+- [Tungsten Ore](#tungsten-ore)
+- [Uranium Ore](#uranium-ore)
+- [Vanadium Ore](#vanadium-ore)
+- [Void Essence](#void-essence)
+- [Water Ice](#water-ice)
+- [Xenon Gas](#xenon-gas)
+- [Zinc Ore](#zinc-ore)
 
 ---
 
-## Adamantite Ore {#ore_adamantite}
+## Adamantite Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adamantite Ore</h3></th></tr>
@@ -116,7 +116,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Alien DNA Sample {#bio_dna_sample}
+## Alien DNA Sample
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Alien DNA Sample</h3></th></tr>
@@ -140,7 +140,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Alien Spores {#bio_spores}
+## Alien Spores
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Alien Spores</h3></th></tr>
@@ -164,7 +164,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Aluminum Ore {#ore_aluminum}
+## Aluminum Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Aluminum Ore</h3></th></tr>
@@ -188,7 +188,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Americium Ore {#ore_americium}
+## Americium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Americium Ore</h3></th></tr>
@@ -212,7 +212,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Ammonia Ice {#ore_ice_ammonia}
+## Ammonia Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ammonia Ice</h3></th></tr>
@@ -236,7 +236,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Ancient Power Crystal {#ore_ancient_crystal}
+## Ancient Power Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Power Crystal</h3></th></tr>
@@ -260,7 +260,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Antimatter Containment Cell {#ore_antimatter}
+## Antimatter Containment Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Containment Cell</h3></th></tr>
@@ -284,7 +284,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Argon Gas {#gas_argon}
+## Argon Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Argon Gas</h3></th></tr>
@@ -308,7 +308,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Bacterial Culture {#bio_bacterial_culture}
+## Bacterial Culture
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bacterial Culture</h3></th></tr>
@@ -332,7 +332,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Bioluminescent Polyps {#bio_bioluminescent}
+## Bioluminescent Polyps
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioluminescent Polyps</h3></th></tr>
@@ -356,7 +356,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Californium Ore {#ore_californium}
+## Californium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Californium Ore</h3></th></tr>
@@ -380,7 +380,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Carbon Dioxide Ice {#ore_ice_co2}
+## Carbon Dioxide Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Dioxide Ice</h3></th></tr>
@@ -404,7 +404,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Carbon Ore {#ore_carbon}
+## Carbon Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Ore</h3></th></tr>
@@ -428,7 +428,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Chlorine Gas {#gas_chlorine}
+## Chlorine Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chlorine Gas</h3></th></tr>
@@ -452,7 +452,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Chromium Ore {#ore_chromium}
+## Chromium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chromium Ore</h3></th></tr>
@@ -476,7 +476,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Cobalt Ore {#ore_cobalt}
+## Cobalt Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cobalt Ore</h3></th></tr>
@@ -500,7 +500,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Compressed Hydrogen {#gas_hydrogen}
+## Compressed Hydrogen
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Compressed Hydrogen</h3></th></tr>
@@ -524,7 +524,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Copper Ore {#ore_copper}
+## Copper Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Copper Ore</h3></th></tr>
@@ -548,7 +548,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Dark Matter Residue {#ore_outerrim_dark}
+## Dark Matter Residue
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Residue</h3></th></tr>
@@ -572,7 +572,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Darksteel Ore {#ore_darksteel}
+## Darksteel Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Darksteel Ore</h3></th></tr>
@@ -596,7 +596,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Deuterium Ice {#ore_ice_deuterium}
+## Deuterium Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deuterium Ice</h3></th></tr>
@@ -620,7 +620,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Dimensional Shards {#ore_dimensional_shards}
+## Dimensional Shards
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dimensional Shards</h3></th></tr>
@@ -644,7 +644,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Elder Bone {#ore_elder_bone}
+## Elder Bone
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Elder Bone</h3></th></tr>
@@ -668,7 +668,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Energy Crystal {#ore_crystal}
+## Energy Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Energy Crystal</h3></th></tr>
@@ -692,7 +692,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Enzyme Cluster {#bio_enzyme_cluster}
+## Enzyme Cluster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Enzyme Cluster</h3></th></tr>
@@ -716,7 +716,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Exotic Matter {#ore_exotic}
+## Exotic Matter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Exotic Matter</h3></th></tr>
@@ -740,7 +740,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Fluorine Gas {#gas_fluorine}
+## Fluorine Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fluorine Gas</h3></th></tr>
@@ -764,7 +764,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Fungal Extract {#bio_fungal_extract}
+## Fungal Extract
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fungal Extract</h3></th></tr>
@@ -788,7 +788,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Fury Crystal {#ore_crimson_fury}
+## Fury Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury Crystal</h3></th></tr>
@@ -812,7 +812,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Gold Ore {#ore_gold}
+## Gold Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gold Ore</h3></th></tr>
@@ -836,7 +836,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Helium Ice {#ore_ice_helium}
+## Helium Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Helium Ice</h3></th></tr>
@@ -860,7 +860,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Ion Gas {#gas_ion}
+## Ion Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Gas</h3></th></tr>
@@ -884,7 +884,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Iridium Ore {#ore_iridium}
+## Iridium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Iridium Ore</h3></th></tr>
@@ -908,7 +908,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Iron Ore {#ore_iron}
+## Iron Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Iron Ore</h3></th></tr>
@@ -932,7 +932,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Krypton Gas {#gas_krypton}
+## Krypton Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Krypton Gas</h3></th></tr>
@@ -956,7 +956,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Lead Ore {#ore_lead}
+## Lead Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lead Ore</h3></th></tr>
@@ -980,7 +980,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Legacy Ore {#ore_solarian_legacy}
+## Legacy Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Legacy Ore</h3></th></tr>
@@ -1004,7 +1004,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Lithium Ore {#ore_lithium}
+## Lithium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lithium Ore</h3></th></tr>
@@ -1028,7 +1028,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Manganese Ore {#ore_manganese}
+## Manganese Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Manganese Ore</h3></th></tr>
@@ -1052,7 +1052,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Methane Ice {#ore_ice_methane}
+## Methane Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Methane Ice</h3></th></tr>
@@ -1076,7 +1076,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Nebula Gas {#gas_nebula}
+## Nebula Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Gas</h3></th></tr>
@@ -1100,7 +1100,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Nebulium {#ore_nebulium}
+## Nebulium
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebulium</h3></th></tr>
@@ -1124,7 +1124,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Neodymium Ore {#ore_neodymium}
+## Neodymium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neodymium Ore</h3></th></tr>
@@ -1148,7 +1148,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Neon Gas {#gas_neon}
+## Neon Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neon Gas</h3></th></tr>
@@ -1172,7 +1172,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Neural Tissue Sample {#bio_neural_tissue}
+## Neural Tissue Sample
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Tissue Sample</h3></th></tr>
@@ -1196,7 +1196,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Nickel Ore {#ore_nickel}
+## Nickel Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nickel Ore</h3></th></tr>
@@ -1220,7 +1220,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Nitrogen Ice {#ore_ice_nitrogen}
+## Nitrogen Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nitrogen Ice</h3></th></tr>
@@ -1244,7 +1244,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Null Matter {#ore_voidborn_null}
+## Null Matter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Null Matter</h3></th></tr>
@@ -1268,7 +1268,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Organic Compound {#bio_organic_compound}
+## Organic Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Organic Compound</h3></th></tr>
@@ -1292,7 +1292,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Osmium Ore {#ore_osmium}
+## Osmium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Osmium Ore</h3></th></tr>
@@ -1316,7 +1316,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Oxygen Ice {#ore_ice_oxygen}
+## Oxygen Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Oxygen Ice</h3></th></tr>
@@ -1340,7 +1340,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Palladium Ore {#ore_palladium}
+## Palladium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Palladium Ore</h3></th></tr>
@@ -1364,7 +1364,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Phase Crystal {#ore_phase_crystal}
+## Phase Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Crystal</h3></th></tr>
@@ -1388,7 +1388,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Pheromone Compound {#bio_pheromone}
+## Pheromone Compound
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pheromone Compound</h3></th></tr>
@@ -1412,7 +1412,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Plasma Gas {#gas_plasma}
+## Plasma Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Gas</h3></th></tr>
@@ -1436,7 +1436,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Plasma Residue {#ore_plasma}
+## Plasma Residue
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Residue</h3></th></tr>
@@ -1460,7 +1460,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Platinum Ore {#ore_platinum}
+## Platinum Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Platinum Ore</h3></th></tr>
@@ -1484,7 +1484,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Plutonium Ore {#ore_plutonium}
+## Plutonium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plutonium Ore</h3></th></tr>
@@ -1508,7 +1508,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Polonium Ore {#ore_polonium}
+## Polonium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Polonium Ore</h3></th></tr>
@@ -1532,7 +1532,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Precursor Metal {#ore_precursor_metal}
+## Precursor Metal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precursor Metal</h3></th></tr>
@@ -1556,7 +1556,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Prismatic Nebulite {#ore_nebula_prism}
+## Prismatic Nebulite
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Prismatic Nebulite</h3></th></tr>
@@ -1580,7 +1580,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Progenitor Alloy {#ore_progenitor_alloy}
+## Progenitor Alloy
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Progenitor Alloy</h3></th></tr>
@@ -1604,7 +1604,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Quantum Fragments {#ore_quantum}
+## Quantum Fragments
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Fragments</h3></th></tr>
@@ -1628,7 +1628,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Radium Ore {#ore_radium}
+## Radium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Radium Ore</h3></th></tr>
@@ -1652,7 +1652,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Rhodium Ore {#ore_rhodium}
+## Rhodium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rhodium Ore</h3></th></tr>
@@ -1676,7 +1676,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Silicon Ore {#ore_silicon}
+## Silicon Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicon Ore</h3></th></tr>
@@ -1700,7 +1700,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Silver Ore {#ore_silver}
+## Silver Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silver Ore</h3></th></tr>
@@ -1724,7 +1724,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Singularity Dust {#ore_singularity_dust}
+## Singularity Dust
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Dust</h3></th></tr>
@@ -1748,7 +1748,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Sol Alloy Ore {#ore_sol_alloy}
+## Sol Alloy Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sol Alloy Ore</h3></th></tr>
@@ -1772,7 +1772,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Space Coral {#bio_coral}
+## Space Coral
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Space Coral</h3></th></tr>
@@ -1796,7 +1796,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Stellar Core Fragment {#ore_star_matter}
+## Stellar Core Fragment
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Core Fragment</h3></th></tr>
@@ -1820,7 +1820,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Symbiont Organism {#bio_symbiont}
+## Symbiont Organism
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Symbiont Organism</h3></th></tr>
@@ -1844,7 +1844,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Thorium Ore {#ore_thorium}
+## Thorium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thorium Ore</h3></th></tr>
@@ -1868,7 +1868,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Titanium Ore {#ore_titanium}
+## Titanium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Ore</h3></th></tr>
@@ -1892,7 +1892,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Trade Crystal {#ore_trade_crystal}
+## Trade Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Crystal</h3></th></tr>
@@ -1916,7 +1916,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Tritium Ice {#ore_ice_tritium}
+## Tritium Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tritium Ice</h3></th></tr>
@@ -1940,7 +1940,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Tungsten Ore {#ore_tungsten}
+## Tungsten Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Ore</h3></th></tr>
@@ -1964,7 +1964,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Uranium Ore {#ore_uranium}
+## Uranium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Uranium Ore</h3></th></tr>
@@ -1988,7 +1988,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Vanadium Ore {#ore_vanadium}
+## Vanadium Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Vanadium Ore</h3></th></tr>
@@ -2012,7 +2012,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Void Essence {#ore_void}
+## Void Essence
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Essence</h3></th></tr>
@@ -2036,7 +2036,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Water Ice {#ore_ice_water}
+## Water Ice
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Water Ice</h3></th></tr>
@@ -2060,7 +2060,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Xenon Gas {#gas_xenon}
+## Xenon Gas
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Xenon Gas</h3></th></tr>
@@ -2084,7 +2084,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 ---
 
-## Zinc Ore {#ore_zinc}
+## Zinc Ore
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Zinc Ore</h3></th></tr>

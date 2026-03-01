@@ -5,11 +5,11 @@
 Weapons and weapon systems.
 
 ## Table of Contents
-- [Void Laser](#void_laser)
+- [Void Laser](#void-laser)
 
 ---
 
-## Void Laser {#void_laser}
+## Void Laser
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Laser</h3></th></tr>

@@ -181,6 +181,7 @@ func writeREADMEs(outDir string, categories []CategoryInfo) error {
 		"yesno":      yesno,
 		"fmtValue":   fmtValue,
 		"joinSkills": joinSkills,
+		"slug":       slug,
 	}
 	topTmpl := template.Must(template.New("top").Funcs(funcs).Parse(topREADMETemplate))
 	catTmpl := template.Must(template.New("cat").Funcs(funcs).Parse(catREADMETemplate))
@@ -336,6 +337,11 @@ func fmtValue(v int) string {
 	return humanize.Comma(int64(v)) + " cr"
 }
 
+// slug converts a name to a GitHub-compatible anchor: lowercase, spaces to hyphens.
+func slug(s string) string {
+	return strings.ToLower(strings.ReplaceAll(s, " ", "-"))
+}
+
 func joinSkills(skills []SkillReq) string {
 	if len(skills) == 0 {
 		return "None"
@@ -369,12 +375,12 @@ const catREADMETemplate = `<!-- Auto-generated from crafting.db — do not edit 
 ## Table of Contents
 
 {{- range .Items}}
-- [{{.Name}}](#{{.ID}})
+- [{{.Name}}](#{{slug .Name}})
 {{- end}}
 
 ---
 {{range .Items}}
-## {{.Name}} {#{{.ID}}}
+## {{.Name}}
 
 {{- /* Include the item file contents inline */}}
 

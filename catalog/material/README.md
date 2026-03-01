@@ -5,12 +5,12 @@
 Rare raw materials with special properties.
 
 ## Table of Contents
-- [Exotic Crystal](#exotic_crystal)
-- [Void Crystal](#void_crystal)
+- [Exotic Crystal](#exotic-crystal)
+- [Void Crystal](#void-crystal)
 
 ---
 
-## Exotic Crystal {#exotic_crystal}
+## Exotic Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Exotic Crystal</h3></th></tr>
@@ -34,7 +34,7 @@ Rare raw materials with special properties.
 
 ---
 
-## Void Crystal {#void_crystal}
+## Void Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Crystal</h3></th></tr>

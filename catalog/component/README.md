@@ -5,130 +5,130 @@
 Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ## Table of Contents
-- [Air Recycler](#comp_air_recycler)
-- [Ammo Fabricator](#comp_ammo_fabricator)
-- [Armor Plate](#comp_armor_plate)
-- [Autopilot Core](#comp_autopilot_module)
-- [Autopilot Module](#comp_autopilot)
-- [Barrel Assembly](#comp_barrel_assembly)
-- [Capital Armor Plate](#capital_armor_plate)
-- [Capital Ship Frame](#comp_capital_frame)
-- [Cargo Bay Expansion](#comp_cargo_expansion)
-- [Cargo Container](#comp_cargo_container)
-- [Cargo Superstructure](#comp_cargo_superstructure)
-- [Communications Array](#comp_comm_array)
-- [Crimson Ordnance Bay](#comp_crimson_ordnance_bay)
-- [Crimson Siege Plating](#comp_crimson_siege_plating)
-- [Cryogenic Pod](#comp_cryogenic_pod)
-- [Cryogenic Pod](#comp_cryo_pod)
-- [Cryogenic Storage](#comp_cryo_storage)
-- [Dark Matter Cell](#comp_dark_matter_cell)
-- [Dark Matter Thruster](#comp_outerrim_dark_thruster)
-- [Deep Core Survey Lens](#comp_deep_core_lens)
-- [Defense Platform](#comp_defense_platform)
-- [Defense Turret](#comp_defense_turret)
-- [Dimensional Anchor](#comp_dimensional_anchor)
-- [Docking Ring](#comp_docking_ring)
-- [Drone AI Core](#comp_drone_ai_core)
-- [Drone Bay Module](#comp_drone_bay)
-- [Drone Chassis](#comp_drone_chassis)
-- [Drone Command Module](#comp_drone_command)
-- [Drone Comms Module](#comp_drone_communication)
-- [Drone Mining Laser](#comp_drone_mining_laser)
-- [Drone Repair Arm](#comp_drone_repair_arm)
-- [Drone Sensor Suite](#comp_drone_sensor)
-- [Drone Weapon Mount](#comp_drone_weapon)
-- [Engine Core](#comp_engine_core)
-- [Escape Pod](#comp_escape_pod)
-- [Frontier Survival Kit](#comp_outerrim_frontier_kit)
-- [Fuel Tank](#comp_fuel_tank)
-- [Fury-Tempered Plating](#comp_fury_plating)
-- [Galactic Standard Alloy](#comp_galactic_alloy)
-- [Gravity Generator](#comp_gravity_generator)
-- [Habitation Module](#comp_hab_module)
-- [Hangar Bay Module](#comp_hangar_bay)
-- [Hazmat Container](#comp_hazmat_container)
-- [Heat Sink](#comp_heat_sink)
-- [Hull Plating](#comp_hull_plate)
-- [Inertial Gyroscope](#comp_gyroscope)
-- [Ion Emitter](#comp_ion_emitter)
-- [Jump Calculator](#comp_jump_calculator)
-- [Jump Coil](#comp_jump_coil)
-- [Jump Drive Core](#jump_drive_core)
-- [Laser Focus Array](#comp_laser_focus)
-- [Laser Focusing Lens](#comp_laser_lens)
-- [Life Support Array](#comp_life_support_array)
-- [Life Support Unit](#comp_life_support)
-- [Life Support Unit](#comp_life_support_unit)
-- [Medical Bay Module](#comp_medical_bay)
-- [Micro-Thruster Array](#comp_micro_thruster)
-- [Missile Guidance Unit](#comp_missile_guidance)
-- [Navigation Array](#comp_nav_array)
-- [Navigation Core](#comp_navigation_core)
-- [Nebula Cargo Matrix](#comp_nebula_cargo_matrix)
-- [Nebula Prism Computer](#comp_nebula_prism_computer)
-- [Neon Signaling Array](#comp_neon_signaling_array)
-- [Ore Hopper](#comp_ore_hopper)
-- [Pan-Galactic Matrix](#comp_pan_galactic_matrix)
-- [Phase Array](#comp_phase_array)
-- [Phase Drive](#comp_phase_drive)
-- [Plasma Injector](#comp_plasma_injector)
-- [Power Cell](#comp_power_cell)
-- [Power Core](#power_core)
-- [Power Distribution Grid](#comp_power_grid)
-- [Precision Optic](#comp_precision_optic)
-- [Pressure Seal](#comp_pressure_seal)
-- [Processing Core](#comp_cpu_core)
-- [Quantum Entangler](#comp_quantum_entangler)
-- [Quantum Processor](#comp_quantum_processor)
-- [Quantum Stabilizer](#comp_quantum_stabilizer)
-- [Railgun Capacitor](#comp_railgun_capacitor)
-- [Rare Salvage](#salvage_rare)
-- [Reinforced Bulkhead](#comp_reinforced_bulkhead)
-- [Repair Nanite Container](#comp_repair_nanites)
-- [Salvage Components](#salvage_components)
-- [Salvage Metal](#salvage_metal)
-- [Secure Vault](#comp_secure_vault)
-- [Sensor Array](#comp_sensor_array)
-- [Sensor Cluster](#comp_sensor_cluster)
-- [Sensor Package](#comp_sensor_package)
-- [Shield Array](#comp_shield_array)
-- [Shield Emitter](#comp_shield_emitter)
-- [Shield Generator](#comp_shield_generator)
-- [Shield Matrix](#comp_shield_matrix)
-- [Singularity Core](#comp_singularity_core)
-- [Solar Collector Array](#comp_solarian_solar_collector)
-- [Solar Panel Array](#comp_solar_panel)
-- [Solarian Logic Matrix](#comp_solarian_logic_matrix)
-- [Station Reactor](#comp_station_reactor)
-- [Station Reactor Core](#comp_reactor_core)
-- [Swarm Controller](#comp_swarm_controller)
-- [Targeting Computer](#comp_targeting_computer)
-- [Temporal Stabilizer](#comp_temporal_stabilizer)
-- [Threat Analyzer](#comp_threat_analyzer)
-- [Thruster Assembly](#comp_thruster_assembly)
-- [Thruster Nozzle](#comp_thruster_nozzle)
-- [Tracking System](#comp_tracking_system)
-- [Trade Authenticator](#comp_trade_authenticator)
-- [Trade Cipher](#comp_trade_cipher)
-- [Universal Nav Core](#comp_universal_nav_core)
-- [Void Capacitor](#comp_void_capacitor)
-- [Void Shield Matrix](#comp_void_shield_matrix)
-- [Voidborn Neural Matrix](#luxury_neural_matrix)
-- [Voidborn Null Matrix](#comp_voidborn_null_matrix)
-- [Voidborn Phase Drive](#comp_voidborn_phase_drive)
-- [Warhead Assembly](#comp_warhead)
-- [Warhead Assembly](#comp_warhead_assembly)
-- [Warp Core](#comp_warp_core)
-- [Water Recycler](#comp_water_recycler)
-- [Weapon Battery](#comp_weapon_battery)
-- [Weapon Core](#comp_weapon_core)
-- [Weapon Housing](#comp_weapon_housing)
-- [Wiring Harness](#comp_wiring_harness)
+- [Air Recycler](#air-recycler)
+- [Ammo Fabricator](#ammo-fabricator)
+- [Armor Plate](#armor-plate)
+- [Autopilot Core](#autopilot-core)
+- [Autopilot Module](#autopilot-module)
+- [Barrel Assembly](#barrel-assembly)
+- [Capital Armor Plate](#capital-armor-plate)
+- [Capital Ship Frame](#capital-ship-frame)
+- [Cargo Bay Expansion](#cargo-bay-expansion)
+- [Cargo Container](#cargo-container)
+- [Cargo Superstructure](#cargo-superstructure)
+- [Communications Array](#communications-array)
+- [Crimson Ordnance Bay](#crimson-ordnance-bay)
+- [Crimson Siege Plating](#crimson-siege-plating)
+- [Cryogenic Pod](#cryogenic-pod)
+- [Cryogenic Pod](#cryogenic-pod)
+- [Cryogenic Storage](#cryogenic-storage)
+- [Dark Matter Cell](#dark-matter-cell)
+- [Dark Matter Thruster](#dark-matter-thruster)
+- [Deep Core Survey Lens](#deep-core-survey-lens)
+- [Defense Platform](#defense-platform)
+- [Defense Turret](#defense-turret)
+- [Dimensional Anchor](#dimensional-anchor)
+- [Docking Ring](#docking-ring)
+- [Drone AI Core](#drone-ai-core)
+- [Drone Bay Module](#drone-bay-module)
+- [Drone Chassis](#drone-chassis)
+- [Drone Command Module](#drone-command-module)
+- [Drone Comms Module](#drone-comms-module)
+- [Drone Mining Laser](#drone-mining-laser)
+- [Drone Repair Arm](#drone-repair-arm)
+- [Drone Sensor Suite](#drone-sensor-suite)
+- [Drone Weapon Mount](#drone-weapon-mount)
+- [Engine Core](#engine-core)
+- [Escape Pod](#escape-pod)
+- [Frontier Survival Kit](#frontier-survival-kit)
+- [Fuel Tank](#fuel-tank)
+- [Fury-Tempered Plating](#fury-tempered-plating)
+- [Galactic Standard Alloy](#galactic-standard-alloy)
+- [Gravity Generator](#gravity-generator)
+- [Habitation Module](#habitation-module)
+- [Hangar Bay Module](#hangar-bay-module)
+- [Hazmat Container](#hazmat-container)
+- [Heat Sink](#heat-sink)
+- [Hull Plating](#hull-plating)
+- [Inertial Gyroscope](#inertial-gyroscope)
+- [Ion Emitter](#ion-emitter)
+- [Jump Calculator](#jump-calculator)
+- [Jump Coil](#jump-coil)
+- [Jump Drive Core](#jump-drive-core)
+- [Laser Focus Array](#laser-focus-array)
+- [Laser Focusing Lens](#laser-focusing-lens)
+- [Life Support Array](#life-support-array)
+- [Life Support Unit](#life-support-unit)
+- [Life Support Unit](#life-support-unit)
+- [Medical Bay Module](#medical-bay-module)
+- [Micro-Thruster Array](#micro-thruster-array)
+- [Missile Guidance Unit](#missile-guidance-unit)
+- [Navigation Array](#navigation-array)
+- [Navigation Core](#navigation-core)
+- [Nebula Cargo Matrix](#nebula-cargo-matrix)
+- [Nebula Prism Computer](#nebula-prism-computer)
+- [Neon Signaling Array](#neon-signaling-array)
+- [Ore Hopper](#ore-hopper)
+- [Pan-Galactic Matrix](#pan-galactic-matrix)
+- [Phase Array](#phase-array)
+- [Phase Drive](#phase-drive)
+- [Plasma Injector](#plasma-injector)
+- [Power Cell](#power-cell)
+- [Power Core](#power-core)
+- [Power Distribution Grid](#power-distribution-grid)
+- [Precision Optic](#precision-optic)
+- [Pressure Seal](#pressure-seal)
+- [Processing Core](#processing-core)
+- [Quantum Entangler](#quantum-entangler)
+- [Quantum Processor](#quantum-processor)
+- [Quantum Stabilizer](#quantum-stabilizer)
+- [Railgun Capacitor](#railgun-capacitor)
+- [Rare Salvage](#rare-salvage)
+- [Reinforced Bulkhead](#reinforced-bulkhead)
+- [Repair Nanite Container](#repair-nanite-container)
+- [Salvage Components](#salvage-components)
+- [Salvage Metal](#salvage-metal)
+- [Secure Vault](#secure-vault)
+- [Sensor Array](#sensor-array)
+- [Sensor Cluster](#sensor-cluster)
+- [Sensor Package](#sensor-package)
+- [Shield Array](#shield-array)
+- [Shield Emitter](#shield-emitter)
+- [Shield Generator](#shield-generator)
+- [Shield Matrix](#shield-matrix)
+- [Singularity Core](#singularity-core)
+- [Solar Collector Array](#solar-collector-array)
+- [Solar Panel Array](#solar-panel-array)
+- [Solarian Logic Matrix](#solarian-logic-matrix)
+- [Station Reactor](#station-reactor)
+- [Station Reactor Core](#station-reactor-core)
+- [Swarm Controller](#swarm-controller)
+- [Targeting Computer](#targeting-computer)
+- [Temporal Stabilizer](#temporal-stabilizer)
+- [Threat Analyzer](#threat-analyzer)
+- [Thruster Assembly](#thruster-assembly)
+- [Thruster Nozzle](#thruster-nozzle)
+- [Tracking System](#tracking-system)
+- [Trade Authenticator](#trade-authenticator)
+- [Trade Cipher](#trade-cipher)
+- [Universal Nav Core](#universal-nav-core)
+- [Void Capacitor](#void-capacitor)
+- [Void Shield Matrix](#void-shield-matrix)
+- [Voidborn Neural Matrix](#voidborn-neural-matrix)
+- [Voidborn Null Matrix](#voidborn-null-matrix)
+- [Voidborn Phase Drive](#voidborn-phase-drive)
+- [Warhead Assembly](#warhead-assembly)
+- [Warhead Assembly](#warhead-assembly)
+- [Warp Core](#warp-core)
+- [Water Recycler](#water-recycler)
+- [Weapon Battery](#weapon-battery)
+- [Weapon Core](#weapon-core)
+- [Weapon Housing](#weapon-housing)
+- [Wiring Harness](#wiring-harness)
 
 ---
 
-## Air Recycler {#comp_air_recycler}
+## Air Recycler
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Air Recycler</h3></th></tr>
@@ -152,7 +152,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Ammo Fabricator {#comp_ammo_fabricator}
+## Ammo Fabricator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ammo Fabricator</h3></th></tr>
@@ -176,7 +176,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Armor Plate {#comp_armor_plate}
+## Armor Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Plate</h3></th></tr>
@@ -200,7 +200,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Autopilot Core {#comp_autopilot_module}
+## Autopilot Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Autopilot Core</h3></th></tr>
@@ -224,7 +224,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Autopilot Module {#comp_autopilot}
+## Autopilot Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Autopilot Module</h3></th></tr>
@@ -248,7 +248,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Barrel Assembly {#comp_barrel_assembly}
+## Barrel Assembly
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Barrel Assembly</h3></th></tr>
@@ -272,7 +272,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Capital Armor Plate {#capital_armor_plate}
+## Capital Armor Plate
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Capital Armor Plate</h3></th></tr>
@@ -296,7 +296,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Capital Ship Frame {#comp_capital_frame}
+## Capital Ship Frame
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Capital Ship Frame</h3></th></tr>
@@ -320,7 +320,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cargo Bay Expansion {#comp_cargo_expansion}
+## Cargo Bay Expansion
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Bay Expansion</h3></th></tr>
@@ -344,7 +344,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cargo Container {#comp_cargo_container}
+## Cargo Container
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Container</h3></th></tr>
@@ -368,7 +368,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cargo Superstructure {#comp_cargo_superstructure}
+## Cargo Superstructure
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Superstructure</h3></th></tr>
@@ -392,7 +392,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Communications Array {#comp_comm_array}
+## Communications Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Communications Array</h3></th></tr>
@@ -416,7 +416,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Crimson Ordnance Bay {#comp_crimson_ordnance_bay}
+## Crimson Ordnance Bay
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Ordnance Bay</h3></th></tr>
@@ -440,7 +440,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Crimson Siege Plating {#comp_crimson_siege_plating}
+## Crimson Siege Plating
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Siege Plating</h3></th></tr>
@@ -464,7 +464,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cryogenic Pod {#comp_cryogenic_pod}
+## Cryogenic Pod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
@@ -488,7 +488,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cryogenic Pod {#comp_cryo_pod}
+## Cryogenic Pod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
@@ -512,7 +512,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Cryogenic Storage {#comp_cryo_storage}
+## Cryogenic Storage
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Storage</h3></th></tr>
@@ -536,7 +536,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Dark Matter Cell {#comp_dark_matter_cell}
+## Dark Matter Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Cell</h3></th></tr>
@@ -560,7 +560,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Dark Matter Thruster {#comp_outerrim_dark_thruster}
+## Dark Matter Thruster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Thruster</h3></th></tr>
@@ -584,7 +584,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Deep Core Survey Lens {#comp_deep_core_lens}
+## Deep Core Survey Lens
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Core Survey Lens</h3></th></tr>
@@ -608,7 +608,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Defense Platform {#comp_defense_platform}
+## Defense Platform
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Defense Platform</h3></th></tr>
@@ -632,7 +632,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Defense Turret {#comp_defense_turret}
+## Defense Turret
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Defense Turret</h3></th></tr>
@@ -656,7 +656,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Dimensional Anchor {#comp_dimensional_anchor}
+## Dimensional Anchor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dimensional Anchor</h3></th></tr>
@@ -680,7 +680,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Docking Ring {#comp_docking_ring}
+## Docking Ring
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Docking Ring</h3></th></tr>
@@ -704,7 +704,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone AI Core {#comp_drone_ai_core}
+## Drone AI Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone AI Core</h3></th></tr>
@@ -728,7 +728,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Bay Module {#comp_drone_bay}
+## Drone Bay Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Bay Module</h3></th></tr>
@@ -752,7 +752,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Chassis {#comp_drone_chassis}
+## Drone Chassis
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Chassis</h3></th></tr>
@@ -776,7 +776,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Command Module {#comp_drone_command}
+## Drone Command Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Command Module</h3></th></tr>
@@ -800,7 +800,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Comms Module {#comp_drone_communication}
+## Drone Comms Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Comms Module</h3></th></tr>
@@ -824,7 +824,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Mining Laser {#comp_drone_mining_laser}
+## Drone Mining Laser
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Mining Laser</h3></th></tr>
@@ -848,7 +848,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Repair Arm {#comp_drone_repair_arm}
+## Drone Repair Arm
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Repair Arm</h3></th></tr>
@@ -872,7 +872,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Sensor Suite {#comp_drone_sensor}
+## Drone Sensor Suite
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Sensor Suite</h3></th></tr>
@@ -896,7 +896,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Drone Weapon Mount {#comp_drone_weapon}
+## Drone Weapon Mount
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Weapon Mount</h3></th></tr>
@@ -920,7 +920,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Engine Core {#comp_engine_core}
+## Engine Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Engine Core</h3></th></tr>
@@ -944,7 +944,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Escape Pod {#comp_escape_pod}
+## Escape Pod
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Escape Pod</h3></th></tr>
@@ -968,7 +968,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Frontier Survival Kit {#comp_outerrim_frontier_kit}
+## Frontier Survival Kit
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Survival Kit</h3></th></tr>
@@ -992,7 +992,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Fuel Tank {#comp_fuel_tank}
+## Fuel Tank
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fuel Tank</h3></th></tr>
@@ -1016,7 +1016,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Fury-Tempered Plating {#comp_fury_plating}
+## Fury-Tempered Plating
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury-Tempered Plating</h3></th></tr>
@@ -1040,7 +1040,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Galactic Standard Alloy {#comp_galactic_alloy}
+## Galactic Standard Alloy
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Galactic Standard Alloy</h3></th></tr>
@@ -1064,7 +1064,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Gravity Generator {#comp_gravity_generator}
+## Gravity Generator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gravity Generator</h3></th></tr>
@@ -1088,7 +1088,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Habitation Module {#comp_hab_module}
+## Habitation Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Habitation Module</h3></th></tr>
@@ -1112,7 +1112,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Hangar Bay Module {#comp_hangar_bay}
+## Hangar Bay Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hangar Bay Module</h3></th></tr>
@@ -1136,7 +1136,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Hazmat Container {#comp_hazmat_container}
+## Hazmat Container
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hazmat Container</h3></th></tr>
@@ -1160,7 +1160,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Heat Sink {#comp_heat_sink}
+## Heat Sink
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Heat Sink</h3></th></tr>
@@ -1184,7 +1184,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Hull Plating {#comp_hull_plate}
+## Hull Plating
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Plating</h3></th></tr>
@@ -1208,7 +1208,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Inertial Gyroscope {#comp_gyroscope}
+## Inertial Gyroscope
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Inertial Gyroscope</h3></th></tr>
@@ -1232,7 +1232,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Ion Emitter {#comp_ion_emitter}
+## Ion Emitter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Emitter</h3></th></tr>
@@ -1256,7 +1256,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Jump Calculator {#comp_jump_calculator}
+## Jump Calculator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Calculator</h3></th></tr>
@@ -1280,7 +1280,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Jump Coil {#comp_jump_coil}
+## Jump Coil
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Coil</h3></th></tr>
@@ -1304,7 +1304,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Jump Drive Core {#jump_drive_core}
+## Jump Drive Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Drive Core</h3></th></tr>
@@ -1328,7 +1328,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Laser Focus Array {#comp_laser_focus}
+## Laser Focus Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Laser Focus Array</h3></th></tr>
@@ -1352,7 +1352,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Laser Focusing Lens {#comp_laser_lens}
+## Laser Focusing Lens
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Laser Focusing Lens</h3></th></tr>
@@ -1376,7 +1376,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Life Support Array {#comp_life_support_array}
+## Life Support Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Array</h3></th></tr>
@@ -1400,31 +1400,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Life Support Unit {#comp_life_support}
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Life Support Unit](../images/comp_life_support.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>3</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
-</table>
-
-> Environmental control system for crew survival.
-
-[View full page](comp_life_support.md)
-
----
-
-## Life Support Unit {#comp_life_support_unit}
+## Life Support Unit
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
@@ -1448,7 +1424,31 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Medical Bay Module {#comp_medical_bay}
+## Life Support Unit
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Life Support Unit](../images/comp_life_support.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>3</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
+</table>
+
+> Environmental control system for crew survival.
+
+[View full page](comp_life_support.md)
+
+---
+
+## Medical Bay Module
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medical Bay Module</h3></th></tr>
@@ -1472,7 +1472,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Micro-Thruster Array {#comp_micro_thruster}
+## Micro-Thruster Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Micro-Thruster Array</h3></th></tr>
@@ -1496,7 +1496,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Missile Guidance Unit {#comp_missile_guidance}
+## Missile Guidance Unit
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Missile Guidance Unit</h3></th></tr>
@@ -1520,7 +1520,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Navigation Array {#comp_nav_array}
+## Navigation Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Navigation Array</h3></th></tr>
@@ -1544,7 +1544,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Navigation Core {#comp_navigation_core}
+## Navigation Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Navigation Core</h3></th></tr>
@@ -1568,7 +1568,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Nebula Cargo Matrix {#comp_nebula_cargo_matrix}
+## Nebula Cargo Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Cargo Matrix</h3></th></tr>
@@ -1592,7 +1592,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Nebula Prism Computer {#comp_nebula_prism_computer}
+## Nebula Prism Computer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Prism Computer</h3></th></tr>
@@ -1616,7 +1616,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Neon Signaling Array {#comp_neon_signaling_array}
+## Neon Signaling Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neon Signaling Array</h3></th></tr>
@@ -1640,7 +1640,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Ore Hopper {#comp_ore_hopper}
+## Ore Hopper
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ore Hopper</h3></th></tr>
@@ -1664,7 +1664,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Pan-Galactic Matrix {#comp_pan_galactic_matrix}
+## Pan-Galactic Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pan-Galactic Matrix</h3></th></tr>
@@ -1688,7 +1688,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Phase Array {#comp_phase_array}
+## Phase Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Array</h3></th></tr>
@@ -1712,7 +1712,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Phase Drive {#comp_phase_drive}
+## Phase Drive
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Drive</h3></th></tr>
@@ -1736,7 +1736,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Plasma Injector {#comp_plasma_injector}
+## Plasma Injector
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Injector</h3></th></tr>
@@ -1760,7 +1760,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Power Cell {#comp_power_cell}
+## Power Cell
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Cell</h3></th></tr>
@@ -1784,7 +1784,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Power Core {#power_core}
+## Power Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Core</h3></th></tr>
@@ -1808,7 +1808,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Power Distribution Grid {#comp_power_grid}
+## Power Distribution Grid
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Distribution Grid</h3></th></tr>
@@ -1832,7 +1832,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Precision Optic {#comp_precision_optic}
+## Precision Optic
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precision Optic</h3></th></tr>
@@ -1856,7 +1856,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Pressure Seal {#comp_pressure_seal}
+## Pressure Seal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pressure Seal</h3></th></tr>
@@ -1880,7 +1880,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Processing Core {#comp_cpu_core}
+## Processing Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processing Core</h3></th></tr>
@@ -1904,7 +1904,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Quantum Entangler {#comp_quantum_entangler}
+## Quantum Entangler
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Entangler</h3></th></tr>
@@ -1928,7 +1928,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Quantum Processor {#comp_quantum_processor}
+## Quantum Processor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Processor</h3></th></tr>
@@ -1952,7 +1952,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Quantum Stabilizer {#comp_quantum_stabilizer}
+## Quantum Stabilizer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Stabilizer</h3></th></tr>
@@ -1976,7 +1976,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Railgun Capacitor {#comp_railgun_capacitor}
+## Railgun Capacitor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Railgun Capacitor</h3></th></tr>
@@ -2000,7 +2000,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Rare Salvage {#salvage_rare}
+## Rare Salvage
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rare Salvage</h3></th></tr>
@@ -2024,7 +2024,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Reinforced Bulkhead {#comp_reinforced_bulkhead}
+## Reinforced Bulkhead
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reinforced Bulkhead</h3></th></tr>
@@ -2048,7 +2048,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Repair Nanite Container {#comp_repair_nanites}
+## Repair Nanite Container
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Nanite Container</h3></th></tr>
@@ -2072,7 +2072,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Salvage Components {#salvage_components}
+## Salvage Components
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Components</h3></th></tr>
@@ -2096,7 +2096,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Salvage Metal {#salvage_metal}
+## Salvage Metal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Metal</h3></th></tr>
@@ -2120,7 +2120,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Secure Vault {#comp_secure_vault}
+## Secure Vault
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Secure Vault</h3></th></tr>
@@ -2144,7 +2144,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Sensor Array {#comp_sensor_array}
+## Sensor Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Array</h3></th></tr>
@@ -2168,7 +2168,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Sensor Cluster {#comp_sensor_cluster}
+## Sensor Cluster
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Cluster</h3></th></tr>
@@ -2192,7 +2192,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Sensor Package {#comp_sensor_package}
+## Sensor Package
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Package</h3></th></tr>
@@ -2216,7 +2216,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Shield Array {#comp_shield_array}
+## Shield Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Array</h3></th></tr>
@@ -2240,7 +2240,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Shield Emitter {#comp_shield_emitter}
+## Shield Emitter
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Emitter</h3></th></tr>
@@ -2264,7 +2264,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Shield Generator {#comp_shield_generator}
+## Shield Generator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Generator</h3></th></tr>
@@ -2288,7 +2288,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Shield Matrix {#comp_shield_matrix}
+## Shield Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Matrix</h3></th></tr>
@@ -2312,7 +2312,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Singularity Core {#comp_singularity_core}
+## Singularity Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Core</h3></th></tr>
@@ -2336,7 +2336,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Solar Collector Array {#comp_solarian_solar_collector}
+## Solar Collector Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solar Collector Array</h3></th></tr>
@@ -2360,7 +2360,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Solar Panel Array {#comp_solar_panel}
+## Solar Panel Array
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solar Panel Array</h3></th></tr>
@@ -2384,7 +2384,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Solarian Logic Matrix {#comp_solarian_logic_matrix}
+## Solarian Logic Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Logic Matrix</h3></th></tr>
@@ -2408,7 +2408,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Station Reactor {#comp_station_reactor}
+## Station Reactor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station Reactor</h3></th></tr>
@@ -2432,7 +2432,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Station Reactor Core {#comp_reactor_core}
+## Station Reactor Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station Reactor Core</h3></th></tr>
@@ -2456,7 +2456,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Swarm Controller {#comp_swarm_controller}
+## Swarm Controller
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Swarm Controller</h3></th></tr>
@@ -2480,7 +2480,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Targeting Computer {#comp_targeting_computer}
+## Targeting Computer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Targeting Computer</h3></th></tr>
@@ -2504,7 +2504,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Temporal Stabilizer {#comp_temporal_stabilizer}
+## Temporal Stabilizer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Temporal Stabilizer</h3></th></tr>
@@ -2528,7 +2528,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Threat Analyzer {#comp_threat_analyzer}
+## Threat Analyzer
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Threat Analyzer</h3></th></tr>
@@ -2552,7 +2552,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Thruster Assembly {#comp_thruster_assembly}
+## Thruster Assembly
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thruster Assembly</h3></th></tr>
@@ -2576,7 +2576,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Thruster Nozzle {#comp_thruster_nozzle}
+## Thruster Nozzle
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thruster Nozzle</h3></th></tr>
@@ -2600,7 +2600,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Tracking System {#comp_tracking_system}
+## Tracking System
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tracking System</h3></th></tr>
@@ -2624,7 +2624,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Trade Authenticator {#comp_trade_authenticator}
+## Trade Authenticator
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Authenticator</h3></th></tr>
@@ -2648,7 +2648,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Trade Cipher {#comp_trade_cipher}
+## Trade Cipher
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Cipher</h3></th></tr>
@@ -2672,7 +2672,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Universal Nav Core {#comp_universal_nav_core}
+## Universal Nav Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Universal Nav Core</h3></th></tr>
@@ -2696,7 +2696,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Void Capacitor {#comp_void_capacitor}
+## Void Capacitor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Capacitor</h3></th></tr>
@@ -2720,7 +2720,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Void Shield Matrix {#comp_void_shield_matrix}
+## Void Shield Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Shield Matrix</h3></th></tr>
@@ -2744,7 +2744,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Voidborn Neural Matrix {#luxury_neural_matrix}
+## Voidborn Neural Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Neural Matrix</h3></th></tr>
@@ -2768,7 +2768,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Voidborn Null Matrix {#comp_voidborn_null_matrix}
+## Voidborn Null Matrix
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Null Matrix</h3></th></tr>
@@ -2792,7 +2792,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Voidborn Phase Drive {#comp_voidborn_phase_drive}
+## Voidborn Phase Drive
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Phase Drive</h3></th></tr>
@@ -2816,31 +2816,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Warhead Assembly {#comp_warhead}
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Warhead Assembly](../images/comp_warhead.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>2</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
-</table>
-
-> Explosive payload for missile systems.
-
-[View full page](comp_warhead.md)
-
----
-
-## Warhead Assembly {#comp_warhead_assembly}
+## Warhead Assembly
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
@@ -2864,7 +2840,31 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Warp Core {#comp_warp_core}
+## Warhead Assembly
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Warhead Assembly](../images/comp_warhead.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
+</table>
+
+> Explosive payload for missile systems.
+
+[View full page](comp_warhead.md)
+
+---
+
+## Warp Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warp Core</h3></th></tr>
@@ -2888,7 +2888,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Water Recycler {#comp_water_recycler}
+## Water Recycler
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Water Recycler</h3></th></tr>
@@ -2912,7 +2912,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Weapon Battery {#comp_weapon_battery}
+## Weapon Battery
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Battery</h3></th></tr>
@@ -2936,7 +2936,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Weapon Core {#comp_weapon_core}
+## Weapon Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Core</h3></th></tr>
@@ -2960,7 +2960,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Weapon Housing {#comp_weapon_housing}
+## Weapon Housing
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Housing</h3></th></tr>
@@ -2984,7 +2984,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
-## Wiring Harness {#comp_wiring_harness}
+## Wiring Harness
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Wiring Harness</h3></th></tr>

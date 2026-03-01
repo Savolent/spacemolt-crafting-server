@@ -5,25 +5,25 @@
 Rare relics and ancient objects from lost civilizations.
 
 ## Table of Contents
-- [Ancient Star Map](#ancient_star_map)
-- [Dravani Idol](#artifact_dravani_idol)
-- [Eldar Memory Crystal](#artifact_eldar_crystal)
-- [Gravity Lens](#artifact_gravity_lens)
-- [Mechanus Cogwheel](#artifact_mechanus_gear)
-- [Precursor Beacon](#artifact_precursor_beacon)
-- [Progenitor Data Core](#progenitor_data_core)
-- [Quantum Anchor](#artifact_quantum_anchor)
-- [Silicate Lifeform Fossil](#artifact_silicate_fossil)
-- [Station AI Core](#station_ai_core)
-- [Stellar Heart](#artifact_stellar_heart)
-- [Temporal Fragment](#temporal_fragment)
-- [Void Shard](#void_shard)
-- [Void Tomb Key](#artifact_void_tomb)
-- [Xenthari Sphere](#artifact_xenthari_orb)
+- [Ancient Star Map](#ancient-star-map)
+- [Dravani Idol](#dravani-idol)
+- [Eldar Memory Crystal](#eldar-memory-crystal)
+- [Gravity Lens](#gravity-lens)
+- [Mechanus Cogwheel](#mechanus-cogwheel)
+- [Precursor Beacon](#precursor-beacon)
+- [Progenitor Data Core](#progenitor-data-core)
+- [Quantum Anchor](#quantum-anchor)
+- [Silicate Lifeform Fossil](#silicate-lifeform-fossil)
+- [Station AI Core](#station-ai-core)
+- [Stellar Heart](#stellar-heart)
+- [Temporal Fragment](#temporal-fragment)
+- [Void Shard](#void-shard)
+- [Void Tomb Key](#void-tomb-key)
+- [Xenthari Sphere](#xenthari-sphere)
 
 ---
 
-## Ancient Star Map {#ancient_star_map}
+## Ancient Star Map
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Star Map</h3></th></tr>
@@ -47,7 +47,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Dravani Idol {#artifact_dravani_idol}
+## Dravani Idol
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dravani Idol</h3></th></tr>
@@ -71,7 +71,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Eldar Memory Crystal {#artifact_eldar_crystal}
+## Eldar Memory Crystal
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Eldar Memory Crystal</h3></th></tr>
@@ -95,7 +95,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Gravity Lens {#artifact_gravity_lens}
+## Gravity Lens
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gravity Lens</h3></th></tr>
@@ -119,7 +119,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Mechanus Cogwheel {#artifact_mechanus_gear}
+## Mechanus Cogwheel
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mechanus Cogwheel</h3></th></tr>
@@ -143,7 +143,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Precursor Beacon {#artifact_precursor_beacon}
+## Precursor Beacon
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precursor Beacon</h3></th></tr>
@@ -167,7 +167,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Progenitor Data Core {#progenitor_data_core}
+## Progenitor Data Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Progenitor Data Core</h3></th></tr>
@@ -191,7 +191,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Quantum Anchor {#artifact_quantum_anchor}
+## Quantum Anchor
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Anchor</h3></th></tr>
@@ -215,7 +215,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Silicate Lifeform Fossil {#artifact_silicate_fossil}
+## Silicate Lifeform Fossil
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicate Lifeform Fossil</h3></th></tr>
@@ -239,7 +239,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Station AI Core {#station_ai_core}
+## Station AI Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station AI Core</h3></th></tr>
@@ -263,7 +263,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Stellar Heart {#artifact_stellar_heart}
+## Stellar Heart
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Heart</h3></th></tr>
@@ -287,7 +287,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Temporal Fragment {#temporal_fragment}
+## Temporal Fragment
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Temporal Fragment</h3></th></tr>
@@ -311,7 +311,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Void Shard {#void_shard}
+## Void Shard
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Shard</h3></th></tr>
@@ -335,7 +335,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Void Tomb Key {#artifact_void_tomb}
+## Void Tomb Key
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Tomb Key</h3></th></tr>
@@ -359,7 +359,7 @@ Rare relics and ancient objects from lost civilizations.
 
 ---
 
-## Xenthari Sphere {#artifact_xenthari_orb}
+## Xenthari Sphere
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Xenthari Sphere</h3></th></tr>

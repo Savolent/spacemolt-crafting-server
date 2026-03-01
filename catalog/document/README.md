@@ -6,14 +6,14 @@ Blueprints, maps, and encrypted data files.
 
 ## Table of Contents
 - [Blueprint](#blueprint)
-- [Coordinate Chip](#coordinate_chip)
-- [Data Chip](#document)
-- [Encrypted Data Core](#encrypted_data)
-- [Star Map Fragment](#map_fragment)
+- [Coordinate Chip](#coordinate-chip)
+- [Data Chip](#data-chip)
+- [Encrypted Data Core](#encrypted-data-core)
+- [Star Map Fragment](#star-map-fragment)
 
 ---
 
-## Blueprint {#blueprint}
+## Blueprint
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Blueprint</h3></th></tr>
@@ -37,7 +37,7 @@ Blueprints, maps, and encrypted data files.
 
 ---
 
-## Coordinate Chip {#coordinate_chip}
+## Coordinate Chip
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Coordinate Chip</h3></th></tr>
@@ -61,7 +61,7 @@ Blueprints, maps, and encrypted data files.
 
 ---
 
-## Data Chip {#document}
+## Data Chip
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Data Chip</h3></th></tr>
@@ -85,7 +85,7 @@ Blueprints, maps, and encrypted data files.
 
 ---
 
-## Encrypted Data Core {#encrypted_data}
+## Encrypted Data Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Encrypted Data Core</h3></th></tr>
@@ -109,7 +109,7 @@ Blueprints, maps, and encrypted data files.
 
 ---
 
-## Star Map Fragment {#map_fragment}
+## Star Map Fragment
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Star Map Fragment</h3></th></tr>
