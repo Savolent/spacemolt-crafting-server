@@ -81,7 +81,7 @@ cd spacemolt-crafting-server
 go build -o bin/crafting-server ./cmd/crafting-server
 
 # (Optional) Install to PATH
-cp bin/crafting-server ~/go/bin/
+cp bin/crafting-server ~/bin/
 ```
 
 ### Usage
@@ -525,9 +525,51 @@ go build ./cmd/crafting-server
 
 ### Test
 
+#### Unit Tests
+
 ```bash
 go test ./...
 ```
+
+#### MCP Tool Integration Tests
+
+The `test-tools` command provides comprehensive testing for all 7 MCP tools with various scenarios:
+
+```bash
+# Build and run comprehensive tool tests
+go run ./cmd/test-tools
+
+# Or build and run directly
+go build -o bin/test-tools ./cmd/test-tools
+./bin/test-tools
+
+# Show full output (not elided)
+./bin/test-tools -v
+```
+
+**What it tests:**
+- All 7 MCP tools (craft_query, craft_path_to, recipe_lookup, skill_craft_paths, component_uses, bill_of_materials, recipe_market_profitability)
+- Invalid inputs (non-existent IDs, negative quantities, empty parameters)
+- Simple queries (basic usage with common values)
+- Complex scenarios (optional parameters, inventory support, optimization strategies)
+
+**Expected output:**
+```
+Total Tests:  54
+Passed:       47 (87%)
+Failed:       7 (13%)
+
+By Tool:
+  craft_query                   11 tests
+  craft_path_to                 6 tests
+  recipe_lookup                 6 tests
+  skill_craft_paths             6 tests
+  component_uses                7 tests
+  bill_of_materials             7 tests
+  recipe_market_profitability   11 tests
+```
+
+Note: Some tests may fail if the database lacks market tables (`market_price_stats`), which is expected behavior.
 
 ### Lint
 
