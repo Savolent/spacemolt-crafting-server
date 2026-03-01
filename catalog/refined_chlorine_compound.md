@@ -1,0 +1,35 @@
+<!-- Auto-generated from crafting.db — do not edit manually -->
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Chlorine Compound</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Chlorine Compound](images/refined_chlorine_compound.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Category</b></td><td>refined</td></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>60 cr</td></tr>
+</table>
+
+> Stabilized chlorine reagent for chemical synthesis and surface etching. Handle with extreme care.
+
+## Crafting
+
+### Produced By
+
+| Recipe | Qty | Crafting Time | Skills Required |
+|--------|-----|---------------|-----------------|
+| [Stabilize Chlorine Gas](refine_chlorine.md) | 3 | 6 ticks | Gas Processing 5, Ore Refinement 3 |
+
+### Used In
+
+| Recipe | Qty | Produces |
+|--------|-----|----------|
+| [Manufacture Corrosive Plasma Cells](craft_corrosive_ammo.md) | 1 | [Corrosive Plasma Cell Pack](plasma_corrosive.md) |
+| [Chlorine Circuit Etching](refine_circuits_chlorine.md) | 1 | [Circuit Board](refined_circuits.md) |

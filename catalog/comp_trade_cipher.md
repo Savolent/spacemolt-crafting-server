@@ -1,0 +1,36 @@
+<!-- Auto-generated from crafting.db — do not edit manually -->
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Trade Cipher</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Trade Cipher](images/comp_trade_cipher.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Category</b></td><td>component</td></tr>
+<tr><td><b>Rarity</b></td><td>exotic</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>500 cr</td></tr>
+</table>
+
+> Cryptographic verification chip refined from Haven trade crystals. Every exchange in the galaxy depends on these to authenticate transactions and set prices.
+
+## Crafting
+
+### Produced By
+
+| Recipe | Qty | Crafting Time | Skills Required |
+|--------|-----|---------------|-----------------|
+| [Encode Trade Cipher](refine_trade_cipher.md) | 5 | 8 ticks | Basic Crafting 3 |
+
+### Used In
+
+| Recipe | Qty | Produces |
+|--------|-----|----------|
+| [Synthesize Pan-Galactic Matrix](craft_pan_galactic_matrix.md) | 1 | [Pan-Galactic Matrix](comp_pan_galactic_matrix.md) |
+| [Wire Trade Authenticator](craft_trade_authenticator.md) | 2 | [Trade Authenticator](comp_trade_authenticator.md) |
+| [Build Universal Nav Core](craft_universal_nav_core.md) | 1 | [Universal Nav Core](comp_universal_nav_core.md) |
