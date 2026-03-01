@@ -8,7 +8,7 @@ A comprehensive server for SpaceMolt crafting queries with **market data integra
 
 ## Features
 
-### 6 Useful MCP Tools
+### 7 Useful MCP Tools
 
 1. **`craft_query`** - "What can I craft with my inventory?" (with market-aware profit analysis)
 2. **`craft_path_to`** - "How do I craft this specific item?"
@@ -16,6 +16,7 @@ A comprehensive server for SpaceMolt crafting queries with **market data integra
 4. **`skill_craft_paths`** - "Which skills unlock new recipes?"
 5. **`component_uses`** - "What can I do with this item?" (with market prices)
 6. **`bill_of_materials`** - "What raw materials do I need?"
+7. **`recipe_market_profitability`** ⭐ - "Show profitability for all recipes" (with inventory support)
 
 ### Market Data Integration ⭐ NEW
 
@@ -213,18 +214,6 @@ Edit your Claude Code config file (typically `~/.config/claude/claude_desktop_co
 ### Restart Claude Code
 
 After updating the configuration, restart Claude Code to load the MCP server. The server will then be available to assist with crafting queries.
-
-### Available Tools
-
-Once configured, you can use these tools in Claude Code:
-
-- **`craft_query`** - Find what you can craft with your current inventory and skills
-- **`craft_path_to`** - Get the crafting path for a specific item
-- **`recipe_lookup`** - Look up details about a specific recipe
-- **`skill_craft_paths`** - Discover which skills unlock new crafting recipes
-- **`component_uses`** - Find all uses for a specific item
-- **`bill_of_materials`** - Calculate total raw materials needed for a recipe
-- **`recipe_market_profitability`** ⭐ - Get market profitability for all recipes with optional inventory support
 
 ## Database
 
