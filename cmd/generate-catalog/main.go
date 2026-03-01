@@ -42,11 +42,12 @@ type ProducedBy struct {
 
 // UsedIn describes a recipe that consumes this item and what it produces.
 type UsedIn struct {
-	RecipeID   string
-	RecipeName string
-	Quantity   int
-	OutputID   string
-	OutputName string
+	RecipeID       string
+	RecipeName     string
+	Quantity       int
+	OutputID       string
+	OutputName     string
+	OutputCategory string
 }
 
 // SkillReq pairs a skill name with its required level.
@@ -101,7 +102,11 @@ func main() {
 	}).Parse(itemTemplate))
 
 	for _, item := range items {
-		path := filepath.Join(outDir, item.ID+".md")
+		catDir := filepath.Join(outDir, item.Category)
+		if err := os.MkdirAll(catDir, 0o755); err != nil {
+			log.Fatalf("create category dir %s: %v", catDir, err)
+		}
+		path := filepath.Join(catDir, item.ID+".md")
 		f, err := os.Create(path)
 		if err != nil {
 			log.Fatalf("create %s: %v", path, err)
@@ -192,7 +197,7 @@ func loadProducedBy(db *sql.DB, items map[string]*Item) error {
 
 func loadUsedIn(db *sql.DB, items map[string]*Item) error {
 	rows, err := db.Query(`
-		SELECT ri.item_id, r.id, r.name, ri.quantity, ro.item_id, oi.name
+		SELECT ri.item_id, r.id, r.name, ri.quantity, ro.item_id, oi.name, COALESCE(oi.category, '')
 		FROM recipe_inputs ri
 		JOIN recipes r ON ri.recipe_id = r.id
 		JOIN recipe_outputs ro ON r.id = ro.recipe_id
@@ -211,7 +216,7 @@ func loadUsedIn(db *sql.DB, items map[string]*Item) error {
 	for rows.Next() {
 		var u UsedIn
 		var itemID string
-		if err := rows.Scan(&itemID, &u.RecipeID, &u.RecipeName, &u.Quantity, &u.OutputID, &u.OutputName); err != nil {
+		if err := rows.Scan(&itemID, &u.RecipeID, &u.RecipeName, &u.Quantity, &u.OutputID, &u.OutputName, &u.OutputCategory); err != nil {
 			return err
 		}
 		k := key{itemID, u.RecipeID, u.OutputID}
@@ -254,7 +259,7 @@ const itemTemplate = `<!-- Auto-generated from crafting.db — do not edit manua
 <tr><th colspan="2" style="text-align:center;"><h3>{{.Name}}</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;">
 
-![{{.Name}}](images/{{.ID}}.png)
+![{{.Name}}](../images/{{.ID}}.png)
 
 </td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
@@ -278,7 +283,7 @@ const itemTemplate = `<!-- Auto-generated from crafting.db — do not edit manua
 | Recipe | Qty | Crafting Time | Skills Required |
 |--------|-----|---------------|-----------------|
 {{- range .ProducedBy}}
-| [{{.RecipeName}}]({{.RecipeID}}.md) | {{.Quantity}} | {{.CraftingTime}} ticks | {{joinSkills .Skills}} |
+| {{.RecipeName}} | {{.Quantity}} | {{.CraftingTime}} ticks | {{joinSkills .Skills}} |
 {{- end}}
 {{- end}}
 {{- if .UsedIn}}
@@ -288,7 +293,7 @@ const itemTemplate = `<!-- Auto-generated from crafting.db — do not edit manua
 | Recipe | Qty | Produces |
 |--------|-----|----------|
 {{- range .UsedIn}}
-| [{{.RecipeName}}]({{.RecipeID}}.md) | {{.Quantity}} | [{{.OutputName}}]({{.OutputID}}.md) |
+| {{.RecipeName}} | {{.Quantity}} | [{{.OutputName}}](../{{.OutputCategory}}/{{.OutputID}}.md) |
 {{- end}}
 {{- end}}
 {{- end}}

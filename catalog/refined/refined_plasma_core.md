@@ -1,0 +1,42 @@
+<!-- Auto-generated from crafting.db — do not edit manually -->
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Refined Plasma Core</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;">
+
+![Refined Plasma Core](../images/refined_plasma_core.png)
+
+</td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Category</b></td><td>refined</td></tr>
+<tr><td><b>Rarity</b></td><td>rare</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>3,000 cr</td></tr>
+</table>
+
+> Stabilized high-energy plasma for weapon systems.
+
+## Crafting
+
+### Produced By
+
+| Recipe | Qty | Crafting Time | Skills Required |
+|--------|-----|---------------|-----------------|
+| Stabilize Plasma Gas | 1 | 6 ticks | Gas Processing 4, Ore Refinement 3 |
+
+### Used In
+
+| Recipe | Qty | Produces |
+|--------|-----|----------|
+| Assemble Plasma Mines | 1 | [Plasma Mines](../consumable/mines_plasma.md) |
+| Build Overcharge Cell | 1 | [Overcharge Cell](../consumable/overcharge_cell.md) |
+| Manufacture Plasma Cells | 1 | [Plasma Cell Pack](../consumable/plasma_standard.md) |
+| Manufacture Focused Plasma Cells | 2 | [Focused Plasma Cell Pack](../consumable/plasma_focused.md) |
+| Build Plasma Injector | 1 | [Plasma Injector](../component/comp_plasma_injector.md) |
+| Manufacture Overcharged Plasma Cells | 2 | [Overcharged Plasma Cell Pack](../consumable/plasma_overcharged.md) |
+| Manufacture Incendiary Rounds | 1 | [Incendiary Rounds Box](../consumable/rounds_incendiary.md) |
+| Assemble Plasma Torpedoes | 1 | [Plasma Torpedoes](../consumable/torpedoes_plasma.md) |
+| Build Weapon Overload Capacitor | 1 | [Weapon Overload Capacitor](../consumable/weapon_overload.md) |
