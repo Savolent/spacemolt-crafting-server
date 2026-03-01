@@ -224,6 +224,7 @@ Once configured, you can use these tools in Claude Code:
 - **`skill_craft_paths`** - Discover which skills unlock new crafting recipes
 - **`component_uses`** - Find all uses for a specific item
 - **`bill_of_materials`** - Calculate total raw materials needed for a recipe
+- **`recipe_market_profitability`** ⭐ - Get market profitability for all recipes with optional inventory support
 
 ## Database
 
@@ -399,6 +400,91 @@ curl -X POST http://localhost:8080/api/v1/admin/market/recalc/ore_iron
   }
 }
 ```
+
+### Recipe Market Profitability ⭐ NEW
+
+Get market profitability for all recipes, sorted by profit. Shows which items are most profitable to craft based on current market data or MSRP.
+
+#### Basic Usage (MSRP Only)
+
+```json
+{
+  "method": "tools/call",
+  "params": {
+    "name": "recipe_market_profitability",
+    "arguments": {}
+  }
+}
+```
+
+**Response:**
+
+```json
+{
+  "recipes": [
+    {
+      "recipe_id": "build_quantum_shield",
+      "recipe_name": "Build Quantum Entanglement Shield",
+      "output_sell_price": 750000,
+      "output_msrp": 750000,
+      "output_uses_msrp": true,
+      "input_cost": 182000,
+      "input_uses_msrp": true,
+      "profit": 568000,
+      "profit_margin_pct": 312.1
+    }
+  ],
+  "total_recipes": 394
+}
+```
+
+#### With Market Data
+
+```json
+{
+  "method": "tools/call",
+  "params": {
+    "name": "recipe_market_profitability",
+    "arguments": {
+      "station_id": "jita_iv"
+    }
+  }
+}
+```
+
+#### With Inventory Support ⭐ NEW
+
+Specify items you already have in inventory. The tool will set input costs to 0 for items you own, showing true profit based on what you need to buy.
+
+```json
+{
+  "method": "tools/call",
+  "params": {
+    "name": "recipe_market_profitability",
+    "arguments": {
+      "station_id": "jita_iv",
+      "components": [
+        {"id": "tritanium", "quantity": 1000},
+        {"id": "pyerite", "quantity": 500}
+      ]
+    }
+  }
+}
+```
+
+**How inventory affects profit calculation:**
+
+- **Full inventory:** If you have ≥ required quantity, cost = 0 (you already own it)
+- **Partial inventory:** If you have some but not enough, cost = price × shortfall only
+- **No inventory:** Full price for required quantity
+
+**Example:** A recipe needs 10 tritanium at 5cr each:
+- With 0 in inventory: input_cost = 50cr
+- With 5 in inventory: input_cost = 25cr (only pay for 5 more)
+- With 10+ in inventory: input_cost = 0cr (you have enough)
+
+This enables accurate profitability calculations based on your actual inventory, not just theoretical market costs.
+
 
 ## Architecture
 
