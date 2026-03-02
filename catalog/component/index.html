@@ -24,7 +24,7 @@ body {
   color: var(--foreground);
   line-height: 1.6;
   padding: 2rem;
-  max-width: 960px;
+  max-width: 85%;
   margin: 0 auto;
 }
 a { color: var(--primary); text-decoration: none; }
@@ -71,6 +71,7 @@ th {
 td {
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--border);
+  vertical-align: middle;
 }
 tr:last-child td { border-bottom: none; }
 .rarity-badge {
@@ -82,6 +83,11 @@ tr:last-child td { border-bottom: none; }
   border: 1px solid;
 }
 td.value { text-align: right; }
+td.size { text-align: right; }
+td.thumb img { height: 64px; image-rendering: pixelated; }
+th { cursor: pointer; user-select: none; }
+th:hover { color: var(--primary); }
+th .sort-arrow { margin-left: 4px; font-size: 10px; }
 </style>
 </head>
 <body>
@@ -90,728 +96,999 @@ td.value { text-align: right; }
 <p class="description">Crafted parts and assemblies used to build ships, stations, and equipment.</p>
 <div class="card">
 <table>
-<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr><th>Item</th><th></th><th>Rarity</th><th style="text-align:right">Size</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
 <tr>
   <td><a href="comp_air_recycler.html">Air Recycler</a></td>
+  <td class="thumb"><img src="../images/comp_air_recycler.png" alt="Air Recycler"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">250 cr</td>
   <td>Atmospheric processing system for extended missions.</td>
 </tr>
 <tr>
   <td><a href="comp_ammo_fabricator.html">Ammo Fabricator</a></td>
+  <td class="thumb"><img src="../images/comp_ammo_fabricator.png" alt="Ammo Fabricator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">700 cr</td>
   <td>Automated system for producing ammunition from raw materials.</td>
 </tr>
 <tr>
   <td><a href="comp_armor_plate.html">Armor Plate</a></td>
+  <td class="thumb"><img src="../images/comp_armor_plate.png" alt="Armor Plate"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">250 cr</td>
   <td>Reinforced hull plating for heavy armor construction.</td>
 </tr>
 <tr>
   <td><a href="comp_autopilot_module.html">Autopilot Core</a></td>
+  <td class="thumb"><img src="../images/comp_autopilot_module.png" alt="Autopilot Core"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">500 cr</td>
   <td>Automated navigation and piloting computation unit.</td>
 </tr>
 <tr>
   <td><a href="comp_autopilot.html">Autopilot Module</a></td>
+  <td class="thumb"><img src="../images/comp_autopilot.png" alt="Autopilot Module"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Automated flight control for routine travel.</td>
 </tr>
 <tr>
   <td><a href="comp_barrel_assembly.html">Barrel Assembly</a></td>
+  <td class="thumb"><img src="../images/comp_barrel_assembly.png" alt="Barrel Assembly"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">250 cr</td>
   <td>Precision-machined weapon barrel for projectile weapons.</td>
 </tr>
 <tr>
   <td><a href="capital_armor_plate.html">Capital Armor Plate</a></td>
+  <td class="thumb"><img src="../images/capital_armor_plate.png" alt="Capital Armor Plate"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">20</td>
   <td class="value">15,000 cr</td>
   <td>Massive reinforced plating for capital ships.</td>
 </tr>
 <tr>
   <td><a href="comp_capital_frame.html">Capital Ship Frame</a></td>
+  <td class="thumb"><img src="../images/comp_capital_frame.png" alt="Capital Ship Frame"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">10</td>
   <td class="value">5,000 cr</td>
   <td>Structural framework for capital-class vessels.</td>
 </tr>
 <tr>
   <td><a href="comp_cargo_expansion.html">Cargo Bay Expansion</a></td>
+  <td class="thumb"><img src="../images/comp_cargo_expansion.png" alt="Cargo Bay Expansion"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">6</td>
   <td class="value">800 cr</td>
   <td>Modular kit to increase ship cargo capacity.</td>
 </tr>
 <tr>
   <td><a href="comp_cargo_container.html">Cargo Container</a></td>
+  <td class="thumb"><img src="../images/comp_cargo_container.png" alt="Cargo Container"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">4</td>
   <td class="value">300 cr</td>
   <td>Standardized storage module for general cargo.</td>
 </tr>
 <tr>
   <td><a href="comp_cargo_superstructure.html">Cargo Superstructure</a></td>
+  <td class="thumb"><img src="../images/comp_cargo_superstructure.png" alt="Cargo Superstructure"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">500 cr</td>
   <td>Modular cargo framework that maximizes volumetric efficiency within existing hull space.</td>
 </tr>
 <tr>
   <td><a href="comp_comm_array.html">Communications Array</a></td>
+  <td class="thumb"><img src="../images/comp_comm_array.png" alt="Communications Array"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">1,500 cr</td>
   <td>Long-range communication system for stations.</td>
 </tr>
 <tr>
   <td><a href="comp_crimson_ordnance_bay.html">Crimson Ordnance Bay</a></td>
+  <td class="thumb"><img src="../images/comp_crimson_ordnance_bay.png" alt="Crimson Ordnance Bay"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,000 cr</td>
   <td>Mass weapon deployment system with integrated ammunition fabrication.</td>
 </tr>
 <tr>
   <td><a href="comp_crimson_siege_plating.html">Crimson Siege Plating</a></td>
+  <td class="thumb"><img src="../images/comp_crimson_siege_plating.png" alt="Crimson Siege Plating"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">2,500 cr</td>
   <td>Fury-alloy reinforced armor designed to close distance under heavy fire.</td>
 </tr>
 <tr>
-  <td><a href="comp_cryogenic_pod.html">Cryogenic Pod</a></td>
-  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
-  <td class="value">800 cr</td>
-  <td>Sealed cryogenic suspension chamber for crew preservation.</td>
-</tr>
-<tr>
   <td><a href="comp_cryo_pod.html">Cryogenic Pod</a></td>
+  <td class="thumb"><img src="../images/comp_cryo_pod.png" alt="Cryogenic Pod"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">800 cr</td>
   <td>Suspended animation unit for long-duration travel.</td>
 </tr>
 <tr>
+  <td><a href="comp_cryogenic_pod.html">Cryogenic Pod</a></td>
+  <td class="thumb"><img src="../images/comp_cryogenic_pod.png" alt="Cryogenic Pod"></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
+  <td class="value">800 cr</td>
+  <td>Sealed cryogenic suspension chamber for crew preservation.</td>
+</tr>
+<tr>
   <td><a href="comp_cryo_storage.html">Cryogenic Storage</a></td>
+  <td class="thumb"><img src="../images/comp_cryo_storage.png" alt="Cryogenic Storage"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">450 cr</td>
   <td>Temperature-controlled container for biological samples.</td>
 </tr>
 <tr>
   <td><a href="comp_dark_matter_cell.html">Dark Matter Cell</a></td>
+  <td class="thumb"><img src="../images/comp_dark_matter_cell.png" alt="Dark Matter Cell"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">1,000 cr</td>
   <td>Outer Rim dark matter suspended in a hydrogen-cooled containment cell. Provides extraordinary energy density for advanced power systems.</td>
 </tr>
 <tr>
   <td><a href="comp_outerrim_dark_thruster.html">Dark Matter Thruster</a></td>
+  <td class="thumb"><img src="../images/comp_outerrim_dark_thruster.png" alt="Dark Matter Thruster"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,500 cr</td>
   <td>Exotic propulsion unit. Nobody&#39;s entirely sure how it works, but it hasn&#39;t exploded yet.</td>
 </tr>
 <tr>
   <td><a href="comp_deep_core_lens.html">Deep Core Survey Lens</a></td>
+  <td class="thumb"><img src="../images/comp_deep_core_lens.png" alt="Deep Core Survey Lens"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,000 cr</td>
   <td>A specialized optical component tuned to detect deep core mineral signatures. Essential for crafting advanced survey equipment. Awarded by the Deep Core Prospector quest chain.</td>
 </tr>
 <tr>
   <td><a href="comp_defense_platform.html">Defense Platform</a></td>
+  <td class="thumb"><img src="../images/comp_defense_platform.png" alt="Defense Platform"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">3,000 cr</td>
   <td>Automated weapons platform for station perimeter defense.</td>
 </tr>
 <tr>
   <td><a href="comp_defense_turret.html">Defense Turret</a></td>
+  <td class="thumb"><img src="../images/comp_defense_turret.png" alt="Defense Turret"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">6</td>
   <td class="value">2,500 cr</td>
   <td>Automated weapon emplacement for station defense.</td>
 </tr>
 <tr>
   <td><a href="comp_dimensional_anchor.html">Dimensional Anchor</a></td>
+  <td class="thumb"><img src="../images/comp_dimensional_anchor.png" alt="Dimensional Anchor"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">4</td>
   <td class="value">20,000 cr</td>
   <td>Prevents interdimensional displacement. Invaluable against exotic weapons.</td>
 </tr>
 <tr>
   <td><a href="comp_docking_ring.html">Docking Ring</a></td>
+  <td class="thumb"><img src="../images/comp_docking_ring.png" alt="Docking Ring"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">8</td>
   <td class="value">2,000 cr</td>
   <td>Universal docking collar for ship berthing.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_ai_core.html">Drone AI Core</a></td>
+  <td class="thumb"><img src="../images/comp_drone_ai_core.png" alt="Drone AI Core"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">800 cr</td>
   <td>Processing unit for autonomous drone behavior.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_bay.html">Drone Bay Module</a></td>
+  <td class="thumb"><img src="../images/comp_drone_bay.png" alt="Drone Bay Module"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">3,000 cr</td>
   <td>Housing and control systems for combat drones.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_chassis.html">Drone Chassis</a></td>
+  <td class="thumb"><img src="../images/comp_drone_chassis.png" alt="Drone Chassis"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">1,500 cr</td>
   <td>Basic framework for autonomous drones.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_command.html">Drone Command Module</a></td>
+  <td class="thumb"><img src="../images/comp_drone_command.png" alt="Drone Command Module"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">1,500 cr</td>
   <td>Multi-drone coordination hub with parallel AI cores for swarm management.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_communication.html">Drone Comms Module</a></td>
+  <td class="thumb"><img src="../images/comp_drone_communication.png" alt="Drone Comms Module"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Encrypted communication system for drone control.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_mining_laser.html">Drone Mining Laser</a></td>
+  <td class="thumb"><img src="../images/comp_drone_mining_laser.png" alt="Drone Mining Laser"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Compact mining beam for autonomous extraction drones.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_repair_arm.html">Drone Repair Arm</a></td>
+  <td class="thumb"><img src="../images/comp_drone_repair_arm.png" alt="Drone Repair Arm"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">450 cr</td>
   <td>Manipulator arm with welding and repair tools.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_sensor.html">Drone Sensor Suite</a></td>
+  <td class="thumb"><img src="../images/comp_drone_sensor.png" alt="Drone Sensor Suite"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Compact detection package for drone reconnaissance.</td>
 </tr>
 <tr>
   <td><a href="comp_drone_weapon.html">Drone Weapon Mount</a></td>
+  <td class="thumb"><img src="../images/comp_drone_weapon.png" alt="Drone Weapon Mount"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">500 cr</td>
   <td>Miniaturized weapon system for combat drones.</td>
 </tr>
 <tr>
   <td><a href="comp_engine_core.html">Engine Core</a></td>
+  <td class="thumb"><img src="../images/comp_engine_core.png" alt="Engine Core"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">250 cr</td>
   <td>Propulsion system core assembly.</td>
 </tr>
 <tr>
   <td><a href="comp_escape_pod.html">Escape Pod</a></td>
+  <td class="thumb"><img src="../images/comp_escape_pod.png" alt="Escape Pod"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">6</td>
   <td class="value">1,500 cr</td>
   <td>Emergency evacuation vessel with minimal supplies.</td>
 </tr>
 <tr>
   <td><a href="comp_outerrim_frontier_kit.html">Frontier Survival Kit</a></td>
+  <td class="thumb"><img src="../images/comp_outerrim_frontier_kit.png" alt="Frontier Survival Kit"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">1,500 cr</td>
   <td>Self-repair and life support package cobbled from whatever was on hand. Surprisingly effective.</td>
 </tr>
 <tr>
   <td><a href="comp_fuel_tank.html">Fuel Tank</a></td>
+  <td class="thumb"><img src="../images/comp_fuel_tank.png" alt="Fuel Tank"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">3</td>
   <td class="value">200 cr</td>
   <td>Standard fuel storage container.</td>
 </tr>
 <tr>
   <td><a href="comp_fury_plating.html">Fury-Tempered Plating</a></td>
+  <td class="thumb"><img src="../images/comp_fury_plating.png" alt="Fury-Tempered Plating"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">1,100 cr</td>
   <td>Crimson fury alloy layered with steel under extreme heat. The resulting armor plate resists both kinetic and energy weapons.</td>
 </tr>
 <tr>
   <td><a href="comp_galactic_alloy.html">Galactic Standard Alloy</a></td>
+  <td class="thumb"><img src="../images/comp_galactic_alloy.png" alt="Galactic Standard Alloy"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">3,500 cr</td>
   <td>Solarian composite fused with Crimson fury alloy and steel. The resulting material meets universal shipbuilding standards across all five empires.</td>
 </tr>
 <tr>
   <td><a href="comp_gravity_generator.html">Gravity Generator</a></td>
+  <td class="thumb"><img src="../images/comp_gravity_generator.png" alt="Gravity Generator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">10</td>
   <td class="value">4,000 cr</td>
   <td>Artificial gravity system for stations and large ships.</td>
 </tr>
 <tr>
   <td><a href="comp_hab_module.html">Habitation Module</a></td>
+  <td class="thumb"><img src="../images/comp_hab_module.png" alt="Habitation Module"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">10</td>
   <td class="value">3,000 cr</td>
   <td>Living quarters unit for station crew.</td>
 </tr>
 <tr>
   <td><a href="comp_hangar_bay.html">Hangar Bay Module</a></td>
+  <td class="thumb"><img src="../images/comp_hangar_bay.png" alt="Hangar Bay Module"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">20</td>
   <td class="value">10,000 cr</td>
   <td>Enclosed bay for ship storage and maintenance.</td>
 </tr>
 <tr>
   <td><a href="comp_hazmat_container.html">Hazmat Container</a></td>
+  <td class="thumb"><img src="../images/comp_hazmat_container.png" alt="Hazmat Container"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">500 cr</td>
   <td>Shielded container for radioactive or dangerous materials.</td>
 </tr>
 <tr>
   <td><a href="comp_heat_sink.html">Heat Sink</a></td>
+  <td class="thumb"><img src="../images/comp_heat_sink.png" alt="Heat Sink"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Thermal management component for weapons and engines.</td>
 </tr>
 <tr>
   <td><a href="comp_hull_plate.html">Hull Plating</a></td>
+  <td class="thumb"><img src="../images/comp_hull_plate.png" alt="Hull Plating"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">100 cr</td>
   <td>Reinforced armor section for ship construction.</td>
 </tr>
 <tr>
   <td><a href="comp_gyroscope.html">Inertial Gyroscope</a></td>
+  <td class="thumb"><img src="../images/comp_gyroscope.png" alt="Inertial Gyroscope"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">300 cr</td>
   <td>Attitude stabilization system for precise maneuvering.</td>
 </tr>
 <tr>
   <td><a href="comp_ion_emitter.html">Ion Emitter</a></td>
+  <td class="thumb"><img src="../images/comp_ion_emitter.png" alt="Ion Emitter"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">300 cr</td>
   <td>Ionized particle projector for energy weapon systems.</td>
 </tr>
 <tr>
   <td><a href="comp_jump_calculator.html">Jump Calculator</a></td>
+  <td class="thumb"><img src="../images/comp_jump_calculator.png" alt="Jump Calculator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">1,500 cr</td>
   <td>Advanced computation unit for jump drive calibration.</td>
 </tr>
 <tr>
   <td><a href="comp_jump_coil.html">Jump Coil</a></td>
+  <td class="thumb"><img src="../images/comp_jump_coil.png" alt="Jump Coil"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">1,000 cr</td>
   <td>Hyperspace transition mechanism.</td>
 </tr>
 <tr>
   <td><a href="jump_drive_core.html">Jump Drive Core</a></td>
+  <td class="thumb"><img src="../images/jump_drive_core.png" alt="Jump Drive Core"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">8</td>
   <td class="value">25,000 cr</td>
   <td>Essential component for hyperspace travel.</td>
 </tr>
 <tr>
   <td><a href="comp_laser_focus.html">Laser Focus Array</a></td>
+  <td class="thumb"><img src="../images/comp_laser_focus.png" alt="Laser Focus Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">350 cr</td>
   <td>Precision laser focusing assembly for mining equipment.</td>
 </tr>
 <tr>
   <td><a href="comp_laser_lens.html">Laser Focusing Lens</a></td>
+  <td class="thumb"><img src="../images/comp_laser_lens.png" alt="Laser Focusing Lens"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">300 cr</td>
   <td>Crystal optics for focusing energy weapons.</td>
 </tr>
 <tr>
   <td><a href="comp_life_support_array.html">Life Support Array</a></td>
+  <td class="thumb"><img src="../images/comp_life_support_array.png" alt="Life Support Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">500 cr</td>
   <td>Extended environmental control system for long-duration missions.</td>
 </tr>
 <tr>
-  <td><a href="comp_life_support.html">Life Support Unit</a></td>
-  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
-  <td class="value">400 cr</td>
-  <td>Environmental control system for crew survival.</td>
-</tr>
-<tr>
   <td><a href="comp_life_support_unit.html">Life Support Unit</a></td>
+  <td class="thumb"><img src="../images/comp_life_support_unit.png" alt="Life Support Unit"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Integrated air and water recycling system for habitation.</td>
 </tr>
 <tr>
+  <td><a href="comp_life_support.html">Life Support Unit</a></td>
+  <td class="thumb"><img src="../images/comp_life_support.png" alt="Life Support Unit"></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
+  <td class="value">400 cr</td>
+  <td>Environmental control system for crew survival.</td>
+</tr>
+<tr>
   <td><a href="comp_medical_bay.html">Medical Bay Module</a></td>
+  <td class="thumb"><img src="../images/comp_medical_bay.png" alt="Medical Bay Module"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">1,200 cr</td>
   <td>Compact medical facility for crew treatment.</td>
 </tr>
 <tr>
   <td><a href="comp_micro_thruster.html">Micro-Thruster Array</a></td>
+  <td class="thumb"><img src="../images/comp_micro_thruster.png" alt="Micro-Thruster Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Miniaturized propulsion system for drones and missiles.</td>
 </tr>
 <tr>
   <td><a href="comp_missile_guidance.html">Missile Guidance Unit</a></td>
+  <td class="thumb"><img src="../images/comp_missile_guidance.png" alt="Missile Guidance Unit"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Smart targeting system for guided munitions.</td>
 </tr>
 <tr>
   <td><a href="comp_nav_array.html">Navigation Array</a></td>
+  <td class="thumb"><img src="../images/comp_nav_array.png" alt="Navigation Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">700 cr</td>
   <td>Advanced astrogation system combining stellar cartography with predictive jump calculations.</td>
 </tr>
 <tr>
   <td><a href="comp_navigation_core.html">Navigation Core</a></td>
+  <td class="thumb"><img src="../images/comp_navigation_core.png" alt="Navigation Core"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">600 cr</td>
   <td>Astrogation computer for hyperspace calculations.</td>
 </tr>
 <tr>
   <td><a href="comp_nebula_cargo_matrix.html">Nebula Cargo Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_nebula_cargo_matrix.png" alt="Nebula Cargo Matrix"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,000 cr</td>
   <td>Prism-lens enhanced storage system that optimizes packing efficiency through light-guided sorting.</td>
 </tr>
 <tr>
   <td><a href="comp_nebula_prism_computer.html">Nebula Prism Computer</a></td>
+  <td class="thumb"><img src="../images/comp_nebula_prism_computer.png" alt="Nebula Prism Computer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">2,500 cr</td>
   <td>Photonic processing unit using light refraction for massively parallel computation.</td>
 </tr>
 <tr>
   <td><a href="comp_neon_signaling_array.html">Neon Signaling Array</a></td>
+  <td class="thumb"><img src="../images/comp_neon_signaling_array.png" alt="Neon Signaling Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">180 cr</td>
   <td>Gas-discharge tube array for high-bandwidth sensor calibration and signal processing.</td>
 </tr>
 <tr>
   <td><a href="comp_ore_hopper.html">Ore Hopper</a></td>
+  <td class="thumb"><img src="../images/comp_ore_hopper.png" alt="Ore Hopper"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">5</td>
   <td class="value">350 cr</td>
   <td>Specialized container for raw ore transport.</td>
 </tr>
 <tr>
   <td><a href="comp_pan_galactic_matrix.html">Pan-Galactic Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_pan_galactic_matrix.png" alt="Pan-Galactic Matrix"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">3</td>
   <td class="value">8,000 cr</td>
   <td>Voidborn null matter, Solarian composite, and Nebula trade ciphers unified in a circuit lattice. The pinnacle of cross-empire cooperation, these matrices power the most advanced technology in known space.</td>
 </tr>
 <tr>
   <td><a href="comp_phase_array.html">Phase Array</a></td>
+  <td class="thumb"><img src="../images/comp_phase_array.png" alt="Phase Array"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">4,000 cr</td>
   <td>Phased optics for cloaking technology.</td>
 </tr>
 <tr>
   <td><a href="comp_phase_drive.html">Phase Drive</a></td>
+  <td class="thumb"><img src="../images/comp_phase_drive.png" alt="Phase Drive"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">6</td>
   <td class="value">15,000 cr</td>
   <td>Allows ships to partially phase out of normal space.</td>
 </tr>
 <tr>
   <td><a href="comp_plasma_injector.html">Plasma Injector</a></td>
+  <td class="thumb"><img src="../images/comp_plasma_injector.png" alt="Plasma Injector"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">450 cr</td>
   <td>Fuel injection system for plasma weapons.</td>
 </tr>
 <tr>
   <td><a href="comp_power_cell.html">Power Cell</a></td>
+  <td class="thumb"><img src="../images/comp_power_cell.png" alt="Power Cell"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">180 cr</td>
   <td>High-capacity energy storage unit.</td>
 </tr>
 <tr>
   <td><a href="power_core.html">Power Core</a></td>
+  <td class="thumb"><img src="../images/power_core.png" alt="Power Core"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,500 cr</td>
   <td>High-capacity energy cell for ship systems.</td>
 </tr>
 <tr>
   <td><a href="comp_power_grid.html">Power Distribution Grid</a></td>
+  <td class="thumb"><img src="../images/comp_power_grid.png" alt="Power Distribution Grid"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Ship-wide power routing network with redundant pathways and load balancing.</td>
 </tr>
 <tr>
   <td><a href="comp_precision_optic.html">Precision Optic</a></td>
+  <td class="thumb"><img src="../images/comp_precision_optic.png" alt="Precision Optic"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">1,300 cr</td>
   <td>Solarian composite ground into optical-grade lenses and mounted in glass housings. Essential for advanced targeting and sensor systems.</td>
 </tr>
 <tr>
   <td><a href="comp_pressure_seal.html">Pressure Seal</a></td>
+  <td class="thumb"><img src="../images/comp_pressure_seal.png" alt="Pressure Seal"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">40 cr</td>
   <td>Airtight seal for hull penetrations and hatches.</td>
 </tr>
 <tr>
   <td><a href="comp_cpu_core.html">Processing Core</a></td>
+  <td class="thumb"><img src="../images/comp_cpu_core.png" alt="Processing Core"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">400 cr</td>
   <td>Central computing unit for ship systems.</td>
 </tr>
 <tr>
   <td><a href="comp_quantum_entangler.html">Quantum Entangler</a></td>
+  <td class="thumb"><img src="../images/comp_quantum_entangler.png" alt="Quantum Entangler"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">5,000 cr</td>
   <td>Quantum-linked communication device for instantaneous data transfer.</td>
 </tr>
 <tr>
   <td><a href="comp_quantum_processor.html">Quantum Processor</a></td>
+  <td class="thumb"><img src="../images/comp_quantum_processor.png" alt="Quantum Processor"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">2</td>
   <td class="value">8,000 cr</td>
   <td>Reality-defying computing unit for exotic ships.</td>
 </tr>
 <tr>
   <td><a href="comp_quantum_stabilizer.html">Quantum Stabilizer</a></td>
+  <td class="thumb"><img src="../images/comp_quantum_stabilizer.png" alt="Quantum Stabilizer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">1,200 cr</td>
   <td>Voidborn null matter bonded to a circuit substrate. Stabilizes quantum states in sensitive equipment across the galaxy.</td>
 </tr>
 <tr>
   <td><a href="comp_railgun_capacitor.html">Railgun Capacitor</a></td>
+  <td class="thumb"><img src="../images/comp_railgun_capacitor.png" alt="Railgun Capacitor"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">600 cr</td>
   <td>High-energy capacitor bank for electromagnetic weapons.</td>
 </tr>
 <tr>
   <td><a href="salvage_rare.html">Rare Salvage</a></td>
+  <td class="thumb"><img src="../images/salvage_rare.png" alt="Rare Salvage"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">100 cr</td>
   <td>Exotic materials and advanced components from high-value wrecks.</td>
 </tr>
 <tr>
   <td><a href="comp_reinforced_bulkhead.html">Reinforced Bulkhead</a></td>
+  <td class="thumb"><img src="../images/comp_reinforced_bulkhead.png" alt="Reinforced Bulkhead"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">500 cr</td>
   <td>Heavy structural framing that distributes stress across multiple hull sections. Standard in warships and heavy haulers.</td>
 </tr>
 <tr>
   <td><a href="comp_repair_nanites.html">Repair Nanite Container</a></td>
+  <td class="thumb"><img src="../images/comp_repair_nanites.png" alt="Repair Nanite Container"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">1,200 cr</td>
   <td>Contained micro-robots for hull repair.</td>
 </tr>
 <tr>
   <td><a href="salvage_components.html">Salvage Components</a></td>
+  <td class="thumb"><img src="../images/salvage_components.png" alt="Salvage Components"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">25 cr</td>
   <td>Partially intact ship systems recovered from wrecks.</td>
 </tr>
 <tr>
   <td><a href="salvage_metal.html">Salvage Metal</a></td>
+  <td class="thumb"><img src="../images/salvage_metal.png" alt="Salvage Metal"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">5 cr</td>
   <td>Reclaimed metal from ship hulls. Used in manufacturing and repairs.</td>
 </tr>
 <tr>
   <td><a href="comp_secure_vault.html">Secure Vault</a></td>
+  <td class="thumb"><img src="../images/comp_secure_vault.png" alt="Secure Vault"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">600 cr</td>
   <td>Reinforced storage for valuable cargo.</td>
 </tr>
 <tr>
   <td><a href="comp_sensor_array.html">Sensor Array</a></td>
+  <td class="thumb"><img src="../images/comp_sensor_array.png" alt="Sensor Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">220 cr</td>
   <td>Multi-spectrum detection equipment.</td>
 </tr>
 <tr>
   <td><a href="comp_sensor_cluster.html">Sensor Cluster</a></td>
+  <td class="thumb"><img src="../images/comp_sensor_cluster.png" alt="Sensor Cluster"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">600 cr</td>
   <td>Multi-spectrum sensor package with cross-referencing analysis cores.</td>
 </tr>
 <tr>
   <td><a href="comp_sensor_package.html">Sensor Package</a></td>
+  <td class="thumb"><img src="../images/comp_sensor_package.png" alt="Sensor Package"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">350 cr</td>
   <td>Integrated sensor and diagnostic array for hull scanning and system analysis.</td>
 </tr>
 <tr>
   <td><a href="comp_shield_array.html">Shield Array</a></td>
+  <td class="thumb"><img src="../images/comp_shield_array.png" alt="Shield Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">800 cr</td>
   <td>Linked bank of shield emitters that shares load across overlapping fields.</td>
 </tr>
 <tr>
   <td><a href="comp_shield_emitter.html">Shield Emitter</a></td>
+  <td class="thumb"><img src="../images/comp_shield_emitter.png" alt="Shield Emitter"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">350 cr</td>
   <td>Projector unit for defensive shields.</td>
 </tr>
 <tr>
   <td><a href="comp_shield_generator.html">Shield Generator</a></td>
+  <td class="thumb"><img src="../images/comp_shield_generator.png" alt="Shield Generator"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">12</td>
   <td class="value">6,000 cr</td>
   <td>Large-scale shield projector for stations and capitals.</td>
 </tr>
 <tr>
   <td><a href="comp_shield_matrix.html">Shield Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_shield_matrix.png" alt="Shield Matrix"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">800 cr</td>
   <td>Energy distribution matrix for advanced shield systems.</td>
 </tr>
 <tr>
   <td><a href="comp_singularity_core.html">Singularity Core</a></td>
+  <td class="thumb"><img src="../images/comp_singularity_core.png" alt="Singularity Core"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">5</td>
   <td class="value">50,000 cr</td>
   <td>Micro black hole power source. Extremely dangerous.</td>
 </tr>
 <tr>
   <td><a href="comp_solarian_solar_collector.html">Solar Collector Array</a></td>
+  <td class="thumb"><img src="../images/comp_solarian_solar_collector.png" alt="Solar Collector Array"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,000 cr</td>
   <td>Photonic energy harvesting system calibrated to multiple stellar classifications.</td>
 </tr>
 <tr>
   <td><a href="comp_solar_panel.html">Solar Panel Array</a></td>
+  <td class="thumb"><img src="../images/comp_solar_panel.png" alt="Solar Panel Array"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">8</td>
   <td class="value">1,000 cr</td>
   <td>Photovoltaic power generation for stations.</td>
 </tr>
 <tr>
   <td><a href="comp_solarian_logic_matrix.html">Solarian Logic Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_solarian_logic_matrix.png" alt="Solarian Logic Matrix"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">3,000 cr</td>
   <td>Quantum-coherent processor array. Three peer review committees certified its clock speed.</td>
 </tr>
 <tr>
   <td><a href="comp_station_reactor.html">Station Reactor</a></td>
+  <td class="thumb"><img src="../images/comp_station_reactor.png" alt="Station Reactor"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">5</td>
   <td class="value">8,000 cr</td>
   <td>High-output fusion reactor core for station power generation.</td>
 </tr>
 <tr>
   <td><a href="comp_reactor_core.html">Station Reactor Core</a></td>
+  <td class="thumb"><img src="../images/comp_reactor_core.png" alt="Station Reactor Core"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">15</td>
   <td class="value">8,000 cr</td>
   <td>Large-scale power generation system for stations.</td>
 </tr>
 <tr>
   <td><a href="comp_swarm_controller.html">Swarm Controller</a></td>
+  <td class="thumb"><img src="../images/comp_swarm_controller.png" alt="Swarm Controller"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">2</td>
   <td class="value">1,500 cr</td>
   <td>Master control unit for coordinating drone swarms.</td>
 </tr>
 <tr>
   <td><a href="comp_targeting_computer.html">Targeting Computer</a></td>
+  <td class="thumb"><img src="../images/comp_targeting_computer.png" alt="Targeting Computer"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">500 cr</td>
   <td>Advanced fire control system for improved weapon accuracy.</td>
 </tr>
 <tr>
   <td><a href="comp_temporal_stabilizer.html">Temporal Stabilizer</a></td>
+  <td class="thumb"><img src="../images/comp_temporal_stabilizer.png" alt="Temporal Stabilizer"></td>
   <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="size">3</td>
   <td class="value">12,000 cr</td>
   <td>Prevents time dilation effects during high-speed travel.</td>
 </tr>
 <tr>
   <td><a href="comp_threat_analyzer.html">Threat Analyzer</a></td>
+  <td class="thumb"><img src="../images/comp_threat_analyzer.png" alt="Threat Analyzer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">550 cr</td>
   <td>Combat computer that prioritizes hostile targets.</td>
 </tr>
 <tr>
   <td><a href="comp_thruster_assembly.html">Thruster Assembly</a></td>
+  <td class="thumb"><img src="../images/comp_thruster_assembly.png" alt="Thruster Assembly"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">450 cr</td>
   <td>Integrated propulsion unit combining multiple nozzles with a coordinated burn controller.</td>
 </tr>
 <tr>
   <td><a href="comp_thruster_nozzle.html">Thruster Nozzle</a></td>
+  <td class="thumb"><img src="../images/comp_thruster_nozzle.png" alt="Thruster Nozzle"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">120 cr</td>
   <td>Exhaust component for sublight propulsion.</td>
 </tr>
 <tr>
   <td><a href="comp_tracking_system.html">Tracking System</a></td>
+  <td class="thumb"><img src="../images/comp_tracking_system.png" alt="Tracking System"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">450 cr</td>
   <td>Target acquisition and tracking hardware.</td>
 </tr>
 <tr>
   <td><a href="comp_trade_authenticator.html">Trade Authenticator</a></td>
+  <td class="thumb"><img src="../images/comp_trade_authenticator.png" alt="Trade Authenticator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">1,400 cr</td>
   <td>Nebula trade ciphers embedded in copper-wire contact arrays. Provides tamper-proof transaction verification for high-value exchanges.</td>
 </tr>
 <tr>
   <td><a href="comp_trade_cipher.html">Trade Cipher</a></td>
+  <td class="thumb"><img src="../images/comp_trade_cipher.png" alt="Trade Cipher"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">500 cr</td>
   <td>Cryptographic verification chip refined from Haven trade crystals. Every exchange in the galaxy depends on these to authenticate transactions and set prices.</td>
 </tr>
 <tr>
   <td><a href="comp_universal_nav_core.html">Universal Nav Core</a></td>
+  <td class="thumb"><img src="../images/comp_universal_nav_core.png" alt="Universal Nav Core"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">2</td>
   <td class="value">3,200 cr</td>
   <td>Nebula trade ciphers and Outer Rim dark matter integrated with circuit boards. Enables navigation across all known space without empire-specific transponder locks.</td>
 </tr>
 <tr>
   <td><a href="comp_void_capacitor.html">Void Capacitor</a></td>
+  <td class="thumb"><img src="../images/comp_void_capacitor.png" alt="Void Capacitor"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">6,000 cr</td>
   <td>Stores energy from void space dimensions.</td>
 </tr>
 <tr>
   <td><a href="comp_void_shield_matrix.html">Void Shield Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_void_shield_matrix.png" alt="Void Shield Matrix"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">3,800 cr</td>
   <td>Voidborn null matter woven through Crimson fury alloy and crystal lattice. Creates a defensive barrier that absorbs both physical and dimensional attacks.</td>
 </tr>
 <tr>
   <td><a href="luxury_neural_matrix.html">Voidborn Neural Matrix</a></td>
+  <td class="thumb"><img src="../images/luxury_neural_matrix.png" alt="Voidborn Neural Matrix"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Quantum computing substrate grown in null-energy fields. For the Voidborn, these are art. For everyone else, they&#39;re the most powerful processors money can buy.</td>
 </tr>
 <tr>
   <td><a href="comp_voidborn_null_matrix.html">Voidborn Null Matrix</a></td>
+  <td class="thumb"><img src="../images/comp_voidborn_null_matrix.png" alt="Voidborn Null Matrix"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">3,000 cr</td>
   <td>Void energy focusing lattice. The mathematics describing its operation have no solution.</td>
 </tr>
 <tr>
   <td><a href="comp_voidborn_phase_drive.html">Voidborn Phase Drive</a></td>
+  <td class="thumb"><img src="../images/comp_voidborn_phase_drive.png" alt="Voidborn Phase Drive"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">2,500 cr</td>
   <td>Propulsion system that partially shifts the hull between dimensional states to reduce inertia.</td>
 </tr>
 <tr>
   <td><a href="comp_warhead_assembly.html">Warhead Assembly</a></td>
+  <td class="thumb"><img src="../images/comp_warhead_assembly.png" alt="Warhead Assembly"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">350 cr</td>
   <td>Explosive warhead core for missile fabrication.</td>
 </tr>
 <tr>
   <td><a href="comp_warhead.html">Warhead Assembly</a></td>
+  <td class="thumb"><img src="../images/comp_warhead.png" alt="Warhead Assembly"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Explosive payload for missile systems.</td>
 </tr>
 <tr>
   <td><a href="comp_warp_core.html">Warp Core</a></td>
+  <td class="thumb"><img src="../images/comp_warp_core.png" alt="Warp Core"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">6</td>
   <td class="value">4,000 cr</td>
   <td>Advanced faster-than-light propulsion core.</td>
 </tr>
 <tr>
   <td><a href="comp_water_recycler.html">Water Recycler</a></td>
+  <td class="thumb"><img src="../images/comp_water_recycler.png" alt="Water Recycler"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">280 cr</td>
   <td>Closed-loop water purification system.</td>
 </tr>
 <tr>
   <td><a href="comp_weapon_battery.html">Weapon Battery</a></td>
+  <td class="thumb"><img src="../images/comp_weapon_battery.png" alt="Weapon Battery"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">700 cr</td>
   <td>Hardened weapon platform housing multiple firing mechanisms with shared targeting.</td>
 </tr>
 <tr>
   <td><a href="comp_weapon_core.html">Weapon Core</a></td>
+  <td class="thumb"><img src="../images/comp_weapon_core.png" alt="Weapon Core"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Central power and control unit for weapon systems.</td>
 </tr>
 <tr>
   <td><a href="comp_weapon_housing.html">Weapon Housing</a></td>
+  <td class="thumb"><img src="../images/comp_weapon_housing.png" alt="Weapon Housing"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">150 cr</td>
   <td>Mounting bracket and power conduit for weapons.</td>
 </tr>
 <tr>
   <td><a href="comp_wiring_harness.html">Wiring Harness</a></td>
+  <td class="thumb"><img src="../images/comp_wiring_harness.png" alt="Wiring Harness"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">60 cr</td>
   <td>Pre-assembled electrical wiring bundle for ship systems.</td>
 </tr>
 </table>
 </div>
+<script>
+document.querySelectorAll("table").forEach(function(table) {
+  var headers = table.querySelectorAll("th");
+  var sortCol = -1, sortAsc = true;
+  headers.forEach(function(th, idx) {
+    th.addEventListener("click", function() {
+      if (sortCol === idx) { sortAsc = !sortAsc; } else { sortCol = idx; sortAsc = true; }
+      headers.forEach(function(h) {
+        var arrow = h.querySelector(".sort-arrow");
+        if (arrow) arrow.remove();
+      });
+      var arrow = document.createElement("span");
+      arrow.className = "sort-arrow";
+      arrow.textContent = sortAsc ? "\u25B2" : "\u25BC";
+      th.appendChild(arrow);
+      var tbody = table.querySelector("tbody") || table;
+      var rows = Array.from(tbody.querySelectorAll("tr")).filter(function(r) { return !r.querySelector("th"); });
+      rows.sort(function(a, b) {
+        var at = a.cells[idx].textContent.trim();
+        var bt = b.cells[idx].textContent.trim();
+        var an = at.replace(/[^0-9.-]/g, ""), bn = bt.replace(/[^0-9.-]/g, "");
+        if (an !== "" && bn !== "" && !isNaN(an) && !isNaN(bn)) {
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? at.localeCompare(bt) : bt.localeCompare(at);
+      });
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+});
+</script>
 </body>
 </html>

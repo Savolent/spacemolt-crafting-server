@@ -24,7 +24,7 @@ body {
   color: var(--foreground);
   line-height: 1.6;
   padding: 2rem;
-  max-width: 960px;
+  max-width: 85%;
   margin: 0 auto;
 }
 a { color: var(--primary); text-decoration: none; }
@@ -71,6 +71,7 @@ th {
 td {
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--border);
+  vertical-align: middle;
 }
 tr:last-child td { border-bottom: none; }
 .rarity-badge {
@@ -82,6 +83,11 @@ tr:last-child td { border-bottom: none; }
   border: 1px solid;
 }
 td.value { text-align: right; }
+td.size { text-align: right; }
+td.thumb img { height: 64px; image-rendering: pixelated; }
+th { cursor: pointer; user-select: none; }
+th:hover { color: var(--primary); }
+th .sort-arrow { margin-left: 4px; font-size: 10px; }
 </style>
 </head>
 <body>
@@ -90,734 +96,1007 @@ td.value { text-align: right; }
 <p class="description">Single-use items including ammunition, stims, repair kits, and fuel.</p>
 <div class="card">
 <table>
-<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr><th>Item</th><th></th><th>Rarity</th><th style="text-align:right">Size</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
 <tr>
   <td><a href="stim_adrenaline.html">Adrenaline Surge</a></td>
+  <td class="thumb"><img src="../images/stim_adrenaline.png" alt="Adrenaline Surge"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">500 cr</td>
   <td>&#43;15% to all combat stats for 5 ticks. Powerful but brief.</td>
 </tr>
 <tr>
   <td><a href="repair_kit_advanced.html">Advanced Repair Kit</a></td>
+  <td class="thumb"><img src="../images/repair_kit_advanced.png" alt="Advanced Repair Kit"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">350 cr</td>
   <td>Professional repair kit, restores 150 hull.</td>
 </tr>
 <tr>
   <td><a href="afterburner_fuel.html">Afterburner Fuel</a></td>
+  <td class="thumb"><img src="../images/afterburner_fuel.png" alt="Afterburner Fuel"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>High-octane fuel for afterburners. &#43;100% speed for 3 ticks.</td>
 </tr>
 <tr>
   <td><a href="anchor_beacon.html">Anchor Beacon</a></td>
+  <td class="thumb"><img src="../images/anchor_beacon.png" alt="Anchor Beacon"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">300 cr</td>
   <td>Deployable navigation beacon for marking locations.</td>
 </tr>
 <tr>
   <td><a href="scan_probe_anomaly.html">Anomaly Detector</a></td>
+  <td class="thumb"><img src="../images/scan_probe_anomaly.png" alt="Anomaly Detector"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">500 cr</td>
   <td>Detects spatial anomalies, wormholes, and hidden features.</td>
 </tr>
 <tr>
   <td><a href="probe_anomaly.html">Anomaly Probe</a></td>
+  <td class="thumb"><img src="../images/probe_anomaly.png" alt="Anomaly Probe"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Specialized probe tuned for detecting spatial anomalies.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_antimatter.html">Antimatter Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_antimatter.png" alt="Antimatter Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">6</td>
   <td class="value">500 cr</td>
   <td>The most destructive single projectile in known space. Handle with extreme caution.</td>
 </tr>
 <tr>
   <td><a href="missiles_antimatter.html">Antimatter Warhead</a></td>
+  <td class="thumb"><img src="../images/missiles_antimatter.png" alt="Antimatter Warhead"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">4</td>
   <td class="value">300 cr</td>
   <td>Single devastating antimatter warhead. The most destructive guided munition available.</td>
 </tr>
 <tr>
   <td><a href="rounds_antimatter.html">Antimatter-Core Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_antimatter.png" alt="Antimatter-Core Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">4</td>
   <td class="value">3,000 cr</td>
   <td>Magnetically contained antimatter warheads packed in a shielded crate. Extreme damage with minor splash effect.</td>
 </tr>
 <tr>
   <td><a href="rounds_armor_piercing.html">Armor Piercing Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_armor_piercing.png" alt="Armor Piercing Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">188 cr</td>
   <td>Hardened penetrator tips packed in a sealed magazine. Bypasses armor plating on impact.</td>
 </tr>
 <tr>
   <td><a href="armor_weld.html">Armor Weld</a></td>
+  <td class="thumb"><img src="../images/armor_weld.png" alt="Armor Weld"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">150 cr</td>
   <td>Quick armor repair paste. Restores 75 hull.</td>
 </tr>
 <tr>
   <td><a href="missiles_armor_buster.html">Armor-Buster Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_armor_buster.png" alt="Armor-Buster Missiles"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">50 cr</td>
   <td>Shaped charge warheads designed to penetrate heavy armor plating.</td>
 </tr>
 <tr>
   <td><a href="stim_berserker.html">Berserker Compound</a></td>
+  <td class="thumb"><img src="../images/stim_berserker.png" alt="Berserker Compound"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">400 cr</td>
   <td>&#43;30% damage, -20% defense for 15 ticks. High risk, high reward.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_breacher.html">Breacher Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_breacher.png" alt="Breacher Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">150 cr</td>
   <td>Armor-piercing torpedoes with penetrating warheads. Designed for armored battleships.</td>
 </tr>
 <tr>
   <td><a href="em_cascade.html">Cascade EM Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_cascade.png" alt="Cascade EM Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">131 cr</td>
   <td>Chain-reaction charges that jump between nearby systems on hit.</td>
 </tr>
 <tr>
   <td><a href="countermeasure_chaff.html">Chaff Bundle</a></td>
+  <td class="thumb"><img src="../images/countermeasure_chaff.png" alt="Chaff Bundle"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">8 cr</td>
   <td>Metallic strips that confuse missile tracking systems.</td>
 </tr>
 <tr>
   <td><a href="chaff_pod.html">Chaff Pod</a></td>
+  <td class="thumb"><img src="../images/chaff_pod.png" alt="Chaff Pod"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">50 cr</td>
   <td>Releases metallic strips to confuse radar and missiles.</td>
 </tr>
 <tr>
   <td><a href="stim_clarity.html">Clarity Stim</a></td>
+  <td class="thumb"><img src="../images/stim_clarity.png" alt="Clarity Stim"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">600 cr</td>
   <td>Immune to electronic warfare for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="cloak_charge.html">Cloaking Charge</a></td>
+  <td class="thumb"><img src="../images/cloak_charge.png" alt="Cloaking Charge"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Single-use cloaking field generator.</td>
 </tr>
 <tr>
   <td><a href="cloaking_dust.html">Cloaking Dust</a></td>
+  <td class="thumb"><img src="../images/cloaking_dust.png" alt="Cloaking Dust"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Provides temporary stealth. &#43;40 cloak strength for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="missiles_cluster.html">Cluster Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_cluster.png" alt="Cluster Missiles"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">90 cr</td>
   <td>Splits into multiple submunitions before impact. Maximum area coverage.</td>
 </tr>
 <tr>
   <td><a href="probe_combat.html">Combat Scanner Probe</a></td>
+  <td class="thumb"><img src="../images/probe_combat.png" alt="Combat Scanner Probe"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">100 cr</td>
   <td>Tactical probe that reveals enemy ship loadouts.</td>
 </tr>
 <tr>
   <td><a href="scan_probe_combat.html">Combat Scanner Probe</a></td>
+  <td class="thumb"><img src="../images/scan_probe_combat.png" alt="Combat Scanner Probe"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Reveals ship details including modules and cargo.</td>
 </tr>
 <tr>
   <td><a href="stim_pack.html">Combat Stim</a></td>
+  <td class="thumb"><img src="../images/stim_pack.png" alt="Combat Stim"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Increases weapon damage by 10% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="plasma_corrosive.html">Corrosive Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_corrosive.png" alt="Corrosive Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">667 cr</td>
   <td>Chemically enhanced plasma that eats through hull plating. Applies corrosion damage over time.</td>
 </tr>
 <tr>
   <td><a href="food_crimson_bloodwine.html">Crimson Bloodwine</a></td>
+  <td class="thumb"><img src="../images/food_crimson_bloodwine.png" alt="Crimson Bloodwine"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Potent spirits brewed in the Fleet&#39;s forge-heated distilleries. An acquired taste — most species describe it as &#39;drinking a supernova.&#39;</td>
 </tr>
 <tr>
   <td><a href="slugs_cryo.html">Cryo Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_cryo.png" alt="Cryo Slug Case"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">105 cr</td>
   <td>Supercooled ceramic-jacketed slugs that flash-freeze hull sections on impact, causing brittle fractures.</td>
 </tr>
 <tr>
-  <td><a href="countermeasure_decoy.html">Decoy Drone</a></td>
-  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
-  <td class="value">40 cr</td>
-  <td>Expendable drone that mimics ship sensor signatures.</td>
-</tr>
-<tr>
   <td><a href="decoy_drone.html">Decoy Drone</a></td>
+  <td class="thumb"><img src="../images/decoy_drone.png" alt="Decoy Drone"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">300 cr</td>
   <td>Deployable drone that mimics your ship signature.</td>
 </tr>
 <tr>
-  <td><a href="scan_probe_deep.html">Deep Scan Probe</a></td>
+  <td><a href="countermeasure_decoy.html">Decoy Drone</a></td>
+  <td class="thumb"><img src="../images/countermeasure_decoy.png" alt="Decoy Drone"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
+  <td class="value">40 cr</td>
+  <td>Expendable drone that mimics ship sensor signatures.</td>
+</tr>
+<tr>
+  <td><a href="scan_probe_deep.html">Deep Scan Probe</a></td>
+  <td class="thumb"><img src="../images/scan_probe_deep.png" alt="Deep Scan Probe"></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">300 cr</td>
   <td>Long-range probe. Reveals objects within 20 AU.</td>
 </tr>
 <tr>
   <td><a href="probe_deep_space.html">Deep Space Probe</a></td>
+  <td class="thumb"><img src="../images/probe_deep_space.png" alt="Deep Space Probe"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">150 cr</td>
   <td>Long-range probe for surveying distant systems.</td>
 </tr>
 <tr>
   <td><a href="rounds_depleted_uranium.html">Depleted Uranium Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_depleted_uranium.png" alt="Depleted Uranium Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">500 cr</td>
   <td>Ultra-dense penetrator rounds in a reinforced magazine. Extreme armor piercing at the cost of extra cargo weight.</td>
 </tr>
 <tr>
   <td><a href="plasma_dispersal.html">Dispersal Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_dispersal.png" alt="Dispersal Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">125 cr</td>
   <td>Wide-dispersal plasma cells that spread thermal damage across a larger area.</td>
 </tr>
 <tr>
-  <td><a href="ecm_burst.html">ECM Burst</a></td>
-  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
-  <td class="value">150 cr</td>
-  <td>Electronic countermeasure pulse. Disrupts targeting for 3 ticks.</td>
-</tr>
-<tr>
   <td><a href="countermeasure_ecm.html">ECM Burst</a></td>
+  <td class="thumb"><img src="../images/countermeasure_ecm.png" alt="ECM Burst"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">25 cr</td>
   <td>Electronic countermeasure pulse that disrupts targeting.</td>
 </tr>
 <tr>
+  <td><a href="ecm_burst.html">ECM Burst</a></td>
+  <td class="thumb"><img src="../images/ecm_burst.png" alt="ECM Burst"></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
+  <td class="value">150 cr</td>
+  <td>Electronic countermeasure pulse. Disrupts targeting for 3 ticks.</td>
+</tr>
+<tr>
   <td><a href="em_standard.html">EM Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_standard.png" alt="EM Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">48 cr</td>
   <td>Pack of standard electromagnetic disruption charges. One pack fully loads any EM weapon magazine.</td>
 </tr>
 <tr>
   <td><a href="mines_emp.html">EMP Mines</a></td>
+  <td class="thumb"><img src="../images/mines_emp.png" alt="EMP Mines"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">70 cr</td>
   <td>Electromagnetic pulse mines. Disrupts any ship that enters the blast zone.</td>
 </tr>
 <tr>
   <td><a href="missiles_emp.html">EMP Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_emp.png" alt="EMP Missiles"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">80 cr</td>
   <td>Electromagnetic pulse warheads. Disrupts all systems in the blast radius.</td>
 </tr>
 <tr>
   <td><a href="slugs_emp.html">EMP Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_emp.png" alt="EMP Slug Case"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">240 cr</td>
   <td>Slugs with embedded superconductor coils that generate an EMP burst on impact.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_emp.html">EMP Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_emp.png" alt="EMP Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">250 cr</td>
   <td>Massive electromagnetic pulse. Cripples all ship systems for an extended duration.</td>
 </tr>
 <tr>
   <td><a href="rounds_emp_tipped.html">EMP-Tipped Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_emp_tipped.png" alt="EMP-Tipped Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">292 cr</td>
   <td>Rounds with embedded micro-EMP charges. Each hit disrupts target electronics alongside kinetic damage.</td>
 </tr>
 <tr>
   <td><a href="emergency_jump.html">Emergency Jump Cell</a></td>
+  <td class="thumb"><img src="../images/emergency_jump.png" alt="Emergency Jump Cell"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">800 cr</td>
   <td>Instantly jumps to random connected system. Use with caution.</td>
 </tr>
 <tr>
   <td><a href="emergency_warp_device.html">Emergency Warp Device</a></td>
+  <td class="thumb"><img src="../images/emergency_warp_device.png" alt="Emergency Warp Device"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">600 cr</td>
   <td>Single-use short-range warp for escaping combat.</td>
 </tr>
 <tr>
   <td><a href="stim_endurance.html">Endurance Booster</a></td>
+  <td class="thumb"><img src="../images/stim_endurance.png" alt="Endurance Booster"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Metabolic enhancer for sustained high-performance operations.</td>
 </tr>
 <tr>
   <td><a href="void_entropic.html">Entropic Void Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_entropic.png" alt="Entropic Void Core Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">200 cr</td>
   <td>Entropy-accelerating cores that age materials on contact.</td>
 </tr>
 <tr>
   <td><a href="xp_booster.html">Experience Booster</a></td>
+  <td class="thumb"><img src="../images/xp_booster.png" alt="Experience Booster"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">1,000 cr</td>
   <td>&#43;25% skill experience gain for 50 ticks.</td>
 </tr>
 <tr>
   <td><a href="slugs_ferrous.html">Ferrous Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_ferrous.png" alt="Ferrous Slug Case"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">4</td>
   <td class="value">60 cr</td>
   <td>Case of standard dense iron slugs for railguns. One case fully loads any railgun magazine.</td>
 </tr>
 <tr>
   <td><a href="flare_pod.html">Flare Pod</a></td>
+  <td class="thumb"><img src="../images/flare_pod.png" alt="Flare Pod"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">50 cr</td>
   <td>Heat decoys to confuse infrared-guided weapons.</td>
 </tr>
 <tr>
   <td><a href="stim_focus.html">Focus Stim</a></td>
+  <td class="thumb"><img src="../images/stim_focus.png" alt="Focus Stim"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">220 cr</td>
   <td>Increases weapon accuracy by 20% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="em_focused.html">Focused EM Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_focused.png" alt="Focused EM Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">112 cr</td>
   <td>Concentrated EM bursts that overwhelm a single target system. Higher damage per charge.</td>
 </tr>
 <tr>
   <td><a href="plasma_focused.html">Focused Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_focused.png" alt="Focused Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">125 cr</td>
   <td>Tight-beam plasma cells with higher energy density. Superior single-target damage.</td>
 </tr>
 <tr>
   <td><a href="mines_fragmentation.html">Fragmentation Mines</a></td>
+  <td class="thumb"><img src="../images/mines_fragmentation.png" alt="Fragmentation Mines"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">60 cr</td>
   <td>Wider blast radius with shrapnel dispersal. Less direct damage.</td>
 </tr>
 <tr>
   <td><a href="rounds_fragmenting.html">Fragmentation Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_fragmenting.png" alt="Fragmentation Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">180 cr</td>
   <td>Pre-scored casings that shatter into lethal shrapnel. Devastating against drones and small targets.</td>
 </tr>
 <tr>
   <td><a href="food_frontier_moonshine.html">Frontier Rotgut</a></td>
+  <td class="thumb"><img src="../images/food_frontier_moonshine.png" alt="Frontier Rotgut"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Rough spirits distilled at the edge of nowhere. The recipe varies by batch, but the hangover is consistent. Inexplicably popular at Haven.</td>
 </tr>
 <tr>
   <td><a href="fuel_cell.html">Fuel Cell</a></td>
+  <td class="thumb"><img src="../images/fuel_cell.png" alt="Fuel Cell"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">15 cr</td>
   <td>Standard fuel cell, restores 20 fuel.</td>
 </tr>
 <tr>
   <td><a href="hull_nanites.html">Hull Nanites</a></td>
+  <td class="thumb"><img src="../images/hull_nanites.png" alt="Hull Nanites"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Nanobots that repair hull over time. Restores 20 hull/tick for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="hull_patch.html">Hull Patch</a></td>
+  <td class="thumb"><img src="../images/hull_patch.png" alt="Hull Patch"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">60 cr</td>
   <td>Emergency hull sealant. Restores 25 hull instantly.</td>
 </tr>
 <tr>
   <td><a href="missiles_incendiary.html">Incendiary Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_incendiary.png" alt="Incendiary Missiles"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">40 cr</td>
   <td>Thermite warheads that burn through hull after detonation. Less explosive force, more sustained damage.</td>
 </tr>
 <tr>
   <td><a href="rounds_incendiary.html">Incendiary Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_incendiary.png" alt="Incendiary Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">270 cr</td>
   <td>Phosphorus-tipped rounds that ignite on impact. Causes sustained thermal damage to hull systems.</td>
 </tr>
 <tr>
   <td><a href="em_ion.html">Ion Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_ion.png" alt="Ion Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">220 cr</td>
   <td>Heavy ion charges that drain capacitor banks and disable shield generators.</td>
 </tr>
 <tr>
   <td><a href="jammer_burst.html">Jammer Burst</a></td>
+  <td class="thumb"><img src="../images/jammer_burst.png" alt="Jammer Burst"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">400 cr</td>
   <td>Powerful jamming pulse. Disrupts all electronics in range for 2 ticks.</td>
 </tr>
 <tr>
   <td><a href="fuel_cell_military.html">Military Fuel Cell</a></td>
+  <td class="thumb"><img src="../images/fuel_cell_military.png" alt="Military Fuel Cell"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">120 cr</td>
   <td>Maximum density fuel, restores 100 fuel.</td>
 </tr>
 <tr>
   <td><a href="scan_probe_mineral.html">Mineral Scanner Probe</a></td>
+  <td class="thumb"><img src="../images/scan_probe_mineral.png" alt="Mineral Scanner Probe"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Detects ore deposits and their composition.</td>
 </tr>
 <tr>
   <td><a href="mining_enhancer.html">Mining Enhancer</a></td>
+  <td class="thumb"><img src="../images/mining_enhancer.png" alt="Mining Enhancer"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">150 cr</td>
   <td>&#43;50% mining yield for 20 ticks.</td>
 </tr>
 <tr>
   <td><a href="probe_mining.html">Mining Survey Probe</a></td>
+  <td class="thumb"><img src="../images/probe_mining.png" alt="Mining Survey Probe"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Mineral detection probe for locating rich mining sites.</td>
 </tr>
 <tr>
   <td><a href="nanite_swarm.html">Nanite Swarm</a></td>
+  <td class="thumb"><img src="../images/nanite_swarm.png" alt="Nanite Swarm"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">800 cr</td>
   <td>Advanced repair nanobots. Restores 50 hull/tick for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="stim_neural.html">Neural Accelerator</a></td>
+  <td class="thumb"><img src="../images/stim_neural.png" alt="Neural Accelerator"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">450 cr</td>
   <td>Reduces weapon cooldown by 20% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="em_neural.html">Neural Disruption Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_neural.png" alt="Neural Disruption Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">200 cr</td>
   <td>Charges tuned to interfere with AI processing cores. Extended effect duration.</td>
 </tr>
 <tr>
   <td><a href="slugs_neutronium.html">Neutronium Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_neutronium.png" alt="Neutronium Slug Case"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">267 cr</td>
   <td>Impossibly dense neutronium-core slugs. The ultimate kinetic penetrator.</td>
 </tr>
 <tr>
   <td><a href="mines_nuclear.html">Nuclear Mines</a></td>
+  <td class="thumb"><img src="../images/mines_nuclear.png" alt="Nuclear Mines"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">200 cr</td>
   <td>Tactical nuclear devices. Enormous blast radius. Indiscriminate.</td>
 </tr>
 <tr>
   <td><a href="void_null.html">Null Void Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_null.png" alt="Null Void Core Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">240 cr</td>
   <td>Cores that create localized null-space pockets. Devastating but difficult to manufacture.</td>
 </tr>
 <tr>
   <td><a href="void_omega.html">Omega Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_omega.png" alt="Omega Core Pack"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">2,250 cr</td>
   <td>Mythical void cores of unknown origin. Their destructive mechanism defies conventional physics.</td>
 </tr>
 <tr>
   <td><a href="overcharge_cell.html">Overcharge Cell</a></td>
+  <td class="thumb"><img src="../images/overcharge_cell.png" alt="Overcharge Cell"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>High-voltage power cell for temporary weapon overcharging.</td>
 </tr>
 <tr>
   <td><a href="plasma_overcharged.html">Overcharged Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_overcharged.png" alt="Overcharged Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">225 cr</td>
   <td>Dangerously overcharged cells delivering massive thermal output. Handle with care.</td>
 </tr>
 <tr>
   <td><a href="overclock_chip.html">Overclock Chip</a></td>
+  <td class="thumb"><img src="../images/overclock_chip.png" alt="Overclock Chip"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">300 cr</td>
   <td>Temporarily boosts CPU capacity by 10 for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="point_defense_burst.html">PD Burst</a></td>
+  <td class="thumb"><img src="../images/point_defense_burst.png" alt="PD Burst"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">350 cr</td>
   <td>Activates emergency point defense. Destroys incoming missiles for 3 ticks.</td>
 </tr>
 <tr>
   <td><a href="stim_perception.html">Perception Enhancer</a></td>
+  <td class="thumb"><img src="../images/stim_perception.png" alt="Perception Enhancer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">300 cr</td>
   <td>Increases scanner range by 50% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="void_phased.html">Phased Void Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_phased.png" alt="Phased Void Core Pack"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">267 cr</td>
   <td>Phase-shifted cores that partially bypass shields and armor.</td>
 </tr>
 <tr>
   <td><a href="plasma_standard.html">Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_standard.png" alt="Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">3</td>
   <td class="value">60 cr</td>
   <td>Pack of standard plasma cartridges. One pack fully loads any plasma weapon magazine.</td>
 </tr>
 <tr>
   <td><a href="mines_plasma.html">Plasma Mines</a></td>
+  <td class="thumb"><img src="../images/mines_plasma.png" alt="Plasma Mines"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">100 cr</td>
   <td>Thermal detonation mines. Superheated blast melts armor in the vicinity.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_plasma.html">Plasma Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_plasma.png" alt="Plasma Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">4</td>
   <td class="value">200 cr</td>
   <td>Superheated plasma warhead. Melts armor on impact and continues burning.</td>
 </tr>
 <tr>
   <td><a href="power_surge.html">Power Surge Cell</a></td>
+  <td class="thumb"><img src="../images/power_surge.png" alt="Power Surge Cell"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">150 cr</td>
   <td>Instantly restores ship power capacity by 50%.</td>
 </tr>
 <tr>
   <td><a href="fuel_cell_premium.html">Premium Fuel Cell</a></td>
+  <td class="thumb"><img src="../images/fuel_cell_premium.png" alt="Premium Fuel Cell"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">50 cr</td>
   <td>High-density fuel cell, restores 50 fuel.</td>
 </tr>
 <tr>
   <td><a href="stim_reflex.html">Reflex Enhancer</a></td>
+  <td class="thumb"><img src="../images/stim_reflex.png" alt="Reflex Enhancer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Improves evasion by 15% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="stim_regeneration.html">Regeneration Serum</a></td>
+  <td class="thumb"><img src="../images/stim_regeneration.png" alt="Regeneration Serum"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Bio-nanite serum that accelerates hull self-repair.</td>
 </tr>
 <tr>
   <td><a href="regenerative_compound.html">Regenerative Compound</a></td>
+  <td class="thumb"><img src="../images/regenerative_compound.png" alt="Regenerative Compound"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">2</td>
   <td class="value">1,000 cr</td>
   <td>Bio-synthetic repair material. Restores 30 hull/tick for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="repair_kit.html">Repair Kit</a></td>
+  <td class="thumb"><img src="../images/repair_kit.png" alt="Repair Kit"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">100 cr</td>
   <td>Emergency repair kit, restores 50 hull.</td>
 </tr>
 <tr>
   <td><a href="repair_nanites.html">Repair Nanites</a></td>
+  <td class="thumb"><img src="../images/repair_nanites.png" alt="Repair Nanites"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">60 cr</td>
   <td>Self-replicating nanobots for automated hull repair.</td>
 </tr>
 <tr>
   <td><a href="salvage_enhancer.html">Salvage Enhancer</a></td>
+  <td class="thumb"><img src="../images/salvage_enhancer.png" alt="Salvage Enhancer"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">150 cr</td>
   <td>&#43;50% salvage yield for 20 ticks.</td>
 </tr>
 <tr>
-  <td><a href="scan_probe_basic.html">Scan Probe</a></td>
-  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
-  <td class="value">100 cr</td>
-  <td>Deployable scanner. Reveals hidden objects within 5 AU.</td>
-</tr>
-<tr>
   <td><a href="probe_scan.html">Scan Probe</a></td>
+  <td class="thumb"><img src="../images/probe_scan.png" alt="Scan Probe"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">40 cr</td>
   <td>Standard scanning probe for system reconnaissance.</td>
 </tr>
 <tr>
+  <td><a href="scan_probe_basic.html">Scan Probe</a></td>
+  <td class="thumb"><img src="../images/scan_probe_basic.png" alt="Scan Probe"></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
+  <td class="value">100 cr</td>
+  <td>Deployable scanner. Reveals hidden objects within 5 AU.</td>
+</tr>
+<tr>
   <td><a href="sensor_booster.html">Sensor Booster</a></td>
+  <td class="thumb"><img src="../images/sensor_booster.png" alt="Sensor Booster"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">250 cr</td>
   <td>Increases scanner power by 50% for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="countermeasure_jammer.html">Sensor Jammer</a></td>
+  <td class="thumb"><img src="../images/countermeasure_jammer.png" alt="Sensor Jammer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Sustained jamming field that disrupts targeting locks.</td>
 </tr>
 <tr>
   <td><a href="slugs_shaped_charge.html">Shaped Charge Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_shaped_charge.png" alt="Shaped Charge Slug Case"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">135 cr</td>
   <td>Explosive-lined slugs that focus blast energy through the target hull on impact.</td>
 </tr>
 <tr>
   <td><a href="shield_booster_mk2.html">Shield Booster MK2</a></td>
+  <td class="thumb"><img src="../images/shield_booster_mk2.png" alt="Shield Booster MK2"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">2</td>
   <td class="value">200 cr</td>
   <td>Advanced shield restoration. Restores 200 shields.</td>
 </tr>
 <tr>
   <td><a href="shield_booster_charge.html">Shield Charge</a></td>
+  <td class="thumb"><img src="../images/shield_booster_charge.png" alt="Shield Charge"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">75 cr</td>
   <td>Instant shield restoration, restores 100 shields.</td>
 </tr>
 <tr>
   <td><a href="shield_hardener.html">Shield Hardener</a></td>
+  <td class="thumb"><img src="../images/shield_hardener.png" alt="Shield Hardener"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">400 cr</td>
   <td>Increases shield resistance by 25% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="shield_overcharge.html">Shield Overcharge</a></td>
+  <td class="thumb"><img src="../images/shield_overcharge.png" alt="Shield Overcharge"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">600 cr</td>
   <td>Overcharges shields to 150% capacity for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="shield_regenerator.html">Shield Regenerator</a></td>
+  <td class="thumb"><img src="../images/shield_regenerator.png" alt="Shield Regenerator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>Boosts shield recharge rate by 50% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_siege.html">Siege Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_siege.png" alt="Siege Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">5</td>
   <td class="value">300 cr</td>
   <td>Maximum hull damage payload. Designed for breaking stations and capital ships.</td>
 </tr>
 <tr>
   <td><a href="void_singularity.html">Singularity Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_singularity.png" alt="Singularity Core Pack"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">1,200 cr</td>
   <td>Contains stabilized micro-singularity charges. The most destructive ammunition in known space.</td>
 </tr>
 <tr>
   <td><a href="slugs_singularity.html">Singularity Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_singularity.png" alt="Singularity Slug Case"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">5</td>
   <td class="value">1,250 cr</td>
   <td>Experimental slugs containing stabilized micro-singularities. Warps space around the impact point.</td>
 </tr>
 <tr>
   <td><a href="smoke_screen.html">Smoke Screen</a></td>
+  <td class="thumb"><img src="../images/smoke_screen.png" alt="Smoke Screen"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Visual obscurement cloud. -40% enemy accuracy for 3 ticks.</td>
 </tr>
 <tr>
   <td><a href="food_sol_rations.html">Solarian Gourmet Rations</a></td>
+  <td class="thumb"><img src="../images/food_sol_rations.png" alt="Solarian Gourmet Rations"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">1</td>
   <td class="value">80 cr</td>
   <td>Vacuum-sealed meals prepared in Sol Central&#39;s hydroponic biosphere. Real food is a luxury in space, and nobody does it better than the Confederacy.</td>
 </tr>
 <tr>
   <td><a href="stim_speed.html">Speed Stim</a></td>
+  <td class="thumb"><img src="../images/stim_speed.png" alt="Speed Stim"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">280 cr</td>
   <td>Increases ship speed by 25% for 10 ticks.</td>
 </tr>
 <tr>
   <td><a href="missiles_standard.html">Standard Guided Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_standard.png" alt="Standard Guided Missiles"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">2</td>
   <td class="value">30 cr</td>
   <td>Heat-seeking guided missiles. Reliable all-purpose ordnance.</td>
 </tr>
 <tr>
   <td><a href="mines_standard.html">Standard Mines</a></td>
+  <td class="thumb"><img src="../images/mines_standard.png" alt="Standard Mines"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">3</td>
   <td class="value">40 cr</td>
   <td>Basic proximity-detonated explosives for area denial.</td>
 </tr>
 <tr>
   <td><a href="rounds_standard.html">Standard Rounds Box</a></td>
+  <td class="thumb"><img src="../images/rounds_standard.png" alt="Standard Rounds Box"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">3</td>
   <td class="value">100 cr</td>
   <td>Crate of basic kinetic autocannon ammunition. One box fully loads any autocannon magazine.</td>
 </tr>
 <tr>
   <td><a href="torpedoes_standard.html">Standard Torpedoes</a></td>
+  <td class="thumb"><img src="../images/torpedoes_standard.png" alt="Standard Torpedoes"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">100 cr</td>
   <td>Heavy anti-capital torpedoes. Slow but devastating on impact.</td>
 </tr>
 <tr>
   <td><a href="plasma_stellar.html">Stellar Plasma Cell Pack</a></td>
+  <td class="thumb"><img src="../images/plasma_stellar.png" alt="Stellar Plasma Cell Pack"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">3</td>
   <td class="value">900 cr</td>
   <td>Cells containing plasma harvested from stellar coronas. Burns hotter than any synthetic alternative.</td>
 </tr>
 <tr>
   <td><a href="structural_cement.html">Structural Cement</a></td>
+  <td class="thumb"><img src="../images/structural_cement.png" alt="Structural Cement"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">3</td>
   <td class="value">500 cr</td>
   <td>Heavy-duty hull repair compound. Restores 200 hull.</td>
 </tr>
 <tr>
   <td><a href="missiles_swarm.html">Swarm Missiles</a></td>
+  <td class="thumb"><img src="../images/missiles_swarm.png" alt="Swarm Missiles"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">2</td>
   <td class="value">45 cr</td>
   <td>Pod of micro-missiles that saturate the target area. Harder to evade but less damage per warhead.</td>
 </tr>
 <tr>
   <td><a href="countermeasure_flare.html">Thermal Flare</a></td>
+  <td class="thumb"><img src="../images/countermeasure_flare.png" alt="Thermal Flare"></td>
   <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="size">1</td>
   <td class="value">8 cr</td>
   <td>Heat decoy that diverts thermal-guided projectiles.</td>
 </tr>
 <tr>
   <td><a href="trade_booster.html">Trade Negotiator</a></td>
+  <td class="thumb"><img src="../images/trade_booster.png" alt="Trade Negotiator"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">500 cr</td>
   <td>&#43;10% better buy/sell prices for 30 ticks.</td>
 </tr>
 <tr>
   <td><a href="slugs_tungsten.html">Tungsten Slug Case</a></td>
+  <td class="thumb"><img src="../images/slugs_tungsten.png" alt="Tungsten Slug Case"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">4</td>
   <td class="value">150 cr</td>
   <td>Heavy tungsten penetrators in a reinforced case. Punches through heavy armor plating.</td>
 </tr>
 <tr>
   <td><a href="stim_turtle.html">Turtle Compound</a></td>
+  <td class="thumb"><img src="../images/stim_turtle.png" alt="Turtle Compound"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">1</td>
   <td class="value">350 cr</td>
   <td>&#43;40% defense, -25% speed for 15 ticks. Maximum survivability.</td>
 </tr>
 <tr>
   <td><a href="void_standard.html">Void Core Pack</a></td>
+  <td class="thumb"><img src="../images/void_standard.png" alt="Void Core Pack"></td>
   <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="size">3</td>
   <td class="value">125 cr</td>
   <td>Pack of standard void energy cores. One pack fully loads any void weapon magazine.</td>
 </tr>
 <tr>
   <td><a href="mines_void.html">Void Mines</a></td>
+  <td class="thumb"><img src="../images/mines_void.png" alt="Void Mines"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">4</td>
   <td class="value">350 cr</td>
   <td>Creates a dimensional rift on detonation. Bypasses conventional shields.</td>
 </tr>
 <tr>
   <td><a href="em_void_tuned.html">Void-Tuned EM Charge Pack</a></td>
+  <td class="thumb"><img src="../images/em_void_tuned.png" alt="Void-Tuned EM Charge Pack"></td>
   <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="size">2</td>
   <td class="value">900 cr</td>
   <td>EM charges calibrated using void crystal harmonics. Bypasses conventional EM shielding.</td>
 </tr>
 <tr>
   <td><a href="warp_stabilizer.html">Warp Stabilizer</a></td>
+  <td class="thumb"><img src="../images/warp_stabilizer.png" alt="Warp Stabilizer"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">500 cr</td>
   <td>Prevents warp disruption for 5 ticks.</td>
 </tr>
 <tr>
   <td><a href="weapon_overload.html">Weapon Overload Capacitor</a></td>
+  <td class="thumb"><img src="../images/weapon_overload.png" alt="Weapon Overload Capacitor"></td>
   <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="size">1</td>
   <td class="value">200 cr</td>
   <td>Dumps stored energy into weapons for a burst of extra damage.</td>
 </tr>
 </table>
 </div>
+<script>
+document.querySelectorAll("table").forEach(function(table) {
+  var headers = table.querySelectorAll("th");
+  var sortCol = -1, sortAsc = true;
+  headers.forEach(function(th, idx) {
+    th.addEventListener("click", function() {
+      if (sortCol === idx) { sortAsc = !sortAsc; } else { sortCol = idx; sortAsc = true; }
+      headers.forEach(function(h) {
+        var arrow = h.querySelector(".sort-arrow");
+        if (arrow) arrow.remove();
+      });
+      var arrow = document.createElement("span");
+      arrow.className = "sort-arrow";
+      arrow.textContent = sortAsc ? "\u25B2" : "\u25BC";
+      th.appendChild(arrow);
+      var tbody = table.querySelector("tbody") || table;
+      var rows = Array.from(tbody.querySelectorAll("tr")).filter(function(r) { return !r.querySelector("th"); });
+      rows.sort(function(a, b) {
+        var at = a.cells[idx].textContent.trim();
+        var bt = b.cells[idx].textContent.trim();
+        var an = at.replace(/[^0-9.-]/g, ""), bn = bt.replace(/[^0-9.-]/g, "");
+        if (an !== "" && bn !== "" && !isNaN(an) && !isNaN(bn)) {
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? at.localeCompare(bt) : bt.localeCompare(at);
+      });
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+});
+</script>
 </body>
 </html>

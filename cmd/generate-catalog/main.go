@@ -510,7 +510,39 @@ func writeHTMLPages(outDir string, categories []CategoryInfo, items map[string]*
 	return nil
 }
 
-const htmlTopTemplate = `<!DOCTYPE html>
+var sortScript = `<script>
+document.querySelectorAll("table").forEach(function(table) {
+  var headers = table.querySelectorAll("th");
+  var sortCol = -1, sortAsc = true;
+  headers.forEach(function(th, idx) {
+    th.addEventListener("click", function() {
+      if (sortCol === idx) { sortAsc = !sortAsc; } else { sortCol = idx; sortAsc = true; }
+      headers.forEach(function(h) {
+        var arrow = h.querySelector(".sort-arrow");
+        if (arrow) arrow.remove();
+      });
+      var arrow = document.createElement("span");
+      arrow.className = "sort-arrow";
+      arrow.textContent = sortAsc ? "\u25B2" : "\u25BC";
+      th.appendChild(arrow);
+      var tbody = table.querySelector("tbody") || table;
+      var rows = Array.from(tbody.querySelectorAll("tr")).filter(function(r) { return !r.querySelector("th"); });
+      rows.sort(function(a, b) {
+        var at = a.cells[idx].textContent.trim();
+        var bt = b.cells[idx].textContent.trim();
+        var an = at.replace(/[^0-9.-]/g, ""), bn = bt.replace(/[^0-9.-]/g, "");
+        if (an !== "" && bn !== "" && !isNaN(an) && !isNaN(bn)) {
+          return sortAsc ? an - bn : bn - an;
+        }
+        return sortAsc ? at.localeCompare(bt) : bt.localeCompare(at);
+      });
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
+  });
+});
+</script>`
+
+var htmlTopTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -573,6 +605,9 @@ td {
 }
 tr:last-child td { border-bottom: none; }
 td.count { text-align: right; }
+th { cursor: pointer; user-select: none; }
+th:hover { color: var(--primary); }
+th .sort-arrow { margin-left: 4px; font-size: 10px; }
 </style>
 </head>
 <body>
@@ -589,11 +624,12 @@ td.count { text-align: right; }
 {{- end}}
 </table>
 </div>
+` + sortScript + `
 </body>
 </html>
 `
 
-const htmlCatTemplate = `<!DOCTYPE html>
+var htmlCatTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -619,7 +655,7 @@ body {
   color: var(--foreground);
   line-height: 1.6;
   padding: 2rem;
-  max-width: 960px;
+  max-width: 85%;
   margin: 0 auto;
 }
 a { color: var(--primary); text-decoration: none; }
@@ -666,6 +702,7 @@ th {
 td {
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--border);
+  vertical-align: middle;
 }
 tr:last-child td { border-bottom: none; }
 .rarity-badge {
@@ -677,6 +714,11 @@ tr:last-child td { border-bottom: none; }
   border: 1px solid;
 }
 td.value { text-align: right; }
+td.size { text-align: right; }
+td.thumb img { height: 64px; image-rendering: pixelated; }
+th { cursor: pointer; user-select: none; }
+th:hover { color: var(--primary); }
+th .sort-arrow { margin-left: 4px; font-size: 10px; }
 </style>
 </head>
 <body>
@@ -685,22 +727,25 @@ td.value { text-align: right; }
 <p class="description">{{.Description}}</p>
 <div class="card">
 <table>
-<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr><th>Item</th><th></th><th>Rarity</th><th style="text-align:right">Size</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
 {{- range .Items}}
 <tr>
   <td><a href="{{.ID}}.html">{{.Name}}</a></td>
+  <td class="thumb"><img src="../images/{{.ID}}.png" alt="{{.Name}}"></td>
   <td><span class="rarity-badge" style="color:{{rarityColor .Rarity}};border-color:{{rarityColor .Rarity}}">{{.Rarity}}</span></td>
+  <td class="size">{{.Size}}</td>
   <td class="value">{{fmtValue .BaseValue}}</td>
   <td>{{.Description}}</td>
 </tr>
 {{- end}}
 </table>
 </div>
+` + sortScript + `
 </body>
 </html>
 `
 
-const htmlItemTemplate = `<!DOCTYPE html>
+var htmlItemTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
