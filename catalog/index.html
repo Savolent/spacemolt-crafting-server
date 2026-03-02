@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+td.count { text-align: right; }
+</style>
+</head>
+<body>
+<h1>SpaceMolt Item Catalog</h1>
+<div class="card">
+<table>
+<tr><th>Category</th><th style="text-align:right">Items</th><th>Description</th></tr>
+<tr>
+  <td><a href="artifact/">artifact</a></td>
+  <td class="count">15</td>
+  <td>Rare relics and ancient objects from lost civilizations.</td>
+</tr>
+<tr>
+  <td><a href="component/">component</a></td>
+  <td class="count">120</td>
+  <td>Crafted parts and assemblies used to build ships, stations, and equipment.</td>
+</tr>
+<tr>
+  <td><a href="consumable/">consumable</a></td>
+  <td class="count">121</td>
+  <td>Single-use items including ammunition, stims, repair kits, and fuel.</td>
+</tr>
+<tr>
+  <td><a href="contraband/">contraband</a></td>
+  <td class="count">12</td>
+  <td>Illegal goods that carry severe penalties if caught in possession.</td>
+</tr>
+<tr>
+  <td><a href="defense/">defense</a></td>
+  <td class="count">1</td>
+  <td>Defensive equipment and shield systems.</td>
+</tr>
+<tr>
+  <td><a href="document/">document</a></td>
+  <td class="count">5</td>
+  <td>Blueprints, maps, and encrypted data files.</td>
+</tr>
+<tr>
+  <td><a href="drone/">drone</a></td>
+  <td class="count">9</td>
+  <td>Autonomous craft for combat, mining, repair, and reconnaissance.</td>
+</tr>
+<tr>
+  <td><a href="material/">material</a></td>
+  <td class="count">2</td>
+  <td>Rare raw materials with special properties.</td>
+</tr>
+<tr>
+  <td><a href="misc/">misc</a></td>
+  <td class="count">29</td>
+  <td>Collectibles, souvenirs, medals, and other miscellaneous items.</td>
+</tr>
+<tr>
+  <td><a href="ore/">ore</a></td>
+  <td class="count">84</td>
+  <td>Raw ores, gases, ice, and biological samples harvested from space.</td>
+</tr>
+<tr>
+  <td><a href="refined/">refined</a></td>
+  <td class="count">77</td>
+  <td>Processed materials refined from raw ores and gases.</td>
+</tr>
+<tr>
+  <td><a href="weapon/">weapon</a></td>
+  <td class="count">1</td>
+  <td>Weapons and weapon systems.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

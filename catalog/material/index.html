@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>material — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / material</nav>
+<h1>material</h1>
+<p class="description">Rare raw materials with special properties.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="exotic_crystal.html">Exotic Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">5,000 cr</td>
+  <td>Rare crystalline structure with quantum properties.</td>
+</tr>
+<tr>
+  <td><a href="void_crystal.html">Void Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">50,000 cr</td>
+  <td>Legendary material formed in the depths of space-time anomalies.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

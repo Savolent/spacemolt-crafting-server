@@ -11,6 +11,7 @@ import (
 	"path/filepath"
 	"slices"
 	"strings"
+	htmltpl "html/template"
 	"text/template"
 
 	humanize "github.com/dustin/go-humanize"
@@ -148,6 +149,10 @@ func main() {
 
 	if err := writeREADMEs(outDir, categories); err != nil {
 		log.Fatalf("write READMEs: %v", err)
+	}
+
+	if err := writeHTMLPages(outDir, categories, items); err != nil {
+		log.Fatalf("write HTML pages: %v", err)
 	}
 
 	fmt.Printf("Generated %d catalog pages in %s/\n", len(items), outDir)
@@ -349,7 +354,7 @@ func cleanGeneratedFiles(outDir string) error {
 	}
 	for _, e := range entries {
 		path := filepath.Join(outDir, e.Name())
-		if !e.IsDir() && strings.HasSuffix(e.Name(), ".md") {
+		if !e.IsDir() && (strings.HasSuffix(e.Name(), ".md") || strings.HasSuffix(e.Name(), ".html")) {
 			if err := os.Remove(path); err != nil {
 				return err
 			}
@@ -427,6 +432,431 @@ const catREADMETemplate = `<!-- Auto-generated from crafting.db — do not edit 
 
 ---
 {{end}}`
+
+// rarityColor maps rarity levels to SMUI aurora palette hex colors.
+func rarityColor(r string) string {
+	switch strings.ToLower(r) {
+	case "common":
+		return "#a3be8c" // aurora green
+	case "uncommon":
+		return "#88c0d0" // frost-2
+	case "rare":
+		return "#5e81ac" // frost-4
+	case "exotic":
+		return "#d08770" // aurora orange
+	case "legendary":
+		return "#b48ead" // aurora purple
+	default:
+		return "#d8dee9" // snow storm
+	}
+}
+
+func writeHTMLPages(outDir string, categories []CategoryInfo, items map[string]*Item) error {
+	funcs := htmltpl.FuncMap{
+		"yesno":       yesno,
+		"fmtValue":    fmtValue,
+		"joinSkills":  joinSkills,
+		"rarityColor": rarityColor,
+	}
+	topTmpl := htmltpl.Must(htmltpl.New("top").Funcs(funcs).Parse(htmlTopTemplate))
+	catTmpl := htmltpl.Must(htmltpl.New("cat").Funcs(funcs).Parse(htmlCatTemplate))
+	itemHTMLTmpl := htmltpl.Must(htmltpl.New("item").Funcs(funcs).Parse(htmlItemTemplate))
+
+	// Top-level index.html.
+	topPath := filepath.Join(outDir, "index.html")
+	f, err := os.Create(topPath)
+	if err != nil {
+		return err
+	}
+	if err := topTmpl.Execute(f, categories); err != nil {
+		_ = f.Close()
+		return err
+	}
+	if err := f.Close(); err != nil {
+		return err
+	}
+
+	// Per-category index.html.
+	for _, cat := range categories {
+		catPath := filepath.Join(outDir, cat.Name, "index.html")
+		f, err := os.Create(catPath)
+		if err != nil {
+			return err
+		}
+		if err := catTmpl.Execute(f, cat); err != nil {
+			_ = f.Close()
+			return err
+		}
+		if err := f.Close(); err != nil {
+			return err
+		}
+	}
+
+	// Per-item HTML pages.
+	for _, item := range items {
+		path := filepath.Join(outDir, item.Category, item.ID+".html")
+		f, err := os.Create(path)
+		if err != nil {
+			return err
+		}
+		if err := itemHTMLTmpl.Execute(f, item); err != nil {
+			_ = f.Close()
+			return err
+		}
+		if err := f.Close(); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+const htmlTopTemplate = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+td.count { text-align: right; }
+</style>
+</head>
+<body>
+<h1>SpaceMolt Item Catalog</h1>
+<div class="card">
+<table>
+<tr><th>Category</th><th style="text-align:right">Items</th><th>Description</th></tr>
+{{- range .}}
+<tr>
+  <td><a href="{{.Name}}/">{{.Name}}</a></td>
+  <td class="count">{{.Count}}</td>
+  <td>{{.Description}}</td>
+</tr>
+{{- end}}
+</table>
+</div>
+</body>
+</html>
+`
+
+const htmlCatTemplate = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{.Name}} — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / {{.Name}}</nav>
+<h1>{{.Name}}</h1>
+<p class="description">{{.Description}}</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+{{- range .Items}}
+<tr>
+  <td><a href="{{.ID}}.html">{{.Name}}</a></td>
+  <td><span class="rarity-badge" style="color:{{rarityColor .Rarity}};border-color:{{rarityColor .Rarity}}">{{.Rarity}}</span></td>
+  <td class="value">{{fmtValue .BaseValue}}</td>
+  <td>{{.Description}}</td>
+</tr>
+{{- end}}
+</table>
+</div>
+</body>
+</html>
+`
+
+const htmlItemTemplate = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{.Name}} — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  margin-bottom: 1.5rem;
+}
+.item-image {
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.item-image img { image-rendering: pixelated; }
+.section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  background: var(--card-header);
+  border-bottom: 1px solid var(--border);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.kv-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  width: 140px;
+}
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+blockquote {
+  border-left: 3px solid var(--border);
+  padding: 0.75rem 1rem;
+  color: var(--muted-foreground);
+  font-style: italic;
+  margin: 1rem 0;
+}
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / <a href="./">{{.Category}}</a> / {{.Name}}</nav>
+<h1>{{.Name}}</h1>
+<div class="card">
+  <div class="item-image">
+    <img src="../images/{{.ID}}.png" alt="{{.Name}}" width="128" height="128">
+  </div>
+  <div class="section-label">General</div>
+  <table>
+    <tr><td class="kv-label">Category</td><td><a href="./">{{.Category}}</a></td></tr>
+    <tr><td class="kv-label">Rarity</td><td><span class="rarity-badge" style="color:{{rarityColor .Rarity}};border-color:{{rarityColor .Rarity}}">{{.Rarity}}</span></td></tr>
+    <tr><td class="kv-label">Size</td><td>{{.Size}}</td></tr>
+    <tr><td class="kv-label">Stackable</td><td>{{yesno .Stackable}}</td></tr>
+    <tr><td class="kv-label">Tradeable</td><td>{{yesno .Tradeable}}</td></tr>
+  </table>
+  <div class="section-label">Market</div>
+  <table>
+    <tr><td class="kv-label">Base Value</td><td>{{fmtValue .BaseValue}}</td></tr>
+  </table>
+</div>
+<blockquote>{{.Description}}</blockquote>
+{{- if or .ProducedBy .UsedIn}}
+<div class="card">
+{{- if .ProducedBy}}
+  <div class="section-label">Produced By</div>
+  <table>
+    <tr><th>Recipe</th><th>Qty</th><th>Crafting Time</th><th>Skills</th></tr>
+    {{- range .ProducedBy}}
+    <tr><td>{{.RecipeName}}</td><td>{{.Quantity}}</td><td>{{.CraftingTime}} ticks</td><td>{{joinSkills .Skills}}</td></tr>
+    {{- end}}
+  </table>
+{{- end}}
+{{- if .UsedIn}}
+  <div class="section-label">Used In</div>
+  <table>
+    <tr><th>Recipe</th><th>Qty</th><th>Produces</th></tr>
+    {{- range .UsedIn}}
+    <tr><td>{{.RecipeName}}</td><td>{{.Quantity}}</td><td><a href="../{{.OutputCategory}}/{{.OutputID}}.html">{{.OutputName}}</a></td></tr>
+    {{- end}}
+  </table>
+{{- end}}
+</div>
+{{- end}}
+</body>
+</html>
+`
 
 const itemTemplate = `<!-- Auto-generated from crafting.db — do not edit manually -->
 

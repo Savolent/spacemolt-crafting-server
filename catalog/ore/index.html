@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ore — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / ore</nav>
+<h1>ore</h1>
+<p class="description">Raw ores, gases, ice, and biological samples harvested from space.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="ore_adamantite.html">Adamantite Ore</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">800 cr</td>
+  <td>Near-indestructible crystalline ore of unknown origin.</td>
+</tr>
+<tr>
+  <td><a href="bio_dna_sample.html">Alien DNA Sample</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">300 cr</td>
+  <td>Preserved genetic material from extraterrestrial life.</td>
+</tr>
+<tr>
+  <td><a href="bio_spores.html">Alien Spores</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">60 cr</td>
+  <td>Dormant spores from unknown organisms. Handle in containment.</td>
+</tr>
+<tr>
+  <td><a href="ore_aluminum.html">Aluminum Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">6 cr</td>
+  <td>Lightweight metal ore for basic hull construction.</td>
+</tr>
+<tr>
+  <td><a href="ore_americium.html">Americium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">400 cr</td>
+  <td>Synthetic actinide recovered from ancient reactors.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_ammonia.html">Ammonia Ice</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">14 cr</td>
+  <td>Frozen ammonia used in industrial coolants and fertilizer.</td>
+</tr>
+<tr>
+  <td><a href="ore_ancient_crystal.html">Ancient Power Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">1,200 cr</td>
+  <td>Crystalline energy source from a long-dead civilization. Still hums with power.</td>
+</tr>
+<tr>
+  <td><a href="ore_antimatter.html">Antimatter Containment Cell</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">800 cr</td>
+  <td>Safely contained antimatter from Solarian research facilities.</td>
+</tr>
+<tr>
+  <td><a href="gas_argon.html">Argon Gas</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">12 cr</td>
+  <td>Inert gas for shielding during welding and manufacturing.</td>
+</tr>
+<tr>
+  <td><a href="bio_bacterial_culture.html">Bacterial Culture</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">30 cr</td>
+  <td>Engineered bacteria for industrial bioprocessing.</td>
+</tr>
+<tr>
+  <td><a href="bio_bioluminescent.html">Bioluminescent Polyps</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">40 cr</td>
+  <td>Light-emitting xenobiological organisms harvested from reef nebulae.</td>
+</tr>
+<tr>
+  <td><a href="ore_californium.html">Californium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">800 cr</td>
+  <td>Ultra-rare element for neutron-based scanners and weapons.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_co2.html">Carbon Dioxide Ice</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">10 cr</td>
+  <td>Dry ice used in atmospheric processing and refrigeration.</td>
+</tr>
+<tr>
+  <td><a href="ore_carbon.html">Carbon Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">4 cr</td>
+  <td>Versatile element used in composites and filtration systems.</td>
+</tr>
+<tr>
+  <td><a href="gas_chlorine.html">Chlorine Gas</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">25 cr</td>
+  <td>Toxic gas used in chemical synthesis and weapons.</td>
+</tr>
+<tr>
+  <td><a href="ore_chromium.html">Chromium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">20 cr</td>
+  <td>Essential for creating stainless alloys and hardening steel.</td>
+</tr>
+<tr>
+  <td><a href="ore_cobalt.html">Cobalt Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">22 cr</td>
+  <td>Heat-resistant ore used in engine components.</td>
+</tr>
+<tr>
+  <td><a href="gas_hydrogen.html">Compressed Hydrogen</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">8 cr</td>
+  <td>Basic fuel source harvested from gas giants and nebulae.</td>
+</tr>
+<tr>
+  <td><a href="ore_copper.html">Copper Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">8 cr</td>
+  <td>Conductive copper ore, essential for electronics.</td>
+</tr>
+<tr>
+  <td><a href="ore_outerrim_dark.html">Dark Matter Residue</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">700 cr</td>
+  <td>Condensed dark matter found only in the deepest reaches of the Outer Rim.</td>
+</tr>
+<tr>
+  <td><a href="ore_darksteel.html">Darksteel Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">350 cr</td>
+  <td>Incredibly dense metal found only in black hole accretion disks near Crimson space.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_deuterium.html">Deuterium Ice</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">120 cr</td>
+  <td>Heavy water ice for advanced fusion reactors.</td>
+</tr>
+<tr>
+  <td><a href="ore_dimensional_shards.html">Dimensional Shards</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">1,800 cr</td>
+  <td>Fragments of matter from parallel dimensions. Highly unstable.</td>
+</tr>
+<tr>
+  <td><a href="ore_elder_bone.html">Elder Bone</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">600 cr</td>
+  <td>Fossilized remains of enormous ancient creatures. Surprisingly durable.</td>
+</tr>
+<tr>
+  <td><a href="ore_crystal.html">Energy Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">75 cr</td>
+  <td>Naturally occurring crystals that store and amplify energy.</td>
+</tr>
+<tr>
+  <td><a href="bio_enzyme_cluster.html">Enzyme Cluster</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">75 cr</td>
+  <td>Biological catalysts for advanced manufacturing.</td>
+</tr>
+<tr>
+  <td><a href="ore_exotic.html">Exotic Matter</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">250 cr</td>
+  <td>Strange matter with properties that defy conventional physics. Found only in Voidborn space.</td>
+</tr>
+<tr>
+  <td><a href="gas_fluorine.html">Fluorine Gas</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">45 cr</td>
+  <td>Highly reactive gas for chemical etching and processing.</td>
+</tr>
+<tr>
+  <td><a href="bio_fungal_extract.html">Fungal Extract</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">35 cr</td>
+  <td>Concentrated extracts from xenofungal colonies.</td>
+</tr>
+<tr>
+  <td><a href="ore_crimson_fury.html">Fury Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">320 cr</td>
+  <td>Superheated crystals from Crimson volcanic worlds, pulsing with thermal energy.</td>
+</tr>
+<tr>
+  <td><a href="ore_gold.html">Gold Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">45 cr</td>
+  <td>Highly conductive precious metal for advanced electronics.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_helium.html">Helium Ice</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">85 cr</td>
+  <td>Frozen helium-3 from gas giant atmospheres. Premium fusion fuel.</td>
+</tr>
+<tr>
+  <td><a href="gas_ion.html">Ion Gas</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">35 cr</td>
+  <td>Highly charged gas for ion propulsion systems.</td>
+</tr>
+<tr>
+  <td><a href="ore_iridium.html">Iridium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">90 cr</td>
+  <td>Dense, corrosion-proof metal for high-stress components.</td>
+</tr>
+<tr>
+  <td><a href="ore_iron.html">Iron Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">5 cr</td>
+  <td>Common ferrous ore, the backbone of basic construction.</td>
+</tr>
+<tr>
+  <td><a href="gas_krypton.html">Krypton Gas</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">50 cr</td>
+  <td>Rare noble gas for high-efficiency lighting systems.</td>
+</tr>
+<tr>
+  <td><a href="ore_lead.html">Lead Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">5 cr</td>
+  <td>Dense metal used for radiation shielding and ballast.</td>
+</tr>
+<tr>
+  <td><a href="ore_solarian_legacy.html">Legacy Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">450 cr</td>
+  <td>Pre-spacefaring Earth artifacts fused with asteroid material over millennia.</td>
+</tr>
+<tr>
+  <td><a href="ore_lithium.html">Lithium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">18 cr</td>
+  <td>Essential for energy storage systems and batteries.</td>
+</tr>
+<tr>
+  <td><a href="ore_manganese.html">Manganese Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">15 cr</td>
+  <td>Strengthening agent for steel and aluminum alloys.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_methane.html">Methane Ice</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">18 cr</td>
+  <td>Frozen methane for chemical processing and fuel synthesis.</td>
+</tr>
+<tr>
+  <td><a href="gas_nebula.html">Nebula Gas</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">55 cr</td>
+  <td>Complex mixture of exotic compounds found only in nebulae.</td>
+</tr>
+<tr>
+  <td><a href="ore_nebulium.html">Nebulium</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">280 cr</td>
+  <td>Crystallized energy from the heart of nebulae in Nebula Federation territory.</td>
+</tr>
+<tr>
+  <td><a href="ore_neodymium.html">Neodymium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">70 cr</td>
+  <td>Rare earth element for creating powerful magnets.</td>
+</tr>
+<tr>
+  <td><a href="gas_neon.html">Neon Gas</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">15 cr</td>
+  <td>Bright noble gas for signage and laser medium.</td>
+</tr>
+<tr>
+  <td><a href="bio_neural_tissue.html">Neural Tissue Sample</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">150 cr</td>
+  <td>Preserved neural matter from space-faring organisms.</td>
+</tr>
+<tr>
+  <td><a href="ore_nickel.html">Nickel Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">7 cr</td>
+  <td>Corrosion-resistant ore used in alloy production.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_nitrogen.html">Nitrogen Ice</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">15 cr</td>
+  <td>Frozen nitrogen used in cooling systems and life support.</td>
+</tr>
+<tr>
+  <td><a href="ore_voidborn_null.html">Null Matter</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">450 cr</td>
+  <td>Material that seems to absorb energy and light. Unique to Voidborn anomaly zones.</td>
+</tr>
+<tr>
+  <td><a href="bio_organic_compound.html">Organic Compound</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">45 cr</td>
+  <td>Complex carbon-based molecules harvested from life-bearing worlds.</td>
+</tr>
+<tr>
+  <td><a href="ore_osmium.html">Osmium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">100 cr</td>
+  <td>The densest naturally occurring element, used in specialized armor.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_oxygen.html">Oxygen Ice</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">20 cr</td>
+  <td>Solid oxygen for emergency life support reserves.</td>
+</tr>
+<tr>
+  <td><a href="ore_palladium.html">Palladium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">80 cr</td>
+  <td>Rare earth element crucial for shield emitter arrays.</td>
+</tr>
+<tr>
+  <td><a href="ore_phase_crystal.html">Phase Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">500 cr</td>
+  <td>Exists partially out of phase with normal space-time. Found only in Outer Rim exploration zones.</td>
+</tr>
+<tr>
+  <td><a href="bio_pheromone.html">Pheromone Compound</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">200 cr</td>
+  <td>Chemical signals extracted from hive-mind species.</td>
+</tr>
+<tr>
+  <td><a href="gas_plasma.html">Plasma Gas</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">65 cr</td>
+  <td>Superheated ionized gas captured from stellar coronas.</td>
+</tr>
+<tr>
+  <td><a href="ore_plasma.html">Plasma Residue</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">280 cr</td>
+  <td>High-energy plasma condensate harvested from Crimson weapons testing ranges.</td>
+</tr>
+<tr>
+  <td><a href="ore_platinum.html">Platinum Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">40 cr</td>
+  <td>Precious metal with excellent catalytic properties.</td>
+</tr>
+<tr>
+  <td><a href="ore_plutonium.html">Plutonium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">300 cr</td>
+  <td>Highly radioactive fissile material. Handle with extreme caution.</td>
+</tr>
+<tr>
+  <td><a href="ore_polonium.html">Polonium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">250 cr</td>
+  <td>Extremely radioactive element for compact power sources.</td>
+</tr>
+<tr>
+  <td><a href="ore_precursor_metal.html">Precursor Metal</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">1,500 cr</td>
+  <td>Self-repairing metal alloy of alien origin. Possibly alive.</td>
+</tr>
+<tr>
+  <td><a href="ore_nebula_prism.html">Prismatic Nebulite</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">380 cr</td>
+  <td>Multicolored crystalline ore that refracts energy in unusual ways.</td>
+</tr>
+<tr>
+  <td><a href="ore_progenitor_alloy.html">Progenitor Alloy</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">1,000 cr</td>
+  <td>Metal of unknown composition from an ancient spacefaring race.</td>
+</tr>
+<tr>
+  <td><a href="ore_quantum.html">Quantum Fragments</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">600 cr</td>
+  <td>Unstable particles that exist in multiple states simultaneously. Found only in Outer Rim frontier space.</td>
+</tr>
+<tr>
+  <td><a href="ore_radium.html">Radium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">180 cr</td>
+  <td>Glowing radioactive element used in specialized equipment.</td>
+</tr>
+<tr>
+  <td><a href="ore_rhodium.html">Rhodium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">95 cr</td>
+  <td>Ultra-reflective metal for advanced optical systems.</td>
+</tr>
+<tr>
+  <td><a href="ore_silicon.html">Silicon Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">10 cr</td>
+  <td>Semiconductor base material for computing components.</td>
+</tr>
+<tr>
+  <td><a href="ore_silver.html">Silver Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">28 cr</td>
+  <td>Reflective metal with antimicrobial properties.</td>
+</tr>
+<tr>
+  <td><a href="ore_singularity_dust.html">Singularity Dust</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,500 cr</td>
+  <td>Particles that have passed through a black hole. Reality warps around them.</td>
+</tr>
+<tr>
+  <td><a href="ore_sol_alloy.html">Sol Alloy Ore</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">200 cr</td>
+  <td>Ancient alloy deposits from Sol&#39;s asteroid belt, prized for their purity.</td>
+</tr>
+<tr>
+  <td><a href="bio_coral.html">Space Coral</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">80 cr</td>
+  <td>Calcium structures from vacuum-dwelling colonial organisms.</td>
+</tr>
+<tr>
+  <td><a href="ore_star_matter.html">Stellar Core Fragment</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,000 cr</td>
+  <td>Condensed matter from the core of a collapsed star.</td>
+</tr>
+<tr>
+  <td><a href="bio_symbiont.html">Symbiont Organism</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">500 cr</td>
+  <td>Living organism that bonds with ship systems. Controversial.</td>
+</tr>
+<tr>
+  <td><a href="ore_thorium.html">Thorium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">120 cr</td>
+  <td>Fertile radioactive material for breeder reactors.</td>
+</tr>
+<tr>
+  <td><a href="ore_titanium.html">Titanium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">25 cr</td>
+  <td>Lightweight and incredibly strong, prized for ship hulls.</td>
+</tr>
+<tr>
+  <td><a href="ore_trade_crystal.html">Trade Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">350 cr</td>
+  <td>Rare crystalline formation used as currency backing in Nebula Federation space.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_tritium.html">Tritium Ice</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">200 cr</td>
+  <td>Radioactive hydrogen isotope ice for high-yield fusion.</td>
+</tr>
+<tr>
+  <td><a href="ore_tungsten.html">Tungsten Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">30 cr</td>
+  <td>Extremely hard metal with the highest melting point of any element.</td>
+</tr>
+<tr>
+  <td><a href="ore_uranium.html">Uranium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">150 cr</td>
+  <td>Radioactive heavy metal for fission reactors and weapons.</td>
+</tr>
+<tr>
+  <td><a href="ore_vanadium.html">Vanadium Ore</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">22 cr</td>
+  <td>Hard transition metal used in high-strength steel alloys.</td>
+</tr>
+<tr>
+  <td><a href="ore_void.html">Void Essence</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">400 cr</td>
+  <td>Crystallized vacuum energy harvested from spatial anomalies. Exclusive to Voidborn territory.</td>
+</tr>
+<tr>
+  <td><a href="ore_ice_water.html">Water Ice</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">12 cr</td>
+  <td>Frozen water extracted from comets and ice moons. Essential for life support.</td>
+</tr>
+<tr>
+  <td><a href="gas_xenon.html">Xenon Gas</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">40 cr</td>
+  <td>Noble gas used in advanced ion thrusters and lighting.</td>
+</tr>
+<tr>
+  <td><a href="ore_zinc.html">Zinc Ore</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">6 cr</td>
+  <td>Corrosion-resistant metal for protective coatings.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

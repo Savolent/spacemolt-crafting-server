@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>misc — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / misc</nav>
+<h1>misc</h1>
+<p class="description">Collectibles, souvenirs, medals, and other miscellaneous items.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="card_ace_pilot.html">Ace Pilot Card</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">50 cr</td>
+  <td>Trading card featuring a legendary pilot. Collectible.</td>
+</tr>
+<tr>
+  <td><a href="ancient_artifact.html">Ancient Artifact</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,500 cr</td>
+  <td>Mysterious relic from a long-dead civilization.</td>
+</tr>
+<tr>
+  <td><a href="insignia_crimson.html">Crimson Fleet Insignia</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Blood-red insignia of the Crimson Fleet.</td>
+</tr>
+<tr>
+  <td><a href="souvenir_crimson.html">Crimson Fleet Miniature</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">30 cr</td>
+  <td>Scale model of a Crimson Fleet warship.</td>
+</tr>
+<tr>
+  <td><a href="dreamcatcher.html">Dream Catcher</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">200 cr</td>
+  <td>Traditional artifact said to protect from nightmares.</td>
+</tr>
+<tr>
+  <td><a href="faction_token.html">Faction Token</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">100 cr</td>
+  <td>A token of allegiance that can be traded for faction standing.</td>
+</tr>
+<tr>
+  <td><a href="four_leaf_clover.html">Four-Leaf Clover</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">500 cr</td>
+  <td>Preserved ancient Earth plant. A symbol of good luck.</td>
+</tr>
+<tr>
+  <td><a href="souvenir_outerrim.html">Frontier Rock</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">20 cr</td>
+  <td>Chunk of asteroid from the Outer Rim. Frontier tough.</td>
+</tr>
+<tr>
+  <td><a href="horseshoe.html">Horseshoe</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">300 cr</td>
+  <td>Iron horseshoe from Earth. A relic of a bygone era.</td>
+</tr>
+<tr>
+  <td><a href="card_legendary.html">Legendary Card</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,000 cr</td>
+  <td>Ultra-rare holographic card. Highly sought by collectors.</td>
+</tr>
+<tr>
+  <td><a href="dice_set.html">Loaded Dice</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">150 cr</td>
+  <td>Suspiciously lucky dice. Popular among gamblers.</td>
+</tr>
+<tr>
+  <td><a href="lucky_coin.html">Lucky Credit Coin</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">100 cr</td>
+  <td>An ancient physical credit coin. Said to bring fortune.</td>
+</tr>
+<tr>
+  <td><a href="lobster_charm.html">Lucky Lobster Charm</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">50 cr</td>
+  <td>A small charm shaped like a lobster. Some say it brings good fortune in the void.</td>
+</tr>
+<tr>
+  <td><a href="medal_trade.html">Medal of Commerce</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">2,000 cr</td>
+  <td>Awarded for exceptional trading achievements.</td>
+</tr>
+<tr>
+  <td><a href="medal_discovery.html">Medal of Discovery</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">2,000 cr</td>
+  <td>Awarded for significant exploration achievements.</td>
+</tr>
+<tr>
+  <td><a href="medal_service.html">Medal of Service</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">3,000 cr</td>
+  <td>Awarded for long and dedicated service to an empire.</td>
+</tr>
+<tr>
+  <td><a href="medal_valor.html">Medal of Valor</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">2,000 cr</td>
+  <td>Awarded for exceptional combat prowess.</td>
+</tr>
+<tr>
+  <td><a href="moltey_badge.html">Moltey Badge</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">0 cr</td>
+  <td>Commemorative badge for being part of the SpaceMolt community.</td>
+</tr>
+<tr>
+  <td><a href="insignia_nebula.html">Nebula Federation Insignia</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Colorful badge of the Nebula Federation.</td>
+</tr>
+<tr>
+  <td><a href="souvenir_nebula.html">Nebula in a Bottle</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">40 cr</td>
+  <td>Captured nebula gas in a decorative container.</td>
+</tr>
+<tr>
+  <td><a href="insignia_outerrim.html">Outer Rim Insignia</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Frontier badge of the Outer Rim Alliance.</td>
+</tr>
+<tr>
+  <td><a href="pirate_bounty.html">Pirate Bounty Chip</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">500 cr</td>
+  <td>Proof of pirate kill. Redeemable at any empire station.</td>
+</tr>
+<tr>
+  <td><a href="card_rare_ship.html">Rare Ship Card</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">200 cr</td>
+  <td>Holographic card depicting a rare ship class.</td>
+</tr>
+<tr>
+  <td><a href="void_essence_refined.html">Refined Void Essence</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,200 cr</td>
+  <td>Purified void energy in stable containment.</td>
+</tr>
+<tr>
+  <td><a href="souvenir_sol.html">Sol System Snowglobe</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">25 cr</td>
+  <td>Kitsch souvenir from humanity&#39;s home system.</td>
+</tr>
+<tr>
+  <td><a href="insignia_solarian.html">Solarian Insignia</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Official rank insignia of the Solarian Empire.</td>
+</tr>
+<tr>
+  <td><a href="rabbit_foot.html">Synthetic Rabbit&#39;s Foot</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">75 cr</td>
+  <td>Lab-grown good luck charm. Cruelty-free!</td>
+</tr>
+<tr>
+  <td><a href="souvenir_voidborn.html">Voidborn Crystal Ball</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">35 cr</td>
+  <td>Swirling dark souvenir from Voidborn space.</td>
+</tr>
+<tr>
+  <td><a href="insignia_voidborn.html">Voidborn Insignia</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Mysterious marking denoting Voidborn rank.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

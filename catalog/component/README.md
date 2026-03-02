@@ -412,26 +412,6 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryo_pod.png" alt="Cryogenic Pod" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>rare</td></tr>
-<tr><td><b>Size</b></td><td>4</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>800 cr</td></tr>
-</table>
-
-> Suspended animation unit for long-duration travel.
-
-[View full page](comp_cryo_pod.md)
-
----
-
-## Cryogenic Pod
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryogenic_pod.png" alt="Cryogenic Pod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
@@ -445,6 +425,26 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 > Sealed cryogenic suspension chamber for crew preservation.
 
 [View full page](comp_cryogenic_pod.md)
+
+---
+
+## Cryogenic Pod
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryo_pod.png" alt="Cryogenic Pod" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>rare</td></tr>
+<tr><td><b>Size</b></td><td>4</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>800 cr</td></tr>
+</table>
+
+> Suspended animation unit for long-duration travel.
+
+[View full page](comp_cryo_pod.md)
 
 ---
 
@@ -1192,26 +1192,6 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support_unit.png" alt="Life Support Unit" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>2</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
-</table>
-
-> Integrated air and water recycling system for habitation.
-
-[View full page](comp_life_support_unit.md)
-
----
-
-## Life Support Unit
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support.png" alt="Life Support Unit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
@@ -1225,6 +1205,26 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 > Environmental control system for crew survival.
 
 [View full page](comp_life_support.md)
+
+---
+
+## Life Support Unit
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support_unit.png" alt="Life Support Unit" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
+</table>
+
+> Integrated air and water recycling system for habitation.
+
+[View full page](comp_life_support_unit.md)
 
 ---
 
@@ -2372,26 +2372,6 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warhead.png" alt="Warhead Assembly" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>2</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
-</table>
-
-> Explosive payload for missile systems.
-
-[View full page](comp_warhead.md)
-
----
-
-## Warhead Assembly
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warhead_assembly.png" alt="Warhead Assembly" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
@@ -2405,6 +2385,26 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 > Explosive warhead core for missile fabrication.
 
 [View full page](comp_warhead_assembly.md)
+
+---
+
+## Warhead Assembly
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warhead.png" alt="Warhead Assembly" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>400 cr</td></tr>
+</table>
+
+> Explosive payload for missile systems.
+
+[View full page](comp_warhead.md)
 
 ---
 

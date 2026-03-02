@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>refined — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / refined</nav>
+<h1>refined</h1>
+<p class="description">Processed materials refined from raw ores and gases.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="refined_adamantite.html">Adamantite Bar</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,500 cr</td>
+  <td>Legendary alloy of unmatched hardness. Nearly indestructible.</td>
+</tr>
+<tr>
+  <td><a href="refined_aluminum_sheet.html">Aluminum Sheet</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">18 cr</td>
+  <td>Lightweight structural panels for basic construction.</td>
+</tr>
+<tr>
+  <td><a href="refined_antimatter_capsule.html">Antimatter Capsule</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,000 cr</td>
+  <td>Safely contained antimatter for ultimate power generation.</td>
+</tr>
+<tr>
+  <td><a href="refined_biocompound.html">Bioactive Compound</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">65 cr</td>
+  <td>Processed xenobiological extract for advanced synthesis.</td>
+</tr>
+<tr>
+  <td><a href="refined_biofiber.html">Biofiber Mesh</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">600 cr</td>
+  <td>Living synthetic material that grows to repair damage.</td>
+</tr>
+<tr>
+  <td><a href="refined_biolume_culture.html">Bioluminescent Culture</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">150 cr</td>
+  <td>Cultivated light-producing organisms for sensor technology.</td>
+</tr>
+<tr>
+  <td><a href="refined_carbon_fiber.html">Carbon Fiber Weave</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">35 cr</td>
+  <td>Strong, lightweight composite for hull reinforcement.</td>
+</tr>
+<tr>
+  <td><a href="refined_ceramite.html">Ceramite Plating</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">85 cr</td>
+  <td>Heat-resistant ceramic-metal composite for plasma containment.</td>
+</tr>
+<tr>
+  <td><a href="refined_chlorine_compound.html">Chlorine Compound</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">60 cr</td>
+  <td>Stabilized chlorine reagent for chemical synthesis and surface etching. Handle with extreme care.</td>
+</tr>
+<tr>
+  <td><a href="refined_chromium_plate.html">Chromium Plate</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">65 cr</td>
+  <td>Corrosion-resistant plating for harsh environments.</td>
+</tr>
+<tr>
+  <td><a href="refined_circuits.html">Circuit Board</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">50 cr</td>
+  <td>Integrated electronic processing boards.</td>
+</tr>
+<tr>
+  <td><a href="refined_outerrim_dark_matter.html">Condensed Dark Matter</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,200 cr</td>
+  <td>Stabilized dark matter for exotic drive systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_antimatter.html">Contained Antimatter</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,500 cr</td>
+  <td>Magnetically confined antimatter for extreme energy applications.</td>
+</tr>
+<tr>
+  <td><a href="refined_coolant.html">Coolant Fluid</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">45 cr</td>
+  <td>Processed thermal management compound.</td>
+</tr>
+<tr>
+  <td><a href="refined_copper_wire.html">Copper Wiring</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">25 cr</td>
+  <td>Bundled conductive wiring for electrical systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_crystalline_lattice.html">Crystalline Lattice</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">550 cr</td>
+  <td>Perfectly ordered crystal structure for energy systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_dark_energy_cell.html">Dark Energy Cell</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">3,000 cr</td>
+  <td>Contained dark energy for exotic propulsion systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_darksteel.html">Darksteel Plating</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,200 cr</td>
+  <td>Processed darksteel for capital ship armor.</td>
+</tr>
+<tr>
+  <td><a href="refined_deuterium.html">Deuterium</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">200 cr</td>
+  <td>Heavy hydrogen isotope for fusion power generation.</td>
+</tr>
+<tr>
+  <td><a href="refined_durasteel.html">Durasteel Plate</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Military-grade alloy combining steel with exotic elements.</td>
+</tr>
+<tr>
+  <td><a href="refined_electrum_ingot.html">Electrum Ingot</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">150 cr</td>
+  <td>A gold-silver alloy prized for its balanced conductivity and corrosion resistance.</td>
+</tr>
+<tr>
+  <td><a href="refined_uranium_rod.html">Enriched Uranium Rod</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">500 cr</td>
+  <td>Processed fissile material for power reactors.</td>
+</tr>
+<tr>
+  <td><a href="refined_polymer.html">Flex Polymer</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">15 cr</td>
+  <td>Flexible synthetic material for seals and cables.</td>
+</tr>
+<tr>
+  <td><a href="refined_fluorine_acid.html">Fluorine Etchant</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">150 cr</td>
+  <td>Precisely concentrated hydrofluoric solution for nanoscale circuit etching and advanced material processing.</td>
+</tr>
+<tr>
+  <td><a href="refined_crystal.html">Focused Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">200 cr</td>
+  <td>Precision-cut energy crystals for weapon systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_crimson_fury_alloy.html">Fury Alloy</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">900 cr</td>
+  <td>Heat-storing alloy that enhances thermal weapons.</td>
+</tr>
+<tr>
+  <td><a href="refined_fuel_rod.html">Fusion Fuel Rod</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">150 cr</td>
+  <td>Processed deuterium-tritium fuel for reactor cores.</td>
+</tr>
+<tr>
+  <td><a href="refined_gold_wire.html">Gold Wiring</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">120 cr</td>
+  <td>Premium conductive material for sensitive electronics.</td>
+</tr>
+<tr>
+  <td><a href="refined_graphene.html">Graphene Sheet</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">280 cr</td>
+  <td>Single-atom carbon layer with incredible strength.</td>
+</tr>
+<tr>
+  <td><a href="refined_helium3.html">Helium-3</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">180 cr</td>
+  <td>Rare helium isotope for aneutronic fusion reactors.</td>
+</tr>
+<tr>
+  <td><a href="refined_ion_solution.html">Ion Solution</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">80 cr</td>
+  <td>Dense suspension of charged particles in magnetic containment. Essential for ion propulsion and directed energy systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_neon.html">Ionized Neon</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">25 cr</td>
+  <td>Excited neon gas sealed in containment tubes. Emits characteristic orange-red glow used in sensor calibration and signal amplification.</td>
+</tr>
+<tr>
+  <td><a href="refined_hydrogen.html">Liquid Hydrogen</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">12 cr</td>
+  <td>Compressed hydrogen fuel for fusion reactors.</td>
+</tr>
+<tr>
+  <td><a href="refined_nitrogen.html">Liquid Nitrogen</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">18 cr</td>
+  <td>Cryogenic nitrogen for cooling systems and chemical synthesis.</td>
+</tr>
+<tr>
+  <td><a href="refined_memory_metal.html">Memory Metal Sheet</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">350 cr</td>
+  <td>Shape-memory alloy that returns to its original form after deformation.</td>
+</tr>
+<tr>
+  <td><a href="refined_aerogel.html">Metallic Aerogel</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">250 cr</td>
+  <td>Ultra-light solid with exceptional insulation properties.</td>
+</tr>
+<tr>
+  <td><a href="refined_metamaterial.html">Metamaterial Panel</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">700 cr</td>
+  <td>Artificially structured material with impossible optical properties.</td>
+</tr>
+<tr>
+  <td><a href="refined_nanoplastic.html">Nanoplastic Composite</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">400 cr</td>
+  <td>Self-healing plastic infused with nanomachines.</td>
+</tr>
+<tr>
+  <td><a href="refined_nebula_essence.html">Nebula Essence</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">400 cr</td>
+  <td>Concentrated nebular gases with exotic chemical properties.</td>
+</tr>
+<tr>
+  <td><a href="refined_nebulium.html">Nebulium Core</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">900 cr</td>
+  <td>Processed nebulium for advanced energy systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_magnet.html">Neodymium Magnet</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">180 cr</td>
+  <td>Powerful permanent magnet for electromagnetic systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_neural_extract.html">Neural Extract</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">350 cr</td>
+  <td>Concentrated neural compounds for AI cores and stimulant production.</td>
+</tr>
+<tr>
+  <td><a href="refined_neural_gel.html">Neural Interface Gel</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">400 cr</td>
+  <td>Biocompatible medium for brain-computer interfaces.</td>
+</tr>
+<tr>
+  <td><a href="refined_neutronium.html">Neutronium Ingot</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">2,500 cr</td>
+  <td>Stabilized neutron-degenerate matter. Impossibly dense.</td>
+</tr>
+<tr>
+  <td><a href="refined_optical_fiber.html">Optical Fiber Bundle</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">200 cr</td>
+  <td>Ultra-pure glass fibers for high-bandwidth data transfer.</td>
+</tr>
+<tr>
+  <td><a href="refined_compound.html">Organic Compound</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">25 cr</td>
+  <td>Synthetic organic base material for biological processing.</td>
+</tr>
+<tr>
+  <td><a href="refined_osmium_plate.html">Osmium Armor Plate</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">350 cr</td>
+  <td>Ultra-dense armor plating for maximum protection.</td>
+</tr>
+<tr>
+  <td><a href="refined_phase.html">Phase Matrix</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">1,800 cr</td>
+  <td>Stabilized phase crystal for reality manipulation.</td>
+</tr>
+<tr>
+  <td><a href="refined_plasma_cell.html">Plasma Cell</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">350 cr</td>
+  <td>Magnetically contained plasma for high-energy applications.</td>
+</tr>
+<tr>
+  <td><a href="refined_battery.html">Power Battery</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">70 cr</td>
+  <td>High-density lithium energy storage unit.</td>
+</tr>
+<tr>
+  <td><a href="refined_nebula_prism_lens.html">Prismatic Lens</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">950 cr</td>
+  <td>Light-refracting material for advanced targeting systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_voidborn_null_matter.html">Processed Null Matter</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,100 cr</td>
+  <td>Stabilized null matter for stealth technology.</td>
+</tr>
+<tr>
+  <td><a href="refined_thorium.html">Processed Thorium</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">160 cr</td>
+  <td>Refined thorium for molten salt reactors and radiation sources.</td>
+</tr>
+<tr>
+  <td><a href="refined_argon.html">Purified Argon</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">20 cr</td>
+  <td>Inert gas for welding, shielding, and controlled atmospheres.</td>
+</tr>
+<tr>
+  <td><a href="refined_krypton.html">Purified Krypton</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">120 cr</td>
+  <td>Ultra-pure krypton gas for precision optical systems and photon absorption cloaking technology.</td>
+</tr>
+<tr>
+  <td><a href="refined_water.html">Purified Water</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">15 cr</td>
+  <td>Purified water for life support and chemical processing.</td>
+</tr>
+<tr>
+  <td><a href="refined_xenon.html">Purified Xenon</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">55 cr</td>
+  <td>Dense noble gas for ion propulsion and high-intensity lighting.</td>
+</tr>
+<tr>
+  <td><a href="refined_quantum_dot.html">Quantum Dot Matrix</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">800 cr</td>
+  <td>Nanoscale semiconductors for quantum computing.</td>
+</tr>
+<tr>
+  <td><a href="refined_plasma_core.html">Refined Plasma Core</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">3,000 cr</td>
+  <td>Stabilized high-energy plasma for weapon systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_quantum_matrix.html">Refined Quantum Matrix</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">8,000 cr</td>
+  <td>Processed quantum-entangled material for advanced tech.</td>
+</tr>
+<tr>
+  <td><a href="refined_glass.html">Reinforced Glass</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">30 cr</td>
+  <td>Transparent armor for viewports and sensors.</td>
+</tr>
+<tr>
+  <td><a href="refined_silicate.html">Silicate Composite</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">55 cr</td>
+  <td>Advanced semiconductor substrate for computing systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_silver_wire.html">Silver Wiring</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">75 cr</td>
+  <td>High-conductivity silver wiring for precision electronics and shield systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_solarian_composite.html">Solarian Composite</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">650 cr</td>
+  <td>Advanced material developed in Sol system research labs.</td>
+</tr>
+<tr>
+  <td><a href="refined_solarian_legacy_alloy.html">Solarian Legacy Alloy</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">600 cr</td>
+  <td>A refined alloy made from ancient Solarian Legacy ore. Its unique crystalline structure makes it exceptionally resistant to energy weapons.</td>
+</tr>
+<tr>
+  <td><a href="refined_exotic.html">Stabilized Exotic</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">800 cr</td>
+  <td>Exotic matter processed into usable form.</td>
+</tr>
+<tr>
+  <td><a href="refined_steel.html">Steel Plate</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">20 cr</td>
+  <td>Processed steel alloy for structural components.</td>
+</tr>
+<tr>
+  <td><a href="refined_superconductor.html">Superconductor</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">300 cr</td>
+  <td>Zero-resistance conductor for shield systems.</td>
+</tr>
+<tr>
+  <td><a href="refined_synthetic_diamond.html">Synthetic Diamond</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">300 cr</td>
+  <td>Lab-grown diamond for cutting tools and heat sinks.</td>
+</tr>
+<tr>
+  <td><a href="refined_ceramic.html">Thermal Ceramic</a></td>
+  <td><span class="rarity-badge" style="color:#a3be8c;border-color:#a3be8c">common</span></td>
+  <td class="value">25 cr</td>
+  <td>Heat-resistant material for engine and weapon components.</td>
+</tr>
+<tr>
+  <td><a href="refined_alloy.html">Titanium Alloy</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">80 cr</td>
+  <td>Advanced hull plating material.</td>
+</tr>
+<tr>
+  <td><a href="refined_titanium_foam.html">Titanium Foam</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">200 cr</td>
+  <td>Lightweight titanium structure with internal voids. Excellent strength-to-weight.</td>
+</tr>
+<tr>
+  <td><a href="refined_titanium.html">Titanium Ingot</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">100 cr</td>
+  <td>Purified titanium for advanced structural applications.</td>
+</tr>
+<tr>
+  <td><a href="rare_element.html">Trace Exotic Element</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">120 cr</td>
+  <td>Rare element distilled from nebula gases. Used in stimulant synthesis.</td>
+</tr>
+<tr>
+  <td><a href="refined_tungsten_rod.html">Tungsten Rod</a></td>
+  <td><span class="rarity-badge" style="color:#88c0d0;border-color:#88c0d0">uncommon</span></td>
+  <td class="value">90 cr</td>
+  <td>Dense penetrator material for kinetic weapons.</td>
+</tr>
+<tr>
+  <td><a href="refined_void_condensate.html">Void Condensate</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">1,200 cr</td>
+  <td>Processed void essence in stable form.</td>
+</tr>
+<tr>
+  <td><a href="refined_plutonium.html">Weapons-Grade Plutonium</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">600 cr</td>
+  <td>Refined fissile material for warheads and advanced reactors.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>artifact — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / artifact</nav>
+<h1>artifact</h1>
+<p class="description">Rare relics and ancient objects from lost civilizations.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="ancient_star_map.html">Ancient Star Map</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">25,000 cr</td>
+  <td>A preserved navigational record from a long-dead civilization.</td>
+</tr>
+<tr>
+  <td><a href="artifact_dravani_idol.html">Dravani Idol</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">45,000 cr</td>
+  <td>Religious artifact from the warrior Dravani. Radiates aggression.</td>
+</tr>
+<tr>
+  <td><a href="artifact_eldar_crystal.html">Eldar Memory Crystal</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">80,000 cr</td>
+  <td>Psionic storage device from the Eldar, an ancient race of telepaths.</td>
+</tr>
+<tr>
+  <td><a href="artifact_gravity_lens.html">Gravity Lens</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">70,000 cr</td>
+  <td>Ancient optic that bends light and gravity alike.</td>
+</tr>
+<tr>
+  <td><a href="artifact_mechanus_gear.html">Mechanus Cogwheel</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">60,000 cr</td>
+  <td>Precision-engineered component from the machine civilization Mechanus.</td>
+</tr>
+<tr>
+  <td><a href="artifact_precursor_beacon.html">Precursor Beacon</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">120,000 cr</td>
+  <td>Still-active beacon from an unknown precursor race. Transmits on unknown frequencies.</td>
+</tr>
+<tr>
+  <td><a href="progenitor_data_core.html">Progenitor Data Core</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">75,000 cr</td>
+  <td>Ancient storage device containing lost knowledge.</td>
+</tr>
+<tr>
+  <td><a href="artifact_quantum_anchor.html">Quantum Anchor</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">180,000 cr</td>
+  <td>Device that locks objects in place across multiple dimensions simultaneously.</td>
+</tr>
+<tr>
+  <td><a href="artifact_silicate_fossil.html">Silicate Lifeform Fossil</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">35,000 cr</td>
+  <td>Petrified remains of silicon-based life. Billions of years old.</td>
+</tr>
+<tr>
+  <td><a href="station_ai_core.html">Station AI Core</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">500,000 cr</td>
+  <td>A self-aware computational substrate capable of managing an entire orbital station — life support, power distribution, docking protocols, defense coordination, and thousands of concurrent systems. These haven&#39;t been manufactured in decades. The fabrication techniques were lost during the Resource Crisis, and the few surviving cores are jealously hoarded by empire leadership. Rumor has it the heads of each empire keep one or two in reserve, and would only entrust them to their most proven allies. If you&#39;re holding one of these, someone very powerful decided you were worth it.</td>
+</tr>
+<tr>
+  <td><a href="artifact_stellar_heart.html">Stellar Heart</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">90,000 cr</td>
+  <td>Crystallized core from an extinct star. Still warm.</td>
+</tr>
+<tr>
+  <td><a href="temporal_fragment.html">Temporal Fragment</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">200,000 cr</td>
+  <td>A splinter of frozen time. Reality bends around it.</td>
+</tr>
+<tr>
+  <td><a href="void_shard.html">Void Shard</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">100,000 cr</td>
+  <td>Fragment of solidified void energy. Hums with dark power.</td>
+</tr>
+<tr>
+  <td><a href="artifact_void_tomb.html">Void Tomb Key</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">250,000 cr</td>
+  <td>Key to an unknown Void Tomb. What lies within is anyone&#39;s guess.</td>
+</tr>
+<tr>
+  <td><a href="artifact_xenthari_orb.html">Xenthari Sphere</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">150,000 cr</td>
+  <td>Containment orb from the Xenthari, masters of dimensional manipulation.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

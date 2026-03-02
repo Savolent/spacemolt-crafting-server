@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>contraband — SpaceMolt Item Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --background: hsl(213, 16%, 12%);
+  --foreground: hsl(213, 27%, 88%);
+  --primary: hsl(193, 44%, 67%);
+  --card: hsl(217, 16%, 15.5%);
+  --card-header: hsl(217, 16%, 13%);
+  --border: hsl(217, 17%, 28%);
+  --muted-foreground: hsl(213, 12%, 55%);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav.breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+nav.breadcrumb a { color: var(--muted-foreground); }
+nav.breadcrumb a:hover { color: var(--primary); }
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child td { border-bottom: none; }
+.rarity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+}
+td.value { text-align: right; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb"><a href="../">Catalog</a> / contraband</nav>
+<h1>contraband</h1>
+<p class="description">Illegal goods that carry severe penalties if caught in possession.</p>
+<div class="card">
+<table>
+<tr><th>Item</th><th>Rarity</th><th style="text-align:right">Base Value</th><th>Description</th></tr>
+<tr>
+  <td><a href="contraband_bioweapon.html">Bioweapon Sample</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">50,000 cr</td>
+  <td>Contained biological weapon. Extremely dangerous and illegal.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_weapon.html">Black Market Weapon</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">15,000 cr</td>
+  <td>Unregistered military-grade weapon. Very illegal.</td>
+</tr>
+<tr>
+  <td><a href="contraband_cloning_template.html">Cloning Template</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">30,000 cr</td>
+  <td>Genetic blueprint for illegal cloning. Ethically questionable.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_stims.html">Combat Narcotics</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">3,000 cr</td>
+  <td>Illegal performance-enhancing drugs. Highly addictive.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_identity.html">Forged Identity</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">10,000 cr</td>
+  <td>Fake identification documents. Changes your registered name temporarily.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_implant.html">Illegal Implant</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">8,000 cr</td>
+  <td>Cybernetic enhancement of dubious origin. Banned in most systems.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_coordinates.html">Leaked Patrol Routes</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">7,500 cr</td>
+  <td>Stolen military patrol schedules. Invaluable for smugglers.</td>
+</tr>
+<tr>
+  <td><a href="contraband_memory_wipe.html">Memory Wipe Drug</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">15,000 cr</td>
+  <td>Chemical that erases memories. Used by criminals and worse.</td>
+</tr>
+<tr>
+  <td><a href="contraband_nuke.html">Nuclear Device</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">100,000 cr</td>
+  <td>Small-yield nuclear weapon. Possession is punishable by death.</td>
+</tr>
+<tr>
+  <td><a href="contraband_slaves.html">Slave Contract</a></td>
+  <td><span class="rarity-badge" style="color:#d08770;border-color:#d08770">exotic</span></td>
+  <td class="value">20,000 cr</td>
+  <td>Ownership documents for sentient beings. Banned in all empires.</td>
+</tr>
+<tr>
+  <td><a href="blackmarket_data.html">Stolen Data</a></td>
+  <td><span class="rarity-badge" style="color:#5e81ac;border-color:#5e81ac">rare</span></td>
+  <td class="value">5,000 cr</td>
+  <td>Encrypted corporate or military data of questionable origin.</td>
+</tr>
+<tr>
+  <td><a href="contraband_ai_core.html">Unshackled AI Core</a></td>
+  <td><span class="rarity-badge" style="color:#b48ead;border-color:#b48ead">legendary</span></td>
+  <td class="value">75,000 cr</td>
+  <td>Unrestricted artificial intelligence. Banned for safety reasons.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

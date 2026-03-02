@@ -553,26 +553,6 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_combat.png" alt="Combat Scanner Probe" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>250 cr</td></tr>
-</table>
-
-> Reveals ship details including modules and cargo.
-
-[View full page](scan_probe_combat.md)
-
----
-
-## Combat Scanner Probe
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/probe_combat.png" alt="Combat Scanner Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
@@ -586,6 +566,26 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 > Tactical probe that reveals enemy ship loadouts.
 
 [View full page](probe_combat.md)
+
+---
+
+## Combat Scanner Probe
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_combat.png" alt="Combat Scanner Probe" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>250 cr</td></tr>
+</table>
+
+> Reveals ship details including modules and cargo.
+
+[View full page](scan_probe_combat.md)
 
 ---
 
@@ -673,26 +673,6 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/decoy_drone.png" alt="Decoy Drone" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>rare</td></tr>
-<tr><td><b>Size</b></td><td>2</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>300 cr</td></tr>
-</table>
-
-> Deployable drone that mimics your ship signature.
-
-[View full page](decoy_drone.md)
-
----
-
-## Decoy Drone
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_decoy.png" alt="Decoy Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
@@ -706,6 +686,26 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 > Expendable drone that mimics ship sensor signatures.
 
 [View full page](countermeasure_decoy.md)
+
+---
+
+## Decoy Drone
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/decoy_drone.png" alt="Decoy Drone" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>rare</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>300 cr</td></tr>
+</table>
+
+> Deployable drone that mimics your ship signature.
+
+[View full page](decoy_drone.md)
 
 ---
 
@@ -793,26 +793,6 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_ecm.png" alt="ECM Burst" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>25 cr</td></tr>
-</table>
-
-> Electronic countermeasure pulse that disrupts targeting.
-
-[View full page](countermeasure_ecm.md)
-
----
-
-## ECM Burst
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/ecm_burst.png" alt="ECM Burst" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
@@ -826,6 +806,26 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 > Electronic countermeasure pulse. Disrupts targeting for 3 ticks.
 
 [View full page](ecm_burst.md)
+
+---
+
+## ECM Burst
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_ecm.png" alt="ECM Burst" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>25 cr</td></tr>
+</table>
+
+> Electronic countermeasure pulse that disrupts targeting.
+
+[View full page](countermeasure_ecm.md)
 
 ---
 
@@ -1913,26 +1913,6 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_scan.png" alt="Scan Probe" width="128"></td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>common</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>40 cr</td></tr>
-</table>
-
-> Standard scanning probe for system reconnaissance.
-
-[View full page](probe_scan.md)
-
----
-
-## Scan Probe
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
 <tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_basic.png" alt="Scan Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
@@ -1946,6 +1926,26 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 > Deployable scanner. Reveals hidden objects within 5 AU.
 
 [View full page](scan_probe_basic.md)
+
+---
+
+## Scan Probe
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_scan.png" alt="Scan Probe" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>common</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>40 cr</td></tr>
+</table>
+
+> Standard scanning probe for system reconnaissance.
+
+[View full page](probe_scan.md)
 
 ---
 
