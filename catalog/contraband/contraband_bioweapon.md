@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioweapon Sample</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioweapon Sample](../images/contraband_bioweapon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_bioweapon.png" alt="Bioweapon Sample" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>contraband</td></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>

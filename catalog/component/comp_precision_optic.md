@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precision Optic</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Precision Optic](../images/comp_precision_optic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_precision_optic.png" alt="Precision Optic" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

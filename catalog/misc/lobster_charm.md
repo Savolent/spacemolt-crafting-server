@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lucky Lobster Charm</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Lucky Lobster Charm](../images/lobster_charm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/lobster_charm.png" alt="Lucky Lobster Charm" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

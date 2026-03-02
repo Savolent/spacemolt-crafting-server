@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Organic Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Organic Compound](../images/refined_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_compound.png" alt="Organic Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

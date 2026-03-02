@@ -27,11 +27,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Star Map</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ancient Star Map](../images/ancient_star_map.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ancient_star_map.png" alt="Ancient Star Map" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -51,11 +47,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dravani Idol</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dravani Idol](../images/artifact_dravani_idol.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_dravani_idol.png" alt="Dravani Idol" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -75,11 +67,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Eldar Memory Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Eldar Memory Crystal](../images/artifact_eldar_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_eldar_crystal.png" alt="Eldar Memory Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -99,11 +87,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gravity Lens</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Gravity Lens](../images/artifact_gravity_lens.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_gravity_lens.png" alt="Gravity Lens" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -123,11 +107,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mechanus Cogwheel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mechanus Cogwheel](../images/artifact_mechanus_gear.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_mechanus_gear.png" alt="Mechanus Cogwheel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -147,11 +127,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precursor Beacon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Precursor Beacon](../images/artifact_precursor_beacon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_precursor_beacon.png" alt="Precursor Beacon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -171,11 +147,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Progenitor Data Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Progenitor Data Core](../images/progenitor_data_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/progenitor_data_core.png" alt="Progenitor Data Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -195,11 +167,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Anchor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Anchor](../images/artifact_quantum_anchor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_quantum_anchor.png" alt="Quantum Anchor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -219,11 +187,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicate Lifeform Fossil</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Silicate Lifeform Fossil](../images/artifact_silicate_fossil.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_silicate_fossil.png" alt="Silicate Lifeform Fossil" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -243,11 +207,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station AI Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Station AI Core](../images/station_ai_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/station_ai_core.png" alt="Station AI Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>50</td></tr>
@@ -267,11 +227,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Heart</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Stellar Heart](../images/artifact_stellar_heart.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_stellar_heart.png" alt="Stellar Heart" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -291,11 +247,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Temporal Fragment</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Temporal Fragment](../images/temporal_fragment.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/temporal_fragment.png" alt="Temporal Fragment" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -315,11 +267,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Shard</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Shard](../images/void_shard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_shard.png" alt="Void Shard" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -339,11 +287,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Tomb Key</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Tomb Key](../images/artifact_void_tomb.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_void_tomb.png" alt="Void Tomb Key" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -363,11 +307,7 @@ Rare relics and ancient objects from lost civilizations.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Xenthari Sphere</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Xenthari Sphere](../images/artifact_xenthari_orb.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_xenthari_orb.png" alt="Xenthari Sphere" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>

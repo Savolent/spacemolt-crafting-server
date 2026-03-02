@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processed Thorium</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Processed Thorium](../images/refined_thorium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_thorium.png" alt="Processed Thorium" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

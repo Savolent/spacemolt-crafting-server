@@ -14,11 +14,7 @@ Rare raw materials with special properties.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Exotic Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Exotic Crystal](../images/exotic_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/exotic_crystal.png" alt="Exotic Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -38,11 +34,7 @@ Rare raw materials with special properties.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Crystal](../images/void_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_crystal.png" alt="Void Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloning Template</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cloning Template](../images/contraband_cloning_template.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_cloning_template.png" alt="Cloning Template" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>contraband</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

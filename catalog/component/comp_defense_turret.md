@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Defense Turret</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Defense Turret](../images/comp_defense_turret.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_defense_turret.png" alt="Defense Turret" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

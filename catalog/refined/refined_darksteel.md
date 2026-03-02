@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Darksteel Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Darksteel Plating](../images/refined_darksteel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_darksteel.png" alt="Darksteel Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

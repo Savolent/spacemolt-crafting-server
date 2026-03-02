@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Coolant Fluid</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Coolant Fluid](../images/refined_coolant.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_coolant.png" alt="Coolant Fluid" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

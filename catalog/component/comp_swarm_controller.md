@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Swarm Controller</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Swarm Controller](../images/comp_swarm_controller.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_swarm_controller.png" alt="Swarm Controller" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

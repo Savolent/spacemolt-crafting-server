@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Synthetic Rabbit's Foot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Synthetic Rabbit's Foot](../images/rabbit_foot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rabbit_foot.png" alt="Synthetic Rabbit's Foot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

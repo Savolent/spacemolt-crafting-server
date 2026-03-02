@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioactive Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioactive Compound](../images/refined_biocompound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_biocompound.png" alt="Bioactive Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

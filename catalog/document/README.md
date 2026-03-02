@@ -17,11 +17,7 @@ Blueprints, maps, and encrypted data files.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Blueprint</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Blueprint](../images/blueprint.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blueprint.png" alt="Blueprint" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -41,11 +37,7 @@ Blueprints, maps, and encrypted data files.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Coordinate Chip</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Coordinate Chip](../images/coordinate_chip.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/coordinate_chip.png" alt="Coordinate Chip" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -65,11 +57,7 @@ Blueprints, maps, and encrypted data files.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Data Chip</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Data Chip](../images/document.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/document.png" alt="Data Chip" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -89,11 +77,7 @@ Blueprints, maps, and encrypted data files.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Encrypted Data Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Encrypted Data Core](../images/encrypted_data.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/encrypted_data.png" alt="Encrypted Data Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -113,11 +97,7 @@ Blueprints, maps, and encrypted data files.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Star Map Fragment</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Star Map Fragment](../images/map_fragment.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/map_fragment.png" alt="Star Map Fragment" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>

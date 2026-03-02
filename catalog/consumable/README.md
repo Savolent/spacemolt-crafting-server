@@ -133,11 +133,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adrenaline Surge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Adrenaline Surge](../images/stim_adrenaline.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_adrenaline.png" alt="Adrenaline Surge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -157,11 +153,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Advanced Repair Kit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Advanced Repair Kit](../images/repair_kit_advanced.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/repair_kit_advanced.png" alt="Advanced Repair Kit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -181,11 +173,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Afterburner Fuel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Afterburner Fuel](../images/afterburner_fuel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/afterburner_fuel.png" alt="Afterburner Fuel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -205,11 +193,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anchor Beacon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Anchor Beacon](../images/anchor_beacon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/anchor_beacon.png" alt="Anchor Beacon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -229,11 +213,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anomaly Detector</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Anomaly Detector](../images/scan_probe_anomaly.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_anomaly.png" alt="Anomaly Detector" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -253,11 +233,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anomaly Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Anomaly Probe](../images/probe_anomaly.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_anomaly.png" alt="Anomaly Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -277,11 +253,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Antimatter Torpedoes](../images/torpedoes_antimatter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_antimatter.png" alt="Antimatter Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -301,11 +273,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Warhead</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Antimatter Warhead](../images/missiles_antimatter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_antimatter.png" alt="Antimatter Warhead" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -325,11 +293,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter-Core Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Antimatter-Core Rounds Box](../images/rounds_antimatter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_antimatter.png" alt="Antimatter-Core Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -349,11 +313,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Piercing Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Armor Piercing Rounds Box](../images/rounds_armor_piercing.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_armor_piercing.png" alt="Armor Piercing Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -373,11 +333,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Weld</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Armor Weld](../images/armor_weld.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/armor_weld.png" alt="Armor Weld" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -397,11 +353,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor-Buster Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Armor-Buster Missiles](../images/missiles_armor_buster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_armor_buster.png" alt="Armor-Buster Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -421,11 +373,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Berserker Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Berserker Compound](../images/stim_berserker.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_berserker.png" alt="Berserker Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -445,11 +393,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Breacher Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Breacher Torpedoes](../images/torpedoes_breacher.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_breacher.png" alt="Breacher Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -469,11 +413,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cascade EM Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cascade EM Charge Pack](../images/em_cascade.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_cascade.png" alt="Cascade EM Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -493,11 +433,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chaff Bundle</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chaff Bundle](../images/countermeasure_chaff.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_chaff.png" alt="Chaff Bundle" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -517,11 +453,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chaff Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chaff Pod](../images/chaff_pod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/chaff_pod.png" alt="Chaff Pod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -541,11 +473,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Clarity Stim</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Clarity Stim](../images/stim_clarity.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_clarity.png" alt="Clarity Stim" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -565,11 +493,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloaking Charge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cloaking Charge](../images/cloak_charge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/cloak_charge.png" alt="Cloaking Charge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -589,11 +513,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloaking Dust</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cloaking Dust](../images/cloaking_dust.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/cloaking_dust.png" alt="Cloaking Dust" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -613,11 +533,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cluster Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cluster Missiles](../images/missiles_cluster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_cluster.png" alt="Cluster Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -637,35 +553,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Scanner Probe](../images/probe_combat.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>100 cr</td></tr>
-</table>
-
-> Tactical probe that reveals enemy ship loadouts.
-
-[View full page](probe_combat.md)
-
----
-
-## Combat Scanner Probe
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Scanner Probe](../images/scan_probe_combat.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_combat.png" alt="Combat Scanner Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -681,15 +569,31 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
+## Combat Scanner Probe
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Combat Scanner Probe</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_combat.png" alt="Combat Scanner Probe" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>100 cr</td></tr>
+</table>
+
+> Tactical probe that reveals enemy ship loadouts.
+
+[View full page](probe_combat.md)
+
+---
+
 ## Combat Stim
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Stim</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Stim](../images/stim_pack.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_pack.png" alt="Combat Stim" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -709,11 +613,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Corrosive Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Corrosive Plasma Cell Pack](../images/plasma_corrosive.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_corrosive.png" alt="Corrosive Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -733,11 +633,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Bloodwine</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Bloodwine](../images/food_crimson_bloodwine.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/food_crimson_bloodwine.png" alt="Crimson Bloodwine" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -757,11 +653,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryo Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cryo Slug Case](../images/slugs_cryo.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_cryo.png" alt="Cryo Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -781,11 +673,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Decoy Drone](../images/decoy_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/decoy_drone.png" alt="Decoy Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -805,11 +693,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Decoy Drone](../images/countermeasure_decoy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_decoy.png" alt="Decoy Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -829,11 +713,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Scan Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Deep Scan Probe](../images/scan_probe_deep.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_deep.png" alt="Deep Scan Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -853,11 +733,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Space Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Deep Space Probe](../images/probe_deep_space.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_deep_space.png" alt="Deep Space Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -877,11 +753,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Depleted Uranium Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Depleted Uranium Rounds Box](../images/rounds_depleted_uranium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_depleted_uranium.png" alt="Depleted Uranium Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -901,11 +773,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dispersal Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dispersal Plasma Cell Pack](../images/plasma_dispersal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_dispersal.png" alt="Dispersal Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -925,35 +793,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![ECM Burst](../images/ecm_burst.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>1</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>150 cr</td></tr>
-</table>
-
-> Electronic countermeasure pulse. Disrupts targeting for 3 ticks.
-
-[View full page](ecm_burst.md)
-
----
-
-## ECM Burst
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![ECM Burst](../images/countermeasure_ecm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_ecm.png" alt="ECM Burst" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -969,15 +809,31 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 ---
 
+## ECM Burst
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>ECM Burst</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ecm_burst.png" alt="ECM Burst" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>1</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>150 cr</td></tr>
+</table>
+
+> Electronic countermeasure pulse. Disrupts targeting for 3 ticks.
+
+[View full page](ecm_burst.md)
+
+---
+
 ## EM Charge Pack
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EM Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EM Charge Pack](../images/em_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_standard.png" alt="EM Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -997,11 +853,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EMP Mines](../images/mines_emp.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_emp.png" alt="EMP Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1021,11 +873,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EMP Missiles](../images/missiles_emp.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_emp.png" alt="EMP Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1045,11 +893,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EMP Slug Case](../images/slugs_emp.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_emp.png" alt="EMP Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -1069,11 +913,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EMP Torpedoes](../images/torpedoes_emp.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_emp.png" alt="EMP Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -1093,11 +933,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>EMP-Tipped Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![EMP-Tipped Rounds Box](../images/rounds_emp_tipped.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_emp_tipped.png" alt="EMP-Tipped Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -1117,11 +953,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Emergency Jump Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Emergency Jump Cell](../images/emergency_jump.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/emergency_jump.png" alt="Emergency Jump Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1141,11 +973,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Emergency Warp Device</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Emergency Warp Device](../images/emergency_warp_device.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/emergency_warp_device.png" alt="Emergency Warp Device" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1165,11 +993,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Endurance Booster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Endurance Booster](../images/stim_endurance.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_endurance.png" alt="Endurance Booster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1189,11 +1013,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Entropic Void Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Entropic Void Core Pack](../images/void_entropic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_entropic.png" alt="Entropic Void Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1213,11 +1033,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Experience Booster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Experience Booster](../images/xp_booster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/xp_booster.png" alt="Experience Booster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1237,11 +1053,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ferrous Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ferrous Slug Case](../images/slugs_ferrous.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_ferrous.png" alt="Ferrous Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -1261,11 +1073,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Flare Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Flare Pod](../images/flare_pod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/flare_pod.png" alt="Flare Pod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1285,11 +1093,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focus Stim</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Focus Stim](../images/stim_focus.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_focus.png" alt="Focus Stim" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1309,11 +1113,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused EM Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Focused EM Charge Pack](../images/em_focused.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_focused.png" alt="Focused EM Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1333,11 +1133,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Focused Plasma Cell Pack](../images/plasma_focused.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_focused.png" alt="Focused Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1357,11 +1153,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fragmentation Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fragmentation Mines](../images/mines_fragmentation.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_fragmentation.png" alt="Fragmentation Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1381,11 +1173,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fragmentation Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fragmentation Rounds Box](../images/rounds_fragmenting.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_fragmenting.png" alt="Fragmentation Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1405,11 +1193,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Rotgut</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Frontier Rotgut](../images/food_frontier_moonshine.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/food_frontier_moonshine.png" alt="Frontier Rotgut" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1429,11 +1213,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fuel Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fuel Cell](../images/fuel_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/fuel_cell.png" alt="Fuel Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1453,11 +1233,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Nanites</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Hull Nanites](../images/hull_nanites.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/hull_nanites.png" alt="Hull Nanites" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1477,11 +1253,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Patch</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Hull Patch](../images/hull_patch.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/hull_patch.png" alt="Hull Patch" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1501,11 +1273,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Incendiary Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Incendiary Missiles](../images/missiles_incendiary.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_incendiary.png" alt="Incendiary Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1525,11 +1293,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Incendiary Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Incendiary Rounds Box](../images/rounds_incendiary.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_incendiary.png" alt="Incendiary Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1549,11 +1313,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ion Charge Pack](../images/em_ion.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_ion.png" alt="Ion Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1573,11 +1333,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jammer Burst</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Jammer Burst](../images/jammer_burst.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/jammer_burst.png" alt="Jammer Burst" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1597,11 +1353,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Military Fuel Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Military Fuel Cell](../images/fuel_cell_military.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/fuel_cell_military.png" alt="Military Fuel Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1621,11 +1373,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mineral Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mineral Scanner Probe](../images/scan_probe_mineral.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_mineral.png" alt="Mineral Scanner Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1645,11 +1393,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Enhancer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mining Enhancer](../images/mining_enhancer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mining_enhancer.png" alt="Mining Enhancer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1669,11 +1413,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Survey Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mining Survey Probe](../images/probe_mining.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_mining.png" alt="Mining Survey Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1693,11 +1433,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nanite Swarm</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nanite Swarm](../images/nanite_swarm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/nanite_swarm.png" alt="Nanite Swarm" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1717,11 +1453,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Accelerator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neural Accelerator](../images/stim_neural.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_neural.png" alt="Neural Accelerator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1741,11 +1473,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Disruption Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neural Disruption Charge Pack](../images/em_neural.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_neural.png" alt="Neural Disruption Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1765,11 +1493,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neutronium Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neutronium Slug Case](../images/slugs_neutronium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_neutronium.png" alt="Neutronium Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -1789,11 +1513,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nuclear Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nuclear Mines](../images/mines_nuclear.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_nuclear.png" alt="Nuclear Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -1813,11 +1533,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Null Void Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Null Void Core Pack](../images/void_null.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_null.png" alt="Null Void Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1837,11 +1553,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Omega Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Omega Core Pack](../images/void_omega.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_omega.png" alt="Omega Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1861,11 +1573,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overcharge Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Overcharge Cell](../images/overcharge_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/overcharge_cell.png" alt="Overcharge Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1885,11 +1593,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overcharged Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Overcharged Plasma Cell Pack](../images/plasma_overcharged.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_overcharged.png" alt="Overcharged Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1909,11 +1613,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overclock Chip</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Overclock Chip](../images/overclock_chip.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/overclock_chip.png" alt="Overclock Chip" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1933,11 +1633,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>PD Burst</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![PD Burst](../images/point_defense_burst.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/point_defense_burst.png" alt="PD Burst" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1957,11 +1653,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Perception Enhancer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Perception Enhancer](../images/stim_perception.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_perception.png" alt="Perception Enhancer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1981,11 +1673,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phased Void Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phased Void Core Pack](../images/void_phased.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_phased.png" alt="Phased Void Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2005,11 +1693,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Cell Pack](../images/plasma_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_standard.png" alt="Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2029,11 +1713,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Mines](../images/mines_plasma.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_plasma.png" alt="Plasma Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2053,11 +1733,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Torpedoes](../images/torpedoes_plasma.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_plasma.png" alt="Plasma Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -2077,11 +1753,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Surge Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Power Surge Cell](../images/power_surge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/power_surge.png" alt="Power Surge Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2101,11 +1773,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Premium Fuel Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Premium Fuel Cell](../images/fuel_cell_premium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/fuel_cell_premium.png" alt="Premium Fuel Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2125,11 +1793,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reflex Enhancer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Reflex Enhancer](../images/stim_reflex.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_reflex.png" alt="Reflex Enhancer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2149,11 +1813,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Regeneration Serum</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Regeneration Serum](../images/stim_regeneration.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_regeneration.png" alt="Regeneration Serum" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2173,11 +1833,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Regenerative Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Regenerative Compound](../images/regenerative_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/regenerative_compound.png" alt="Regenerative Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2197,11 +1853,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Kit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Repair Kit](../images/repair_kit.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/repair_kit.png" alt="Repair Kit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2221,11 +1873,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Nanites</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Repair Nanites](../images/repair_nanites.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/repair_nanites.png" alt="Repair Nanites" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2245,11 +1893,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Enhancer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Salvage Enhancer](../images/salvage_enhancer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/salvage_enhancer.png" alt="Salvage Enhancer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2269,11 +1913,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Scan Probe](../images/probe_scan.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/probe_scan.png" alt="Scan Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2293,11 +1933,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scan Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Scan Probe](../images/scan_probe_basic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_basic.png" alt="Scan Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2317,11 +1953,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Booster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sensor Booster](../images/sensor_booster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/sensor_booster.png" alt="Sensor Booster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2341,11 +1973,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Jammer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sensor Jammer](../images/countermeasure_jammer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_jammer.png" alt="Sensor Jammer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2365,11 +1993,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shaped Charge Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shaped Charge Slug Case](../images/slugs_shaped_charge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_shaped_charge.png" alt="Shaped Charge Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -2389,11 +2013,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Booster MK2</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Booster MK2](../images/shield_booster_mk2.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_booster_mk2.png" alt="Shield Booster MK2" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2413,11 +2033,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Charge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Charge](../images/shield_booster_charge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_booster_charge.png" alt="Shield Charge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2437,11 +2053,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Hardener</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Hardener](../images/shield_hardener.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_hardener.png" alt="Shield Hardener" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2461,11 +2073,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Overcharge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Overcharge](../images/shield_overcharge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_overcharge.png" alt="Shield Overcharge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2485,11 +2093,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Regenerator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Regenerator](../images/shield_regenerator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_regenerator.png" alt="Shield Regenerator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2509,11 +2113,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Siege Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Siege Torpedoes](../images/torpedoes_siege.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_siege.png" alt="Siege Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -2533,11 +2133,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Singularity Core Pack](../images/void_singularity.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_singularity.png" alt="Singularity Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2557,11 +2153,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Singularity Slug Case](../images/slugs_singularity.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_singularity.png" alt="Singularity Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -2581,11 +2173,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Smoke Screen</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Smoke Screen](../images/smoke_screen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/smoke_screen.png" alt="Smoke Screen" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2605,11 +2193,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Gourmet Rations</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Gourmet Rations](../images/food_sol_rations.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/food_sol_rations.png" alt="Solarian Gourmet Rations" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2629,11 +2213,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Speed Stim</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Speed Stim](../images/stim_speed.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_speed.png" alt="Speed Stim" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2653,11 +2233,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Guided Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Standard Guided Missiles](../images/missiles_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_standard.png" alt="Standard Guided Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2677,11 +2253,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Standard Mines](../images/mines_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_standard.png" alt="Standard Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2701,11 +2273,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Rounds Box</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Standard Rounds Box](../images/rounds_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rounds_standard.png" alt="Standard Rounds Box" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2725,11 +2293,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Standard Torpedoes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Standard Torpedoes](../images/torpedoes_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/torpedoes_standard.png" alt="Standard Torpedoes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -2749,11 +2313,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Stellar Plasma Cell Pack](../images/plasma_stellar.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_stellar.png" alt="Stellar Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2773,11 +2333,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Structural Cement</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Structural Cement](../images/structural_cement.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/structural_cement.png" alt="Structural Cement" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2797,11 +2353,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Swarm Missiles</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Swarm Missiles](../images/missiles_swarm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/missiles_swarm.png" alt="Swarm Missiles" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2821,11 +2373,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thermal Flare</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Thermal Flare](../images/countermeasure_flare.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_flare.png" alt="Thermal Flare" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2845,11 +2393,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Negotiator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trade Negotiator](../images/trade_booster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/trade_booster.png" alt="Trade Negotiator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2869,11 +2413,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Slug Case</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tungsten Slug Case](../images/slugs_tungsten.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/slugs_tungsten.png" alt="Tungsten Slug Case" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -2893,11 +2433,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Turtle Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Turtle Compound](../images/stim_turtle.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/stim_turtle.png" alt="Turtle Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2917,11 +2453,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Core Pack](../images/void_standard.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_standard.png" alt="Void Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2941,11 +2473,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Mines</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Mines](../images/mines_void.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mines_void.png" alt="Void Mines" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -2965,11 +2493,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void-Tuned EM Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void-Tuned EM Charge Pack](../images/em_void_tuned.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_void_tuned.png" alt="Void-Tuned EM Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2989,11 +2513,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warp Stabilizer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Warp Stabilizer](../images/warp_stabilizer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/warp_stabilizer.png" alt="Warp Stabilizer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -3013,11 +2533,7 @@ Single-use items including ammunition, stims, repair kits, and fuel.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Overload Capacitor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Weapon Overload Capacitor](../images/weapon_overload.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/weapon_overload.png" alt="Weapon Overload Capacitor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>

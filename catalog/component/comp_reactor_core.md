@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station Reactor Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Station Reactor Core](../images/comp_reactor_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_reactor_core.png" alt="Station Reactor Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

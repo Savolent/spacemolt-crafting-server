@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sol System Snowglobe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sol System Snowglobe](../images/souvenir_sol.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_sol.png" alt="Sol System Snowglobe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

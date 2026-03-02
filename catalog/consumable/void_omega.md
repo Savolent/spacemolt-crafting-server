@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Omega Core Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Omega Core Pack](../images/void_omega.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_omega.png" alt="Omega Core Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

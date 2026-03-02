@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tracking System</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tracking System](../images/comp_tracking_system.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_tracking_system.png" alt="Tracking System" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

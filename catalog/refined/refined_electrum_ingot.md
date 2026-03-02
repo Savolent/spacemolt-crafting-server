@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Electrum Ingot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Electrum Ingot](../images/refined_electrum_ingot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_electrum_ingot.png" alt="Electrum Ingot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

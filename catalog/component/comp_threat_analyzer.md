@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Threat Analyzer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Threat Analyzer](../images/comp_threat_analyzer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_threat_analyzer.png" alt="Threat Analyzer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

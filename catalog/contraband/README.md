@@ -24,11 +24,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioweapon Sample</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioweapon Sample](../images/contraband_bioweapon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_bioweapon.png" alt="Bioweapon Sample" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -48,11 +44,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Black Market Weapon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Black Market Weapon](../images/blackmarket_weapon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_weapon.png" alt="Black Market Weapon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -72,11 +64,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cloning Template</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cloning Template](../images/contraband_cloning_template.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_cloning_template.png" alt="Cloning Template" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -96,11 +84,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Narcotics</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Narcotics](../images/blackmarket_stims.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_stims.png" alt="Combat Narcotics" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -120,11 +104,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Forged Identity</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Forged Identity](../images/blackmarket_identity.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_identity.png" alt="Forged Identity" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -144,11 +124,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Illegal Implant</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Illegal Implant](../images/blackmarket_implant.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_implant.png" alt="Illegal Implant" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -168,11 +144,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Leaked Patrol Routes</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Leaked Patrol Routes](../images/blackmarket_coordinates.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_coordinates.png" alt="Leaked Patrol Routes" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -192,11 +164,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Memory Wipe Drug</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Memory Wipe Drug](../images/contraband_memory_wipe.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_memory_wipe.png" alt="Memory Wipe Drug" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -216,11 +184,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nuclear Device</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nuclear Device](../images/contraband_nuke.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_nuke.png" alt="Nuclear Device" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -240,11 +204,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Slave Contract</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Slave Contract](../images/contraband_slaves.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_slaves.png" alt="Slave Contract" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -264,11 +224,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stolen Data</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Stolen Data](../images/blackmarket_data.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_data.png" alt="Stolen Data" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -288,11 +244,7 @@ Illegal goods that carry severe penalties if caught in possession.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Unshackled AI Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Unshackled AI Core](../images/contraband_ai_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/contraband_ai_core.png" alt="Unshackled AI Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>

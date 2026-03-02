@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Micro-Thruster Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Micro-Thruster Array](../images/comp_micro_thruster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_micro_thruster.png" alt="Micro-Thruster Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

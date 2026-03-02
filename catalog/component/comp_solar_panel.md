@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solar Panel Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solar Panel Array](../images/comp_solar_panel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_solar_panel.png" alt="Solar Panel Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Autopilot Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Autopilot Module](../images/comp_autopilot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_autopilot.png" alt="Autopilot Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Booster MK2</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Booster MK2](../images/shield_booster_mk2.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_booster_mk2.png" alt="Shield Booster MK2" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

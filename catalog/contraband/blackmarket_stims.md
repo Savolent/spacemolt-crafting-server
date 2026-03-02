@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Narcotics</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Narcotics](../images/blackmarket_stims.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/blackmarket_stims.png" alt="Combat Narcotics" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>contraband</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

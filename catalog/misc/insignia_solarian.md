@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Insignia](../images/insignia_solarian.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_solarian.png" alt="Solarian Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

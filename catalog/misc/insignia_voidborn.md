@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Insignia](../images/insignia_voidborn.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_voidborn.png" alt="Voidborn Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

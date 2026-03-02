@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fungal Extract</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fungal Extract](../images/bio_fungal_extract.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_fungal_extract.png" alt="Fungal Extract" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>ore</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

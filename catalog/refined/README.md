@@ -89,11 +89,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adamantite Bar</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Adamantite Bar](../images/refined_adamantite.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_adamantite.png" alt="Adamantite Bar" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -113,11 +109,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Aluminum Sheet</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Aluminum Sheet](../images/refined_aluminum_sheet.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_aluminum_sheet.png" alt="Aluminum Sheet" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -137,11 +129,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Capsule</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Antimatter Capsule](../images/refined_antimatter_capsule.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_antimatter_capsule.png" alt="Antimatter Capsule" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -161,11 +149,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioactive Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioactive Compound](../images/refined_biocompound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_biocompound.png" alt="Bioactive Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -185,11 +169,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Biofiber Mesh</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Biofiber Mesh](../images/refined_biofiber.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_biofiber.png" alt="Biofiber Mesh" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -209,11 +189,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioluminescent Culture</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioluminescent Culture](../images/refined_biolume_culture.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_biolume_culture.png" alt="Bioluminescent Culture" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -233,11 +209,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Fiber Weave</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Carbon Fiber Weave](../images/refined_carbon_fiber.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_carbon_fiber.png" alt="Carbon Fiber Weave" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -257,11 +229,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ceramite Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ceramite Plating](../images/refined_ceramite.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_ceramite.png" alt="Ceramite Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -281,11 +249,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chlorine Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chlorine Compound](../images/refined_chlorine_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_chlorine_compound.png" alt="Chlorine Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -305,11 +269,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chromium Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chromium Plate](../images/refined_chromium_plate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_chromium_plate.png" alt="Chromium Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -329,11 +289,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Circuit Board</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Circuit Board](../images/refined_circuits.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_circuits.png" alt="Circuit Board" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -353,11 +309,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Condensed Dark Matter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Condensed Dark Matter](../images/refined_outerrim_dark_matter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_outerrim_dark_matter.png" alt="Condensed Dark Matter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -377,11 +329,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Contained Antimatter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Contained Antimatter](../images/refined_antimatter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_antimatter.png" alt="Contained Antimatter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -401,11 +349,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Coolant Fluid</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Coolant Fluid](../images/refined_coolant.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_coolant.png" alt="Coolant Fluid" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -425,11 +369,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Copper Wiring</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Copper Wiring](../images/refined_copper_wire.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_copper_wire.png" alt="Copper Wiring" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -449,11 +389,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crystalline Lattice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crystalline Lattice](../images/refined_crystalline_lattice.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_crystalline_lattice.png" alt="Crystalline Lattice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -473,11 +409,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Energy Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dark Energy Cell](../images/refined_dark_energy_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_dark_energy_cell.png" alt="Dark Energy Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -497,11 +429,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Darksteel Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Darksteel Plating](../images/refined_darksteel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_darksteel.png" alt="Darksteel Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -521,11 +449,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deuterium</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Deuterium](../images/refined_deuterium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_deuterium.png" alt="Deuterium" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -545,11 +469,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Durasteel Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Durasteel Plate](../images/refined_durasteel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_durasteel.png" alt="Durasteel Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -569,11 +489,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Electrum Ingot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Electrum Ingot](../images/refined_electrum_ingot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_electrum_ingot.png" alt="Electrum Ingot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -593,11 +509,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Enriched Uranium Rod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Enriched Uranium Rod](../images/refined_uranium_rod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_uranium_rod.png" alt="Enriched Uranium Rod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -617,11 +529,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Flex Polymer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Flex Polymer](../images/refined_polymer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_polymer.png" alt="Flex Polymer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -641,11 +549,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fluorine Etchant</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fluorine Etchant](../images/refined_fluorine_acid.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_fluorine_acid.png" alt="Fluorine Etchant" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -665,11 +569,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Focused Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Focused Crystal](../images/refined_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_crystal.png" alt="Focused Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -689,11 +589,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury Alloy</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fury Alloy](../images/refined_crimson_fury_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_crimson_fury_alloy.png" alt="Fury Alloy" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -713,11 +609,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fusion Fuel Rod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fusion Fuel Rod](../images/refined_fuel_rod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_fuel_rod.png" alt="Fusion Fuel Rod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -737,11 +629,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gold Wiring</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Gold Wiring](../images/refined_gold_wire.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_gold_wire.png" alt="Gold Wiring" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -761,11 +649,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Graphene Sheet</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Graphene Sheet](../images/refined_graphene.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_graphene.png" alt="Graphene Sheet" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -785,11 +669,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Helium-3</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Helium-3](../images/refined_helium3.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_helium3.png" alt="Helium-3" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -809,11 +689,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Solution</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ion Solution](../images/refined_ion_solution.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_ion_solution.png" alt="Ion Solution" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -833,11 +709,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ionized Neon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ionized Neon](../images/refined_neon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_neon.png" alt="Ionized Neon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -857,11 +729,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Liquid Hydrogen</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Liquid Hydrogen](../images/refined_hydrogen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_hydrogen.png" alt="Liquid Hydrogen" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -881,11 +749,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Liquid Nitrogen</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Liquid Nitrogen](../images/refined_nitrogen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_nitrogen.png" alt="Liquid Nitrogen" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -905,11 +769,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Memory Metal Sheet</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Memory Metal Sheet](../images/refined_memory_metal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_memory_metal.png" alt="Memory Metal Sheet" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -929,11 +789,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Metallic Aerogel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Metallic Aerogel](../images/refined_aerogel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_aerogel.png" alt="Metallic Aerogel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -953,11 +809,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Metamaterial Panel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Metamaterial Panel](../images/refined_metamaterial.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_metamaterial.png" alt="Metamaterial Panel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -977,11 +829,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nanoplastic Composite</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nanoplastic Composite](../images/refined_nanoplastic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_nanoplastic.png" alt="Nanoplastic Composite" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1001,11 +849,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Essence</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula Essence](../images/refined_nebula_essence.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_nebula_essence.png" alt="Nebula Essence" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1025,11 +869,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebulium Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebulium Core](../images/refined_nebulium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_nebulium.png" alt="Nebulium Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1049,11 +889,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neodymium Magnet</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neodymium Magnet](../images/refined_magnet.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_magnet.png" alt="Neodymium Magnet" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1073,11 +909,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Extract</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neural Extract](../images/refined_neural_extract.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_neural_extract.png" alt="Neural Extract" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1097,11 +929,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Interface Gel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neural Interface Gel](../images/refined_neural_gel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_neural_gel.png" alt="Neural Interface Gel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1121,11 +949,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neutronium Ingot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neutronium Ingot](../images/refined_neutronium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_neutronium.png" alt="Neutronium Ingot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1145,11 +969,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Optical Fiber Bundle</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Optical Fiber Bundle](../images/refined_optical_fiber.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_optical_fiber.png" alt="Optical Fiber Bundle" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1169,11 +989,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Organic Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Organic Compound](../images/refined_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_compound.png" alt="Organic Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1193,11 +1009,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Osmium Armor Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Osmium Armor Plate](../images/refined_osmium_plate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_osmium_plate.png" alt="Osmium Armor Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1217,11 +1029,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phase Matrix](../images/refined_phase.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_phase.png" alt="Phase Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1241,11 +1049,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Cell](../images/refined_plasma_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_plasma_cell.png" alt="Plasma Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1265,11 +1069,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Battery</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Power Battery](../images/refined_battery.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_battery.png" alt="Power Battery" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1289,11 +1089,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Prismatic Lens</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Prismatic Lens](../images/refined_nebula_prism_lens.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_nebula_prism_lens.png" alt="Prismatic Lens" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1313,11 +1109,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processed Null Matter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Processed Null Matter](../images/refined_voidborn_null_matter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_voidborn_null_matter.png" alt="Processed Null Matter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1337,11 +1129,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processed Thorium</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Processed Thorium](../images/refined_thorium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_thorium.png" alt="Processed Thorium" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1361,11 +1149,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Argon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Purified Argon](../images/refined_argon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_argon.png" alt="Purified Argon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1385,11 +1169,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Krypton</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Purified Krypton](../images/refined_krypton.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_krypton.png" alt="Purified Krypton" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1409,11 +1189,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Water</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Purified Water](../images/refined_water.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_water.png" alt="Purified Water" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1433,11 +1209,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Purified Xenon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Purified Xenon](../images/refined_xenon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_xenon.png" alt="Purified Xenon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1457,11 +1229,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Dot Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Dot Matrix](../images/refined_quantum_dot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_quantum_dot.png" alt="Quantum Dot Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1481,11 +1249,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Plasma Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Refined Plasma Core](../images/refined_plasma_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_plasma_core.png" alt="Refined Plasma Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1505,11 +1269,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Quantum Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Refined Quantum Matrix](../images/refined_quantum_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_quantum_matrix.png" alt="Refined Quantum Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1529,11 +1289,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reinforced Glass</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Reinforced Glass](../images/refined_glass.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_glass.png" alt="Reinforced Glass" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1553,11 +1309,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicate Composite</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Silicate Composite](../images/refined_silicate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_silicate.png" alt="Silicate Composite" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1577,11 +1329,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silver Wiring</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Silver Wiring](../images/refined_silver_wire.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_silver_wire.png" alt="Silver Wiring" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1601,11 +1349,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Composite</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Composite](../images/refined_solarian_composite.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_solarian_composite.png" alt="Solarian Composite" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1625,11 +1369,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Legacy Alloy</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Legacy Alloy](../images/refined_solarian_legacy_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_solarian_legacy_alloy.png" alt="Solarian Legacy Alloy" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1649,11 +1389,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stabilized Exotic</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Stabilized Exotic](../images/refined_exotic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_exotic.png" alt="Stabilized Exotic" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1673,11 +1409,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Steel Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Steel Plate](../images/refined_steel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_steel.png" alt="Steel Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1697,11 +1429,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Superconductor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Superconductor](../images/refined_superconductor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_superconductor.png" alt="Superconductor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1721,11 +1449,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Synthetic Diamond</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Synthetic Diamond](../images/refined_synthetic_diamond.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_synthetic_diamond.png" alt="Synthetic Diamond" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1745,11 +1469,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thermal Ceramic</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Thermal Ceramic](../images/refined_ceramic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_ceramic.png" alt="Thermal Ceramic" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1769,11 +1489,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Alloy</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Titanium Alloy](../images/refined_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_alloy.png" alt="Titanium Alloy" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1793,11 +1509,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Foam</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Titanium Foam](../images/refined_titanium_foam.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_titanium_foam.png" alt="Titanium Foam" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1817,11 +1529,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Ingot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Titanium Ingot](../images/refined_titanium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_titanium.png" alt="Titanium Ingot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1841,11 +1549,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trace Exotic Element</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trace Exotic Element](../images/rare_element.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rare_element.png" alt="Trace Exotic Element" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1865,11 +1569,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Rod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tungsten Rod](../images/refined_tungsten_rod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_tungsten_rod.png" alt="Tungsten Rod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1889,11 +1589,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Condensate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Condensate](../images/refined_void_condensate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_void_condensate.png" alt="Void Condensate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1913,11 +1609,7 @@ Processed materials refined from raw ores and gases.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapons-Grade Plutonium</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Weapons-Grade Plutonium](../images/refined_plutonium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_plutonium.png" alt="Weapons-Grade Plutonium" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>

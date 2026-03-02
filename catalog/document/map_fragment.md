@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Star Map Fragment</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Star Map Fragment](../images/map_fragment.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/map_fragment.png" alt="Star Map Fragment" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>document</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

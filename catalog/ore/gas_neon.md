@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neon Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neon Gas](../images/gas_neon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_neon.png" alt="Neon Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>ore</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

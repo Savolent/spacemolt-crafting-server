@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Moltey Badge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Moltey Badge](../images/moltey_badge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/moltey_badge.png" alt="Moltey Badge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>

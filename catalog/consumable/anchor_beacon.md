@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Anchor Beacon</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Anchor Beacon](../images/anchor_beacon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/anchor_beacon.png" alt="Anchor Beacon" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

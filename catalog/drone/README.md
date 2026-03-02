@@ -21,11 +21,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Combat Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Combat Drone](../images/combat_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/combat_drone.png" alt="Combat Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -45,11 +41,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>ECM Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![ECM Drone](../images/ecm_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ecm_drone.png" alt="ECM Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -69,11 +61,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Heavy Combat Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Heavy Combat Drone](../images/heavy_combat_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/heavy_combat_drone.png" alt="Heavy Combat Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>8</td></tr>
@@ -93,11 +81,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Logistics Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Logistics Drone](../images/logistics_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/logistics_drone.png" alt="Logistics Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -117,11 +101,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mining Drone](../images/mining_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mining_drone.png" alt="Mining Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -141,11 +121,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Repair Drone](../images/repair_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/repair_drone.png" alt="Repair Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -165,11 +141,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Salvage Drone](../images/salvage_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/salvage_drone.png" alt="Salvage Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -189,11 +161,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Scout Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Scout Drone](../images/scout_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scout_drone.png" alt="Scout Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -213,11 +181,7 @@ Autonomous craft for combat, mining, repair, and reconnaissance.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Drone](../images/shield_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/shield_drone.png" alt="Shield Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>

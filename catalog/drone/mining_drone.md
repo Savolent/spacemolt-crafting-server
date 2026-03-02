@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mining Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mining Drone](../images/mining_drone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/mining_drone.png" alt="Mining Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>drone</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Decoy Drone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Decoy Drone](../images/countermeasure_decoy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/countermeasure_decoy.png" alt="Decoy Drone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Artifact</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ancient Artifact](../images/ancient_artifact.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ancient_artifact.png" alt="Ancient Artifact" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>

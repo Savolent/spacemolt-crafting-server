@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Copper Wiring</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Copper Wiring](../images/refined_copper_wire.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_copper_wire.png" alt="Copper Wiring" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

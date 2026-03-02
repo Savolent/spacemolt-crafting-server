@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mechanus Cogwheel</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mechanus Cogwheel](../images/artifact_mechanus_gear.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_mechanus_gear.png" alt="Mechanus Cogwheel" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>artifact</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

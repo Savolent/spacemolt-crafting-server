@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fuel Tank</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fuel Tank](../images/comp_fuel_tank.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_fuel_tank.png" alt="Fuel Tank" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

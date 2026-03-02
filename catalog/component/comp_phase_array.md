@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phase Array](../images/comp_phase_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_phase_array.png" alt="Phase Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

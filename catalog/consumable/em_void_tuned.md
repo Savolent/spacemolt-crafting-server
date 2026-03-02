@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void-Tuned EM Charge Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void-Tuned EM Charge Pack](../images/em_void_tuned.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/em_void_tuned.png" alt="Void-Tuned EM Charge Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

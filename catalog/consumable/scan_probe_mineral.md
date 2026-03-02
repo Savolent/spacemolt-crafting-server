@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Mineral Scanner Probe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Mineral Scanner Probe](../images/scan_probe_mineral.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/scan_probe_mineral.png" alt="Mineral Scanner Probe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

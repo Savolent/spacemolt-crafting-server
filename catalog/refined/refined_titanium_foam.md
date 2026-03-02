@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Foam</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Titanium Foam](../images/refined_titanium_foam.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/refined_titanium_foam.png" alt="Titanium Foam" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

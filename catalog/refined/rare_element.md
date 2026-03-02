@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trace Exotic Element</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trace Exotic Element](../images/rare_element.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rare_element.png" alt="Trace Exotic Element" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>refined</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

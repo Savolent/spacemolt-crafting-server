@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Ordnance Bay</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Ordnance Bay](../images/comp_crimson_ordnance_bay.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_crimson_ordnance_bay.png" alt="Crimson Ordnance Bay" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

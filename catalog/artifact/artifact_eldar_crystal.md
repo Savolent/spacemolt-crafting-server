@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Eldar Memory Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Eldar Memory Crystal](../images/artifact_eldar_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_eldar_crystal.png" alt="Eldar Memory Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>artifact</td></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>

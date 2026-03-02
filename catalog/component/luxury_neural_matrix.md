@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Neural Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Neural Matrix](../images/luxury_neural_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/luxury_neural_matrix.png" alt="Voidborn Neural Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

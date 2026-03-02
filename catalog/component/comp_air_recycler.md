@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Air Recycler</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Air Recycler](../images/comp_air_recycler.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_air_recycler.png" alt="Air Recycler" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

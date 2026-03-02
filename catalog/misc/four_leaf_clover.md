@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Four-Leaf Clover</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Four-Leaf Clover](../images/four_leaf_clover.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/four_leaf_clover.png" alt="Four-Leaf Clover" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

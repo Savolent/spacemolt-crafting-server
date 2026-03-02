@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neodymium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neodymium Ore](../images/ore_neodymium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_neodymium.png" alt="Neodymium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>ore</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

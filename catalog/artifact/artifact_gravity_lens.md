@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gravity Lens</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Gravity Lens](../images/artifact_gravity_lens.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/artifact_gravity_lens.png" alt="Gravity Lens" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>artifact</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Bay Expansion</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cargo Bay Expansion](../images/comp_cargo_expansion.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cargo_expansion.png" alt="Cargo Bay Expansion" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

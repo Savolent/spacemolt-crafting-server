@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Overcharged Plasma Cell Pack</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Overcharged Plasma Cell Pack](../images/plasma_overcharged.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/plasma_overcharged.png" alt="Overcharged Plasma Cell Pack" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

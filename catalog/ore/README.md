@@ -96,11 +96,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Adamantite Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Adamantite Ore](../images/ore_adamantite.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_adamantite.png" alt="Adamantite Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -120,11 +116,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Alien DNA Sample</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Alien DNA Sample](../images/bio_dna_sample.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_dna_sample.png" alt="Alien DNA Sample" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -144,11 +136,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Alien Spores</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Alien Spores](../images/bio_spores.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_spores.png" alt="Alien Spores" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -168,11 +156,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Aluminum Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Aluminum Ore](../images/ore_aluminum.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_aluminum.png" alt="Aluminum Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -192,11 +176,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Americium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Americium Ore](../images/ore_americium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_americium.png" alt="Americium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -216,11 +196,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ammonia Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ammonia Ice](../images/ore_ice_ammonia.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_ammonia.png" alt="Ammonia Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -240,11 +216,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Power Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ancient Power Crystal](../images/ore_ancient_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ancient_crystal.png" alt="Ancient Power Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -264,11 +236,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Antimatter Containment Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Antimatter Containment Cell](../images/ore_antimatter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_antimatter.png" alt="Antimatter Containment Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -288,11 +256,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Argon Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Argon Gas](../images/gas_argon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_argon.png" alt="Argon Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -312,11 +276,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bacterial Culture</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bacterial Culture](../images/bio_bacterial_culture.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_bacterial_culture.png" alt="Bacterial Culture" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -336,11 +296,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Bioluminescent Polyps</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Bioluminescent Polyps](../images/bio_bioluminescent.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_bioluminescent.png" alt="Bioluminescent Polyps" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -360,11 +316,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Californium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Californium Ore](../images/ore_californium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_californium.png" alt="Californium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -384,11 +336,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Dioxide Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Carbon Dioxide Ice](../images/ore_ice_co2.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_co2.png" alt="Carbon Dioxide Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -408,11 +356,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Carbon Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Carbon Ore](../images/ore_carbon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_carbon.png" alt="Carbon Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -432,11 +376,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chlorine Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chlorine Gas](../images/gas_chlorine.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_chlorine.png" alt="Chlorine Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -456,11 +396,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Chromium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Chromium Ore](../images/ore_chromium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_chromium.png" alt="Chromium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -480,11 +416,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cobalt Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cobalt Ore](../images/ore_cobalt.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_cobalt.png" alt="Cobalt Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -504,11 +436,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Compressed Hydrogen</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Compressed Hydrogen](../images/gas_hydrogen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_hydrogen.png" alt="Compressed Hydrogen" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -528,11 +456,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Copper Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Copper Ore](../images/ore_copper.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_copper.png" alt="Copper Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -552,11 +476,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Residue</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dark Matter Residue](../images/ore_outerrim_dark.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_outerrim_dark.png" alt="Dark Matter Residue" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -576,11 +496,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Darksteel Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Darksteel Ore](../images/ore_darksteel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_darksteel.png" alt="Darksteel Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -600,11 +516,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deuterium Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Deuterium Ice](../images/ore_ice_deuterium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_deuterium.png" alt="Deuterium Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -624,11 +536,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dimensional Shards</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dimensional Shards](../images/ore_dimensional_shards.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_dimensional_shards.png" alt="Dimensional Shards" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -648,11 +556,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Elder Bone</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Elder Bone](../images/ore_elder_bone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_elder_bone.png" alt="Elder Bone" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -672,11 +576,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Energy Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Energy Crystal](../images/ore_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_crystal.png" alt="Energy Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -696,11 +596,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Enzyme Cluster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Enzyme Cluster](../images/bio_enzyme_cluster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_enzyme_cluster.png" alt="Enzyme Cluster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -720,11 +616,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Exotic Matter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Exotic Matter](../images/ore_exotic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_exotic.png" alt="Exotic Matter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -744,11 +636,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fluorine Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fluorine Gas](../images/gas_fluorine.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_fluorine.png" alt="Fluorine Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -768,11 +656,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fungal Extract</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fungal Extract](../images/bio_fungal_extract.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_fungal_extract.png" alt="Fungal Extract" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -792,11 +676,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fury Crystal](../images/ore_crimson_fury.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_crimson_fury.png" alt="Fury Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -816,11 +696,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gold Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Gold Ore](../images/ore_gold.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_gold.png" alt="Gold Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -840,11 +716,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Helium Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Helium Ice](../images/ore_ice_helium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_helium.png" alt="Helium Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -864,11 +736,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ion Gas](../images/gas_ion.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_ion.png" alt="Ion Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -888,11 +756,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Iridium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Iridium Ore](../images/ore_iridium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_iridium.png" alt="Iridium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -912,11 +776,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Iron Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Iron Ore](../images/ore_iron.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_iron.png" alt="Iron Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -936,11 +796,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Krypton Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Krypton Gas](../images/gas_krypton.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_krypton.png" alt="Krypton Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -960,11 +816,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lead Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Lead Ore](../images/ore_lead.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_lead.png" alt="Lead Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -984,11 +836,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Legacy Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Legacy Ore](../images/ore_solarian_legacy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_solarian_legacy.png" alt="Legacy Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1008,11 +856,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lithium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Lithium Ore](../images/ore_lithium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_lithium.png" alt="Lithium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1032,11 +876,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Manganese Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Manganese Ore](../images/ore_manganese.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_manganese.png" alt="Manganese Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1056,11 +896,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Methane Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Methane Ice](../images/ore_ice_methane.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_methane.png" alt="Methane Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1080,11 +916,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula Gas](../images/gas_nebula.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_nebula.png" alt="Nebula Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1104,11 +936,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebulium</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebulium](../images/ore_nebulium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_nebulium.png" alt="Nebulium" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1128,11 +956,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neodymium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neodymium Ore](../images/ore_neodymium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_neodymium.png" alt="Neodymium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1152,11 +976,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neon Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neon Gas](../images/gas_neon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_neon.png" alt="Neon Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1176,11 +996,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neural Tissue Sample</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neural Tissue Sample](../images/bio_neural_tissue.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_neural_tissue.png" alt="Neural Tissue Sample" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1200,11 +1016,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nickel Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nickel Ore](../images/ore_nickel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_nickel.png" alt="Nickel Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1224,11 +1036,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nitrogen Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nitrogen Ice](../images/ore_ice_nitrogen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_nitrogen.png" alt="Nitrogen Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1248,11 +1056,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Null Matter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Null Matter](../images/ore_voidborn_null.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_voidborn_null.png" alt="Null Matter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1272,11 +1076,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Organic Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Organic Compound](../images/bio_organic_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_organic_compound.png" alt="Organic Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1296,11 +1096,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Osmium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Osmium Ore](../images/ore_osmium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_osmium.png" alt="Osmium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1320,11 +1116,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Oxygen Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Oxygen Ice](../images/ore_ice_oxygen.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_oxygen.png" alt="Oxygen Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1344,11 +1136,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Palladium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Palladium Ore](../images/ore_palladium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_palladium.png" alt="Palladium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1368,11 +1156,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phase Crystal](../images/ore_phase_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_phase_crystal.png" alt="Phase Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1392,11 +1176,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pheromone Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Pheromone Compound](../images/bio_pheromone.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_pheromone.png" alt="Pheromone Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1416,11 +1196,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Gas](../images/gas_plasma.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_plasma.png" alt="Plasma Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1440,11 +1216,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Residue</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Residue](../images/ore_plasma.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_plasma.png" alt="Plasma Residue" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1464,11 +1236,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Platinum Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Platinum Ore](../images/ore_platinum.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_platinum.png" alt="Platinum Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1488,11 +1256,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plutonium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plutonium Ore](../images/ore_plutonium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_plutonium.png" alt="Plutonium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1512,11 +1276,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Polonium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Polonium Ore](../images/ore_polonium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_polonium.png" alt="Polonium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1536,11 +1296,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precursor Metal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Precursor Metal](../images/ore_precursor_metal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_precursor_metal.png" alt="Precursor Metal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1560,11 +1316,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Prismatic Nebulite</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Prismatic Nebulite](../images/ore_nebula_prism.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_nebula_prism.png" alt="Prismatic Nebulite" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1584,11 +1336,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Progenitor Alloy</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Progenitor Alloy](../images/ore_progenitor_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_progenitor_alloy.png" alt="Progenitor Alloy" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1608,11 +1356,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Fragments</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Fragments](../images/ore_quantum.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_quantum.png" alt="Quantum Fragments" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1632,11 +1376,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Radium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Radium Ore](../images/ore_radium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_radium.png" alt="Radium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1656,11 +1396,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rhodium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Rhodium Ore](../images/ore_rhodium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_rhodium.png" alt="Rhodium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1680,11 +1416,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silicon Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Silicon Ore](../images/ore_silicon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_silicon.png" alt="Silicon Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1704,11 +1436,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Silver Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Silver Ore](../images/ore_silver.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_silver.png" alt="Silver Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1728,11 +1456,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Dust</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Singularity Dust](../images/ore_singularity_dust.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_singularity_dust.png" alt="Singularity Dust" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1752,11 +1476,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sol Alloy Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sol Alloy Ore](../images/ore_sol_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_sol_alloy.png" alt="Sol Alloy Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1776,11 +1496,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Space Coral</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Space Coral](../images/bio_coral.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_coral.png" alt="Space Coral" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1800,11 +1516,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Stellar Core Fragment</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Stellar Core Fragment](../images/ore_star_matter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_star_matter.png" alt="Stellar Core Fragment" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1824,11 +1536,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Symbiont Organism</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Symbiont Organism](../images/bio_symbiont.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/bio_symbiont.png" alt="Symbiont Organism" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1848,11 +1556,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thorium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Thorium Ore](../images/ore_thorium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_thorium.png" alt="Thorium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1872,11 +1576,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Titanium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Titanium Ore](../images/ore_titanium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_titanium.png" alt="Titanium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1896,11 +1596,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Crystal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trade Crystal](../images/ore_trade_crystal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_trade_crystal.png" alt="Trade Crystal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1920,11 +1616,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tritium Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tritium Ice](../images/ore_ice_tritium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_tritium.png" alt="Tritium Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1944,11 +1636,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tungsten Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tungsten Ore](../images/ore_tungsten.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_tungsten.png" alt="Tungsten Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1968,11 +1656,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Uranium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Uranium Ore](../images/ore_uranium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_uranium.png" alt="Uranium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1992,11 +1676,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Vanadium Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Vanadium Ore](../images/ore_vanadium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_vanadium.png" alt="Vanadium Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2016,11 +1696,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Essence</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Essence](../images/ore_void.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_void.png" alt="Void Essence" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2040,11 +1716,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Water Ice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Water Ice](../images/ore_ice_water.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_ice_water.png" alt="Water Ice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2064,11 +1736,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Xenon Gas</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Xenon Gas](../images/gas_xenon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/gas_xenon.png" alt="Xenon Gas" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2088,11 +1756,7 @@ Raw ores, gases, ice, and biological samples harvested from space.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Zinc Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Zinc Ore](../images/ore_zinc.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_zinc.png" alt="Zinc Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>

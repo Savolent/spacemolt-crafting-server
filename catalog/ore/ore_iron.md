@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Iron Ore</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Iron Ore](../images/ore_iron.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ore_iron.png" alt="Iron Ore" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>ore</td></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>

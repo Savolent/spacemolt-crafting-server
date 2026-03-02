@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Valor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medal of Valor](../images/medal_valor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/medal_valor.png" alt="Medal of Valor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>misc</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

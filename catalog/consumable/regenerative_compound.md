@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Regenerative Compound</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Regenerative Compound](../images/regenerative_compound.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/regenerative_compound.png" alt="Regenerative Compound" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

@@ -132,11 +132,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Air Recycler</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Air Recycler](../images/comp_air_recycler.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_air_recycler.png" alt="Air Recycler" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -156,11 +152,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ammo Fabricator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ammo Fabricator](../images/comp_ammo_fabricator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_ammo_fabricator.png" alt="Ammo Fabricator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -180,11 +172,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Armor Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Armor Plate](../images/comp_armor_plate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_armor_plate.png" alt="Armor Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -204,11 +192,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Autopilot Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Autopilot Core](../images/comp_autopilot_module.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_autopilot_module.png" alt="Autopilot Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -228,11 +212,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Autopilot Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Autopilot Module](../images/comp_autopilot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_autopilot.png" alt="Autopilot Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -252,11 +232,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Barrel Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Barrel Assembly](../images/comp_barrel_assembly.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_barrel_assembly.png" alt="Barrel Assembly" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -276,11 +252,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Capital Armor Plate</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Capital Armor Plate](../images/capital_armor_plate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/capital_armor_plate.png" alt="Capital Armor Plate" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>20</td></tr>
@@ -300,11 +272,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Capital Ship Frame</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Capital Ship Frame](../images/comp_capital_frame.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_capital_frame.png" alt="Capital Ship Frame" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>10</td></tr>
@@ -324,11 +292,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Bay Expansion</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cargo Bay Expansion](../images/comp_cargo_expansion.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cargo_expansion.png" alt="Cargo Bay Expansion" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -348,11 +312,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Container</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cargo Container](../images/comp_cargo_container.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cargo_container.png" alt="Cargo Container" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -372,11 +332,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cargo Superstructure</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cargo Superstructure](../images/comp_cargo_superstructure.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cargo_superstructure.png" alt="Cargo Superstructure" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -396,11 +352,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Communications Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Communications Array](../images/comp_comm_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_comm_array.png" alt="Communications Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -420,11 +372,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Ordnance Bay</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Ordnance Bay](../images/comp_crimson_ordnance_bay.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_crimson_ordnance_bay.png" alt="Crimson Ordnance Bay" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -444,11 +392,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Siege Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Siege Plating](../images/comp_crimson_siege_plating.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_crimson_siege_plating.png" alt="Crimson Siege Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -468,35 +412,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cryogenic Pod](../images/comp_cryogenic_pod.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>rare</td></tr>
-<tr><td><b>Size</b></td><td>3</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>800 cr</td></tr>
-</table>
-
-> Sealed cryogenic suspension chamber for crew preservation.
-
-[View full page](comp_cryogenic_pod.md)
-
----
-
-## Cryogenic Pod
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cryogenic Pod](../images/comp_cryo_pod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryo_pod.png" alt="Cryogenic Pod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -512,15 +428,31 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
+## Cryogenic Pod
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Pod</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryogenic_pod.png" alt="Cryogenic Pod" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>rare</td></tr>
+<tr><td><b>Size</b></td><td>3</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>800 cr</td></tr>
+</table>
+
+> Sealed cryogenic suspension chamber for crew preservation.
+
+[View full page](comp_cryogenic_pod.md)
+
+---
+
 ## Cryogenic Storage
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Cryogenic Storage</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Cryogenic Storage](../images/comp_cryo_storage.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cryo_storage.png" alt="Cryogenic Storage" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -540,11 +472,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dark Matter Cell](../images/comp_dark_matter_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_dark_matter_cell.png" alt="Dark Matter Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -564,11 +492,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Thruster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dark Matter Thruster](../images/comp_outerrim_dark_thruster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_outerrim_dark_thruster.png" alt="Dark Matter Thruster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -588,11 +512,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Deep Core Survey Lens</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Deep Core Survey Lens](../images/comp_deep_core_lens.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_deep_core_lens.png" alt="Deep Core Survey Lens" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -612,11 +532,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Defense Platform</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Defense Platform](../images/comp_defense_platform.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_defense_platform.png" alt="Defense Platform" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -636,11 +552,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Defense Turret</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Defense Turret](../images/comp_defense_turret.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_defense_turret.png" alt="Defense Turret" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -660,11 +572,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dimensional Anchor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dimensional Anchor](../images/comp_dimensional_anchor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_dimensional_anchor.png" alt="Dimensional Anchor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -684,11 +592,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Docking Ring</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Docking Ring](../images/comp_docking_ring.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_docking_ring.png" alt="Docking Ring" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>8</td></tr>
@@ -708,11 +612,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone AI Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone AI Core](../images/comp_drone_ai_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_ai_core.png" alt="Drone AI Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -732,11 +632,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Bay Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Bay Module](../images/comp_drone_bay.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_bay.png" alt="Drone Bay Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -756,11 +652,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Chassis</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Chassis](../images/comp_drone_chassis.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_chassis.png" alt="Drone Chassis" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -780,11 +672,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Command Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Command Module](../images/comp_drone_command.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_command.png" alt="Drone Command Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -804,11 +692,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Comms Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Comms Module](../images/comp_drone_communication.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_communication.png" alt="Drone Comms Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -828,11 +712,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Mining Laser</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Mining Laser](../images/comp_drone_mining_laser.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_mining_laser.png" alt="Drone Mining Laser" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -852,11 +732,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Repair Arm</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Repair Arm](../images/comp_drone_repair_arm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_repair_arm.png" alt="Drone Repair Arm" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -876,11 +752,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Sensor Suite</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Sensor Suite](../images/comp_drone_sensor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_sensor.png" alt="Drone Sensor Suite" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -900,11 +772,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Drone Weapon Mount</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Drone Weapon Mount](../images/comp_drone_weapon.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_drone_weapon.png" alt="Drone Weapon Mount" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -924,11 +792,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Engine Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Engine Core](../images/comp_engine_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_engine_core.png" alt="Engine Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -948,11 +812,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Escape Pod</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Escape Pod](../images/comp_escape_pod.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_escape_pod.png" alt="Escape Pod" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -972,11 +832,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Survival Kit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Frontier Survival Kit](../images/comp_outerrim_frontier_kit.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_outerrim_frontier_kit.png" alt="Frontier Survival Kit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -996,11 +852,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fuel Tank</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fuel Tank](../images/comp_fuel_tank.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_fuel_tank.png" alt="Fuel Tank" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1020,11 +872,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Fury-Tempered Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Fury-Tempered Plating](../images/comp_fury_plating.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_fury_plating.png" alt="Fury-Tempered Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1044,11 +892,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Galactic Standard Alloy</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Galactic Standard Alloy](../images/comp_galactic_alloy.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_galactic_alloy.png" alt="Galactic Standard Alloy" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1068,11 +912,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Gravity Generator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Gravity Generator](../images/comp_gravity_generator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_gravity_generator.png" alt="Gravity Generator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>10</td></tr>
@@ -1092,11 +932,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Habitation Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Habitation Module](../images/comp_hab_module.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_hab_module.png" alt="Habitation Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>10</td></tr>
@@ -1116,11 +952,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hangar Bay Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Hangar Bay Module](../images/comp_hangar_bay.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_hangar_bay.png" alt="Hangar Bay Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>20</td></tr>
@@ -1140,11 +972,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hazmat Container</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Hazmat Container](../images/comp_hazmat_container.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_hazmat_container.png" alt="Hazmat Container" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -1164,11 +992,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Heat Sink</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Heat Sink](../images/comp_heat_sink.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_heat_sink.png" alt="Heat Sink" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1188,11 +1012,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Hull Plating</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Hull Plating](../images/comp_hull_plate.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_hull_plate.png" alt="Hull Plating" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1212,11 +1032,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Inertial Gyroscope</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Inertial Gyroscope](../images/comp_gyroscope.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_gyroscope.png" alt="Inertial Gyroscope" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1236,11 +1052,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ion Emitter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ion Emitter](../images/comp_ion_emitter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_ion_emitter.png" alt="Ion Emitter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1260,11 +1072,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Calculator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Jump Calculator](../images/comp_jump_calculator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_jump_calculator.png" alt="Jump Calculator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1284,11 +1092,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Coil</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Jump Coil](../images/comp_jump_coil.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_jump_coil.png" alt="Jump Coil" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>4</td></tr>
@@ -1308,11 +1112,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Jump Drive Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Jump Drive Core](../images/jump_drive_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/jump_drive_core.png" alt="Jump Drive Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>8</td></tr>
@@ -1332,11 +1132,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Laser Focus Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Laser Focus Array](../images/comp_laser_focus.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_laser_focus.png" alt="Laser Focus Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1356,11 +1152,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Laser Focusing Lens</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Laser Focusing Lens](../images/comp_laser_lens.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_laser_lens.png" alt="Laser Focusing Lens" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1380,11 +1172,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Life Support Array](../images/comp_life_support_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support_array.png" alt="Life Support Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1404,11 +1192,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Life Support Unit](../images/comp_life_support_unit.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support_unit.png" alt="Life Support Unit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1428,11 +1212,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Life Support Unit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Life Support Unit](../images/comp_life_support.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_life_support.png" alt="Life Support Unit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1452,11 +1232,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medical Bay Module</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medical Bay Module](../images/comp_medical_bay.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_medical_bay.png" alt="Medical Bay Module" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -1476,11 +1252,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Micro-Thruster Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Micro-Thruster Array](../images/comp_micro_thruster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_micro_thruster.png" alt="Micro-Thruster Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1500,11 +1272,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Missile Guidance Unit</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Missile Guidance Unit](../images/comp_missile_guidance.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_missile_guidance.png" alt="Missile Guidance Unit" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1524,11 +1292,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Navigation Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Navigation Array](../images/comp_nav_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_nav_array.png" alt="Navigation Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1548,11 +1312,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Navigation Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Navigation Core](../images/comp_navigation_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_navigation_core.png" alt="Navigation Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1572,11 +1332,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Cargo Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula Cargo Matrix](../images/comp_nebula_cargo_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_nebula_cargo_matrix.png" alt="Nebula Cargo Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1596,11 +1352,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Prism Computer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula Prism Computer](../images/comp_nebula_prism_computer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_nebula_prism_computer.png" alt="Nebula Prism Computer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1620,11 +1372,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Neon Signaling Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Neon Signaling Array](../images/comp_neon_signaling_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_neon_signaling_array.png" alt="Neon Signaling Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1644,11 +1392,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ore Hopper</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ore Hopper](../images/comp_ore_hopper.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_ore_hopper.png" alt="Ore Hopper" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -1668,11 +1412,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pan-Galactic Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Pan-Galactic Matrix](../images/comp_pan_galactic_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_pan_galactic_matrix.png" alt="Pan-Galactic Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1692,11 +1432,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phase Array](../images/comp_phase_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_phase_array.png" alt="Phase Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1716,11 +1452,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Phase Drive</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Phase Drive](../images/comp_phase_drive.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_phase_drive.png" alt="Phase Drive" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -1740,11 +1472,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Plasma Injector</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Plasma Injector](../images/comp_plasma_injector.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_plasma_injector.png" alt="Plasma Injector" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1764,11 +1492,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Power Cell](../images/comp_power_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_power_cell.png" alt="Power Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1788,11 +1512,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Power Core](../images/power_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/power_core.png" alt="Power Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1812,11 +1532,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Power Distribution Grid</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Power Distribution Grid](../images/comp_power_grid.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_power_grid.png" alt="Power Distribution Grid" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1836,11 +1552,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Precision Optic</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Precision Optic](../images/comp_precision_optic.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_precision_optic.png" alt="Precision Optic" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1860,11 +1572,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pressure Seal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Pressure Seal](../images/comp_pressure_seal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_pressure_seal.png" alt="Pressure Seal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1884,11 +1592,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Processing Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Processing Core](../images/comp_cpu_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_cpu_core.png" alt="Processing Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -1908,11 +1612,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Entangler</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Entangler](../images/comp_quantum_entangler.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_quantum_entangler.png" alt="Quantum Entangler" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -1932,11 +1632,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Processor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Processor](../images/comp_quantum_processor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_quantum_processor.png" alt="Quantum Processor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1956,11 +1652,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Stabilizer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Stabilizer](../images/comp_quantum_stabilizer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_quantum_stabilizer.png" alt="Quantum Stabilizer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -1980,11 +1672,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Railgun Capacitor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Railgun Capacitor](../images/comp_railgun_capacitor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_railgun_capacitor.png" alt="Railgun Capacitor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2004,11 +1692,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rare Salvage</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Rare Salvage](../images/salvage_rare.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/salvage_rare.png" alt="Rare Salvage" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2028,11 +1712,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Reinforced Bulkhead</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Reinforced Bulkhead](../images/comp_reinforced_bulkhead.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_reinforced_bulkhead.png" alt="Reinforced Bulkhead" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2052,11 +1732,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Repair Nanite Container</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Repair Nanite Container](../images/comp_repair_nanites.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_repair_nanites.png" alt="Repair Nanite Container" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2076,11 +1752,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Components</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Salvage Components](../images/salvage_components.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/salvage_components.png" alt="Salvage Components" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2100,11 +1772,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Salvage Metal</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Salvage Metal](../images/salvage_metal.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/salvage_metal.png" alt="Salvage Metal" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2124,11 +1792,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Secure Vault</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Secure Vault](../images/comp_secure_vault.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_secure_vault.png" alt="Secure Vault" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2148,11 +1812,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sensor Array](../images/comp_sensor_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_sensor_array.png" alt="Sensor Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2172,11 +1832,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Cluster</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sensor Cluster](../images/comp_sensor_cluster.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_sensor_cluster.png" alt="Sensor Cluster" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2196,11 +1852,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sensor Package</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sensor Package](../images/comp_sensor_package.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_sensor_package.png" alt="Sensor Package" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2220,11 +1872,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Array](../images/comp_shield_array.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_shield_array.png" alt="Shield Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2244,11 +1892,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Emitter</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Emitter](../images/comp_shield_emitter.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_shield_emitter.png" alt="Shield Emitter" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2268,11 +1912,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Generator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Generator](../images/comp_shield_generator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_shield_generator.png" alt="Shield Generator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>12</td></tr>
@@ -2292,11 +1932,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Shield Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Shield Matrix](../images/comp_shield_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_shield_matrix.png" alt="Shield Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2316,11 +1952,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Singularity Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Singularity Core](../images/comp_singularity_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_singularity_core.png" alt="Singularity Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -2340,11 +1972,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solar Collector Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solar Collector Array](../images/comp_solarian_solar_collector.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_solarian_solar_collector.png" alt="Solar Collector Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2364,11 +1992,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solar Panel Array</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solar Panel Array](../images/comp_solar_panel.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_solar_panel.png" alt="Solar Panel Array" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>8</td></tr>
@@ -2388,11 +2012,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Logic Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Logic Matrix](../images/comp_solarian_logic_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_solarian_logic_matrix.png" alt="Solarian Logic Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2412,11 +2032,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station Reactor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Station Reactor](../images/comp_station_reactor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_station_reactor.png" alt="Station Reactor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>5</td></tr>
@@ -2436,11 +2052,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Station Reactor Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Station Reactor Core](../images/comp_reactor_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_reactor_core.png" alt="Station Reactor Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>15</td></tr>
@@ -2460,11 +2072,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Swarm Controller</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Swarm Controller](../images/comp_swarm_controller.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_swarm_controller.png" alt="Swarm Controller" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2484,11 +2092,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Targeting Computer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Targeting Computer](../images/comp_targeting_computer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_targeting_computer.png" alt="Targeting Computer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2508,11 +2112,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Temporal Stabilizer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Temporal Stabilizer](../images/comp_temporal_stabilizer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_temporal_stabilizer.png" alt="Temporal Stabilizer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2532,11 +2132,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Threat Analyzer</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Threat Analyzer](../images/comp_threat_analyzer.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_threat_analyzer.png" alt="Threat Analyzer" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2556,11 +2152,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thruster Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Thruster Assembly](../images/comp_thruster_assembly.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_thruster_assembly.png" alt="Thruster Assembly" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2580,11 +2172,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Thruster Nozzle</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Thruster Nozzle](../images/comp_thruster_nozzle.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_thruster_nozzle.png" alt="Thruster Nozzle" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2604,11 +2192,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Tracking System</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Tracking System](../images/comp_tracking_system.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_tracking_system.png" alt="Tracking System" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2628,11 +2212,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Authenticator</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trade Authenticator](../images/comp_trade_authenticator.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_trade_authenticator.png" alt="Trade Authenticator" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2652,11 +2232,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Trade Cipher</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Trade Cipher](../images/comp_trade_cipher.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_trade_cipher.png" alt="Trade Cipher" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2676,11 +2252,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Universal Nav Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Universal Nav Core](../images/comp_universal_nav_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_universal_nav_core.png" alt="Universal Nav Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2700,11 +2272,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Capacitor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Capacitor](../images/comp_void_capacitor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_void_capacitor.png" alt="Void Capacitor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2724,11 +2292,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Shield Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Shield Matrix](../images/comp_void_shield_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_void_shield_matrix.png" alt="Void Shield Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2748,11 +2312,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Neural Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Neural Matrix](../images/luxury_neural_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/luxury_neural_matrix.png" alt="Voidborn Neural Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -2772,11 +2332,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Null Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Null Matrix](../images/comp_voidborn_null_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_voidborn_null_matrix.png" alt="Voidborn Null Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2796,11 +2352,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Phase Drive</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Phase Drive](../images/comp_voidborn_phase_drive.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_voidborn_phase_drive.png" alt="Voidborn Phase Drive" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2820,35 +2372,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Warhead Assembly](../images/comp_warhead_assembly.png)
-
-</td></tr>
-<tr><th colspan="2" style="text-align:center;">General</th></tr>
-<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
-<tr><td><b>Size</b></td><td>2</td></tr>
-<tr><td><b>Stackable</b></td><td>Yes</td></tr>
-<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
-<tr><th colspan="2" style="text-align:center;">Market</th></tr>
-<tr><td><b>Base Value</b></td><td>350 cr</td></tr>
-</table>
-
-> Explosive warhead core for missile fabrication.
-
-[View full page](comp_warhead_assembly.md)
-
----
-
-## Warhead Assembly
-
-<table>
-<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Warhead Assembly](../images/comp_warhead.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warhead.png" alt="Warhead Assembly" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2864,15 +2388,31 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 ---
 
+## Warhead Assembly
+
+<table>
+<tr><th colspan="2" style="text-align:center;"><h3>Warhead Assembly</h3></th></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warhead_assembly.png" alt="Warhead Assembly" width="128"></td></tr>
+<tr><th colspan="2" style="text-align:center;">General</th></tr>
+<tr><td><b>Rarity</b></td><td>uncommon</td></tr>
+<tr><td><b>Size</b></td><td>2</td></tr>
+<tr><td><b>Stackable</b></td><td>Yes</td></tr>
+<tr><td><b>Tradeable</b></td><td>Yes</td></tr>
+<tr><th colspan="2" style="text-align:center;">Market</th></tr>
+<tr><td><b>Base Value</b></td><td>350 cr</td></tr>
+</table>
+
+> Explosive warhead core for missile fabrication.
+
+[View full page](comp_warhead_assembly.md)
+
+---
+
 ## Warp Core
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Warp Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Warp Core](../images/comp_warp_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_warp_core.png" alt="Warp Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>6</td></tr>
@@ -2892,11 +2432,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Water Recycler</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Water Recycler](../images/comp_water_recycler.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_water_recycler.png" alt="Water Recycler" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2916,11 +2452,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Battery</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Weapon Battery](../images/comp_weapon_battery.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_weapon_battery.png" alt="Weapon Battery" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>3</td></tr>
@@ -2940,11 +2472,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Core</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Weapon Core](../images/comp_weapon_core.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_weapon_core.png" alt="Weapon Core" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2964,11 +2492,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Weapon Housing</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Weapon Housing](../images/comp_weapon_housing.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_weapon_housing.png" alt="Weapon Housing" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -2988,11 +2512,7 @@ Crafted parts and assemblies used to build ships, stations, and equipment.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Wiring Harness</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Wiring Harness](../images/comp_wiring_harness.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_wiring_harness.png" alt="Wiring Harness" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>

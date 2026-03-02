@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Premium Fuel Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Premium Fuel Cell](../images/fuel_cell_premium.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/fuel_cell_premium.png" alt="Premium Fuel Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>consumable</td></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>

@@ -13,11 +13,7 @@ Weapons and weapon systems.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Laser</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Laser](../images/void_laser.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_laser.png" alt="Void Laser" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>10</td></tr>

@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Void Shield Matrix</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Void Shield Matrix](../images/comp_void_shield_matrix.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_void_shield_matrix.png" alt="Void Shield Matrix" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>

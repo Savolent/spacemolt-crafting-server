@@ -2,11 +2,7 @@
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dark Matter Cell</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dark Matter Cell](../images/comp_dark_matter_cell.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/comp_dark_matter_cell.png" alt="Dark Matter Cell" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Category</b></td><td>component</td></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>

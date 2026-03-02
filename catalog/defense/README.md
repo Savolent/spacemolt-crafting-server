@@ -13,11 +13,7 @@ Defensive equipment and shield systems.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Quantum Entanglement Shield</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Quantum Entanglement Shield](../images/quantum_entanglement_shield.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/quantum_entanglement_shield.png" alt="Quantum Entanglement Shield" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>8</td></tr>

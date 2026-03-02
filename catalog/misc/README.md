@@ -41,11 +41,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ace Pilot Card</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ace Pilot Card](../images/card_ace_pilot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/card_ace_pilot.png" alt="Ace Pilot Card" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -65,11 +61,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Ancient Artifact</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Ancient Artifact](../images/ancient_artifact.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/ancient_artifact.png" alt="Ancient Artifact" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -89,11 +81,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Fleet Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Fleet Insignia](../images/insignia_crimson.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_crimson.png" alt="Crimson Fleet Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -113,11 +101,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Crimson Fleet Miniature</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Crimson Fleet Miniature](../images/souvenir_crimson.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_crimson.png" alt="Crimson Fleet Miniature" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -137,11 +121,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Dream Catcher</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Dream Catcher](../images/dreamcatcher.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/dreamcatcher.png" alt="Dream Catcher" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -161,11 +141,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Faction Token</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Faction Token](../images/faction_token.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/faction_token.png" alt="Faction Token" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -185,11 +161,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Four-Leaf Clover</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Four-Leaf Clover](../images/four_leaf_clover.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/four_leaf_clover.png" alt="Four-Leaf Clover" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -209,11 +181,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Frontier Rock</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Frontier Rock](../images/souvenir_outerrim.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_outerrim.png" alt="Frontier Rock" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -233,11 +201,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Horseshoe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Horseshoe](../images/horseshoe.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/horseshoe.png" alt="Horseshoe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>2</td></tr>
@@ -257,11 +221,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Legendary Card</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Legendary Card](../images/card_legendary.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/card_legendary.png" alt="Legendary Card" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -281,11 +241,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Loaded Dice</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Loaded Dice](../images/dice_set.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/dice_set.png" alt="Loaded Dice" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -305,11 +261,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lucky Credit Coin</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Lucky Credit Coin](../images/lucky_coin.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/lucky_coin.png" alt="Lucky Credit Coin" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -329,11 +281,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Lucky Lobster Charm</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Lucky Lobster Charm](../images/lobster_charm.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/lobster_charm.png" alt="Lucky Lobster Charm" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -353,11 +301,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Commerce</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medal of Commerce](../images/medal_trade.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/medal_trade.png" alt="Medal of Commerce" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -377,11 +321,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Discovery</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medal of Discovery](../images/medal_discovery.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/medal_discovery.png" alt="Medal of Discovery" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -401,11 +341,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Service</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medal of Service](../images/medal_service.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/medal_service.png" alt="Medal of Service" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -425,11 +361,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Medal of Valor</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Medal of Valor](../images/medal_valor.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/medal_valor.png" alt="Medal of Valor" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -449,11 +381,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Moltey Badge</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Moltey Badge](../images/moltey_badge.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/moltey_badge.png" alt="Moltey Badge" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>legendary</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -473,11 +401,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula Federation Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula Federation Insignia](../images/insignia_nebula.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_nebula.png" alt="Nebula Federation Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -497,11 +421,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Nebula in a Bottle</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Nebula in a Bottle](../images/souvenir_nebula.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_nebula.png" alt="Nebula in a Bottle" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -521,11 +441,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Outer Rim Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Outer Rim Insignia](../images/insignia_outerrim.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_outerrim.png" alt="Outer Rim Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -545,11 +461,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Pirate Bounty Chip</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Pirate Bounty Chip](../images/pirate_bounty.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/pirate_bounty.png" alt="Pirate Bounty Chip" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -569,11 +481,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Rare Ship Card</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Rare Ship Card](../images/card_rare_ship.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/card_rare_ship.png" alt="Rare Ship Card" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -593,11 +501,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Refined Void Essence</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Refined Void Essence](../images/void_essence_refined.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/void_essence_refined.png" alt="Refined Void Essence" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>exotic</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -617,11 +521,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Sol System Snowglobe</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Sol System Snowglobe](../images/souvenir_sol.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_sol.png" alt="Sol System Snowglobe" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -641,11 +541,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Solarian Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Solarian Insignia](../images/insignia_solarian.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_solarian.png" alt="Solarian Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -665,11 +561,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Synthetic Rabbit's Foot</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Synthetic Rabbit's Foot](../images/rabbit_foot.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/rabbit_foot.png" alt="Synthetic Rabbit's Foot" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>uncommon</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -689,11 +581,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Crystal Ball</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Crystal Ball](../images/souvenir_voidborn.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/souvenir_voidborn.png" alt="Voidborn Crystal Ball" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>common</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
@@ -713,11 +601,7 @@ Collectibles, souvenirs, medals, and other miscellaneous items.
 
 <table>
 <tr><th colspan="2" style="text-align:center;"><h3>Voidborn Insignia</h3></th></tr>
-<tr><td colspan="2" style="text-align:center;">
-
-![Voidborn Insignia](../images/insignia_voidborn.png)
-
-</td></tr>
+<tr><td colspan="2" style="text-align:center;"><img src="../images/insignia_voidborn.png" alt="Voidborn Insignia" width="128"></td></tr>
 <tr><th colspan="2" style="text-align:center;">General</th></tr>
 <tr><td><b>Rarity</b></td><td>rare</td></tr>
 <tr><td><b>Size</b></td><td>1</td></tr>
