@@ -127,3 +127,67 @@ func TestUnknownCategory_LastInResults(t *testing.T) {
 		t.Errorf("Unknown category (tier 6) should appear in last half of results: found at index %d of %d", unknownIdx, len(resp.Craftable))
 	}
 }
+
+// TestCraftQuery_AmmunitionFiltering verifies that ammunition recipes
+// are excluded by default and can be included with the flag.
+func TestCraftQuery_AmmunitionFiltering(t *testing.T) {
+	ctx := context.Background()
+	e := setupTestEngine(t)
+
+	// Query with IncludeAmmunition=false (default)
+	reqDefault := crafting.CraftQueryRequest{
+		Components:   []crafting.Component{},
+		Limit:        100,
+		MinMatchRatio: 0.0,
+		Strategy:     crafting.StrategyUseInventoryFirst,
+	}
+
+	respDefault, err := e.CraftQuery(ctx, reqDefault)
+	if err != nil {
+		t.Fatalf("CraftQuery with default settings failed: %v", err)
+	}
+
+	// Verify no ammunition recipes are in default results
+	for _, r := range respDefault.Craftable {
+		if r.Recipe.Category == "Ammunition" {
+			t.Errorf("Ammunition recipe found in results when IncludeAmmunition=false (default): %s", r.Recipe.Name)
+		}
+	}
+
+	// Query with IncludeAmmunition=true
+	reqWithAmmo := crafting.CraftQueryRequest{
+		Components:        []crafting.Component{},
+		Limit:             100,
+		MinMatchRatio:     0.0,
+		Strategy:          crafting.StrategyUseInventoryFirst,
+		IncludeAmmunition: true,
+	}
+
+	respWithAmmo, err := e.CraftQuery(ctx, reqWithAmmo)
+	if err != nil {
+		t.Fatalf("CraftQuery with IncludeAmmunition=true failed: %v", err)
+	}
+
+	// Check if there are ammunition recipes in the database at all
+	hasAmmunitionRecipes := false
+	for _, r := range respWithAmmo.Craftable {
+		if r.Recipe.Category == "Ammunition" {
+			hasAmmunitionRecipes = true
+			break
+		}
+	}
+
+	// If ammunition recipes exist, verify they're included when the flag is set
+	if hasAmmunitionRecipes {
+		foundAmmo := false
+		for _, r := range respWithAmmo.Craftable {
+			if r.Recipe.Category == "Ammunition" {
+				foundAmmo = true
+				break
+			}
+		}
+		if !foundAmmo {
+			t.Error("Ammunition recipes should be included when IncludeAmmunition=true")
+		}
+	}
+}

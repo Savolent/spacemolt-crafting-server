@@ -238,14 +238,15 @@ type SkillUnlockPath struct {
 
 // CraftQueryRequest is the input for the craft_query tool.
 type CraftQueryRequest struct {
-	Components     []Component          `json:"components"`
-	Skills         map[string]int       `json:"skills"`
-	IncludePartial bool                 `json:"include_partial"`
-	MinMatchRatio  float64              `json:"min_match_ratio"`
-	Strategy       OptimizationStrategy `json:"optimization_strategy"`
-	StationID      string               `json:"station_id,omitempty"`
-	CategoryFilter string               `json:"category_filter,omitempty"`
-	Limit          int                  `json:"limit"`
+	Components         []Component          `json:"components"`
+	Skills             map[string]int       `json:"skills"`
+	IncludePartial     bool                 `json:"include_partial"`
+	IncludeAmmunition  bool                 `json:"include_ammunition"`
+	MinMatchRatio      float64              `json:"min_match_ratio"`
+	Strategy           OptimizationStrategy `json:"optimization_strategy"`
+	StationID          string               `json:"station_id,omitempty"`
+	CategoryFilter     string               `json:"category_filter,omitempty"`
+	Limit              int                  `json:"limit"`
 }
 
 // CraftQueryResponse is the output for the craft_query tool.

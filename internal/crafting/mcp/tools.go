@@ -103,6 +103,11 @@ func craftQueryTool() ToolDefinition {
 					Type:        "string",
 					Description: "Filter to specific recipe category",
 				},
+				"include_ammunition": {
+					Type:        "boolean",
+					Description: "Include ammunition recipes in results",
+					Default:     false,
+				},
 				"limit": {
 					Type:        "integer",
 					Description: "Max results per section",

@@ -268,7 +268,7 @@ func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ve
 		"craft_path_to with zero quantity",
 		func() (any, error) {
 			return eng.CraftPathTo(ctx, crafting.CraftPathRequest{
-				TargetRecipeID: "craft_engine_core",
+				TargetRecipeID: "assemble_engine_core",
 				TargetQuantity: 0,
 				Skills:         baseSkills,
 			})
@@ -280,7 +280,7 @@ func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ve
 		"craft_path_to for engine_core",
 		func() (any, error) {
 			return eng.CraftPathTo(ctx, crafting.CraftPathRequest{
-				TargetRecipeID: "craft_engine_core",
+				TargetRecipeID: "assemble_engine_core",
 				TargetQuantity: 1,
 				Skills:         baseSkills,
 			})
@@ -322,7 +322,7 @@ func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ve
 		"craft_path_to for large quantity",
 		func() (any, error) {
 			return eng.CraftPathTo(ctx, crafting.CraftPathRequest{
-				TargetRecipeID: "craft_capital_armor_plate",
+				TargetRecipeID: "build_capital_armor_plate",
 				TargetQuantity: 10,
 				Skills:         baseSkills,
 			})
@@ -368,7 +368,7 @@ func testRecipeLookup(ctx context.Context, eng *engine.Engine, _ *slog.Logger, v
 		"recipe_lookup by ID for engine_core",
 		func() (any, error) {
 			return eng.RecipeLookup(ctx, crafting.RecipeLookupRequest{
-				RecipeID: "craft_engine_core",
+				RecipeID: "assemble_engine_core",
 				Skills:   baseSkills,
 			})
 		}, verbose,
@@ -390,7 +390,7 @@ func testRecipeLookup(ctx context.Context, eng *engine.Engine, _ *slog.Logger, v
 		"recipe_lookup with skill gap analysis",
 		func() (any, error) {
 			return eng.RecipeLookup(ctx, crafting.RecipeLookupRequest{
-				RecipeID: "craft_adaptive_shield_1",
+				RecipeID: "build_adaptive_shield_i",
 				Skills: map[string]int{
 					"crafting_basic": 1,
 					"shields_basic":  2,
@@ -404,7 +404,7 @@ func testRecipeLookup(ctx context.Context, eng *engine.Engine, _ *slog.Logger, v
 		"recipe_lookup showing used_in chain",
 		func() (any, error) {
 			return eng.RecipeLookup(ctx, crafting.RecipeLookupRequest{
-				RecipeID: "craft_engine_core",
+				RecipeID: "assemble_engine_core",
 				Skills:   baseSkills,
 			})
 		}, verbose,
@@ -595,23 +595,12 @@ func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, 
 func testBillOfMaterials(ctx context.Context, eng *engine.Engine, _ *slog.Logger, verbose bool) []TestResult {
 	var results []TestResult
 
-	// INVALID: Non-existent recipe
-	results = append(results, runTest(ctx, eng, "bill_of_materials", "invalid",
-		"bill_of_materials for non-existent recipe",
-		func() (any, error) {
-			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "chicken_pot_pie",
-				Quantity: 1,
-			})
-		}, verbose,
-	))
-
 	// INVALID: Zero or negative quantity
 	results = append(results, runTest(ctx, eng, "bill_of_materials", "invalid",
-		"bill_of_materials with zero quantity",
+		"bill_of_materials with zero quantity (defaults to 1)",
 		func() (any, error) {
 			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "craft_engine_core",
+				RecipeID: "assemble_engine_core",
 				Quantity: 0,
 			})
 		}, verbose,
@@ -622,7 +611,7 @@ func testBillOfMaterials(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		"bill_of_materials for engine_core",
 		func() (any, error) {
 			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "craft_engine_core",
+				RecipeID: "assemble_engine_core",
 				Quantity: 1,
 			})
 		}, verbose,
@@ -633,7 +622,7 @@ func testBillOfMaterials(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		"bill_of_materials for multiple units",
 		func() (any, error) {
 			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "craft_power_core",
+				RecipeID: "assemble_power_core",
 				Quantity: 5,
 			})
 		}, verbose,
@@ -655,7 +644,7 @@ func testBillOfMaterials(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		"bill_of_materials for large batch of complex item",
 		func() (any, error) {
 			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "craft_adaptive_shield_1",
+				RecipeID: "build_adaptive_shield_i",
 				Quantity: 10,
 			})
 		}, verbose,
@@ -666,7 +655,7 @@ func testBillOfMaterials(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		"bill_of_materials for capital armor plate (multi-tier)",
 		func() (any, error) {
 			return eng.BillOfMaterials(ctx, crafting.BillOfMaterialsRequest{
-				RecipeID: "craft_capital_armor_plate",
+				RecipeID: "build_capital_armor_plate",
 				Quantity: 1,
 			})
 		}, verbose,

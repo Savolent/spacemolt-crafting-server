@@ -76,6 +76,11 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 			continue
 		}
 
+		// Filter out ammunition recipes unless explicitly included
+		if !req.IncludeAmmunition && recipe.Category == "Ammunition" {
+			continue
+		}
+
 		// Calculate input match
 		have, missing, canCraft := e.calculateInputMatch(recipe, inventory)
 		matchRatio := calculateMatchRatio(len(have), len(recipe.Inputs))
