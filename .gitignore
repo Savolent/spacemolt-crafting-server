@@ -3,10 +3,11 @@ bin/
 
 # Database backups
 *.db.backup
+database/backups/
 
 # Editor swap files
 *.swp
 
-
 # Working docs
 docs/
+temp/
