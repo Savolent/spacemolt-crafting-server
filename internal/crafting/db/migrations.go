@@ -216,3 +216,28 @@ func ApplyMigration005(ctx context.Context, db *DB) error {
 		return err
 	})
 }
+
+// GetMigration007 returns the illegal_recipes table migration.
+func GetMigration007() (*Migration, error) {
+	data, err := migrationFS.ReadFile("migrations/007_illegal_recipes.sql")
+	if err != nil {
+		return nil, err
+	}
+
+	return &Migration{
+		ID:      "007_illegal_recipes",
+		UpSQL:   string(data),
+		DownSQL: `DROP TABLE IF EXISTS illegal_recipes;`,
+	}, nil
+}
+
+// ApplyMigration007 applies migration 007 (illegal_recipes table).
+func ApplyMigration007(ctx context.Context, db *DB) error {
+	migration, err := GetMigration007()
+	if err != nil {
+		return err
+	}
+
+	migrator := NewMigrator(db)
+	return migrator.Apply(ctx, migration)
+}
