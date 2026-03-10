@@ -64,30 +64,30 @@ func (s *CategoryPriorityStore) GetAllCategories(ctx context.Context) (map[strin
 }
 
 // InitializeDefaultPriorities populates the table with default priority tiers.
-// Uses INSERT OR IGNORE to be idempotent.
+// Uses INSERT OR REPLACE to update existing priorities on restart.
 func (s *CategoryPriorityStore) InitializeDefaultPriorities(ctx context.Context) error {
 	// Default priority tiers as specified in design
 	defaults := map[string]int{
 		"Shipbuilding":       1,
 		"Legendary":          1,
-		"Utility":            2,
 		"Mining":             2,
 		"Gas Processing":     2,
 		"Ice Refining":       2,
 		"Equipment":          2,
-		"Components":         3,
-		"Weapons":            4,
-		"Drones":             4,
-		"Electronic Warfare": 4,
-		"Defense":            4,
-		"Stealth":            4,
+		"Components":         2,
+		"Refining":           2,
+		"Weapons":            3,
+		"Drones":             3,
+		"Electronic Warfare": 3,
+		"Defense":            3,
+		"Stealth":            3,
+		"Utility":            4,
 		"Ammunition":         5,
-		"Refining":           5,
 	}
 
 	return s.db.InTransaction(ctx, func(tx *sql.Tx) error {
 		stmt, err := tx.PrepareContext(ctx, `
-			INSERT OR IGNORE INTO category_priorities (category, priority_tier)
+			INSERT OR REPLACE INTO category_priorities (category, priority_tier)
 			VALUES (?, ?)
 		`)
 		if err != nil {
