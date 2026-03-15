@@ -126,7 +126,7 @@ func runAllTests(ctx context.Context, eng *engine.Engine, log *slog.Logger, verb
 func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, verbose bool) []TestResult {
 	var results []TestResult
 
-	baseSkills := map[string]int{"crafting_basic": 1}
+	baseSkills := map[string]int{"crafting": 1}
 
 	// INVALID: Non-existent items
 	results = append(results, runTest(ctx, eng, "craft_query", "invalid",
@@ -160,7 +160,7 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 		func() (any, error) {
 			return eng.CraftQuery(ctx, crafting.CraftQueryRequest{
 				Components: []crafting.Component{
-					{ID: "ore_iron", Quantity: -5},
+					{ID: "iron_ore", Quantity: -5},
 				},
 				Skills: baseSkills,
 			})
@@ -169,11 +169,11 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 
 	// SIMPLE: Basic iron ore query
 	results = append(results, runTest(ctx, eng, "craft_query", "simple",
-		"craft_query with ore_iron: 10",
+		"craft_query with iron_ore: 10",
 		func() (any, error) {
 			return eng.CraftQuery(ctx, crafting.CraftQueryRequest{
 				Components: []crafting.Component{
-					{ID: "ore_iron", Quantity: 10},
+					{ID: "iron_ore", Quantity: 10},
 				},
 				Skills: baseSkills,
 				Limit:  10,
@@ -187,8 +187,8 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 		func() (any, error) {
 			return eng.CraftQuery(ctx, crafting.CraftQueryRequest{
 				Components: []crafting.Component{
-					{ID: "ore_iron", Quantity: 20},
-					{ID: "ore_copper", Quantity: 15},
+					{ID: "iron_ore", Quantity: 20},
+					{ID: "copper_ore", Quantity: 15},
 				},
 				Skills: baseSkills,
 				Limit:  15,
@@ -209,9 +209,9 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 			func() (any, error) {
 				return eng.CraftQuery(ctx, crafting.CraftQueryRequest{
 					Components: []crafting.Component{
-						{ID: "ore_iron", Quantity: 50},
-						{ID: "ore_copper", Quantity: 30},
-						{ID: "comp_circuit_board", Quantity: 5},
+						{ID: "iron_ore", Quantity: 50},
+						{ID: "copper_ore", Quantity: 30},
+						{ID: "circuit_board", Quantity: 5},
 					},
 					Skills:              baseSkills,
 					Limit:               20,
@@ -229,8 +229,8 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 		func() (any, error) {
 			return eng.CraftQuery(ctx, crafting.CraftQueryRequest{
 				Components: []crafting.Component{
-					{ID: "ore_iron", Quantity: 100},
-					{ID: "comp_capital_frame", Quantity: 2},
+					{ID: "iron_ore", Quantity: 100},
+					{ID: "capital_ship_frame", Quantity: 2},
 				},
 				Skills:         baseSkills,
 				CategoryFilter: "Components",
@@ -249,7 +249,7 @@ func testCraftQuery(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ver
 func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, verbose bool) []TestResult {
 	var results []TestResult
 
-	baseSkills := map[string]int{"crafting_basic": 1}
+	baseSkills := map[string]int{"crafting": 1}
 
 	// INVALID: Non-existent recipe
 	results = append(results, runTest(ctx, eng, "craft_path_to", "invalid",
@@ -292,10 +292,10 @@ func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ve
 		"craft_path_to with partial inventory",
 		func() (any, error) {
 			return eng.CraftPathTo(ctx, crafting.CraftPathRequest{
-				TargetRecipeID: "craft_laser_focus",
+				TargetRecipeID: "assemble_laser_focus_array",
 				TargetQuantity: 1,
 				CurrentInventory: []crafting.Component{
-					{ID: "comp_optical_sensor", Quantity: 2},
+					{ID: "sensor_array", Quantity: 2},
 				},
 				Skills: baseSkills,
 			})
@@ -339,7 +339,7 @@ func testCraftPathTo(ctx context.Context, eng *engine.Engine, _ *slog.Logger, ve
 func testRecipeLookup(ctx context.Context, eng *engine.Engine, _ *slog.Logger, verbose bool) []TestResult {
 	var results []TestResult
 
-	baseSkills := map[string]int{"crafting_basic": 1}
+	baseSkills := map[string]int{"crafting": 1}
 
 	// INVALID: Non-existent recipe
 	results = append(results, runTest(ctx, eng, "recipe_lookup", "invalid",
@@ -392,8 +392,8 @@ func testRecipeLookup(ctx context.Context, eng *engine.Engine, _ *slog.Logger, v
 			return eng.RecipeLookup(ctx, crafting.RecipeLookupRequest{
 				RecipeID: "build_adaptive_shield_i",
 				Skills: map[string]int{
-					"crafting_basic": 1,
-					"shields_basic":  2,
+					"crafting": 1,
+					"shields":  2,
 				},
 			})
 		}, verbose,
@@ -462,8 +462,8 @@ func testSkillCraftPaths(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 			return eng.SkillCraftPaths(ctx, crafting.SkillCraftPathsRequest{
 				Skills: map[string]crafting.SkillProgress{
 					"armor":            {Level: 2, CurrentXP: 500},
-					"weapons_basic":    {Level: 1, CurrentXP: 200},
-					"shields_advanced": {Level: 3, CurrentXP: 1500},
+					"weapons":    {Level: 1, CurrentXP: 200},
+					"shields": {Level: 3, CurrentXP: 1500},
 				},
 				Limit: 15,
 			})
@@ -476,8 +476,8 @@ func testSkillCraftPaths(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		func() (any, error) {
 			return eng.SkillCraftPaths(ctx, crafting.SkillCraftPathsRequest{
 				Skills: map[string]crafting.SkillProgress{
-					"capital_weapons":  {Level: 2, CurrentXP: 800},
-					"weapons_advanced": {Level: 1, CurrentXP: 300},
+					"gunnery":  {Level: 2, CurrentXP: 800},
+					"weapons": {Level: 1, CurrentXP: 300},
 					"armor":            {Level: 3, CurrentXP: 2000},
 				},
 				CategoryFilter: "Combat",
@@ -492,7 +492,7 @@ func testSkillCraftPaths(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 		func() (any, error) {
 			return eng.SkillCraftPaths(ctx, crafting.SkillCraftPathsRequest{
 				Skills: map[string]crafting.SkillProgress{
-					"armor_advanced": {Level: 5, CurrentXP: 5000},
+					"armor": {Level: 5, CurrentXP: 5000},
 				},
 				Limit: 50,
 			})
@@ -509,7 +509,7 @@ func testSkillCraftPaths(ctx context.Context, eng *engine.Engine, _ *slog.Logger
 func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, verbose bool) []TestResult {
 	var results []TestResult
 
-	baseSkills := map[string]int{"crafting_basic": 1}
+	baseSkills := map[string]int{"crafting": 1}
 
 	// INVALID: Non-existent component
 	results = append(results, runTest(ctx, eng, "component_uses", "invalid",
@@ -535,10 +535,10 @@ func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, 
 
 	// SIMPLE: Basic raw material
 	results = append(results, runTest(ctx, eng, "component_uses", "simple",
-		"component_uses for ore_iron",
+		"component_uses for iron_ore",
 		func() (any, error) {
 			return eng.ComponentUses(ctx, crafting.ComponentUsesRequest{
-				ItemID: "ore_iron",
+				ItemID: "iron_ore",
 				Skills: baseSkills,
 			})
 		}, verbose,
@@ -549,7 +549,7 @@ func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, 
 		"component_uses for circuit_board",
 		func() (any, error) {
 			return eng.ComponentUses(ctx, crafting.ComponentUsesRequest{
-				ItemID: "comp_circuit_board",
+				ItemID: "circuit_board",
 				Skills: baseSkills,
 			})
 		}, verbose,
@@ -564,7 +564,7 @@ func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, 
 			fmt.Sprintf("component_uses with strategy: %s", strategy),
 			func() (any, error) {
 				return eng.ComponentUses(ctx, crafting.ComponentUsesRequest{
-					ItemID:             "comp_capital_frame",
+					ItemID:             "capital_ship_frame",
 					Skills:             baseSkills,
 					IncludeSkillLocked: true,
 					Strategy:           strategy,
@@ -578,7 +578,7 @@ func testComponentUses(ctx context.Context, eng *engine.Engine, _ *slog.Logger, 
 		"component_uses for widely-used component",
 		func() (any, error) {
 			return eng.ComponentUses(ctx, crafting.ComponentUsesRequest{
-				ItemID:             "comp_armor_plate",
+				ItemID:             "armor_plate",
 				Skills:             baseSkills,
 				IncludeSkillLocked: true,
 			})
@@ -676,7 +676,7 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with negative inventory quantity",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "", "", []crafting.Component{
-				{ID: "ore_iron", Quantity: -10},
+				{ID: "iron_ore", Quantity: -10},
 			})
 		}, verbose,
 	))
@@ -712,8 +712,8 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with inventory only",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "", "", []crafting.Component{
-				{ID: "tritanium", Quantity: 1000},
-				{ID: "pyerite", Quantity: 500},
+				{ID: "titanium_alloy", Quantity: 1000},
+				{ID: "superconductor", Quantity: 500},
 			})
 		}, verbose,
 	))
@@ -723,8 +723,8 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with station and inventory",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "amarr_viii", "", []crafting.Component{
-				{ID: "ore_iron", Quantity: 500},
-				{ID: "comp_steel", Quantity: 50},
+				{ID: "iron_ore", Quantity: 500},
+				{ID: "steel_plate", Quantity: 50},
 			})
 		}, verbose,
 	))
@@ -734,10 +734,10 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with full inventory coverage",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "", "", []crafting.Component{
-				{ID: "ore_iron", Quantity: 10000},
-				{ID: "ore_copper", Quantity: 5000},
-				{ID: "comp_circuit_board", Quantity: 100},
-				{ID: "comp_steel", Quantity: 200},
+				{ID: "iron_ore", Quantity: 10000},
+				{ID: "copper_ore", Quantity: 5000},
+				{ID: "circuit_board", Quantity: 100},
+				{ID: "steel_plate", Quantity: 200},
 			})
 		}, verbose,
 	))
@@ -747,8 +747,8 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with partial inventory",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "jita_iv", "", []crafting.Component{
-				{ID: "tritanium", Quantity: 100},
-				{ID: "pyerite", Quantity: 50},
+				{ID: "titanium_alloy", Quantity: 100},
+				{ID: "superconductor", Quantity: 50},
 			})
 		}, verbose,
 	))
@@ -758,14 +758,14 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with large inventory list",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "rens_vi", "", []crafting.Component{
-				{ID: "ore_iron", Quantity: 5000},
-				{ID: "ore_copper", Quantity: 3000},
-				{ID: "ore_gold", Quantity: 1000},
-				{ID: "ore_titanium", Quantity: 2000},
-				{ID: "comp_steel", Quantity: 500},
-				{ID: "comp_circuit_board", Quantity: 200},
-				{ID: "comp_optical_sensor", Quantity: 150},
-				{ID: "comp_power_core", Quantity: 100},
+				{ID: "iron_ore", Quantity: 5000},
+				{ID: "copper_ore", Quantity: 3000},
+				{ID: "gold_ore", Quantity: 1000},
+				{ID: "titanium_ore", Quantity: 2000},
+				{ID: "steel_plate", Quantity: 500},
+				{ID: "circuit_board", Quantity: 200},
+				{ID: "sensor_array", Quantity: 150},
+				{ID: "power_core", Quantity: 100},
 			})
 		}, verbose,
 	))
@@ -783,8 +783,8 @@ func testRecipeMarketProfitability(ctx context.Context, eng *engine.Engine, _ *s
 		"recipe_market_profitability with station, empire, and inventory",
 		func() (any, error) {
 			return eng.RecipeMarketProfitability(ctx, "dodixie", "gallente", []crafting.Component{
-				{ID: "comp_circuit_board", Quantity: 1000},
-				{ID: "comp_capital_frame", Quantity: 10},
+				{ID: "circuit_board", Quantity: 1000},
+				{ID: "capital_ship_frame", Quantity: 10},
 			})
 		}, verbose,
 	))
