@@ -86,12 +86,6 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 		have, missing, canCraft := e.calculateInputMatch(recipe, inventory)
 		matchRatio := calculateMatchRatio(len(have), len(recipe.Inputs))
 
-		// Check skill requirements
-		skillsReady, skillGaps, err := e.checkSkillRequirements(ctx, recipe, req.Skills)
-		if err != nil {
-			return nil, err
-		}
-
 		// Calculate profit if station provided
 		var profitAnalysis *crafting.ProfitAnalysis
 		if req.StationID != "" {
@@ -101,8 +95,8 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 			}
 		}
 
-		// Categorize result
-		if matchRatio == 1.0 && skillsReady {
+		// Categorize result (no skill gating since v0.226.0)
+		if matchRatio == 1.0 {
 			// Fully craftable
 			result := crafting.CraftableMatch{
 				Recipe:           *recipe,
@@ -116,34 +110,18 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 			}
 
 			craftable = append(craftable, result)
-		} else if matchRatio == 1.0 && !skillsReady {
-			// Have inputs but blocked by skills
-			result := crafting.PartialComponentMatch{
-				Recipe:         *recipe,
-				InputsHave:     have,
-				InputsMissing:  missing,
-				MatchRatio:     matchRatio,
-				SkillsReady:    false,
-				SkillsMissing:  skillGaps,
-				ProfitAnalysis: profitAnalysis,
-			}
-
-			// Enrich with illegal status
-			if err := e.enrichRecipeWithIllegalStatus(ctx, &result.Recipe); err != nil {
-				return nil, fmt.Errorf("enriching illegal status: %w", err)
-			}
-
-			blockedBySkills = append(blockedBySkills, result)
 		} else if req.IncludePartial && matchRatio >= req.MinMatchRatio {
 			// Partial input match
 			result := crafting.PartialComponentMatch{
-				Recipe:         *recipe,
-				InputsHave:     have,
-				InputsMissing:  missing,
-				MatchRatio:     matchRatio,
-				SkillsReady:    skillsReady,
-				SkillsMissing:  skillGaps,
-				ProfitAnalysis: profitAnalysis,
+				Recipe:        *recipe,
+				InputsHave:    have,
+				InputsMissing: missing,
+				MatchRatio:    matchRatio,
+				SkillsReady:   true,
+			}
+
+			if req.StationID != "" {
+				result.ProfitAnalysis = profitAnalysis
 			}
 
 			// Enrich with illegal status

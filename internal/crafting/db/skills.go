@@ -197,46 +197,6 @@ func (s *SkillStore) GetAllSkillIDs(ctx context.Context) ([]string, error) {
 	return ids, rows.Err()
 }
 
-// FindRecipesRequiringSkillLevel finds recipes that require a specific skill at a level
-// greater than currentLevel but <= targetLevel.
-// Used to find what recipes unlock at the next level.
-func (s *SkillStore) FindRecipesUnlockedAtLevel(ctx context.Context, skillID string, level int) ([]string, error) {
-	rows, err := s.db.QueryContext(ctx, `
-		SELECT recipe_id 
-		FROM recipe_skills 
-		WHERE skill_id = ? AND level_required = ?
-	`, skillID, level)
-	if err != nil {
-		return nil, fmt.Errorf("finding recipes unlocked at level: %w", err)
-	}
-	defer func() { _ = rows.Close() }()
-	
-	var ids []string
-	for rows.Next() {
-		var id string
-		if err := rows.Scan(&id); err != nil {
-			return nil, fmt.Errorf("scanning recipe id: %w", err)
-		}
-		ids = append(ids, id)
-	}
-	
-	return ids, rows.Err()
-}
-
-// CountRecipesLockedBySkill counts how many recipes are locked by insufficient skill level.
-func (s *SkillStore) CountRecipesLockedBySkill(ctx context.Context, skillID string, currentLevel int) (int, error) {
-	var count int
-	err := s.db.QueryRowContext(ctx, `
-		SELECT COUNT(DISTINCT recipe_id)
-		FROM recipe_skills
-		WHERE skill_id = ? AND level_required > ?
-	`, skillID, currentLevel).Scan(&count)
-	if err != nil {
-		return 0, fmt.Errorf("counting locked recipes: %w", err)
-	}
-	return count, nil
-}
-
 // BulkInsertSkills inserts multiple skills in a transaction.
 func (s *SkillStore) BulkInsertSkills(ctx context.Context, skills []crafting.Skill) error {
 	return s.db.InTransaction(ctx, func(tx *sql.Tx) error {

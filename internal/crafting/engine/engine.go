@@ -68,49 +68,9 @@ func (e *Engine) getCategoryTier(category string) int {
 	return 6 // Default to lowest priority
 }
 
-// checkSkillRequirements checks if the given skills meet recipe requirements.
-// Returns whether all requirements are met and any gaps.
-func (e *Engine) checkSkillRequirements(
-	ctx context.Context,
-	recipe *crafting.Recipe,
-	agentSkills map[string]int,
-) (bool, []crafting.SkillGap, error) {
-	ready := true
-	var gaps []crafting.SkillGap
-
-	for _, req := range recipe.SkillsRequired {
-		currentLevel := agentSkills[req.SkillID] // defaults to 0 if not present
-
-		if currentLevel < req.LevelRequired {
-			ready = false
-
-			// Get skill name for better output
-			skillName, err := e.skills.GetSkillName(ctx, req.SkillID)
-			if err != nil {
-				return false, nil, err
-			}
-			if skillName == "" {
-				skillName = req.SkillID
-			}
-
-			// Calculate XP to next level
-			xpToNext, err := e.skills.GetXPForLevel(ctx, req.SkillID, currentLevel+1)
-			if err != nil {
-				return false, nil, err
-			}
-
-			gaps = append(gaps, crafting.SkillGap{
-				SkillID:       req.SkillID,
-				SkillName:     skillName,
-				CurrentLevel:  currentLevel,
-				RequiredLevel: req.LevelRequired,
-				XPToNext:      xpToNext,
-			})
-		}
-	}
-
-	return ready, gaps, nil
-}
+// NOTE: Recipe-level skill requirements ("crafting gates") were removed in
+// v0.226.0. Skills now affect batch size and bonus output rather than gating
+// access to recipes. The checkSkillRequirements function has been removed.
 
 // calculateInputMatch calculates how well the agent's inventory matches recipe input requirements.
 func (e *Engine) calculateInputMatch(

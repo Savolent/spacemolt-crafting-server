@@ -48,23 +48,8 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 			}
 		}
 
-		// Check skill requirements
-		var skillReady bool
-		var skillGaps []crafting.SkillGap
-		if len(req.Skills) > 0 {
-			var err error
-			skillReady, skillGaps, err = e.checkSkillRequirements(ctx, recipe, req.Skills)
-			if err != nil {
-				return nil, err
-			}
-
-			// Skip if not including skill-locked recipes
-			if !req.IncludeSkillLocked && !skillReady {
-				continue
-			}
-		} else {
-			skillReady = true // Assume ready if no skills provided
-		}
+		// No recipe-level skill gating since v0.226.0
+		skillReady := true
 
 		// Calculate profit if station provided
 		var profitAnalysis *crafting.ProfitAnalysis
@@ -84,7 +69,6 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 			Recipe:           *recipe,
 			QuantityPerCraft: quantityNeeded,
 			SkillReady:       skillReady,
-			SkillGaps:        skillGaps,
 			ProfitAnalysis:   profitAnalysis,
 		})
 	}

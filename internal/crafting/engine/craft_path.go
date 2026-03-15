@@ -41,12 +41,6 @@ func (e *Engine) CraftPathTo(ctx context.Context, req crafting.CraftPathRequest)
 	// Build inventory map
 	inventory := buildInventoryMap(req.CurrentInventory)
 	
-	// Check skill requirements
-	skillsReady, skillGaps, err := e.checkSkillRequirements(ctx, recipe, req.Skills)
-	if err != nil {
-		return nil, err
-	}
-	
 	// Calculate materials needed (single level)
 	materials, err := e.calculateMaterialsNeeded(ctx, recipe, req.TargetQuantity, inventory, req.StationID)
 	if err != nil {
@@ -72,9 +66,8 @@ func (e *Engine) CraftPathTo(ctx context.Context, req crafting.CraftPathRequest)
 			Quantity:      req.TargetQuantity,
 			IllegalStatus: recipe.IllegalStatus,
 		},
-		Feasible:        feasible,
-		SkillReady:      skillsReady,
-		SkillsMissing:   skillGaps,
+		Feasible:   feasible,
+		SkillReady: true,
 		MaterialsNeeded: materials,
 		CraftingTime:    recipe.CraftingTime * req.TargetQuantity,
 		Summary:         summary,

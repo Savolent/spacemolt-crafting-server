@@ -62,9 +62,9 @@ func TestRecipeMarketProfitability(t *testing.T) {
 	}
 
 	_, err = database.ExecContext(ctx, `
-		INSERT INTO recipe_outputs (recipe_id, item_id, quantity, quality_mod) VALUES
-			('craft_steel', 'comp_steel', 1, false),
-			('craft_engine', 'comp_engine', 1, false)
+		INSERT INTO recipe_outputs (recipe_id, item_id, quantity) VALUES
+			('craft_steel', 'comp_steel', 1),
+			('craft_engine', 'comp_engine', 1)
 	`)
 	if err != nil {
 		t.Fatalf("inserting recipe outputs: %v", err)

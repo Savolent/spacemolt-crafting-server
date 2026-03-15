@@ -55,15 +55,8 @@ func (e *Engine) RecipeLookup(ctx context.Context, req crafting.RecipeLookupRequ
 	}
 	resp.Recipe = recipe
 	
-	// Check skill requirements if skills provided
-	if len(req.Skills) > 0 {
-		ready, gaps, err := e.checkSkillRequirements(ctx, recipe, req.Skills)
-		if err != nil {
-			return nil, err
-		}
-		resp.SkillReady = ready
-		resp.SkillGaps = gaps
-	}
+	// No recipe-level skill gating since v0.226.0
+	resp.SkillReady = true
 	
 	// Calculate profit analysis if station provided
 	if req.StationID != "" {

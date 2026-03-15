@@ -83,6 +83,11 @@ func (s *CategoryPriorityStore) InitializeDefaultPriorities(ctx context.Context)
 		"Stealth":            3,
 		"Utility":            4,
 		"Ammunition":         5,
+		"Modules":            2,
+		"Ship Passive":       3,
+		"Biological Refining": 6,
+		"Consumables":        6,
+		"Facility Only":      6,
 	}
 
 	return s.db.InTransaction(ctx, func(tx *sql.Tx) error {

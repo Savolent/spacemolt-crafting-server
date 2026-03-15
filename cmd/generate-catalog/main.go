@@ -243,45 +243,38 @@ func loadItems(db *sql.DB) (map[string]*Item, error) {
 
 func loadProducedBy(db *sql.DB, items map[string]*Item) error {
 	rows, err := db.Query(`
-		SELECT ro.item_id, r.id, r.name, ro.quantity, r.crafting_time,
-		       COALESCE(s.name, ''), COALESCE(rs.level_required, 0)
+		SELECT ro.item_id, r.id, r.name, ro.quantity, r.crafting_time
 		FROM recipe_outputs ro
 		JOIN recipes r ON ro.recipe_id = r.id
-		LEFT JOIN recipe_skills rs ON r.id = rs.recipe_id
-		LEFT JOIN skills s ON rs.skill_id = s.id
-		ORDER BY ro.item_id, r.id, s.name`)
+		ORDER BY ro.item_id, r.id`)
 	if err != nil {
 		return err
 	}
 	defer func() { _ = rows.Close() }()
 
-	// Accumulate rows; deduplicate by (item_id, recipe_id) while
-	// collecting all skill requirements per recipe.
+	// Deduplicate by (item_id, recipe_id).
 	type key struct{ itemID, recipeID string }
 	seen := make(map[key]*ProducedBy)
 	var order []key
 
 	for rows.Next() {
-		var itemID, recipeID, recipeName, skillName string
-		var qty, craftTime, skillLevel int
-		if err := rows.Scan(&itemID, &recipeID, &recipeName, &qty, &craftTime, &skillName, &skillLevel); err != nil {
+		var itemID, recipeID, recipeName string
+		var qty, craftTime int
+		if err := rows.Scan(&itemID, &recipeID, &recipeName, &qty, &craftTime); err != nil {
 			return err
 		}
 		k := key{itemID, recipeID}
-		pb, ok := seen[k]
-		if !ok {
-			pb = &ProducedBy{
-				RecipeID:     recipeID,
-				RecipeName:   recipeName,
-				Quantity:     qty,
-				CraftingTime: craftTime,
-			}
-			seen[k] = pb
-			order = append(order, k)
+		if _, ok := seen[k]; ok {
+			continue
 		}
-		if skillName != "" {
-			pb.Skills = append(pb.Skills, SkillReq{Name: skillName, Level: skillLevel})
+		pb := &ProducedBy{
+			RecipeID:     recipeID,
+			RecipeName:   recipeName,
+			Quantity:     qty,
+			CraftingTime: craftTime,
 		}
+		seen[k] = pb
+		order = append(order, k)
 	}
 	if err := rows.Err(); err != nil {
 		return err

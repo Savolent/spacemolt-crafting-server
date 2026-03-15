@@ -77,18 +77,14 @@ func (s OptimizationStrategy) IsValid() bool {
 
 // Recipe represents a craftable item with its requirements.
 type Recipe struct {
-	ID              string              `json:"id"`
-	Name            string              `json:"name"`
-	Description     string              `json:"description,omitempty"`
-	Category        string              `json:"category,omitempty"`
-	CraftingTime    int                 `json:"crafting_time,omitempty"`
-	BaseQuality     int                 `json:"base_quality,omitempty"`
-	SkillQualityMod int                 `json:"skill_quality_mod,omitempty"`
-	RequiredSkills  map[string]int      `json:"required_skills,omitempty"`
-	Inputs          []RecipeInput       `json:"inputs"`
-	Outputs         []RecipeOutput      `json:"outputs"`
-	SkillsRequired  []SkillRequirement  `json:"skills_required"`
-	IllegalStatus   *IllegalStatus      `json:"illegal_status,omitempty"`
+	ID            string         `json:"id"`
+	Name          string         `json:"name"`
+	Description   string         `json:"description,omitempty"`
+	Category      string         `json:"category,omitempty"`
+	CraftingTime  int            `json:"crafting_time,omitempty"`
+	Inputs        []RecipeInput  `json:"inputs"`
+	Outputs       []RecipeOutput `json:"outputs"`
+	IllegalStatus *IllegalStatus `json:"illegal_status,omitempty"`
 }
 
 // RecipeInput represents a required input item for a recipe.
@@ -105,9 +101,8 @@ type SkillRequirement struct {
 
 // RecipeOutput represents what a recipe produces.
 type RecipeOutput struct {
-	ItemID     string `json:"item_id"`
-	Quantity   int    `json:"quantity"`
-	QualityMod bool   `json:"quality_mod"`
+	ItemID   string `json:"item_id"`
+	Quantity int    `json:"quantity"`
 }
 
 // IllegalStatus indicates a recipe cannot be crafted privately.

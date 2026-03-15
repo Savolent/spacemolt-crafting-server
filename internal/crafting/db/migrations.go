@@ -4,6 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"embed"
+	"fmt"
 
 	_ "modernc.org/sqlite"
 )
@@ -240,4 +241,95 @@ func ApplyMigration007(ctx context.Context, db *DB) error {
 
 	migrator := NewMigrator(db)
 	return migrator.Apply(ctx, migration)
+}
+
+// GetMigration008 returns the crafting gates removal migration.
+func GetMigration008() (*Migration, error) {
+	data, err := migrationFS.ReadFile("migrations/008_remove_crafting_gates.sql")
+	if err != nil {
+		return nil, err
+	}
+
+	return &Migration{
+		ID:    "008_remove_crafting_gates",
+		UpSQL: string(data),
+		DownSQL: `
+			CREATE TABLE IF NOT EXISTS recipe_skills (
+				recipe_id TEXT NOT NULL,
+				skill_id TEXT NOT NULL,
+				level_required INTEGER NOT NULL,
+				PRIMARY KEY (recipe_id, skill_id),
+				FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
+			);
+		`,
+	}, nil
+}
+
+// ApplyMigration008 applies migration 008 (remove crafting gates and quality system).
+// This migration is safe for both fresh and existing databases.
+func ApplyMigration008(ctx context.Context, db *DB) error {
+	// Check if already applied
+	tracker := NewMigrationTracker(db)
+	applied, err := tracker.IsApplied(ctx, "008_remove_crafting_gates")
+	if err != nil {
+		return err
+	}
+	if applied {
+		return nil
+	}
+
+	// For fresh databases (built from updated schema.sql), the columns
+	// and table may not exist. Check before attempting drops.
+	return db.InTransaction(ctx, func(tx *sql.Tx) error {
+		// Drop recipe_skills table if it exists
+		if _, err := tx.ExecContext(ctx, `DROP TABLE IF EXISTS recipe_skills`); err != nil {
+			return err
+		}
+
+		// Check and drop columns from recipes table
+		for _, col := range []string{"base_quality", "skill_quality_mod", "required_skills"} {
+			if hasColumn(ctx, tx, "recipes", col) {
+				if _, err := tx.ExecContext(ctx, fmt.Sprintf(`ALTER TABLE recipes DROP COLUMN %s`, col)); err != nil {
+					return err
+				}
+			}
+		}
+
+		// Check and drop quality_mod from recipe_outputs
+		if hasColumn(ctx, tx, "recipe_outputs", "quality_mod") {
+			if _, err := tx.ExecContext(ctx, `ALTER TABLE recipe_outputs DROP COLUMN quality_mod`); err != nil {
+				return err
+			}
+		}
+
+		// Record as applied
+		_, err := tx.ExecContext(ctx,
+			`INSERT INTO schema_migrations (migration_id, applied_at) VALUES (?, datetime('now'))`,
+			"008_remove_crafting_gates",
+		)
+		return err
+	})
+}
+
+// hasColumn checks if a table has a specific column.
+func hasColumn(ctx context.Context, tx *sql.Tx, table, column string) bool {
+	rows, err := tx.QueryContext(ctx, fmt.Sprintf(`PRAGMA table_info(%s)`, table))
+	if err != nil {
+		return false
+	}
+	defer func() { _ = rows.Close() }()
+
+	var cid int
+	var name, ctype string
+	var notnull, pk int
+	var dfltValue any
+	for rows.Next() {
+		if err := rows.Scan(&cid, &name, &ctype, &notnull, &dfltValue, &pk); err != nil {
+			return false
+		}
+		if name == column {
+			return true
+		}
+	}
+	return false
 }

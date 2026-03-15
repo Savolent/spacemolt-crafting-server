@@ -11,9 +11,6 @@ CREATE TABLE IF NOT EXISTS recipes (
     description     TEXT,
     category        TEXT,
     crafting_time   INTEGER DEFAULT 0,
-    base_quality    INTEGER DEFAULT 0,
-    skill_quality_mod INTEGER DEFAULT 0,
-    required_skills TEXT DEFAULT '{}',
     last_updated_tick INTEGER DEFAULT 0
 );
 
@@ -29,16 +26,7 @@ CREATE TABLE IF NOT EXISTS recipe_outputs (
     recipe_id       TEXT NOT NULL,
     item_id         TEXT NOT NULL,
     quantity        INTEGER NOT NULL,
-    quality_mod     BOOLEAN DEFAULT 0,
     PRIMARY KEY (recipe_id, item_id),
-    FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
-);
-
-CREATE TABLE IF NOT EXISTS recipe_skills (
-    recipe_id       TEXT NOT NULL,
-    skill_id        TEXT NOT NULL,
-    level_required  INTEGER NOT NULL,
-    PRIMARY KEY (recipe_id, skill_id),
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
 
@@ -213,6 +201,21 @@ BEGIN
     SELECT RAISE(ABORT, 'Only one row allowed in version table with id=1');
 END;
 
+
+-- ============================================
+-- ILLEGAL RECIPES
+-- ============================================
+
+CREATE TABLE IF NOT EXISTS illegal_recipes (
+    recipe_id       TEXT PRIMARY KEY,
+    ban_reason      TEXT NOT NULL,
+    legal_location  TEXT NOT NULL,
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_illegal_recipes_recipe_id ON illegal_recipes(recipe_id);
 
 -- ============================================
 -- CATEGORY PRIORITY DATA

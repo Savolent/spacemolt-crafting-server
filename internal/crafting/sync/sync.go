@@ -57,13 +57,11 @@ type ItemImport struct {
 
 // RecipeImport represents the expected format of recipe data from SpaceMolt.
 type RecipeImport struct {
-	ID              string `json:"id"`
-	Name            string `json:"name"`
-	Description     string `json:"description,omitempty"`
-	Category        string `json:"category,omitempty"`
-	CraftingTime    int    `json:"crafting_time,omitempty"`
-	BaseQuality     int    `json:"base_quality,omitempty"`
-	SkillQualityMod int    `json:"skill_quality_mod,omitempty"`
+	ID           string `json:"id"`
+	Name         string `json:"name"`
+	Description  string `json:"description,omitempty"`
+	Category     string `json:"category,omitempty"`
+	CraftingTime int    `json:"crafting_time,omitempty"`
 
 	// Inputs (was components)
 	Inputs []struct {
@@ -79,24 +77,12 @@ type RecipeImport struct {
 		Quantity int    `json:"quantity"`
 	} `json:"components,omitempty"`
 
-	// Outputs - now supports multiple
+	// Outputs - supports multiple
 	Outputs []struct {
-		ItemID     string `json:"item_id,omitempty"`
-		ID         string `json:"id,omitempty"`
-		Quantity   int    `json:"quantity"`
-		QualityMod bool   `json:"quality_mod,omitempty"`
+		ItemID   string `json:"item_id,omitempty"`
+		ID       string `json:"id,omitempty"`
+		Quantity int    `json:"quantity"`
 	} `json:"outputs,omitempty"`
-
-	// Skills may be in various formats
-	Skills []struct {
-		ID            string `json:"id,omitempty"`
-		SkillID       string `json:"skill_id,omitempty"`
-		Level         int    `json:"level,omitempty"`
-		LevelRequired int    `json:"level_required,omitempty"`
-	} `json:"skills,omitempty"`
-
-	// RequiredSkills as a map (catalog format: {"crafting_advanced": 2})
-	RequiredSkills map[string]int `json:"required_skills,omitempty"`
 
 	// Legacy single output support
 	Output struct {
@@ -282,13 +268,11 @@ func (s *Syncer) ImportSkillsFromFile(ctx context.Context, path string) error {
 // transformRecipe converts import format to domain format.
 func transformRecipe(imp RecipeImport) crafting.Recipe {
 	recipe := crafting.Recipe{
-		ID:              imp.ID,
-		Name:            imp.Name,
-		Description:     imp.Description,
-		Category:        imp.Category,
-		CraftingTime:    imp.CraftingTime,
-		BaseQuality:     imp.BaseQuality,
-		SkillQualityMod: imp.SkillQualityMod,
+		ID:           imp.ID,
+		Name:         imp.Name,
+		Description:  imp.Description,
+		Category:     imp.Category,
+		CraftingTime: imp.CraftingTime,
 	}
 
 	// Handle inputs - try both "inputs" and "components" fields
@@ -322,9 +306,8 @@ func transformRecipe(imp RecipeImport) crafting.Recipe {
 				continue
 			}
 			recipe.Outputs = append(recipe.Outputs, crafting.RecipeOutput{
-				ItemID:     itemID,
-				Quantity:   out.Quantity,
-				QualityMod: out.QualityMod,
+				ItemID:   itemID,
+				Quantity: out.Quantity,
 			})
 		}
 	} else {
@@ -349,39 +332,8 @@ func transformRecipe(imp RecipeImport) crafting.Recipe {
 
 		if outputItemID != "" {
 			recipe.Outputs = append(recipe.Outputs, crafting.RecipeOutput{
-				ItemID:     outputItemID,
-				Quantity:   outputQuantity,
-				QualityMod: false,
-			})
-		}
-	}
-
-	// Transform skill requirements from Skills array
-	for _, sk := range imp.Skills {
-		skillID := sk.SkillID
-		if skillID == "" {
-			skillID = sk.ID
-		}
-		if skillID == "" {
-			continue
-		}
-		level := sk.LevelRequired
-		if level == 0 {
-			level = sk.Level
-		}
-		recipe.SkillsRequired = append(recipe.SkillsRequired, crafting.SkillRequirement{
-			SkillID:       skillID,
-			LevelRequired: level,
-		})
-	}
-
-	// If no Skills array entries, convert RequiredSkills map to SkillsRequired slice
-	if len(recipe.SkillsRequired) == 0 && len(imp.RequiredSkills) > 0 {
-		recipe.RequiredSkills = imp.RequiredSkills
-		for skillID, level := range imp.RequiredSkills {
-			recipe.SkillsRequired = append(recipe.SkillsRequired, crafting.SkillRequirement{
-				SkillID:       skillID,
-				LevelRequired: level,
+				ItemID:   outputItemID,
+				Quantity: outputQuantity,
 			})
 		}
 	}

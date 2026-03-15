@@ -55,6 +55,12 @@ func OpenAndInit(ctx context.Context, path string) (*DB, error) {
 		return nil, fmt.Errorf("initializing category priorities: %w", err)
 	}
 
+	// Apply pending migrations for existing databases
+	if err := ApplyMigration008(ctx, db); err != nil {
+		_ = db.Close()
+		return nil, fmt.Errorf("applying migration 008: %w", err)
+	}
+
 	return db, nil
 }
 
