@@ -41,7 +41,6 @@ func GetToolDefinitions() []ToolDefinition {
 		craftQueryTool(),
 		craftPathToTool(),
 		recipeLookupTool(),
-		skillCraftPathsTool(),
 		componentUsesTool(),
 		billOfMaterialsTool(),
 		recipeMarketProfitabilityTool(),
@@ -53,10 +52,10 @@ func craftQueryTool() ToolDefinition {
 	maxMatch := 1.0
 	minLimit := 1.0
 	maxLimit := 100.0
-	
+
 	return ToolDefinition{
 		Name:        "craft_query",
-		Description: "Query what recipes can be crafted with given components and skills. Returns fully craftable recipes, partial matches, and skill-blocked recipes.",
+		Description: "Query what recipes can be crafted with given components. Returns fully craftable recipes and partial matches.",
 		InputSchema: JSONSchema{
 			Type: "object",
 			Properties: map[string]Property{
@@ -71,11 +70,6 @@ func craftQueryTool() ToolDefinition {
 						},
 						Required: []string{"id", "quantity"},
 					},
-				},
-				"skills": {
-					Type:        "object",
-					Description: "Agent's current skill levels (skill_id -> level)",
-					AdditionalProperties: &Property{Type: "integer"},
 				},
 				"include_partial": {
 					Type:        "boolean",
@@ -116,14 +110,14 @@ func craftQueryTool() ToolDefinition {
 					Maximum:     &maxLimit,
 				},
 			},
-			Required: []string{"components", "skills"},
+			Required: []string{"components"},
 		},
 	}
 }
 
 func craftPathToTool() ToolDefinition {
 	minQty := 1.0
-	
+
 	return ToolDefinition{
 		Name:        "craft_path_to",
 		Description: "Calculate what materials are needed to craft a specific recipe. Returns single-level component expansion with acquisition methods.",
@@ -152,17 +146,12 @@ func craftPathToTool() ToolDefinition {
 						Required: []string{"id", "quantity"},
 					},
 				},
-				"skills": {
-					Type:        "object",
-					Description: "Agent's current skill levels",
-					AdditionalProperties: &Property{Type: "integer"},
-				},
 				"station_id": {
 					Type:        "string",
 					Description: "Station ID for acquisition method lookups",
 				},
 			},
-			Required: []string{"target_recipe_id", "skills"},
+			Required: []string{"target_recipe_id"},
 		},
 	}
 }
@@ -170,7 +159,7 @@ func craftPathToTool() ToolDefinition {
 func recipeLookupTool() ToolDefinition {
 	return ToolDefinition{
 		Name:        "recipe_lookup",
-		Description: "Look up details for a specific recipe by ID or search term. Returns recipe details, skill gaps, profit analysis, and what recipes use the output.",
+		Description: "Look up details for a specific recipe by ID or search term. Returns recipe details, profit analysis, and what recipes use the output.",
 		InputSchema: JSONSchema{
 			Type: "object",
 			Properties: map[string]Property{
@@ -182,53 +171,11 @@ func recipeLookupTool() ToolDefinition {
 					Type:        "string",
 					Description: "Search term for recipe name (alternative to recipe_id)",
 				},
-				"skills": {
-					Type:        "object",
-					Description: "Agent's skills for gap analysis",
-					AdditionalProperties: &Property{Type: "integer"},
-				},
 				"station_id": {
 					Type:        "string",
 					Description: "Station for market data",
 				},
 			},
-		},
-	}
-}
-
-func skillCraftPathsTool() ToolDefinition {
-	minLimit := 1.0
-	
-	return ToolDefinition{
-		Name:        "skill_craft_paths",
-		Description: "Find which skills would unlock new crafting recipes if leveled. Returns skills sorted by recipes unlocked at next level.",
-		InputSchema: JSONSchema{
-			Type: "object",
-			Properties: map[string]Property{
-				"skills": {
-					Type:        "object",
-					Description: "Agent's current skill levels with optional XP",
-					AdditionalProperties: &Property{
-						Type: "object",
-						Properties: map[string]Property{
-							"level":      {Type: "integer"},
-							"current_xp": {Type: "integer"},
-						},
-						Required: []string{"level"},
-					},
-				},
-				"category_filter": {
-					Type:        "string",
-					Description: "Filter to skills in specific category",
-				},
-				"limit": {
-					Type:        "integer",
-					Description: "Max skills to return",
-					Default:     10,
-					Minimum:     &minLimit,
-				},
-			},
-			Required: []string{"skills"},
 		},
 	}
 }
@@ -243,16 +190,6 @@ func componentUsesTool() ToolDefinition {
 				"component_id": {
 					Type:        "string",
 					Description: "Component to look up uses for",
-				},
-				"skills": {
-					Type:        "object",
-					Description: "Agent's skills for filtering",
-					AdditionalProperties: &Property{Type: "integer"},
-				},
-				"include_skill_locked": {
-					Type:        "boolean",
-					Description: "Include recipes agent can't craft yet",
-					Default:     true,
 				},
 				"station_id": {
 					Type:        "string",
@@ -294,14 +231,6 @@ func (s *Server) toolRecipeLookup(ctx context.Context, args json.RawMessage) (an
 		return nil, err
 	}
 	return s.engine.RecipeLookup(ctx, req)
-}
-
-func (s *Server) toolSkillCraftPaths(ctx context.Context, args json.RawMessage) (any, error) {
-	var req crafting.SkillCraftPathsRequest
-	if err := json.Unmarshal(args, &req); err != nil {
-		return nil, err
-	}
-	return s.engine.SkillCraftPaths(ctx, req)
 }
 
 func (s *Server) toolComponentUses(ctx context.Context, args json.RawMessage) (any, error) {

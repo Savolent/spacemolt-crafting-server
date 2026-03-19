@@ -48,9 +48,6 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 			}
 		}
 
-		// No recipe-level skill gating since v0.226.0
-		skillReady := true
-
 		// Calculate profit if station provided
 		var profitAnalysis *crafting.ProfitAnalysis
 		if req.StationID != "" {
@@ -68,7 +65,6 @@ func (e *Engine) ComponentUses(ctx context.Context, req crafting.ComponentUsesRe
 		uses = append(uses, crafting.ComponentUseInfo{
 			Recipe:           *recipe,
 			QuantityPerCraft: quantityNeeded,
-			SkillReady:       skillReady,
 			ProfitAnalysis:   profitAnalysis,
 		})
 	}
@@ -124,10 +120,6 @@ func (e *Engine) sortComponentUses(uses []crafting.ComponentUseInfo, strategy cr
 			return len(uses[i].Recipe.Inputs) < len(uses[j].Recipe.Inputs)
 
 		default:
-			// Default: prefer recipes we can actually craft
-			if uses[i].SkillReady != uses[j].SkillReady {
-				return uses[i].SkillReady
-			}
 			return len(uses[i].Recipe.Inputs) < len(uses[j].Recipe.Inputs)
 		}
 	})

@@ -61,7 +61,6 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 
 	var craftable []crafting.CraftableMatch
 	var partialComponents []crafting.PartialComponentMatch
-	var blockedBySkills []crafting.PartialComponentMatch
 
 	for _, recipeID := range candidateIDs {
 		recipe, err := e.recipes.GetRecipe(ctx, recipeID)
@@ -95,7 +94,6 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 			}
 		}
 
-		// Categorize result (no skill gating since v0.226.0)
 		if matchRatio == 1.0 {
 			// Fully craftable
 			result := crafting.CraftableMatch{
@@ -117,7 +115,6 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 				InputsHave:    have,
 				InputsMissing: missing,
 				MatchRatio:    matchRatio,
-				SkillsReady:   true,
 			}
 
 			if req.StationID != "" {
@@ -136,7 +133,6 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 	// Sort results based on strategy
 	e.sortCraftable(craftable, req.Strategy)
 	e.sortPartial(partialComponents, req.Strategy)
-	e.sortPartial(blockedBySkills, req.Strategy)
 
 	// Apply limits
 	if len(craftable) > req.Limit {
@@ -145,14 +141,10 @@ func (e *Engine) CraftQuery(ctx context.Context, req crafting.CraftQueryRequest)
 	if len(partialComponents) > req.Limit {
 		partialComponents = partialComponents[:req.Limit]
 	}
-	if len(blockedBySkills) > req.Limit {
-		blockedBySkills = blockedBySkills[:req.Limit]
-	}
 
 	return &crafting.CraftQueryResponse{
 		Craftable:         craftable,
 		PartialComponents: partialComponents,
-		BlockedBySkills:   blockedBySkills,
 		QueryStats: crafting.QueryStats{
 			TotalRecipesChecked: len(candidateIDs),
 			ComponentsProvided:  len(req.Components),

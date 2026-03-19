@@ -54,10 +54,7 @@ func (e *Engine) RecipeLookup(ctx context.Context, req crafting.RecipeLookupRequ
 		return resp, nil
 	}
 	resp.Recipe = recipe
-	
-	// No recipe-level skill gating since v0.226.0
-	resp.SkillReady = true
-	
+
 	// Calculate profit analysis if station provided
 	if req.StationID != "" {
 		analysis, err := e.calculateProfitAnalysis(ctx, recipe, req.StationID, 1)

@@ -259,8 +259,6 @@ func (s *Server) callTool(ctx context.Context, name string, args json.RawMessage
 		return s.toolCraftPathTo(ctx, args)
 	case "recipe_lookup":
 		return s.toolRecipeLookup(ctx, args)
-	case "skill_craft_paths":
-		return s.toolSkillCraftPaths(ctx, args)
 	case "component_uses":
 		return s.toolComponentUses(ctx, args)
 	case "bill_of_materials":

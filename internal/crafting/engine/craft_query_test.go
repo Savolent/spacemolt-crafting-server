@@ -110,16 +110,6 @@ func TestCraftQuery_IllegalRecipes(t *testing.T) {
 		}
 	}
 
-	// Also check blocked by skills results
-	if illegalRecipe == nil {
-		for i := range results.BlockedBySkills {
-			if results.BlockedBySkills[i].Recipe.ID == "craft_ammo_std" {
-				illegalRecipe = &results.BlockedBySkills[i].Recipe
-				break
-			}
-		}
-	}
-
 	if illegalRecipe == nil {
 		t.Fatal("illegal recipe not found in results")
 	}

@@ -30,15 +30,6 @@ type Component struct {
 	Quantity int    `json:"quantity"`
 }
 
-// SkillProgress represents an agent's progress in a skill.
-type SkillProgress struct {
-	Level     int `json:"level"`
-	CurrentXP int `json:"current_xp,omitempty"`
-}
-
-// AgentSkillState maps skill IDs to progress.
-type AgentSkillState map[string]SkillProgress
-
 // OptimizationStrategy controls result sorting/filtering.
 type OptimizationStrategy string
 
@@ -93,12 +84,6 @@ type RecipeInput struct {
 	Quantity int    `json:"quantity"`
 }
 
-// SkillRequirement represents a skill level needed for a recipe.
-type SkillRequirement struct {
-	SkillID       string `json:"skill_id"`
-	LevelRequired int    `json:"level_required"`
-}
-
 // RecipeOutput represents what a recipe produces.
 type RecipeOutput struct {
 	ItemID   string `json:"item_id"`
@@ -116,6 +101,12 @@ type IllegalStatus struct {
 // SKILL TYPES
 // ============================================
 
+// SkillRequirement represents a skill level needed as a prerequisite.
+type SkillRequirement struct {
+	SkillID       string `json:"skill_id"`
+	LevelRequired int    `json:"level_required"`
+}
+
 // Skill represents a skill in the progression tree.
 type Skill struct {
 	ID             string             `json:"id"`
@@ -129,15 +120,6 @@ type Skill struct {
 	RequiredSkills json.RawMessage    `json:"required_skills_json,omitempty"`
 	Prerequisites  []SkillRequirement `json:"prerequisites,omitempty"`
 	XPThresholds   []int              `json:"xp_thresholds"`
-}
-
-// SkillGap represents the difference between current and required skill levels.
-type SkillGap struct {
-	SkillID       string `json:"skill_id"`
-	SkillName     string `json:"skill_name"`
-	CurrentLevel  int    `json:"current_level"`
-	RequiredLevel int    `json:"required_level"`
-	XPToNext      int    `json:"xp_to_next,omitempty"`
 }
 
 // ============================================
@@ -187,13 +169,11 @@ type CraftableMatch struct {
 
 // PartialComponentMatch represents a recipe where the agent has some components.
 type PartialComponentMatch struct {
-	Recipe            Recipe             `json:"recipe"`
-	InputsHave       []RecipeInput  `json:"inputs_have"`
-	InputsMissing    []RecipeInput  `json:"inputs_missing"`
-	MatchRatio        float64            `json:"match_ratio"`
-	SkillsReady       bool               `json:"skills_ready"`
-	SkillsMissing     []SkillGap         `json:"skills_missing,omitempty"`
-	ProfitAnalysis    *ProfitAnalysis    `json:"profit_analysis,omitempty"`
+	Recipe         Recipe          `json:"recipe"`
+	InputsHave     []RecipeInput   `json:"inputs_have"`
+	InputsMissing  []RecipeInput   `json:"inputs_missing"`
+	MatchRatio     float64         `json:"match_ratio"`
+	ProfitAnalysis *ProfitAnalysis `json:"profit_analysis,omitempty"`
 }
 
 // CraftStep represents a single step in a crafting path.
@@ -204,8 +184,6 @@ type CraftStep struct {
 	QuantityToCraft int              `json:"quantity_to_craft"`
 	Inputs          []CraftStepInput `json:"inputs"`
 	Output          RecipeOutput     `json:"output"`
-	SkillReady      bool             `json:"skill_ready"`
-	SkillGap        *SkillGap        `json:"skill_gap,omitempty"`
 }
 
 // CraftStepInput represents an input component for a craft step.
@@ -228,14 +206,6 @@ type MaterialRequirement struct {
 	CraftIllegalStatus *IllegalStatus `json:"craft_illegal_status,omitempty"`
 }
 
-// SkillUnlockPath represents a skill that would unlock recipes if leveled.
-type SkillUnlockPath struct {
-	Skill           Skill    `json:"skill"`
-	CurrentLevel    int      `json:"current_level"`
-	XPToNextLevel   int      `json:"xp_to_next_level"`
-	RecipesUnlocked []string `json:"recipes_unlocked_at_next"`
-}
-
 // ============================================
 // TOOL REQUEST/RESPONSE TYPES
 // ============================================
@@ -243,7 +213,6 @@ type SkillUnlockPath struct {
 // CraftQueryRequest is the input for the craft_query tool.
 type CraftQueryRequest struct {
 	Components         []Component          `json:"components"`
-	Skills             map[string]int       `json:"skills"`
 	IncludePartial     bool                 `json:"include_partial"`
 	IncludeAmmunition  bool                 `json:"include_ammunition"`
 	MinMatchRatio      float64              `json:"min_match_ratio"`
@@ -257,7 +226,6 @@ type CraftQueryRequest struct {
 type CraftQueryResponse struct {
 	Craftable         []CraftableMatch        `json:"craftable"`
 	PartialComponents []PartialComponentMatch `json:"partial_components"`
-	BlockedBySkills   []PartialComponentMatch `json:"blocked_by_skills"`
 	QueryStats        QueryStats              `json:"query_stats"`
 }
 
@@ -271,19 +239,16 @@ type QueryStats struct {
 
 // CraftPathRequest is the input for the craft_path_to tool.
 type CraftPathRequest struct {
-	TargetRecipeID   string         `json:"target_recipe_id"`
-	TargetQuantity   int            `json:"target_quantity"`
-	CurrentInventory []Component    `json:"current_inventory"`
-	Skills           map[string]int `json:"skills"`
-	StationID        string         `json:"station_id,omitempty"`
+	TargetRecipeID   string      `json:"target_recipe_id"`
+	TargetQuantity   int         `json:"target_quantity"`
+	CurrentInventory []Component `json:"current_inventory"`
+	StationID        string      `json:"station_id,omitempty"`
 }
 
 // CraftPathResponse is the output for the craft_path_to tool.
 type CraftPathResponse struct {
 	Target          CraftPathTarget       `json:"target"`
 	Feasible        bool                  `json:"feasible"`
-	SkillReady      bool                  `json:"skill_ready"`
-	SkillsMissing   []SkillGap            `json:"skills_missing,omitempty"`
 	MaterialsNeeded []MaterialRequirement `json:"materials_needed"`
 	CraftingTime    int                   `json:"crafting_time"`
 	Summary         CraftPathSummary      `json:"summary"`
@@ -307,17 +272,14 @@ type CraftPathSummary struct {
 
 // RecipeLookupRequest is the input for the recipe_lookup tool.
 type RecipeLookupRequest struct {
-	RecipeID  string         `json:"recipe_id,omitempty"`
-	Search    string         `json:"search,omitempty"`
-	Skills    map[string]int `json:"skills,omitempty"`
-	StationID string         `json:"station_id,omitempty"`
+	RecipeID  string `json:"recipe_id,omitempty"`
+	Search    string `json:"search,omitempty"`
+	StationID string `json:"station_id,omitempty"`
 }
 
 // RecipeLookupResponse is the output for the recipe_lookup tool.
 type RecipeLookupResponse struct {
 	Recipe         *Recipe           `json:"recipe,omitempty"`
-	SkillReady     bool              `json:"skill_ready"`
-	SkillGaps      []SkillGap        `json:"skill_gaps,omitempty"`
 	ProfitAnalysis *ProfitAnalysis   `json:"profit_analysis,omitempty"`
 	UsedInRecipes  []string          `json:"used_in_recipes,omitempty"`
 	SearchResults  []RecipeSearchHit `json:"search_results,omitempty"`
@@ -330,35 +292,11 @@ type RecipeSearchHit struct {
 	Category string `json:"category"`
 }
 
-// SkillCraftPathsRequest is the input for the skill_craft_paths tool.
-type SkillCraftPathsRequest struct {
-	Skills         map[string]SkillProgress `json:"skills"`
-	CategoryFilter string                   `json:"category_filter,omitempty"`
-	Limit          int                      `json:"limit"`
-}
-
-// SkillCraftPathsResponse is the output for the skill_craft_paths tool.
-type SkillCraftPathsResponse struct {
-	SkillPaths []SkillUnlockPath      `json:"skill_paths"`
-	Summary    SkillCraftPathsSummary `json:"summary"`
-}
-
-// SkillCraftPathsSummary provides aggregate info about skill unlock potential.
-type SkillCraftPathsSummary struct {
-	TotalRecipes       int    `json:"total_recipes"`
-	RecipesUnlocked    int    `json:"recipes_unlocked"`
-	RecipesLocked      int    `json:"recipes_locked"`
-	ClosestUnlockSkill string `json:"closest_unlock_skill,omitempty"`
-	ClosestUnlockXP    int    `json:"closest_unlock_xp,omitempty"`
-}
-
 // ComponentUsesRequest is the input for the component_uses tool.
 type ComponentUsesRequest struct {
-	ItemID             string               `json:"item_id"`
-	Skills             map[string]int       `json:"skills,omitempty"`
-	IncludeSkillLocked bool                 `json:"include_skill_locked"`
-	StationID          string               `json:"station_id,omitempty"`
-	Strategy           OptimizationStrategy `json:"optimization_strategy"`
+	ItemID    string               `json:"item_id"`
+	StationID string               `json:"station_id,omitempty"`
+	Strategy  OptimizationStrategy `json:"optimization_strategy"`
 }
 
 // ComponentUsesResponse is the output for the component_uses tool.
@@ -374,8 +312,6 @@ type ComponentUsesResponse struct {
 type ComponentUseInfo struct {
 	Recipe           Recipe          `json:"recipe"`
 	QuantityPerCraft int             `json:"quantity_per_craft"`
-	SkillReady       bool            `json:"skill_ready"`
-	SkillGaps        []SkillGap      `json:"skill_gaps,omitempty"`
 	ProfitAnalysis   *ProfitAnalysis `json:"profit_analysis,omitempty"`
 }
 
