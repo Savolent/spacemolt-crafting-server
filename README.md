@@ -2,23 +2,22 @@
 
 A comprehensive server for SpaceMolt crafting queries with **market data integration** and **intelligent pricing**. Supports both MCP (Model Context Protocol) and HTTP API modes for AI agents and web services.
 
-- Last rebuilt and repopulated the database against Server version: **v0.142.7**
-- **NEW:** Market data submission and sophisticated pricing calculations
-- **NEW:** HTTP API for real-time market data integration
+- Last rebuilt and repopulated the database against Server version: **v0.226.0**
+- Market data submission and sophisticated pricing calculations
+- HTTP API for real-time market data integration
 
 ## Features
 
-### 7 Useful MCP Tools
+### 6 MCP Tools
 
 1. **`craft_query`** - "What can I craft with my inventory?" (optional market pricing with station_id)
 2. **`craft_path_to`** - "How do I craft this specific item?"
 3. **`recipe_lookup`** - "Tell me about this recipe" (optional market pricing with station_id)
-4. **`skill_craft_paths`** - "Which skills unlock new recipes?"
-5. **`component_uses`** - "What can I do with this item?" (optional market pricing with station_id)
-6. **`bill_of_materials`** - "What raw materials do I need?"
-7. **`recipe_market_profitability`** ⭐ - "Show profitability for all recipes" (with inventory support)
+4. **`component_uses`** - "What can I do with this item?" (optional market pricing with station_id)
+5. **`bill_of_materials`** - "What raw materials do I need?"
+6. **`recipe_market_profitability`** - "Show profitability for all recipes" (with inventory support)
 
-### Market Data Integration ⭐ NEW
+### Market Data Integration
 
 - **Real-time Market Data API**: Submit and query market prices via HTTP
 - **Sophisticated Pricing Algorithms**: Volume-weighted, second-price auction, median
@@ -27,7 +26,7 @@ A comprehensive server for SpaceMolt crafting queries with **market data integra
 - **Auto-recalculation**: Statistics updated automatically when new orders submitted
 - **7-Day Order Retention**: Keeps order book bounded and fresh
 
-### HTTP API Endpoints ⭐ NEW
+### HTTP API Endpoints
 
 ```bash
 # Submit market data
@@ -62,11 +61,11 @@ The crafting server uses a rough priority ordering when returning recipes to try
 | Tier | Categories | Recipe Count |
 |------|------------|--------------|
 | 1 (Highest) | Shipbuilding, Legendary | 25 |
-| 2 | Components, Weapons, Equipment | 125 |
-| 3 | Consumables | 79 |
-| 4 | Refining | 71 |
-| 5 | (various) | ~50 |
-| 6 (Lowest) | Defense, Utility, Drones, etc. | ~44 |
+| 2 | Refining, Modules, Gas Processing, Equipment, Components, Mining, Ice Refining | 201 |
+| 3 | Weapons, Stealth, Ship Passive, Drones, Defense, Electronic Warfare | 108 |
+| 4 | Utility | 23 |
+| 5 | Ammunition | 0 |
+| 6 (Lowest) | Consumables, Facility Only, Biological Refining | 115 |
 
 ## Quick Start
 
@@ -93,7 +92,7 @@ cp bin/crafting-server ~/bin/
 ./bin/crafting-server -db crafting.db
 ```
 
-#### As an HTTP Server ⭐ NEW
+#### As an HTTP Server
 
 ```bash
 # Run in HTTP API mode on port 8080
@@ -140,14 +139,14 @@ The catalog JSON files use a `{"items": [...]}` envelope format, which the impor
 # Import items first (provides item metadata for names, categories, etc.)
 ./bin/crafting-server -db crafting.db -import-items catalog_items.json
 
-# Import recipes (with inputs, outputs, and skill requirements)
+# Import recipes (with inputs and outputs)
 ./bin/crafting-server -db crafting.db -import-recipes catalog_recipes.json
 
 # Import skills (with prerequisites and XP thresholds)
 ./bin/crafting-server -db crafting.db -import-skills catalog_skills.json
 
 # Set game version (optional, tracks which server version the data came from)
-./bin/crafting-server -db crafting.db -game-version v0.142.7 -import-items catalog_items.json
+./bin/crafting-server -db crafting.db -game-version v0.226.0 -import-items catalog_items.json
 
 # (Optional) Import market data for profit calculations
 ./bin/crafting-server -db crafting.db -import-market market.json
@@ -163,9 +162,9 @@ To see which game server version the database was built from:
 
 Output:
 ```
-Game Version: v0.142.7
-Imported At: 2026-02-20 20:09:00 PST
-Updated At:  2026-02-24 19:06:35 PST
+Game Version: v0.226.0
+Imported At: 2026-03-15 15:35:35 PDT
+Updated At:  2026-03-15 15:35:35 PDT
 ```
 
 #### Verifying the Import
@@ -179,13 +178,12 @@ sqlite3 crafting.db "
   UNION ALL SELECT 'skills', COUNT(*) FROM skills
   UNION ALL SELECT 'recipe_inputs', COUNT(*) FROM recipe_inputs
   UNION ALL SELECT 'recipe_outputs', COUNT(*) FROM recipe_outputs
-  UNION ALL SELECT 'recipe_skills', COUNT(*) FROM recipe_skills
   UNION ALL SELECT 'skill_levels', COUNT(*) FROM skill_levels
   UNION ALL SELECT 'skill_prerequisites', COUNT(*) FROM skill_prerequisites;
 "
 ```
 
-Expected counts: ~688 items, 394 recipes, 138 skills, plus populated junction tables.
+Expected counts: ~476 items, ~472 recipes, ~28 skills, plus populated junction tables.
 
 ## Claude Code Integration
 
@@ -219,9 +217,9 @@ After updating the configuration, restart Claude Code to load the MCP server. Th
 
 The server uses SQLite for fast, efficient recipe and skill queries:
 
-- **Items:** 688 item definitions from the game catalog
-- **Recipes:** 394 recipes from SpaceMolt
-- **Skills:** 138 skill definitions
+- **Items:** 476 item definitions from the game catalog
+- **Recipes:** 472 recipes from SpaceMolt
+- **Skills:** 28 skill definitions
 - **Database Size:** ~500KB (base) + variable for market data
 - **Query Performance:** 1-5ms typical
 
@@ -232,12 +230,14 @@ The server uses SQLite for fast, efficient recipe and skill queries:
 - `recipes` - Recipe metadata
 - `recipe_inputs` - Required input items (inverted index)
 - `recipe_outputs` - Recipe output items (supports multiple outputs)
-- `recipe_skills` - Skill requirements per recipe
 - `skills` - Skill definitions
 - `skill_prerequisites` - Skill dependencies
 - `skill_levels` - XP thresholds per level
+- `stations` - Station info for market lookups
+- `illegal_recipes` - Recipes marked as illegal with ban reasons and legal locations
+- `category_priorities` - Priority tier assignments for recipe categories
 
-#### Market Data Tables ⭐ NEW
+#### Market Data Tables
 - `market_order_book` - Individual buy/sell orders (7-day retention)
   - Stores raw order data with price, volume, station, timestamp
   - Used for sophisticated price calculations
@@ -254,8 +254,7 @@ The server uses SQLite for fast, efficient recipe and skill queries:
 - `market_prices` - Legacy price data (backward compatibility)
 - `market_price_summary` - Legacy aggregated summaries
 
-### Pricing Methodology ⭐ NEW
-
+### Pricing Methodology
 The server automatically selects the best pricing algorithm based on market characteristics:
 
 | Method | Conditions | Use Case | Confidence |
@@ -280,9 +279,6 @@ The server automatically selects the best pricing algorithm based on market char
       "components": [
         {"id": "ore_copper", "quantity": 50}
       ],
-      "skills": {
-        "crafting_basic": 1
-      },
       "limit": 10
     }
   }
@@ -307,8 +303,7 @@ The server automatically selects the best pricing algorithm based on market char
 }
 ```
 
-### HTTP API Usage ⭐ NEW
-
+### HTTP API Usage
 #### Submit Market Data
 
 ```bash
@@ -390,8 +385,7 @@ curl -X POST http://localhost:8080/api/v1/admin/market/recalc/ore_iron
 }
 ```
 
-### Recipe Market Profitability ⭐ NEW
-
+### Recipe Market Profitability
 Get market profitability for all recipes, sorted by profit. Shows which items are most profitable to craft based on current market data or MSRP.
 
 #### Basic Usage (MSRP Only)
@@ -423,7 +417,7 @@ Get market profitability for all recipes, sorted by profit. Shows which items ar
       "profit_margin_pct": 312.1
     }
   ],
-  "total_recipes": 394
+  "total_recipes": 472
 }
 ```
 
@@ -441,8 +435,7 @@ Get market profitability for all recipes, sorted by profit. Shows which items ar
 }
 ```
 
-#### With Inventory Support ⭐ NEW
-
+#### With Inventory Support
 Specify items you already have in inventory. The tool will set input costs to 0 for items you own, showing true profit based on what you need to buy.
 
 ```json
@@ -478,33 +471,34 @@ This enables accurate profitability calculations based on your actual inventory,
 ## Architecture
 
 ```
-cmd/crafting-server/    # Main entry point
-pkg/crafting/           # Public domain types
+cmd/crafting-server/       # Main entry point
+cmd/test-tools/            # MCP tool integration tests
+pkg/crafting/              # Public domain types
 internal/
-  ├── api/             # HTTP API server and handlers ⭐ NEW
-  ├── db/              # Database layer (SQLite)
-  │   ├── migrations/  # Database schema migrations
-  │   └── market*.go   # Market data and statistics
-  ├── engine/          # Query business logic
-  ├── mcp/             # MCP protocol
-  └── sync/            # Data import from catalog JSON
+  ├── api/                 # HTTP API server and handlers
+  └── crafting/
+      ├── db/              # Database layer (SQLite)
+      │   └── migrations/  # Database schema migrations
+      ├── engine/          # Query business logic
+      ├── mcp/             # MCP protocol
+      └── sync/            # Data import from catalog JSON
 ```
 
 ### Key Components
 
-- **`internal/api/`** ⭐ NEW - HTTP server for market data API
+- **`internal/api/`** - HTTP server for market data API
   - Market data submission endpoint
   - Price query endpoint
   - Admin recalculation endpoint
   - Graceful shutdown and timeout handling
 
-- **`internal/db/market*.go`** ⭐ NEW - Market data management
+- **`internal/crafting/db/market*.go`** - Market data management
   - MarketStore for order book and price stats
   - StatsCalculator with hybrid pricing algorithms
   - Auto-recalculation after order submission
   - Old order pruning (7-day retention)
 
-- **`internal/db/migrations/`** ⭐ NEW - Database versioning
+- **`internal/crafting/db/migrations/`** - Database versioning
   - Migration 005: Enhanced market tables
   - Automatic migration application
   - Schema version tracking
@@ -533,7 +527,7 @@ go test ./...
 
 #### MCP Tool Integration Tests
 
-The `test-tools` command provides comprehensive testing for all 7 MCP tools with various scenarios:
+The `test-tools` command provides comprehensive testing for all 6 MCP tools with various scenarios:
 
 ```bash
 # Build and run comprehensive tool tests
@@ -548,28 +542,10 @@ go build -o bin/test-tools ./cmd/test-tools
 ```
 
 **What it tests:**
-- All 7 MCP tools (craft_query, craft_path_to, recipe_lookup, skill_craft_paths, component_uses, bill_of_materials, recipe_market_profitability)
+- All 6 MCP tools (craft_query, craft_path_to, recipe_lookup, component_uses, bill_of_materials, recipe_market_profitability)
 - Invalid inputs (non-existent IDs, negative quantities, empty parameters)
 - Simple queries (basic usage with common values)
 - Complex scenarios (optional parameters, inventory support, optimization strategies)
-
-**Expected output:**
-```
-Total Tests:  54
-Passed:       47 (87%)
-Failed:       7 (13%)
-
-By Tool:
-  craft_query                   11 tests
-  craft_path_to                 6 tests
-  recipe_lookup                 6 tests
-  skill_craft_paths             6 tests
-  component_uses                7 tests
-  bill_of_materials             7 tests
-  recipe_market_profitability   11 tests
-```
-
-Note: Some tests may fail if the database lacks market tables (`market_price_stats`), which is expected behavior.
 
 ### Lint
 
@@ -596,15 +572,14 @@ Command-line options:
 -import-market string
     Import market data from JSON file
 -game-version string
-    Set game server version (e.g., "v0.142.7")
+    Set game server version (e.g., "v0.226.0")
 -version
     Show database version information and exit
 -verbose
     Enable verbose logging
 ```
 
-### HTTP Server Configuration ⭐ NEW
-
+### HTTP Server Configuration
 When running in HTTP mode (`-http :8080`), the server uses these timeouts:
 
 - **Read Timeout:** 10 seconds
@@ -646,18 +621,13 @@ The importer accepts both flat JSON arrays and catalog envelope format (`{"items
       "description": "Build propulsion system cores.",
       "category": "Components",
       "crafting_time": 10,
-      "base_quality": 40,
-      "skill_quality_mod": 6,
       "inputs": [
         {"item_id": "refined_alloy", "quantity": 3},
         {"item_id": "ore_cobalt", "quantity": 4}
       ],
       "outputs": [
-        {"item_id": "comp_engine_core", "quantity": 1, "quality_mod": true}
-      ],
-      "required_skills": {
-        "crafting_advanced": 2
-      }
+        {"item_id": "comp_engine_core", "quantity": 1}
+      ]
     }
   ]
 }
@@ -687,59 +657,16 @@ The importer accepts both flat JSON arrays and catalog envelope format (`{"items
 
 - **Query Speed:** 1-5ms for typical queries
 - **Database Size:** ~500KB (base) + variable for market data
-  - Base: 688 items, 394 recipes, 138 skills
+  - Base: 476 items, 472 recipes, 28 skills
   - Market data: ~1KB per order (7-day retention)
 - **Binary Size:** ~10MB
 - **Memory Usage:** ~5MB typical (MCP mode), ~10MB (HTTP mode)
 - **HTTP API:** Handles 1000+ concurrent submissions
 - **Market Stats Calculation:** <50ms for typical items
 
-## Development
+## Market Data Integration Guide
 
-### Build
-
-```bash
-go build ./cmd/crafting-server
-```
-
-### Test
-
-```bash
-# Run all tests
-go test ./...
-
-# Run specific package tests
-go test ./internal/api/...
-go test ./internal/crafting/db/...
-go test ./internal/crafting/engine/...
-
-# Run with verbose output
-go test -v ./...
-```
-
-### Test Market Data Features
-
-```bash
-# Test HTTP server with market data
-go test -v ./internal/api/...
-
-# Test pricing algorithms with real data
-go test -v ./internal/crafting/db/... -run TestStatsCalculator
-
-# Test profit calculations with market stats
-go test -v ./internal/crafting/engine/... -run TestCalculateProfitAnalysis
-```
-
-### Lint
-
-```bash
-golangci-lint run
-```
-
-## Market Data Integration Guide ⭐ NEW
-
-### Database Migrations ⭐ NEW
-
+### Database Migrations
 The server uses automatic database migrations to manage schema updates:
 
 - **Migration 005:** Enhanced market tables (order book, price stats)
